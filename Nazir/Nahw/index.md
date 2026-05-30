@@ -39,33 +39,10 @@
   a:hover { color: #064e3b; border-bottom-style: solid; }
 </style>
 
-# Nahw — *Ilm-un-Nahw al-Bushra* (page-by-page notes)
+# Nahw — *Ilm-un-Nahw al-Bushra*
 
-> **Source-of-truth:** [IlmUnNahwAlBushraColor (1).pdf](IlmUnNahwAlBushraColor%20(1).pdf)
->
-> **Project:** Nazir's eMahad Aalim course — Nahw subject.
->
-> **Hosting status:** Not yet hosted publicly — pre-build phase, deferred per [_planning/architecture-v2.md](_planning/architecture-v2.md) until Bab 1 reaches `Status: VERIFIED` on every Section.
-
----
-
-## Top-level navigation
-
-| Resource | Description |
+| Resource | |
 |---|---|
-| [bab-1/README.md](bab-1/README.md) | Bab 1 — Kalimah aur Kalam — Fasl 1-6 status + per-Fasl entry points |
-| [charts.md](charts.md) | Mermaid concept charts (single cross-cutting file) |
-| [irab-tables.md](irab-tables.md) | Paradigm / i'rab tables (single cross-cutting file) |
-| [notes.md](notes.md) | **Retired** — minimal redirect after Phase 2. All Sections moved to per-Section files under `bab-1/fasl-N/` |
-| [_archive/notes-pre-split-2026-05-30.md](_archive/notes-pre-split-2026-05-30.md) | Pre-Phase-1 snapshot of monolithic notes.md (byte-identical reference, 4965 lines) |
-| [_archive/notes-pre-phase2-2026-05-30.md](_archive/notes-pre-phase2-2026-05-30.md) | Pre-Phase-2 stub snapshot (byte-identical reference for the 2647-line Phase-1 stub state) |
-| [_planning/architecture-v2.md](_planning/architecture-v2.md) | Approved architecture v2 plan (4 decisions, migration sequence, validators) |
-
----
-
-## Bab status (current — 2026-05-30)
-
-| Bab | Title | Status | Entry |
-|---|---|---|---|
-| 1 | Kalimah aur Kalam | Phase 1 + 2 migration COMPLETE: Fasl 1-5 all MUKAMMAL & migrated to bab-1/fasl-N/; Fasl 6 TBD (Phase 3 native builds) | [bab-1/README.md](bab-1/README.md) |
-| 2+ | (forthcoming — Section 21+ continues the book) | TBD | — |
+| [Bab 1 — Kalimah aur Kalam](bab-1/README.md) | Fasl-by-Fasl notes |
+| [Charts](charts.md) | Mermaid concept charts |
+| [I'rab tables](irab-tables.md) | Paradigm tables |

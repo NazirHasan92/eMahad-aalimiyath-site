@@ -39,28 +39,14 @@
   a:hover { color: #064e3b; border-bottom-style: solid; }
 </style>
 
-# Nazir's Sarf Notes — Book Navigator
+# Sarf — *Mu'allim u Sarf*
 
-> **Source book:** Mu'allim u Sarf — `Sarf/Muallim u Sarf_ebook_New_15_jan.pdf` (135 pages; asal mazmoon p-018 se shuru).
->
-> Yeh navigator har Topic ke per-Sub-Topic notes par link karta hai. Builder workflow + architecture v2 plan: [`_planning/architecture-v2.md`](_planning/architecture-v2.md).
+| Topic | Status | |
+|---|---|---|
+| **1.0 — اصطلاحات (Istilahaat)** | 🏁 MUKAMMAL | [topic-1/README.md](topic-1/README.md) |
+| **2.0 — فعل ماضی** | IN-PROGRESS | [topic-2/README.md](topic-2/README.md) |
 
----
+## Cross-cutting
 
-## Topics
-
-- **Topic 1.0** — Istilahaat (اصطلاحات) — [topic-1/README.md](topic-1/README.md) — Status: **7/7 Sub Topics MUKAMMAL** (Phase 1 + Phase 2 complete, 2026-05-30). **Topic 1.0 MUKAMMAL confirmed by Slide 49 Topic 2.0 transition** (PDF p-035, 2026-05-30) — pehle structural inference tha (S19 fenced), ab PDF-explicit. Nazir physical-book sub-slide-level verification still pending for individual Sub Topics, but Topic-level closure confirmed.
-- **Topic 2.0** — فعل ماضی — [topic-2/README.md](topic-2/README.md) — Status: **IN-PROGRESS** (started 2026-05-30 with PDF p-035 = Slides 49 + 50 + 51). Sub Topic 2.1 IN-PROGRESS (3 of ~14 expected slides covered). 4 Sub Topics expected per Slide 49 TOC (2.1/2.2/2.3/2.4 starting Slides 50/64/70/77). Sub Topic decorative tags `[?]`-flagged (stylized calligraphic).
-
----
-
-## Cross-cutting references
-
-- [`charts.md`](charts.md) — Mermaid concept charts (kept single — cross-cutting)
-- [`gardaan-tables.md`](gardaan-tables.md) — Paradigm tables (kept single — cross-cutting)
-
----
-
-## Hosting status
-
-Not yet hosted publicly — pre-build phase, deferred per [`_planning/architecture-v2.md`](_planning/architecture-v2.md). Re-trigger conditions: Topic 1.0 reaches VERIFIED status on every Sub Topic, OR live-affirmation phase begins on Topic 1.0, OR explicit ask.
+- [Charts](charts.md)
+- [Gardaan tables](gardaan-tables.md)

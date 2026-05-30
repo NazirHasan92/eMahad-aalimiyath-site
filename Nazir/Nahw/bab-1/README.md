@@ -41,29 +41,19 @@
 
 # Bab 1 — Kalimah aur Kalam (کلمہ وکلام)
 
-> **Source-of-truth:** [../IlmUnNahwAlBushraColor (1).pdf](../IlmUnNahwAlBushraColor%20(1).pdf), pages 6-25 (book pp. ۵–۲۴).
->
-> **Migration status (2026-05-30):** Phase 1 + Phase 2 of architecture v2 migration COMPLETE. All Fasls 1-5 migrated to per-Section files under `bab-1/fasl-N/`. Monolithic `../notes.md` retired to minimal redirect. Fasl 6+ will be built natively under the new structure (Phase 3, ongoing per-page workflow at [../_planning/forward-build-workflow.md](../_planning/forward-build-workflow.md)). Plan: [../_planning/architecture-v2.md](../_planning/architecture-v2.md).
-
----
-
 ## Fasl status
 
-| Fasl | Title (per backup TOC) | Sections | PDF pages | Status | Location |
+| Fasl | Title | Sections | PDF pages | Status | Location |
 |---|---|---|---|---|---|
-| 1 | Fasl-e-Awwal (within Bab 1 — Kalimah aur Kalam) | 1-6 | p-06 → p-11 | 🏁 **KHATAM** (migrated) | [fasl-1/README.md](fasl-1/README.md) |
-| 2 | جملہ کے ذاتی و صفاتی اقسام (Jumla ke Zaati o Sifati Aqsam) | 7-8 | p-12 → p-13 | 🏁 **MUKAMMAL** (migrated) | [fasl-2/README.md](fasl-2/README.md) |
-| 3 | علاماتِ اسم، فعل، حرف (Alamat-e-Ism, Fi'l, Harf — pehchaan ke signs) | 9-10 | p-14 → p-15 | 🏁 **MUKAMMAL** (migrated) | [fasl-3/README.md](fasl-3/README.md) |
-| 4 | معرب و مبنی (Mu'arrab wa Mabni — Kalimah ki i'rab-based taqseem) | 11-12 | p-16 → p-17 | **(migrated)** | [fasl-4/README.md](fasl-4/README.md) |
-| 5 | اسم غیر متمکن کے اقسام (Ism Ghair Mutamakkin ke Aqsam) | 13-20 | p-18 → p-25 | 🏁 **MUKAMMAL** (migrated) | [fasl-5/README.md](fasl-5/README.md) |
-| 6 | اسم منسوب (Ism Mansoob — nisba-formation rules) | 21+ | p-26 → | **IN-PROGRESS** (Section 21 built 2026-05-30 — Phase 3 native) | [fasl-6/README.md](fasl-6/README.md) |
-
----
+| 1 | Fasl-e-Awwal | 1-6 | p-06 → p-11 | 🏁 **KHATAM** | [fasl-1/README.md](fasl-1/README.md) |
+| 2 | جملہ کے ذاتی و صفاتی اقسام | 7-8 | p-12 → p-13 | 🏁 **MUKAMMAL** | [fasl-2/README.md](fasl-2/README.md) |
+| 3 | علاماتِ اسم، فعل، حرف | 9-10 | p-14 → p-15 | 🏁 **MUKAMMAL** | [fasl-3/README.md](fasl-3/README.md) |
+| 4 | معرب و مبنی | 11-12 | p-16 → p-17 | 🏁 **MUKAMMAL** | [fasl-4/README.md](fasl-4/README.md) |
+| 5 | اسم غیر متمکن کے اقسام | 13-20 | p-18 → p-25 | 🏁 **MUKAMMAL** | [fasl-5/README.md](fasl-5/README.md) |
+| 6 | اسم منسوب | 21+ | p-26 → | **IN-PROGRESS** | [fasl-6/README.md](fasl-6/README.md) |
 
 ## Navigation
 
-- 📖 Top: [Nahw index](../index.md)
-- 📐 Charts: [../charts.md](../charts.md)
-- 📋 I'rab tables: [../irab-tables.md](../irab-tables.md)
-- 🗂 Pre-split backup: [../_archive/notes-pre-split-2026-05-30.md](../_archive/notes-pre-split-2026-05-30.md)
-- 📐 Architecture plan: [../_planning/architecture-v2.md](../_planning/architecture-v2.md)
+- 📖 [Nahw index](../index.md)
+- 📐 [Charts](../charts.md)
+- 📋 [I'rab tables](../irab-tables.md)

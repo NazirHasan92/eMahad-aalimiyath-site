@@ -41,33 +41,15 @@
 
 # Fasl 6 — اسم منسوب (Ism Mansoob)
 
-> **Status:** IN-PROGRESS (2026-05-30) — Section 21 built natively under architecture v2 (Phase 3 first page).
->
-> **Scope per PDF p-26 title block:** **اسم منسوب** (Ism Mansoob) — the chapter on **nisba forms**: how to derive "belonging to / related to" adjectives from a base ism.
->
-> **Source-of-truth:** [../../IlmUnNahwAlBushraColor (1).pdf](../../IlmUnNahwAlBushraColor%20(1).pdf), pages 26+ (book pp. ۲۵+).
->
-> **Bootstrap note (2026-05-30):** This Fasl is the **first to be built natively under v2** (per-Section file structure). Sections 1-20 were migrated from monolithic `notes.md` during Phase 1+2 (see `../../_planning/architecture-v2.md`). Per `../../_planning/forward-build-workflow.md`, every PDF page from p-26 onwards = one Section file in this folder, built one-page-per-turn.
+**IN-PROGRESS** — nisba-formation rules: how to derive "belonging to / related to" adjectives from a base ism.
 
----
-
-## Section TOC
-
-| Section | PDF page | Book page | File | Snapshot (from PDF blocks) |
-|---|---|---|---|---|
-| 21 | p-26 | p-۲۵ | [section-21.md](section-21.md) | Fasl 6 ka aaghaaz: اسم منسوب — tareef + 4 misaalein (بَغْدَادِيٌّ / هِنْدِيٌّ / صَرْفِيٌّ / نَحْوِيٌّ) + Qaida 1 (الف مقصورہ → و / drop) + Qaida 2 (الف ممدودہ ke baad hamza → و) + Qaida 3 (pre-existing یاے مشدّد — یاے نسبت ki zaroorat nahi) + Qaida 4 (تائے تانیث gir jaati — TRUNCATED at کُوْفَۃُ, continues p-27) |
-
----
-
-## Fasl-level synthesis
-
-> *To be written when this Fasl reaches MUKAMMAL milestone. Per forward-build-workflow Pitfall #2: synthesis is derived from Section H1s + Yaad rakho only — never from training.*
-
----
+| Section | PDF page | Topic |
+|---|---|---|
+| [21](section-21.md) | p-26 | Fasl 6 ka aaghaaz: اسم منسوب — tareef + 4 misaalein + Qaida 1 (الف مقصورہ → و) + Qaida 2 (الف ممدودہ + hamza → و) + Qaida 3 (pre-existing یاے مشدّد) + Qaida 4 (تائے تانیث — TRUNCATED) |
 
 ## Navigation
 
-- ⬆ Up: [Bab 1 README](../README.md)
-- 📖 Top: [Nahw index](../../index.md)
-- 📐 Charts: [../../charts.md](../../charts.md)
-- 📋 I'rab tables: [../../irab-tables.md](../../irab-tables.md)
+- ⬆ [Bab 1](../README.md)
+- 📖 [Nahw index](../../index.md)
+- 📐 [Charts](../../charts.md)
+- 📋 [I'rab tables](../../irab-tables.md)

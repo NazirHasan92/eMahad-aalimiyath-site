@@ -39,30 +39,18 @@
   a:hover { color: #064e3b; border-bottom-style: solid; }
 </style>
 
-# Fasl 3 — علاماتِ اسم، فعل، حرف (Alamat-e-Ism, Fi'l, Harf — pehchaan ke signs)
+# Fasl 3 — علاماتِ اسم، فعل، حرف (Alamat-e-Ism, Fi'l, Harf)
 
-> **Status:** 🏁 **MUKAMMAL** — Sections 9-10 documented across PDF p-14 → p-15. Asal content (alamat lists for Ism / Fi'l / Harf) completes on Section 10.
->
-> **Scope per backup TOC heading:** *Fasl 3 — علاماتِ اسم، فعل، حرف (Alamat-e-Ism, Fi'l, Harf — pehchaan ke signs)*.
->
-> **Source-of-truth:** [../../IlmUnNahwAlBushraColor (1).pdf](../../IlmUnNahwAlBushraColor%20(1).pdf), pages 14-15.
->
-> **Pre-split history:** This Fasl was migrated 2026-05-30 (Phase 2 of architecture v2) from monolithic `Nahw/notes.md` (pre-split backup at `Nahw/_archive/notes-pre-split-2026-05-30.md`, lines 1822-2251) into 2 per-Section files under this folder. Content is byte-identical to the backup. Migration plan: [../../_planning/architecture-v2.md](../../_planning/architecture-v2.md).
+🏁 **MUKAMMAL** — Sections 9-10 across PDF p-14 → p-15.
 
----
-
-## Section TOC
-
-| Section | PDF page | Book page | File | Snapshot (from backup TOC) |
-|---|---|---|---|---|
-| 9 | p-14 | p-۱۳ | [section-09.md](section-09.md) | Fasl 3 ka aaghaaz: **علاماتِ اسم** ki **11 alamat** (الف لام / حرف جر / تنوین / Musnad Ilayh / Mudaf / Musaghghar / Mansoob / Tathniya / Jam' / Mausoof / Taa'-e-Mutaharrika) + **فائدہ** box: Fi'l ki tathniya/jam' forms Fa'il ke aitebar se (action ki ginti nahi) |
-| 10 | p-15 | p-۱۴ | [section-10.md](section-10.md) | **🏁 Fasl 3 ka asal content mukammal** — **علاماتِ فعل** ki **8 alamat** (قَدْ / سَ / سَوْفَ / حرفِ جزم / ضمیر متصل / تائے ساکن / Amr / Nahi) + **علامتِ حرف** (negative definition + Harf = "مَحْض ربط" + 3 link-types: Ism-Ism / Ism-Fi'l / Fi'l-Fi'l) |
-
----
+| Section | PDF page | Topic |
+|---|---|---|
+| [9](section-09.md) | p-14 | Fasl 3 ka aaghaaz: **علاماتِ اسم — 11 alamat** + **فائدہ** Fi'l ki tathniya/jam' forms |
+| [10](section-10.md) | p-15 | **🏁 Mukammal** — **علاماتِ فعل — 8 alamat** + **علامتِ حرف** (negative def + 3 link-types) |
 
 ## Navigation
 
-- ⬆ Up: [Bab 1 README](../README.md)
-- 📖 Top: [Nahw index](../../index.md)
-- 📐 Charts: [../../charts.md](../../charts.md)
-- 📋 I'rab tables: [../../irab-tables.md](../../irab-tables.md)
+- ⬆ [Bab 1](../README.md)
+- 📖 [Nahw index](../../index.md)
+- 📐 [Charts](../../charts.md)
+- 📋 [I'rab tables](../../irab-tables.md)

@@ -39,30 +39,18 @@
   a:hover { color: #064e3b; border-bottom-style: solid; }
 </style>
 
-# Fasl 4 — معرب و مبنی (Mu'arrab wa Mabni — Kalimah ki i'rab-based taqseem)
+# Fasl 4 — معرب و مبنی (Mu'arrab wa Mabni)
 
-> **Status:** Sections 11-12 documented across PDF p-16 → p-17. Section 12 closes Fasl 4 by setting up the Mabni/Mu'arrab taxonomy that Fasl 5 then expands.
->
-> **Scope per backup TOC heading:** *Fasl 4 — معرب و مبنی (Mu'arrab wa Mabni — Kalimah ki i'rab-based taqseem)*.
->
-> **Source-of-truth:** [../../IlmUnNahwAlBushraColor (1).pdf](../../IlmUnNahwAlBushraColor%20(1).pdf), pages 16-17.
->
-> **Pre-split history:** This Fasl was migrated 2026-05-30 (Phase 2 of architecture v2) from monolithic `Nahw/notes.md` (pre-split backup at `Nahw/_archive/notes-pre-split-2026-05-30.md`, lines 2252-2699) into 2 per-Section files under this folder. Content is byte-identical to the backup. Migration plan: [../../_planning/architecture-v2.md](../../_planning/architecture-v2.md).
+🏁 **MUKAMMAL** — Sections 11-12 across PDF p-16 → p-17. Sets up the Mabni/Mu'arrab taxonomy that Fasl 5 then expands.
 
----
-
-## Section TOC
-
-| Section | PDF page | Book page | File | Snapshot (from backup TOC) |
-|---|---|---|---|---|
-| 11 | p-16 | p-۱۵ | [section-11.md](section-11.md) | Fasl 4 ka aaghaaz: **Mu'arrab vs Mabni** taqseem + **Amil** + **اعراب** definitions (p-12 ke 3 forward-refs ab defined!) + **I'rab ki 2 qismein** (Harki/Harfi) + **Mahall-e-I'rab** + **Zayd 3 forms walkthrough (Mu'arrab)** + **Hadha 3 forms walkthrough (Mabni)** + Persian mnemonic couplet |
-| 12 | p-17 | p-۱۶ | [section-12.md](section-12.md) | **Mabni o Mu'arrab ke Aqsam** (taxonomy): Mabni categories list (Ism Ghair Mutamakkin + Fi'l Maazi + Amr Haazir Ma'roof + Muzaari with noon jam' mu'annath/ta'keed + tamam Huroof) + **Mu'arrab ki 2 categories** (Ism Mutamakkin with tarkeeb condition + Fi'l Muzaari with noon-empty condition) + **Mabni-al-Asl ki 3 qismein** + **Ism Ghair Mutamakkin = mushabih-of-Mabni-al-Asl** + **Mushabahat ki 4 tareeqein** (اَیْنَ، هَیْهَاتَ، رُوَیْدَ، Mausoolah/Ishara, مَنْ/ذَا, اَحَدَ عَشَرَ) |
-
----
+| Section | PDF page | Topic |
+|---|---|---|
+| [11](section-11.md) | p-16 | **Mu'arrab vs Mabni** + **Amil** + **اعراب** + **I'rab ki 2 qismein** + **Mahall-e-I'rab** + Zayd/Hadha 3 forms walkthroughs |
+| [12](section-12.md) | p-17 | **Mabni o Mu'arrab ke Aqsam** + **Mu'arrab ki 2 categories** + **Mabni-al-Asl ki 3 qismein** + **Mushabahat ki 4 tareeqein** |
 
 ## Navigation
 
-- ⬆ Up: [Bab 1 README](../README.md)
-- 📖 Top: [Nahw index](../../index.md)
-- 📐 Charts: [../../charts.md](../../charts.md)
-- 📋 I'rab tables: [../../irab-tables.md](../../irab-tables.md)
+- ⬆ [Bab 1](../README.md)
+- 📖 [Nahw index](../../index.md)
+- 📐 [Charts](../../charts.md)
+- 📋 [I'rab tables](../../irab-tables.md)

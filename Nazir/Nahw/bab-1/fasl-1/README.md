@@ -39,34 +39,22 @@
   a:hover { color: #064e3b; border-bottom-style: solid; }
 </style>
 
-# Fasl 1 — Fasl-e-Awwal (within Bab 1 — Kalimah aur Kalam)
+# Fasl 1 — Kalimah aur Kalam ka aaghaaz
 
-> **Status:** 🏁 **KHATAM** — Sections 1-6 documented across PDF p-06 → p-11. Bab 1's opening Fasl closes at Section 6 (Mana' Sarf + 3 tarkeeb examples + 3 exercise).
->
-> **Scope per backup TOC heading:** *Bab 1 — Kalimah aur Kalam (Fasl-e-Awwal)*. Bab ka asal naam PDF p-06 ke header par: **کلمہ وکلام** (Kalimah pehle, Kalam baad mein).
->
-> **Source-of-truth:** [../../IlmUnNahwAlBushraColor (1).pdf](../../IlmUnNahwAlBushraColor%20(1).pdf), pages 6-11.
->
-> **Pre-split history:** This Fasl was migrated 2026-05-30 (Phase 2 of architecture v2) from monolithic `Nahw/notes.md` (pre-split backup at `Nahw/_archive/notes-pre-split-2026-05-30.md`, lines 113-1399) into 6 per-Section files under this folder. Content is byte-identical to the backup. Migration plan: [../../_planning/architecture-v2.md](../../_planning/architecture-v2.md).
+🏁 **KHATAM** — Sections 1-6 across PDF p-06 → p-11.
 
----
-
-## Section TOC
-
-| Section | PDF page | Book page | File | Snapshot (from backup TOC) |
-|---|---|---|---|---|
-| 1 | p-06 | p-۵ | [section-01.md](section-01.md) | Muqaddama (Tareef + Faida + Mauzu' Lahu) + Fasl 1 ka aaghaaz: Lafz, Mufrad/Murakkab, Kalimah, Ism |
-| 2 | p-07 | p-۶ | [section-02.md](section-02.md) | Ism ki 3 qismein tareef + Fi'l + Harf + Murakkab + **Murakkab Mufid = Jumla = Kalam** |
-| 3 | p-08 | p-۷ | [section-03.md](section-03.md) | Jumla ki qismein (Khabariya/Insha'iya) + Ismiya/Fi'liya + **Mubtada, Khabar, Musnad, Musnad Ilayh, Fa'il** |
-| 4 | p-09 | p-۸ | [section-04.md](section-04.md) | Harf neither M/MI + Tarkeeb method (Ismiya & Fi'liya) + 8-jumla exercise + **Jumla Insha'iya tareef + qismein 1-6** (Amr/Nahi/Istefham/Tamanni/Tarajji/Uqood) |
-| 5 | p-10 | p-۹ | [section-05.md](section-05.md) | Insha'iya qismein 7-10 (Nida/Arz/Qasam/Ta'ajjub) + **Murakkab Ghair Mufid tareef + 3 qismein** + **Murakkab Idafi (Mudaf/Mudaf Ilayh)** + Murakkab Bina'i (partial) + p-09 footnote ka khaatma |
-| 6 | p-11 | p-۱۰ | [section-06.md](section-06.md) | **🏁 Fasl 1 KHATAM** — Bina'i ka khaatma + harakaat rules + **Mana' Sarf tareef + بَعْلَبَكُّ misaal** + 3 jumlon ki tarkeeb (one per qism) + 3-jumla exercise |
-
----
+| Section | PDF page | Topic |
+|---|---|---|
+| [1](section-01.md) | p-06 | Muqaddama + Lafz, Mufrad/Murakkab, Kalimah, Ism |
+| [2](section-02.md) | p-07 | Ism ki 3 qismein + Fi'l + Harf + **Murakkab Mufid = Jumla = Kalam** |
+| [3](section-03.md) | p-08 | Jumla ki qismein + Ismiya/Fi'liya + **Mubtada, Khabar, Musnad, Musnad Ilayh, Fa'il** |
+| [4](section-04.md) | p-09 | Tarkeeb method + 8-jumla exercise + **Jumla Insha'iya tareef + qismein 1-6** |
+| [5](section-05.md) | p-10 | Insha'iya qismein 7-10 + **Murakkab Ghair Mufid + 3 qismein** + **Murakkab Idafi** |
+| [6](section-06.md) | p-11 | **🏁 Fasl 1 KHATAM** — Bina'i + **Mana' Sarf + بَعْلَبَكُّ** + tarkeeb of 3 jumlay + exercise |
 
 ## Navigation
 
-- ⬆ Up: [Bab 1 README](../README.md)
-- 📖 Top: [Nahw index](../../index.md)
-- 📐 Charts: [../../charts.md](../../charts.md)
-- 📋 I'rab tables: [../../irab-tables.md](../../irab-tables.md)
+- ⬆ [Bab 1](../README.md)
+- 📖 [Nahw index](../../index.md)
+- 📐 [Charts](../../charts.md)
+- 📋 [I'rab tables](../../irab-tables.md)

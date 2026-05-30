@@ -41,28 +41,16 @@
 
 # Fasl 2 — جملہ کے ذاتی و صفاتی اقسام (Jumla ke Zaati o Sifati Aqsam)
 
-> **Status:** 🏁 **MUKAMMAL** — Sections 7-8 documented across PDF p-12 → p-13. Sifati taqseem (6 qismein) completes on Section 8.
->
-> **Scope per backup TOC heading:** *Fasl 2 — جملہ کے ذاتی و صفاتی اقسام (Jumla ke Zaati o Sifati Aqsam)*.
->
-> **Source-of-truth:** [../../IlmUnNahwAlBushraColor (1).pdf](../../IlmUnNahwAlBushraColor%20(1).pdf), pages 12-13.
->
-> **Pre-split history:** This Fasl was migrated 2026-05-30 (Phase 2 of architecture v2) from monolithic `Nahw/notes.md` (pre-split backup at `Nahw/_archive/notes-pre-split-2026-05-30.md`, lines 1400-1821) into 2 per-Section files under this folder. Content is byte-identical to the backup. Migration plan: [../../_planning/architecture-v2.md](../../_planning/architecture-v2.md).
+🏁 **MUKAMMAL** — Sections 7-8 across PDF p-12 → p-13.
 
----
-
-## Section TOC
-
-| Section | PDF page | Book page | File | Snapshot (from backup TOC) |
-|---|---|---|---|---|
-| 7 | p-12 | p-۱۱ | [section-07.md](section-07.md) | Fasl 2 ka aaghaaz: Jumla ≥2 kalimat rule + **Bā i'tibār-e-Zaat 4 qismein** (Ismiya/Fi'liya/Shartiya/Zarfiya — yeh 4 = "Asl Jumla") + **Bā i'tibār-e-Sifat 6 qismein** ka heading + Qism 1 (Mubaiyana) ka shuru (partial — continues p-13) |
-| 8 | p-13 | p-۱۲ | [section-08.md](section-08.md) | **🏁 Sifati taqseem mukammal** — Mubaiyana ka khaatma + **Sifati qismein 2-6**: Mu'allila (Hadith misaal) + Mu'tariza (Abu Hanifa quote) + Musta'nafa (= Jumla Ibtida'iyya) + Haliya + Ma'tufa |
-
----
+| Section | PDF page | Topic |
+|---|---|---|
+| [7](section-07.md) | p-12 | Fasl 2 ka aaghaaz: Jumla ≥2 kalimat rule + **Bā i'tibār-e-Zaat 4 qismein** (Ismiya/Fi'liya/Shartiya/Zarfiya) + **Bā i'tibār-e-Sifat 6 qismein** + Qism 1 (Mubaiyana) ka shuru |
+| [8](section-08.md) | p-13 | **🏁 Sifati taqseem mukammal** — Mubaiyana khaatma + **Sifati qismein 2-6**: Mu'allila + Mu'tariza + Musta'nafa + Haliya + Ma'tufa |
 
 ## Navigation
 
-- ⬆ Up: [Bab 1 README](../README.md)
-- 📖 Top: [Nahw index](../../index.md)
-- 📐 Charts: [../../charts.md](../../charts.md)
-- 📋 I'rab tables: [../../irab-tables.md](../../irab-tables.md)
+- ⬆ [Bab 1](../README.md)
+- 📖 [Nahw index](../../index.md)
+- 📐 [Charts](../../charts.md)
+- 📋 [I'rab tables](../../irab-tables.md)
