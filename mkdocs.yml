@@ -96,6 +96,18 @@ plugins:
         - en
   - mermaid2:
       version: 10.9.1
+      arguments:
+        theme: base
+        themeVariables:
+          fontFamily: '"Noori Nastaliq", "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", Inter, sans-serif'
+          fontSize: 16px
+          primaryColor: '#064e3b'
+          primaryTextColor: '#ffffff'
+          primaryBorderColor: '#064e3b'
+          lineColor: '#b45309'
+        flowchart:
+          htmlLabels: true
+          useMaxWidth: true
 
 hooks:
   - hooks.py
