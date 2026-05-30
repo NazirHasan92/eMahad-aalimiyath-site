@@ -1,33 +1,33 @@
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
-  @font-face {
-    font-family: 'UrduArabicScript';
-    src: local('Noori Nastaliq'), local('Jameel Noori Nastaleeq'), local('Alvi Nastaleeq'),
-         local('Faiz Lahori Nastaleeq'), local('Noto Nastaliq Urdu');
-    unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
-    size-adjust: 135%;
-    font-display: swap;
-  }
-  body, .markdown-body {
-    font-family: 'UrduArabicScript', 'Noto Nastaliq Urdu', -apple-system, 'Segoe UI', sans-serif;
-    font-size: 20px; line-height: 2.05; max-width: 1100px; margin: 0 auto; padding: 2rem 2.5rem; color: #1a1a1a;
-  }
-  h1 { font-size: 2.3em; color: #064e3b; border-bottom: 3px solid #064e3b; padding-bottom: 0.35em; }
-  h2 { font-size: 1.8em; color: #064e3b; border-bottom: 2px solid #ddd; padding-bottom: 0.3em; margin-top: 2.2em; }
-  h3 { font-size: 1.45em; color: #0e7490; margin-top: 1.8em; }
-  table { border-collapse: collapse; margin: 1.5em 0; width: 100%; }
-  th, td { padding: 0.75em 1em; border: 1px solid #ccc; line-height: 1.95; vertical-align: top; }
-  th { background: #e8f4f4; font-weight: 700; color: #064e3b; }
-  blockquote { border-left: 5px solid #064e3b; padding: 0.7em 1.3em; background: #f3faf6; margin: 1.3em 0; }
-  code { background: #f4f4f4; padding: 0.18em 0.45em; border-radius: 3px; color: #be123c; font-size: 0.9em; }
-  pre { background: #f7f7f7; padding: 1em 1.2em; border-radius: 6px; border: 1px solid #eee; }
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+ @font-face {
+ font-family: 'UrduArabicScript';
+ src: local('Noori Nastaliq'), local('Jameel Noori Nastaleeq'), local('Alvi Nastaleeq'),
+ local('Faiz Lahori Nastaleeq'), local('Noto Nastaliq Urdu');
+ unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+ size-adjust: 135%;
+ font-display: swap;
+ }
+ body,.markdown-body {
+ font-family: 'UrduArabicScript', 'Noto Nastaliq Urdu', -apple-system, 'Segoe UI', sans-serif;
+ font-size: 20px; line-height: 2.05; max-width: 1100px; margin: 0 auto; padding: 2rem 2.5rem; color: #1a1a1a;
+ }
+ h1 { font-size: 2.3em; color: #064e3b; border-bottom: 3px solid #064e3b; padding-bottom: 0.35em; }
+ h2 { font-size: 1.8em; color: #064e3b; border-bottom: 2px solid #ddd; padding-bottom: 0.3em; margin-top: 2.2em; }
+ h3 { font-size: 1.45em; color: #0e7490; margin-top: 1.8em; }
+ table { border-collapse: collapse; margin: 1.5em 0; width: 100%; }
+ th, td { padding: 0.75em 1em; border: 1px solid #ccc; line-height: 1.95; vertical-align: top; }
+ th { background: #e8f4f4; font-weight: 700; color: #064e3b; }
+ blockquote { border-left: 5px solid #064e3b; padding: 0.7em 1.3em; background: #f3faf6; margin: 1.3em 0; }
+ code { background: #f4f4f4; padding: 0.18em 0.45em; border-radius: 3px; color: #be123c; font-size: 0.9em; }
+ pre { background: #f7f7f7; padding: 1em 1.2em; border-radius: 6px; border: 1px solid #eee; }
 </style>
 
 # Nahw — Concept Charts (Mermaid)
 
 > **One chart = one concept. Built during teaching when a concept genuinely needs visual representation.**
 >
-> Rules (full version in CLAUDE.md → Charts discipline):
+
 > - Beginner charts: max 6-8 nodes, 2-3 color roles, NO subgraphs
 > - Topic-overview charts (built AFTER all sub-concepts taught): max 16 nodes, one level of subgraph max
 > - **Never use comprehensive overview chart to OPEN a topic for a beginner**
@@ -41,22 +41,22 @@
 
 ```mermaid
 flowchart TD
-  R["Root<br/>topic node"]:::root
-  M["Main<br/>concept"]:::main
-  S["Sub<br/>rule/detail"]:::sub
-  L["Leaf<br/>terminal"]:::leaf
-  E["Example<br/>misaal"]:::ex
+ R["Root<br/>topic node"]:::root
+ M["Main<br/>concept"]:::main
+ S["Sub<br/>rule/detail"]:::sub
+ L["Leaf<br/>terminal"]:::leaf
+ E["Example<br/>misaal"]:::ex
 
-  R --> M
-  R --> E
-  M --> S
-  M --> L
+ R --> M
+ R --> E
+ M --> S
+ M --> L
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef sub  fill:#fef3c7,stroke:#b45309,color:#7c2d12;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-  classDef ex   fill:#ffe4e6,stroke:#be123c,color:#881337;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
 ```
 
 Apne charts mein sirf wahi `classDef` lines paste karein jo zaroori hain.
@@ -103,32 +103,26 @@ Semantics (never deviate):
 
 ```mermaid
 flowchart TD
-  K["کلمہ (Kalimah)<br/>= مفرد<br/>akela bamaani lafz"]:::root
+ K["کلمہ (Kalimah)<br/>= مفرد<br/>akela bamaani lafz"]:::root
 
-  K --> I["اِسم (Ism)<br/>akela samjha jaye<br/>+ zamana NAHI"]:::main
-  K --> F["فِعل (Fi'l)<br/>akela samjha jaye<br/>+ zamana HAI"]:::main
-  K --> H["حَرف (Harf)<br/>akela bematlab<br/>(jodne wala)"]:::main
+ K --> I["اِسم (Ism)<br/>akela samjha jaye<br/>+ zamana NAHI"]:::main
+ K --> F["فِعل (Fi'l)<br/>akela samjha jaye<br/>+ zamana HAI"]:::main
+ K --> H["حَرف (Harf)<br/>akela bematlab<br/>(jodne wala)"]:::main
 
-  I --> J["جَامِد (Jamid)<br/>na bana, na bante"]:::leaf
-  I --> M["مَصدر (Masdar)<br/>source (na bana,<br/>bohot bante)"]:::leaf
-  I --> S["مُشتَق (Mushtaq)<br/>Masdar se bana"]:::leaf
+ I --> J["جَامِد (Jamid)<br/>na bana, na bante"]:::leaf
+ I --> M["مَصدر (Masdar)<br/>source (na bana,<br/>bohot bante)"]:::leaf
+ I --> S["مُشتَق (Mushtaq)<br/>Masdar se bana"]:::leaf
 
-  F --> FQ["4 qismein:<br/>Maazi / Muzaari /<br/>Amr / Nahi<br/>→ tareefein Sarf mein"]:::sub
+ F --> FQ["4 qismein:<br/>Maazi / Muzaari /<br/>Amr / Nahi<br/>→ tareefein Sarf mein"]:::sub
 
-  H --> HA["عَامِل (Amil)"]:::leaf
-  H --> HG["غَیر عَامِل<br/>(Ghair Amil)"]:::leaf
+ H --> HA["عَامِل (Amil)"]:::leaf
+ H --> HG["غَیر عَامِل<br/>(Ghair Amil)"]:::leaf
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef sub  fill:#fef3c7,stroke:#b45309,color:#7c2d12;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
 ```
-
-**Density check (CLAUDE.md rules):**
-- 10 nodes (limit: 16 for topic-overview) ✅
-- 4 classDefs (limit: 5) ✅
-- No subgraphs ✅
-- Each Arabic label paired with Roman transliteration ✅
 
 **Kaise istemaal karein:**
 - Chart kholo → kisi bhi node par dekho → us ki tareef yaad karo (notes.md mein dekhna minus points)
@@ -151,21 +145,21 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  L["لَفظ (Lafz)<br/>jo awaaz<br/>muh se nikle"]:::root
+ L["لَفظ (Lafz)<br/>jo awaaz<br/>muh se nikle"]:::root
 
-  L --> MZ["مَوضُوع (Mauzu')<br/>bamaani lafz"]:::main
-  L --> MH["مُہْمَل (Muhmal)<br/>bematlab — Nahw<br/>se khaarij"]:::leaf
+ L --> MZ["مَوضُوع (Mauzu')<br/>bamaani lafz"]:::main
+ L --> MH["مُہْمَل (Muhmal)<br/>bematlab — Nahw<br/>se khaarij"]:::leaf
 
-  MZ --> MF["مُفرَد = کَلِمَہ<br/>(akela bamaani)<br/>→ Chart 1"]:::sub
-  MZ --> MR["مُرَکَّب<br/>(2+ kalimon ka jod)"]:::main
+ MZ --> MF["مُفرَد = کَلِمَہ<br/>(akela bamaani)<br/>→ Chart 1"]:::sub
+ MZ --> MR["مُرَکَّب<br/>(2+ kalimon ka jod)"]:::main
 
-  MR --> MU["مُفِید = جُملہ = کَلَام<br/>→ Chart 3 (Khabariya)<br/>→ Chart 4 (Insha'iya)"]:::sub
-  MR --> GM["غَیر مُفِید<br/>→ Chart 5"]:::sub
+ MR --> MU["مُفِید = جُملہ = کَلَام<br/>→ Chart 3 (Khabariya)<br/>→ Chart 4 (Insha'iya)"]:::sub
+ MR --> GM["غَیر مُفِید<br/>→ Chart 5"]:::sub
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef sub  fill:#fef3c7,stroke:#b45309,color:#7c2d12;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
 ```
 
 **Density check:** 7 nodes, 4 classDefs, no subgraphs. ✅
@@ -182,23 +176,23 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  K["جُملہ خَبَرِیَّہ<br/>(sach/jhoot keh sakein)"]:::root
+ K["جُملہ خَبَرِیَّہ<br/>(sach/jhoot keh sakein)"]:::root
 
-  K --> I["جُملہ اِسمِیَّہ<br/>(pehla hissa Ism;<br/>doosra Ism ya Fi'l)"]:::main
-  K --> F["جُملہ فِعلِیَّہ<br/>(pehla Fi'l + Fa'il)"]:::main
+ K --> I["جُملہ اِسمِیَّہ<br/>(pehla hissa Ism;<br/>doosra Ism ya Fi'l)"]:::main
+ K --> F["جُملہ فِعلِیَّہ<br/>(pehla Fi'l + Fa'il)"]:::main
 
-  I --> IM["مُبتَدا (Mubtada)<br/>= Musnad Ilayh<br/>pehla hissa"]:::leaf
-  I --> IK["خَبَر (Khabar)<br/>= Musnad<br/>doosra hissa"]:::leaf
-  I --> IE["misaal:<br/>زَیْدٌ عَالِمٌ<br/>زَیْدٌ عَلِمَ"]:::ex
+ I --> IM["مُبتَدا (Mubtada)<br/>= Musnad Ilayh<br/>pehla hissa"]:::leaf
+ I --> IK["خَبَر (Khabar)<br/>= Musnad<br/>doosra hissa"]:::leaf
+ I --> IE["misaal:<br/>زَیْدٌ عَالِمٌ<br/>زَیْدٌ عَلِمَ"]:::ex
 
-  F --> FF["فِعل (Fi'l)<br/>= Musnad<br/>pehla hissa"]:::leaf
-  F --> FA["فَاعِل (Fa'il)<br/>= Musnad Ilayh<br/>doosra hissa"]:::leaf
-  F --> FE["misaal:<br/>عَلِمَ زَیْدٌ<br/>سَمِعَ بَکْرٌ"]:::ex
+ F --> FF["فِعل (Fi'l)<br/>= Musnad<br/>pehla hissa"]:::leaf
+ F --> FA["فَاعِل (Fa'il)<br/>= Musnad Ilayh<br/>doosra hissa"]:::leaf
+ F --> FE["misaal:<br/>عَلِمَ زَیْدٌ<br/>سَمِعَ بَکْرٌ"]:::ex
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-  classDef ex   fill:#ffe4e6,stroke:#be123c,color:#881337;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
 ```
 
 **Density check:** 9 nodes, 4 classDefs, no subgraphs. ✅
@@ -217,21 +211,21 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  IN["جُملہ اِنشَائِیَّہ<br/>(sach/jhoot na keh sakein)"]:::root
+ IN["جُملہ اِنشَائِیَّہ<br/>(sach/jhoot na keh sakein)"]:::root
 
-  IN --> Q1["اَمر (Amr)<br/>hukm<br/>اِضْرِبْ"]:::leaf
-  IN --> Q2["نَہی (Nahi)<br/>mana<br/>لَا تَضْرِبْ"]:::leaf
-  IN --> Q3["اِستِفہَام (Istefham)<br/>sawal<br/>هَلْ ضَرَبَ زَیْدٌ؟"]:::leaf
-  IN --> Q4["تَمَنِّی (Tamanni)<br/>kaash<br/>لَیْتَ زَیْدًا حَاضِرٌ"]:::leaf
-  IN --> Q5["تَرَجِّی (Tarajji)<br/>ummeed<br/>لَعَلَّ عَمْرًوا غَائِبٌ"]:::leaf
-  IN --> Q6["عُقُود (Uqood)<br/>muamla<br/>بِعْتُ وَاشْتَرَیْتُ"]:::leaf
-  IN --> Q7["نِدَا (Nida)<br/>pukar<br/>يَا اَللهُ"]:::leaf
-  IN --> Q8["عَرض (Arz)<br/>narmi se<br/>اَلَا تَأْتِيْنِيْ<br/>فَأُعْطِیْكَ دِیْنَارًا"]:::leaf
-  IN --> Q9["قَسَم (Qasam)<br/>qasam<br/>وَاللهِ لَأَضْرِبَنَّ زَیْدًا"]:::leaf
-  IN --> Q10["تَعَجُّب (Ta'ajjub)<br/>hairat<br/>مَا اَحْسَنَهٗ"]:::leaf
+ IN --> Q1["اَمر (Amr)<br/>hukm<br/>اِضْرِبْ"]:::leaf
+ IN --> Q2["نَہی (Nahi)<br/>mana<br/>لَا تَضْرِبْ"]:::leaf
+ IN --> Q3["اِستِفہَام (Istefham)<br/>sawal<br/>هَلْ ضَرَبَ زَیْدٌ؟"]:::leaf
+ IN --> Q4["تَمَنِّی (Tamanni)<br/>kaash<br/>لَیْتَ زَیْدًا حَاضِرٌ"]:::leaf
+ IN --> Q5["تَرَجِّی (Tarajji)<br/>ummeed<br/>لَعَلَّ عَمْرًوا غَائِبٌ"]:::leaf
+ IN --> Q6["عُقُود (Uqood)<br/>muamla<br/>بِعْتُ وَاشْتَرَیْتُ"]:::leaf
+ IN --> Q7["نِدَا (Nida)<br/>pukar<br/>يَا اَللهُ"]:::leaf
+ IN --> Q8["عَرض (Arz)<br/>narmi se<br/>اَلَا تَأْتِيْنِيْ<br/>فَأُعْطِیْكَ دِیْنَارًا"]:::leaf
+ IN --> Q9["قَسَم (Qasam)<br/>qasam<br/>وَاللهِ لَأَضْرِبَنَّ زَیْدًا"]:::leaf
+ IN --> Q10["تَعَجُّب (Ta'ajjub)<br/>hairat<br/>مَا اَحْسَنَهٗ"]:::leaf
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
 ```
 
 **Density check:** 11 nodes, 2 classDefs, no subgraphs. ✅
@@ -255,23 +249,23 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  GM["مُرَکَّب غَیر مُفِید<br/>(khabar/talab nahi)"]:::root
+ GM["مُرَکَّب غَیر مُفِید<br/>(khabar/talab nahi)"]:::root
 
-  GM --> ID["مُرَکَّب اِضافی<br/>(nisbat ek ism ki<br/>doosre ki taraf)"]:::main
-  GM --> BI["مُرَکَّب بِنائی<br/>(2 ism ek;<br/>donon par fatha)"]:::main
-  GM --> MS["مُرَکَّب مَنَع صَرف<br/>(2 ism ek;<br/>sirf pehla maftooh)"]:::main
+ GM --> ID["مُرَکَّب اِضافی<br/>(nisbat ek ism ki<br/>doosre ki taraf)"]:::main
+ GM --> BI["مُرَکَّب بِنائی<br/>(2 ism ek;<br/>donon par fatha)"]:::main
+ GM --> MS["مُرَکَّب مَنَع صَرف<br/>(2 ism ek;<br/>sirf pehla maftooh)"]:::main
 
-  ID --> IDR["مُضاف +<br/>مُضاف الیہ"]:::sub
-  ID --> IDE["misaal:<br/>غُلَامُ زَیْدٍ"]:::ex
+ ID --> IDR["مُضاف +<br/>مُضاف الیہ"]:::sub
+ ID --> IDE["misaal:<br/>غُلَامُ زَیْدٍ"]:::ex
 
-  BI --> BIE["misaal: اَحَدَ عَشَرَ<br/>(asal: اَحَدٌ وَعَشَرٌ)<br/>exception: اِثْنَا عَشَرَ"]:::ex
+ BI --> BIE["misaal: اَحَدَ عَشَرَ<br/>(asal: اَحَدٌ وَعَشَرٌ)<br/>exception: اِثْنَا عَشَرَ"]:::ex
 
-  MS --> MSE["misaal: بَعْلَبَكُّ<br/>(shehar — بَعْل+بَكٌّ)"]:::ex
+ MS --> MSE["misaal: بَعْلَبَكُّ<br/>(shehar — بَعْل+بَكٌّ)"]:::ex
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef sub  fill:#fef3c7,stroke:#b45309,color:#7c2d12;
-  classDef ex   fill:#ffe4e6,stroke:#be123c,color:#881337;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
+ classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
 ```
 
 **Density check:** 8 nodes, 4 classDefs, no subgraphs. ✅
@@ -302,31 +296,26 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  R["آخری حرف کی تبدیلی?<br/>(Mu'arrab vs Mabni)"]:::root
+ R["آخری حرف کی تبدیلی?<br/>(Mu'arrab vs Mabni)"]:::root
 
-  R --> MU["مُعرَب<br/>akhri harakah BADALTI<br/>misaal: زَیْد"]:::main
-  R --> MA["مَبنی<br/>akhri harakah YAKSAAN<br/>misaal: هٰذَا"]:::main
+ R --> MU["مُعرَب<br/>akhri harakah BADALTI<br/>misaal: زَیْد"]:::main
+ R --> MA["مَبنی<br/>akhri harakah YAKSAAN<br/>misaal: هٰذَا"]:::main
 
-  MU --> Z1["جَاءَ زَیْدٌ<br/>(د par ضمہ)"]:::ex
-  MU --> Z2["رَأَیْتُ زَیْدًا<br/>(د par فتحہ)"]:::ex
-  MU --> Z3["مَرَرْتُ بِزَیْدٍ<br/>(د par کسرہ)"]:::ex
+ MU --> Z1["جَاءَ زَیْدٌ<br/>(د par ضمہ)"]:::ex
+ MU --> Z2["رَأَیْتُ زَیْدًا<br/>(د par فتحہ)"]:::ex
+ MU --> Z3["مَرَرْتُ بِزَیْدٍ<br/>(د par کسرہ)"]:::ex
 
-  MA --> H1["جَاءَ هٰذَا"]:::ex
-  MA --> H2["رَأَیْتُ هٰذَا"]:::ex
-  MA --> H3["مَرَرْتُ بِهٰذَا"]:::ex
+ MA --> H1["جَاءَ هٰذَا"]:::ex
+ MA --> H2["رَأَیْتُ هٰذَا"]:::ex
+ MA --> H3["مَرَرْتُ بِهٰذَا"]:::ex
 
-  MU --> MUI["محل اعراب = 'د'<br/>(same letter, alag harakah)"]:::sub
+ MU --> MUI["محل اعراب = 'د'<br/>(same letter, alag harakah)"]:::sub
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef sub  fill:#fef3c7,stroke:#b45309,color:#7c2d12;
-  classDef ex   fill:#ffe4e6,stroke:#be123c,color:#881337;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
+ classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
 ```
-
-**Density check (CLAUDE.md rules):**
-- 10 nodes (limit: 16 for topic-overview) ✅
-- 4 classDefs (limit: 5) ✅
-- No subgraphs ✅
 
 **Kaise istemaal karein:**
 - Mu'arrab side dekho — 3 misaal jumlon mein **akhri harakah** par focus (ٌ → ً → ٍ).
@@ -356,31 +345,31 @@ Yeh **identification toolkit** chart hai — koi Arabic lafz dekho, in 11 mein s
 
 ```mermaid
 flowchart TD
-  I["اِسم — pehchaan ke<br/>11 alamat (PDF p-14)"]:::root
+ I["اِسم — pehchaan ke<br/>11 alamat (PDF p-14)"]:::root
 
-  I --> G1["Group 1: Word-edge markers"]:::main
-  I --> G2["Group 2: Syntactic role markers"]:::main
-  I --> G3["Group 3: Morphological forms<br/>(Sarf forward-refs)"]:::main
-  I --> G4["Group 4: Quality + femininity markers"]:::main
+ I --> G1["Group 1: Word-edge markers"]:::main
+ I --> G2["Group 2: Syntactic role markers"]:::main
+ I --> G3["Group 3: Morphological forms<br/>(Sarf forward-refs)"]:::main
+ I --> G4["Group 4: Quality + femininity markers"]:::main
 
-  G1 --> A1["1. الف لام shuru mein<br/>misaal: اَلْحَمْدُ"]:::leaf
-  G1 --> A2["2. حرفِ جر shuru mein<br/>misaal: بِزَیْدِ"]:::leaf
-  G1 --> A3["3. تنوین aakhir mein<br/>misaal: زَیْدٌ"]:::leaf
+ G1 --> A1["1. الف لام shuru mein<br/>misaal: اَلْحَمْدُ"]:::leaf
+ G1 --> A2["2. حرفِ جر shuru mein<br/>misaal: بِزَیْدِ"]:::leaf
+ G1 --> A3["3. تنوین aakhir mein<br/>misaal: زَیْدٌ"]:::leaf
 
-  G2 --> A4["4. مسند الیہ ho<br/>misaal: زَیْدٌ قَائِمٌ"]:::leaf
-  G2 --> A5["5. مضاف ho<br/>misaal: غُلَامُ زَیْدٍ"]:::leaf
+ G2 --> A4["4. مسند الیہ ho<br/>misaal: زَیْدٌ قَائِمٌ"]:::leaf
+ G2 --> A5["5. مضاف ho<br/>misaal: غُلَامُ زَیْدٍ"]:::leaf
 
-  G3 --> A6["6. مُصَغَّر<br/>misaal: قُرَیْشٌ، رُجَیْلٌ"]:::leaf
-  G3 --> A7["7. منسوب<br/>misaal: بَغْدَادِيٌّ، هِنْدِيٌّ"]:::leaf
-  G3 --> A8["8. تثنیہ<br/>misaal: رَجُلَانِ"]:::leaf
-  G3 --> A9["9. جمع<br/>misaal: رِجَالٌ"]:::leaf
+ G3 --> A6["6. مُصَغَّر<br/>misaal: قُرَیْشٌ، رُجَیْلٌ"]:::leaf
+ G3 --> A7["7. منسوب<br/>misaal: بَغْدَادِيٌّ، هِنْدِيٌّ"]:::leaf
+ G3 --> A8["8. تثنیہ<br/>misaal: رَجُلَانِ"]:::leaf
+ G3 --> A9["9. جمع<br/>misaal: رِجَالٌ"]:::leaf
 
-  G4 --> A10["10. موصوف ho<br/>misaal: رَجُلٌ کَرِیْمٌ"]:::leaf
-  G4 --> A11["11. تائے متحرک aakhir mein<br/>misaal: ضَارِبَۃٌ"]:::leaf
+ G4 --> A10["10. موصوف ho<br/>misaal: رَجُلٌ کَرِیْمٌ"]:::leaf
+ G4 --> A11["11. تائے متحرک aakhir mein<br/>misaal: ضَارِبَۃٌ"]:::leaf
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
 ```
 
 **Density check:** 16 nodes (limit: 16 for topic-overview ✅), 3 classDefs, no subgraphs ✅.
@@ -389,10 +378,8 @@ flowchart TD
 
 **4-group framing (chart ke baahar):** *(yeh 4-group thematic arrangement meri taraf se hai — book ne 11 alamat bina grouping ke list ki; grouping pedagogically helpful)*
 
-**Harakaat verification (2026-05-29 direct PDF re-read):** Pichle round mein 2 validator queries uthayi thin (`بِزَیْدِ` vs `بِزَیْدٍ`, `رَجُلَانِ` vs `رَجُلَان`). 2026-05-29 ko **direct PDF p-14 image re-read** ne dono resolve kiye:
 - **A2 example `بِزَیْدِ`**: PDF par `د` ke neeche **single kasra** (ek diagonal stroke) clear hai — NOT tanween-kasra. Chart aur Section 9 ka reading correct hai. **RESOLVED.**
 - **A8 example `رَجُلَانِ`**: PDF par final `ن` ke neeche **kasra** dikhayi deti hai. Chart aur Section 9 ka reading correct hai. **RESOLVED.**
-- **Pattern note** (memory-fill-patterns.md): Native validators ki harakaat-reading bias — jab validator finding ambiguous PDF image se conflict kare, builder ka direct PDF re-read final hota hai. Yeh chart par confirmation cycle ka canonical example bana.
 
 ---
 
@@ -408,26 +395,26 @@ Yeh **topic-overview** chart hai — built after sub-concepts taught.
 
 ```mermaid
 flowchart TD
-  J["جُملہ (Fasl 2 ki<br/>2 taqseemein)"]:::root
+ J["جُملہ (Fasl 2 ki<br/>2 taqseemein)"]:::root
 
-  J --> Z["بااعتبارِ ذات<br/>4 qismein = 'اصل جملہ'"]:::main
-  J --> S["بااعتبارِ صفت<br/>6 qismein"]:::main
+ J --> Z["بااعتبارِ ذات<br/>4 qismein = 'اصل جملہ'"]:::main
+ J --> S["بااعتبارِ صفت<br/>6 qismein"]:::main
 
-  Z --> Z1["اسمیہ<br/>misaal: زَیْدٌ قَائِمٌ"]:::leaf
-  Z --> Z2["فعلیہ<br/>misaal: قَامَ زَیْدٌ"]:::leaf
-  Z --> Z3["شرطیہ<br/>misaal: اِنْ تُکْرِمْنِيْ أُکْرِمْكَ"]:::leaf
-  Z --> Z4["ظرفیہ<br/>misaal: عِنْدِيْ مَالٌ"]:::leaf
+ Z --> Z1["اسمیہ<br/>misaal: زَیْدٌ قَائِمٌ"]:::leaf
+ Z --> Z2["فعلیہ<br/>misaal: قَامَ زَیْدٌ"]:::leaf
+ Z --> Z3["شرطیہ<br/>misaal: اِنْ تُکْرِمْنِيْ أُکْرِمْكَ"]:::leaf
+ Z --> Z4["ظرفیہ<br/>misaal: عِنْدِيْ مَالٌ"]:::leaf
 
-  S --> S1["مبینہ<br/>pehlay jumlay ko wazeh kare"]:::leaf
-  S --> S2["معللہ<br/>علت bayan kare"]:::leaf
-  S --> S3["معترضہ<br/>do jumlon ke darmiyaan interject"]:::leaf
-  S --> S4["مستانفہ<br/>(= جملہ ابتدائیہ)<br/>naya kalam shuru kare"]:::leaf
-  S --> S5["حالیہ<br/>حال واقع ho"]:::leaf
-  S --> S6["معطوفہ<br/>عطف se juda jumla"]:::leaf
+ S --> S1["مبینہ<br/>pehlay jumlay ko wazeh kare"]:::leaf
+ S --> S2["معللہ<br/>علت bayan kare"]:::leaf
+ S --> S3["معترضہ<br/>do jumlon ke darmiyaan interject"]:::leaf
+ S --> S4["مستانفہ<br/>(= جملہ ابتدائیہ)<br/>naya kalam shuru kare"]:::leaf
+ S --> S5["حالیہ<br/>حال واقع ho"]:::leaf
+ S --> S6["معطوفہ<br/>عطف se juda jumla"]:::leaf
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
 ```
 
 **Density check:** 13 nodes (limit: 16 ✅), 3 classDefs ✅, no subgraphs ✅.
@@ -446,30 +433,30 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  R["Fi'l aur Harf ki<br/>alamat (PDF p-15)"]:::root
+ R["Fi'l aur Harf ki<br/>alamat (PDF p-15)"]:::root
 
-  R --> F["فِعل — 8 positive alamat"]:::main
-  R --> H["حرف — 1 negative criterion<br/>(Ism/Fi'l ki alamat na ho)"]:::main
+ R --> F["فِعل — 8 positive alamat"]:::main
+ R --> H["حرف — 1 negative criterion<br/>(Ism/Fi'l ki alamat na ho)"]:::main
 
-  F --> F1["1. قَدْ shuru mein<br/>misaal: قَدْ ضَرَبَ"]:::leaf
-  F --> F2["2. سَ shuru mein<br/>misaal: سَیَضْرِبُ"]:::leaf
-  F --> F3["3. سَوْفَ shuru mein<br/>misaal: سَوْفَ یَضْرِبُ"]:::leaf
-  F --> F4["4. حرفِ جزم daakhil<br/>misaal: لَمْ یَضْرِبْ"]:::leaf
-  F --> F5["5. ضمیر متصل ho<br/>misaal: ضَرَبْتُ"]:::leaf
-  F --> F6["6. تائے ساکن aakhir<br/>misaal: ضَرَبَتْ"]:::leaf
-  F --> F7["7. اَمر<br/>misaal: اِضْرِبْ"]:::leaf
-  F --> F8["8. نہی<br/>misaal: لَا تَضْرِبْ"]:::leaf
+ F --> F1["1. قَدْ shuru mein<br/>misaal: قَدْ ضَرَبَ"]:::leaf
+ F --> F2["2. سَ shuru mein<br/>misaal: سَیَضْرِبُ"]:::leaf
+ F --> F3["3. سَوْفَ shuru mein<br/>misaal: سَوْفَ یَضْرِبُ"]:::leaf
+ F --> F4["4. حرفِ جزم daakhil<br/>misaal: لَمْ یَضْرِبْ"]:::leaf
+ F --> F5["5. ضمیر متصل ho<br/>misaal: ضَرَبْتُ"]:::leaf
+ F --> F6["6. تائے ساکن aakhir<br/>misaal: ضَرَبَتْ"]:::leaf
+ F --> F7["7. اَمر<br/>misaal: اِضْرِبْ"]:::leaf
+ F --> F8["8. نہی<br/>misaal: لَا تَضْرِبْ"]:::leaf
 
-  H --> HK["Harf = محض ربط<br/>(mere linking)"]:::sub
-  HK --> L1["Ism⟷Ism<br/>زَیْدٌ فِي الدَّارِ"]:::ex
-  HK --> L2["Ism⟷Fi'l<br/>کَتَبْتُ بِالْقَلَمِ"]:::ex
-  HK --> L3["Fi'l⟷Fi'l<br/>أُرِیْدُ أَنْ أُصَلِّيَ"]:::ex
+ H --> HK["Harf = محض ربط<br/>(mere linking)"]:::sub
+ HK --> L1["Ism⟷Ism<br/>زَیْدٌ فِي الدَّارِ"]:::ex
+ HK --> L2["Ism⟷Fi'l<br/>کَتَبْتُ بِالْقَلَمِ"]:::ex
+ HK --> L3["Fi'l⟷Fi'l<br/>أُرِیْدُ أَنْ أُصَلِّيَ"]:::ex
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef sub  fill:#fef3c7,stroke:#b45309,color:#7c2d12;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-  classDef ex   fill:#ffe4e6,stroke:#be123c,color:#881337;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
 ```
 
 **Density check:** 14 nodes (limit: 16 ✅), 5 classDefs (limit: 5 ✅), no subgraphs ✅.
@@ -491,24 +478,24 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  R["مُدْمَرَات / Damayer<br/>Qism #1 of 8<br/>(Section 13-15)<br/>5 qismein → 6 tables<br/>× 14 forms = 84 total"]:::root
+ R["مُدْمَرَات / Damayer<br/>Qism #1 of 8<br/>(Section 13-15)<br/>5 qismein → 6 tables<br/>× 14 forms = 84 total"]:::root
 
-  R --> MR["مَرفُوع / Marfu'<br/>Fa'il position"]:::main
-  R --> MN["مَنصُوب / Mansoob<br/>Maf'ool position"]:::main
-  R --> MJ["مَجرُور / Majroor<br/>after Jarr/Idafa"]:::main
+ R --> MR["مَرفُوع / Marfu'<br/>Fa'il position"]:::main
+ R --> MN["مَنصُوب / Mansoob<br/>Maf'ool position"]:::main
+ R --> MJ["مَجرُور / Majroor<br/>after Jarr/Idafa"]:::main
 
-  MR --> T1["مُتَّصِل (Table 1)<br/>e.g. ضَرَبْتُ"]:::leaf
-  MR --> T2["مُنفَصِل (Table 2)<br/>e.g. اَنَا"]:::leaf
+ MR --> T1["مُتَّصِل (Table 1)<br/>e.g. ضَرَبْتُ"]:::leaf
+ MR --> T2["مُنفَصِل (Table 2)<br/>e.g. اَنَا"]:::leaf
 
-  MN --> T3["مُتَّصِل (Table 3)<br/>e.g. ضَرَبَنِيْ"]:::leaf
-  MN --> T4["مُنفَصِل (Table 4)<br/>e.g. اِیَّایَ"]:::leaf
+ MN --> T3["مُتَّصِل (Table 3)<br/>e.g. ضَرَبَنِيْ"]:::leaf
+ MN --> T4["مُنفَصِل (Table 4)<br/>e.g. اِیَّایَ"]:::leaf
 
-  MJ --> T5["بہ حَرف جَر<br/>(Table 5)<br/>e.g. لِيْ"]:::leaf
-  MJ --> T6["بہ اِضافَت<br/>(Table 6)<br/>e.g. دَارِيْ"]:::leaf
+ MJ --> T5["بہ حَرف جَر<br/>(Table 5)<br/>e.g. لِيْ"]:::leaf
+ MJ --> T6["بہ اِضافَت<br/>(Table 6)<br/>e.g. دَارِيْ"]:::leaf
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
 ```
 
 **Density check:** 10 nodes (limit: 16 ✅), 3 classDefs (limit: 5 ✅), no subgraphs ✅.
@@ -531,27 +518,27 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  R["اَسْمَائے مَوْصُوْلَہ<br/>Mausoolah<br/>Qism #2 of 8<br/>(Section 15)<br/>10 paradigm cells<br/>+ 3 special rules"]:::root
+ R["اَسْمَائے مَوْصُوْلَہ<br/>Mausoolah<br/>Qism #2 of 8<br/>(Section 15)<br/>10 paradigm cells<br/>+ 3 special rules"]:::root
 
-  R --> SP["خاص (Specific)<br/>7 gender-specific"]:::main
-  R --> GN["عام (Generic)<br/>2 generic"]:::main
-  R --> EX["استثناء<br/>(3 special rules)"]:::sub
+ R --> SP["خاص (Specific)<br/>7 gender-specific"]:::main
+ R --> GN["عام (Generic)<br/>2 generic"]:::main
+ R --> EX["استثناء<br/>(3 special rules)"]:::sub
 
-  SP --> M["مَردانہ (M) — 3 forms<br/>اَلَّذِيْ (sing) /<br/>اَلَّذَانِ (dual) /<br/>اَلَّذِيْنَ (pl)"]:::leaf
-  SP --> F["مُؤنث (F) — 4 forms<br/>اَلَّتِيْ / اَلَّتَانِ /<br/>اَللَّتَیْنِ /<br/>اَللَّاتِيْ"]:::leaf
+ SP --> M["مَردانہ (M) — 3 forms<br/>اَلَّذِيْ (sing) /<br/>اَلَّذَانِ (dual) /<br/>اَلَّذِيْنَ (pl)"]:::leaf
+ SP --> F["مُؤنث (F) — 4 forms<br/>اَلَّتِيْ / اَلَّتَانِ /<br/>اَللَّتَیْنِ /<br/>اَللَّاتِيْ"]:::leaf
 
-  GN --> G1["مَنْ (human) /<br/>مَا (non-human)"]:::leaf
+ GN --> G1["مَنْ (human) /<br/>مَا (non-human)"]:::leaf
 
-  EX --> E1["اَيٌّ / اَيَّۃٌ<br/>Mu'arrab + Idafa-only<br/>(also fills 10th cell)"]:::leaf
-  EX --> E2["الف لام = اَلَّذِيْ<br/>(in Ism Fa'il/Maf'ool)<br/>e.g. اَلضَّارِبُ"]:::leaf
-  EX --> E3["ذُو = اَلَّذِيْ<br/>(Banu Tay tribe)"]:::leaf
+ EX --> E1["اَيٌّ / اَيَّۃٌ<br/>Mu'arrab + Idafa-only<br/>(also fills 10th cell)"]:::leaf
+ EX --> E2["الف لام = اَلَّذِيْ<br/>(in Ism Fa'il/Maf'ool)<br/>e.g. اَلضَّارِبُ"]:::leaf
+ EX --> E3["ذُو = اَلَّذِيْ<br/>(Banu Tay tribe)"]:::leaf
 
-  R --> RULE["Mausool + سِلَہ<br/>= compound unit<br/>(Section 15 rule)<br/>Sila ki return-ضمیر<br/>lazmi"]:::sub
+ R --> RULE["Mausool + سِلَہ<br/>= compound unit<br/>(Section 15 rule)<br/>Sila ki return-ضمیر<br/>lazmi"]:::sub
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef sub  fill:#fef3c7,stroke:#b45309,color:#7c2d12;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
 ```
 
 **Density check:** 11 nodes (limit: 16 ✅), 4 classDefs (limit: 5 ✅), no subgraphs ✅.
@@ -574,29 +561,29 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  R["اَسْمَائے اِشَارَہ<br/>Ishara<br/>Qism #3 of 8<br/>(Section 16)<br/>10 forms total"]:::root
+ R["اَسْمَائے اِشَارَہ<br/>Ishara<br/>Qism #3 of 8<br/>(Section 16)<br/>10 forms total"]:::root
 
-  R --> QR["اِشَارَہ قَرِیْب<br/>Qareeb (close)<br/>5 forms"]:::main
-  R --> BD["اِشَارَہ بَعِیْد<br/>Ba'eed (far)<br/>5 forms"]:::main
+ R --> QR["اِشَارَہ قَرِیْب<br/>Qareeb (close)<br/>5 forms"]:::main
+ R --> BD["اِشَارَہ بَعِیْد<br/>Ba'eed (far)<br/>5 forms"]:::main
 
-  QR --> Q1["M sing: هٰذَا"]:::leaf
-  QR --> Q2["M dual: هٰذَانِ"]:::leaf
-  QR --> Q3["F sing: هٰذِهِ"]:::leaf
-  QR --> Q4["F dual: هَاتَانِ"]:::leaf
-  QR --> Q5["Plural<br/>(gender-common):<br/>هٰؤُلَاءِ"]:::leaf
+ QR --> Q1["M sing: هٰذَا"]:::leaf
+ QR --> Q2["M dual: هٰذَانِ"]:::leaf
+ QR --> Q3["F sing: هٰذِهِ"]:::leaf
+ QR --> Q4["F dual: هَاتَانِ"]:::leaf
+ QR --> Q5["Plural<br/>(gender-common):<br/>هٰؤُلَاءِ"]:::leaf
 
-  BD --> B1["M sing: ذٰلِكَ"]:::leaf
-  BD --> B2["M dual: ذَانِكَ"]:::leaf
-  BD --> B3["F sing: تِلْكَ"]:::leaf
-  BD --> B4["F dual: تَانِكَ"]:::leaf
-  BD --> B5["Plural<br/>(gender-common):<br/>اُولٰئِكَ"]:::leaf
+ BD --> B1["M sing: ذٰلِكَ"]:::leaf
+ BD --> B2["M dual: ذَانِكَ"]:::leaf
+ BD --> B3["F sing: تِلْكَ"]:::leaf
+ BD --> B4["F dual: تَانِكَ"]:::leaf
+ BD --> B5["Plural<br/>(gender-common):<br/>اُولٰئِكَ"]:::leaf
 
-  R --> RULE["Ishara + مُشار اِلَیہ<br/>= compound unit<br/>(Section 16 rule)<br/>e.g. هٰذَا الْقَلَمُ نَفِیْسٌ"]:::sub
+ R --> RULE["Ishara + مُشار اِلَیہ<br/>= compound unit<br/>(Section 16 rule)<br/>e.g. هٰذَا الْقَلَمُ نَفِیْسٌ"]:::sub
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef sub  fill:#fef3c7,stroke:#b45309,color:#7c2d12;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
 ```
 
 **Density check:** 14 nodes (limit: 16 ✅), 4 classDefs (limit: 5 ✅), no subgraphs ✅.
@@ -615,6 +602,6 @@ flowchart TD
 - **Chart 13 candidate**: Ism Ghair Mutamakkin **8 qismein full taxonomy tree** — Fasl 5 ka topic-overview chart (ab build kiya ja sakta kyunke saari 8 qismein covered).
 - **Chart 14 candidate**: Mabni-ending classification (Section 20 Faida 1) — visual grouping of all Zarf items by damma/fatha/kasra/sukoon.
 - **Chart 15+ candidates**: Aage ke pages (p-26+) ke naye concepts ke saath new charts emerge honge:
-  - Mabni-Mu'arrab full taxonomy tree (Mabni-al-Asl 3 + Mushabahat 4 tareeqein) — Section 12 conceptual map
-  - Case-state names (Marfu'/Mansoob/Majroor) — Bab-level i'rab system overview
-  - Amil / Ma'mool chart (jab Ma'mool ki tareef milti — p-12 ka 4th forward-ref still pending)
+ - Mabni-Mu'arrab full taxonomy tree (Mabni-al-Asl 3 + Mushabahat 4 tareeqein) — Section 12 conceptual map
+ - Case-state names (Marfu'/Mansoob/Majroor) — Bab-level i'rab system overview
+ - Amil / Ma'mool chart (jab Ma'mool ki tareef milti — p-12 ka 4th forward-ref still pending)

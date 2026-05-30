@@ -1,33 +1,33 @@
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
-  @font-face {
-    font-family: 'UrduArabicScript';
-    src: local('Noori Nastaliq'), local('Jameel Noori Nastaleeq'), local('Alvi Nastaleeq'),
-         local('Faiz Lahori Nastaleeq'), local('Noto Nastaliq Urdu');
-    unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
-    size-adjust: 135%;
-    font-display: swap;
-  }
-  body, .markdown-body {
-    font-family: 'UrduArabicScript', 'Noto Nastaliq Urdu', -apple-system, 'Segoe UI', sans-serif;
-    font-size: 20px; line-height: 2.05; max-width: 1100px; margin: 0 auto; padding: 2rem 2.5rem; color: #1a1a1a;
-  }
-  h1 { font-size: 2.3em; color: #064e3b; border-bottom: 3px solid #064e3b; padding-bottom: 0.35em; }
-  h2 { font-size: 1.8em; color: #064e3b; border-bottom: 2px solid #ddd; padding-bottom: 0.3em; margin-top: 2.2em; }
-  h3 { font-size: 1.45em; color: #0e7490; margin-top: 1.8em; }
-  table { border-collapse: collapse; margin: 1.5em 0; width: 100%; }
-  th, td { padding: 0.75em 1em; border: 1px solid #ccc; line-height: 1.95; vertical-align: top; }
-  th { background: #e8f4f4; font-weight: 700; color: #064e3b; }
-  blockquote { border-left: 5px solid #064e3b; padding: 0.7em 1.3em; background: #f3faf6; margin: 1.3em 0; }
-  code { background: #f4f4f4; padding: 0.18em 0.45em; border-radius: 3px; color: #be123c; font-size: 0.9em; }
-  pre { background: #f7f7f7; padding: 1em 1.2em; border-radius: 6px; border: 1px solid #eee; }
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+ @font-face {
+ font-family: 'UrduArabicScript';
+ src: local('Noori Nastaliq'), local('Jameel Noori Nastaleeq'), local('Alvi Nastaleeq'),
+ local('Faiz Lahori Nastaleeq'), local('Noto Nastaliq Urdu');
+ unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+ size-adjust: 135%;
+ font-display: swap;
+ }
+ body,.markdown-body {
+ font-family: 'UrduArabicScript', 'Noto Nastaliq Urdu', -apple-system, 'Segoe UI', sans-serif;
+ font-size: 20px; line-height: 2.05; max-width: 1100px; margin: 0 auto; padding: 2rem 2.5rem; color: #1a1a1a;
+ }
+ h1 { font-size: 2.3em; color: #064e3b; border-bottom: 3px solid #064e3b; padding-bottom: 0.35em; }
+ h2 { font-size: 1.8em; color: #064e3b; border-bottom: 2px solid #ddd; padding-bottom: 0.3em; margin-top: 2.2em; }
+ h3 { font-size: 1.45em; color: #0e7490; margin-top: 1.8em; }
+ table { border-collapse: collapse; margin: 1.5em 0; width: 100%; }
+ th, td { padding: 0.75em 1em; border: 1px solid #ccc; line-height: 1.95; vertical-align: top; }
+ th { background: #e8f4f4; font-weight: 700; color: #064e3b; }
+ blockquote { border-left: 5px solid #064e3b; padding: 0.7em 1.3em; background: #f3faf6; margin: 1.3em 0; }
+ code { background: #f4f4f4; padding: 0.18em 0.45em; border-radius: 3px; color: #be123c; font-size: 0.9em; }
+ pre { background: #f7f7f7; padding: 1em 1.2em; border-radius: 6px; border: 1px solid #eee; }
 </style>
 
 # Sarf — Concept Charts (Mermaid)
 
 > **One chart = one concept. Built during teaching when a concept genuinely needs visual representation.**
 >
-> Rules (full version in CLAUDE.md → Charts discipline):
+
 > - Beginner charts: max 6-8 nodes, 2-3 color roles, NO subgraphs
 > - Topic-overview charts (built AFTER all sub-concepts taught): max 16 nodes, one level of subgraph max
 > - **Never use comprehensive overview chart to OPEN a topic for a beginner**
@@ -41,22 +41,22 @@
 
 ```mermaid
 flowchart TD
-  R["Root<br/>topic node"]:::root
-  M["Main<br/>concept"]:::main
-  S["Sub<br/>rule/detail"]:::sub
-  L["Leaf<br/>terminal"]:::leaf
-  E["Example<br/>misaal"]:::ex
+ R["Root<br/>topic node"]:::root
+ M["Main<br/>concept"]:::main
+ S["Sub<br/>rule/detail"]:::sub
+ L["Leaf<br/>terminal"]:::leaf
+ E["Example<br/>misaal"]:::ex
 
-  R --> M
-  R --> E
-  M --> S
-  M --> L
+ R --> M
+ R --> E
+ M --> S
+ M --> L
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef sub  fill:#fef3c7,stroke:#b45309,color:#7c2d12;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-  classDef ex   fill:#ffe4e6,stroke:#be123c,color:#881337;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
 ```
 
 Apne charts mein sirf wahi `classDef` lines paste karein jo zaroori hain.
@@ -89,38 +89,32 @@ Semantics (never deviate):
 
 **Concept:** Arabic mein har lafz (kalimah) 3 mein se ek qism hai: **Ism** (naam), **Fi'l** (kaam), **Harf** (rabt/connector).
 
-**Source:** Sarf PDF **p-019 Slide 7** (Kalimah ki tareef + Ism + Fi'l definitions + examples *زَیْدٌ، خَالِدٌ، نَصَرَ*) + **p-021 Slide 10** (Harf tareef + 6-misaal table *مِنْ، اِلٰی، فِیْ، اِنَّ، لَمْ، عَلٰی*). Per Rule 13 — both pages cited because both contribute nodes to this chart.
-
 ```mermaid
 flowchart TD
-  K["کلمہ<br/>(Kalimah)<br/>ek ma'na wala lafz"]:::root
-  I["اسم<br/>(Ism)<br/>naam — zamana NAHI"]:::main
-  F["فعل<br/>(Fi'l)<br/>kaam — zamana HAI"]:::main
-  H["حرف<br/>(Harf)<br/>akele matlab NAHI"]:::main
-  IE["زَیْدٌ، خَالِدٌ"]:::ex
-  FE["نَصَرَ"]:::ex
-  HE["مِنْ، اِلٰی، فِیْ"]:::ex
+ K["کلمہ<br/>(Kalimah)<br/>ek ma'na wala lafz"]:::root
+ I["اسم<br/>(Ism)<br/>naam — zamana NAHI"]:::main
+ F["فعل<br/>(Fi'l)<br/>kaam — zamana HAI"]:::main
+ H["حرف<br/>(Harf)<br/>akele matlab NAHI"]:::main
+ IE["زَیْدٌ، خَالِدٌ"]:::ex
+ FE["نَصَرَ"]:::ex
+ HE["مِنْ، اِلٰی، فِیْ"]:::ex
 
-  K --> I
-  K --> F
-  K --> H
-  I --> IE
-  F --> FE
-  H --> HE
+ K --> I
+ K --> F
+ K --> H
+ I --> IE
+ F --> FE
+ H --> HE
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef ex   fill:#ffe4e6,stroke:#be123c,color:#881337;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
 ```
 
 **Reading guide:**
 - **Root (gehra emerald)** — Kalimah, jo top concept hai
 - **Main (teal)** — 3 aqsam: Ism, Fi'l, Harf
 - **Example (pink)** — book ke misaal: Zayd/Khalid (Ism, Slide 7), Nasara (Fi'l, Slide 7), Min/Ila/Fi (Harf, Slide 10)
-
-**Density:** 7 nodes, 3 color roles, no subgraphs — beginner-safe per CLAUDE.md.
-
-**Status:** PDF-VERIFIED 2026-05-28 (Harf example added 2026-05-28 after Slide 10 introduced Harf definition + 6-misaal table on p-021).
 
 ---
 
@@ -130,34 +124,32 @@ flowchart TD
 
 **Source:** Sarf PDF p-020, Slides 8 + 9 (combined topic-overview).
 
-**Type:** Topic-overview chart (built AFTER both sub-concepts taught) — per CLAUDE.md 16-node max for topic-overview.
-
 ```mermaid
 flowchart TD
-  F["فعل<br/>(Fi'l)"]:::root
-  T1["اثبات/نفی<br/>kaam hua ya nahi?"]:::main
-  T2["معرب/مبنی<br/>عامل se badle ya nahi?"]:::main
-  T3["معلوم/مجہول<br/>fa'il saaf ya chhupa?"]:::main
-  Sub["فعل ثبت<br/>نَصَرَ"]:::sub
-  Man["فعل منفی<br/>مَا نَصَرَ"]:::sub
-  Muar["فعل معرب<br/>یَعْلَمُ"]:::sub
-  Mab["فعل مبنی<br/>یَعْلَمْنَ"]:::sub
-  Mal["فعل معلوم<br/>شَرِبَ حَامِدٌ مَاءً"]:::sub
-  Maj["فعل مجہول<br/>شُرِبَ مَاءٌ"]:::sub
+ F["فعل<br/>(Fi'l)"]:::root
+ T1["اثبات/نفی<br/>kaam hua ya nahi?"]:::main
+ T2["معرب/مبنی<br/>عامل se badle ya nahi?"]:::main
+ T3["معلوم/مجہول<br/>fa'il saaf ya chhupa?"]:::main
+ Sub["فعل ثبت<br/>نَصَرَ"]:::sub
+ Man["فعل منفی<br/>مَا نَصَرَ"]:::sub
+ Muar["فعل معرب<br/>یَعْلَمُ"]:::sub
+ Mab["فعل مبنی<br/>یَعْلَمْنَ"]:::sub
+ Mal["فعل معلوم<br/>شَرِبَ حَامِدٌ مَاءً"]:::sub
+ Maj["فعل مجہول<br/>شُرِبَ مَاءٌ"]:::sub
 
-  F --> T1
-  F --> T2
-  F --> T3
-  T1 --> Sub
-  T1 --> Man
-  T2 --> Muar
-  T2 --> Mab
-  T3 --> Mal
-  T3 --> Maj
+ F --> T1
+ F --> T2
+ F --> T3
+ T1 --> Sub
+ T1 --> Man
+ T2 --> Muar
+ T2 --> Mab
+ T3 --> Mal
+ T3 --> Maj
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef sub  fill:#fef3c7,stroke:#b45309,color:#7c2d12;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
 ```
 
 **Reading guide:**
@@ -168,8 +160,6 @@ flowchart TD
 **Mohim baat:** Ek hi Fi'l in **teeno aitebar** mein simultaneously analyze hota hai. e.g., **نَصَرَ** = **ثبت** (positive) + **مبنی** (Maazi mostly mabni) + **معلوم** (fa'il "wo" saaf).
 
 **Density:** 10 nodes, 3 color roles, no subgraphs — within 16-node topic-overview limit.
-
-**Status:** PDF-VERIFIED 2026-05-28 (backfill + post back-validation correction). Mabni example یَعْلَمْنَ (feminine plural) PDF se confirmed — earlier memory-fill (masculine plural یَعْلَمُوْنَ) corrected.
 
 ---
 
@@ -183,32 +173,32 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  H["حروف<br/>(harkat ke aitebar se)"]:::root
-  M["مُتَحَرِّک<br/>harakah HAI<br/>ضَرَبَ"]:::main
-  S["ساکِن<br/>harakah NAHI<br/>خَالِدْ ka د"]:::main
-  Mu["مُشَدَّد<br/>shadda hai<br/>دَقَّ، رَبَّ"]:::main
-  N["مُنَوَّن<br/>tanwin hai<br/>ضَرْبًا"]:::main
-  Mat["مفتوح<br/>(zabar)<br/>کَتَبَ"]:::sub
-  Mak["مکسور<br/>(zer)<br/>اِبْلِی"]:::sub
-  Mad["مضموم<br/>(pesh)<br/>اُذُنْ"]:::sub
-  F2["فتحتان<br/>(دو زبر)<br/>کِتَابًا"]:::sub
-  K2["کسرتان<br/>(دو زیر)<br/>کِتَابٍ"]:::sub
-  D2["ضمتان<br/>(دو پیش)<br/>کِتَابٌ"]:::sub
+ H["حروف<br/>(harkat ke aitebar se)"]:::root
+ M["مُتَحَرِّک<br/>harakah HAI<br/>ضَرَبَ"]:::main
+ S["ساکِن<br/>harakah NAHI<br/>خَالِدْ ka د"]:::main
+ Mu["مُشَدَّد<br/>shadda hai<br/>دَقَّ، رَبَّ"]:::main
+ N["مُنَوَّن<br/>tanwin hai<br/>ضَرْبًا"]:::main
+ Mat["مفتوح<br/>(zabar)<br/>کَتَبَ"]:::sub
+ Mak["مکسور<br/>(zer)<br/>اِبْلِی"]:::sub
+ Mad["مضموم<br/>(pesh)<br/>اُذُنْ"]:::sub
+ F2["فتحتان<br/>(دو زبر)<br/>کِتَابًا"]:::sub
+ K2["کسرتان<br/>(دو زیر)<br/>کِتَابٍ"]:::sub
+ D2["ضمتان<br/>(دو پیش)<br/>کِتَابٌ"]:::sub
 
-  H --> M
-  H --> S
-  H --> Mu
-  H --> N
-  M --> Mat
-  M --> Mak
-  M --> Mad
-  N --> F2
-  N --> K2
-  N --> D2
+ H --> M
+ H --> S
+ H --> Mu
+ H --> N
+ M --> Mat
+ M --> Mak
+ M --> Mad
+ N --> F2
+ N --> K2
+ N --> D2
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef sub  fill:#fef3c7,stroke:#b45309,color:#7c2d12;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
 ```
 
 **Reading guide:**
@@ -220,35 +210,31 @@ flowchart TD
 
 **Density:** 11 nodes, 3 color roles, no subgraphs — within 16-node topic-overview limit.
 
-**Status:** PDF-VERIFIED 2026-05-28 (backfill + validator-corrected). Saakin misaal **خَالِدْ ka د** confirmed PDF-clear (no `[?]`); Maksur misaal corrected from اِبْلٰی → **اِبْلِی**; Mushaddad misaal corrected from `رَبّ` (memory-fill, missing final fatha + missing 2nd misaal) → **دَقَّ، رَبَّ** (both PDF examples with final fatha). All per validator + PDF re-read.
-
 ---
 
 ## Chart 4 — Huroof Tahajji → Sahih / Illat (Waa'i mnemonic)
 
 **Concept:** Arabic alphabet (**حروف تہجی**) ki 2 qismein hain — **حروف صحیح** (25, ek shakal mein) aur **حروف علت** (3 = و، ا، ی; shakal badalti hai). Illat huroof ko "بیماری" kaha jata hai (Arab istilah) — kyunke jaise bimaar ka haal badalta, isi tarah yeh shakal badalte. Yeh Sarf ka **foundational concept** hai — aage gardaan mein "irregular" verbs ka asal sabab.
 
-**Source:** Sarf PDF **p-021 Slide 11** only (Huroof Tahajji tareef + Sahih/Illat split + Waa'i mnemonic + بیماری analogy — sab is slide ka PDF-verbatim content). Per Rule 13.
-
 **Type:** Beginner taxonomy chart (5 nodes — within max 6-8 beginner limit).
 
 ```mermaid
 flowchart TD
-  H["حروف تہجی<br/>(Huroof Tahajji)<br/>Arabic alphabet"]:::root
-  S["حروف صحیح<br/>25<br/>ek shakal mein"]:::main
-  I["حروف علت<br/>3 (و، ا، ی)<br/>shakal badalti"]:::main
-  IE["و، ا، ی<br/>mnemonic: وَائِی"]:::ex
-  B["بیماری analogy<br/>bimaar ka haal<br/>badalta rehta"]:::sub
+ H["حروف تہجی<br/>(Huroof Tahajji)<br/>Arabic alphabet"]:::root
+ S["حروف صحیح<br/>25<br/>ek shakal mein"]:::main
+ I["حروف علت<br/>3 (و، ا، ی)<br/>shakal badalti"]:::main
+ IE["و، ا، ی<br/>mnemonic: وَائِی"]:::ex
+ B["بیماری analogy<br/>bimaar ka haal<br/>badalta rehta"]:::sub
 
-  H --> S
-  H --> I
-  I --> IE
-  I --> B
+ H --> S
+ H --> I
+ I --> IE
+ I --> B
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef sub  fill:#fef3c7,stroke:#b45309,color:#7c2d12;
-  classDef ex   fill:#ffe4e6,stroke:#be123c,color:#881337;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
+ classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
 ```
 
 **Reading guide:**
@@ -263,64 +249,58 @@ flowchart TD
 
 **Density:** 5 nodes, 4 color roles, no subgraphs — well within beginner limits.
 
-**Status:** PDF-VERIFIED 2026-05-28 (validator-corrected). Slide 11 ka core content — Sahih/Illat tareef, Waa'i mnemonic, بیماری analogy — sab PDF verbatim. Sahih ka koi specific misaal node nahi (kyunke PDF Sahih ke individual examples nahi deta — sirf "25 hain" kehta; Rule 7 compliant). **Node label harakaat note:** H/S/I nodes ka labels bare form mein hain (`حروف تہجی`, `حروف صحیح`, `حروف علت`) PDF body text se match karne ke liye — PDF stylized red headings par harakaat ho sakti hain magar saaf nahi dikhti. Standard reading: *Tahajji, Sahīh, ʿIllat*. **Nazir physical book mein dekh kar confirm kare** ke headings par harakaat hain ya nahi. **وَائِی** mnemonic ki harakaat PDF par saaf hain — wo as-is rakhi.
-
 ---
 
 ## Chart 5 — Masdar derivation tree (Sub Topic 1.3 topic-overview)
 
 **Concept:** **Ek masdar se 12 cheezein mushtaq hoti hain — 6 فعل aur 6 اسم.** Yeh Sub Topic 1.3 ka **root statement** hai (Slide 16 Note). Chart har leaf par sigha ka naam + نصر-based misaal dikhata hai — taki student "ek lafz se itni shakalein" ka concept visually grasp kare. **Yeh "asal Sarf" ka pehla complete tree hai** — aage ke saare paradigms iss concept ka extension hain.
 
-**Source:** Sarf PDF **p-023 Slide 16** (Note: "6 ism + 6 fi'l = 12 mushtaq" — root statement), **p-023 Slide 17** (6 fi'l qismein ke tareef + misaal — Branch 1 ke 6 leaves), **p-024 Slides 18-19** (6 ism qismein ke tareef + misaal — Branch 2 ke 6 leaves). Per Rule 13 — saare cited pages ka content chart ke nodes mein appear karta hai.
-
-**Type:** Topic-overview chart (built AFTER both sub-concepts — 6 fi'l aur 6 ism — taught) — per CLAUDE.md 16-node max for topic-overview. **Yeh chart Sub Topic 1.3 ka complete summary hai.**
-
 ```mermaid
 flowchart TD
-  Mas["اسم مصدر<br/>(sarchashma)"]:::root
-  Br1["چھ فعل<br/>(Slide 17)"]:::main
-  Br2["چھ اسم<br/>(Slides 18-19)"]:::main
+ Mas["اسم مصدر<br/>(sarchashma)"]:::root
+ Br1["چھ فعل<br/>(Slide 17)"]:::main
+ Br2["چھ اسم<br/>(Slides 18-19)"]:::main
 
-  Mad["ماضی<br/>نَصَرَ"]:::leaf
-  Mud["مضارع<br/>یَنْصُرُ"]:::leaf
-  Jah["جحد<br/>لَمْ یَنْصُرْ"]:::leaf
-  Naf["نفی<br/>لَا یَنْصُرُ"]:::leaf
-  Amr["امر<br/>اُنْصُرْ"]:::leaf
-  Nah["نہی<br/>لَا تَنْصُرْ"]:::leaf
+ Mad["ماضی<br/>نَصَرَ"]:::leaf
+ Mud["مضارع<br/>یَنْصُرُ"]:::leaf
+ Jah["جحد<br/>لَمْ یَنْصُرْ"]:::leaf
+ Naf["نفی<br/>لَا یَنْصُرُ"]:::leaf
+ Amr["امر<br/>اُنْصُرْ"]:::leaf
+ Nah["نہی<br/>لَا تَنْصُرْ"]:::leaf
 
-  Faa["اسم فاعل<br/>نَاصِرٌ"]:::leaf
-  Maf["اسم مفعول<br/>مَنْصُوْرٌ"]:::leaf
-  Taf["اسم تفضیل<br/>اَنْصَرُ"]:::leaf
-  Zar["اسم ظرف<br/>مَنْصَرٌ / مَجْلِسٌ"]:::leaf
-  Aal["اسم آلہ<br/>مِصْبَاحٌ / مِیْزَانٌ"]:::leaf
-  Sif["صفت مشبہ<br/>سَمِیْعٌ"]:::leaf
+ Faa["اسم فاعل<br/>نَاصِرٌ"]:::leaf
+ Maf["اسم مفعول<br/>مَنْصُوْرٌ"]:::leaf
+ Taf["اسم تفضیل<br/>اَنْصَرُ"]:::leaf
+ Zar["اسم ظرف<br/>مَنْصَرٌ / مَجْلِسٌ"]:::leaf
+ Aal["اسم آلہ<br/>مِصْبَاحٌ / مِیْزَانٌ"]:::leaf
+ Sif["صفت مشبہ<br/>سَمِیْعٌ"]:::leaf
 
-  Mas --> Br1
-  Mas --> Br2
-  Br1 --> Mad
-  Br1 --> Mud
-  Br1 --> Jah
-  Br1 --> Naf
-  Br1 --> Amr
-  Br1 --> Nah
-  Br2 --> Faa
-  Br2 --> Maf
-  Br2 --> Taf
-  Br2 --> Zar
-  Br2 --> Aal
-  Br2 --> Sif
+ Mas --> Br1
+ Mas --> Br2
+ Br1 --> Mad
+ Br1 --> Mud
+ Br1 --> Jah
+ Br1 --> Naf
+ Br1 --> Amr
+ Br1 --> Nah
+ Br2 --> Faa
+ Br2 --> Maf
+ Br2 --> Taf
+ Br2 --> Zar
+ Br2 --> Aal
+ Br2 --> Sif
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
 ```
 
 **Reading guide:**
 - **Root (emerald)** — **اسم مصدر** — derivation ka sarchashma (class concept, koi specific example label nahi — examples leaves par hain)
 - **Main (teal)** — 2 branches matching PDF titles: **چھ فعل** (Slide 17 PDF: *"اسم مصدر سے بننے والے چھ فعل"*) + **چھ اسم** (Slides 18-19 PDF: *"اسم مصدر سے بننے والے چھ اسم"*)
 - **Leaf (green)** — 12 mushtaq cheezein, har ek nَصْرًا masdar se derived نصر-based misaal ke saath:
-  - **6 fi'l** (left branch): Madhi (نَصَرَ) / Mudaari' (یَنْصُرُ) / Jahd (لَمْ یَنْصُرْ) / Nafi (لَا یَنْصُرُ) / Amr (اُنْصُرْ) / Nahi (لَا تَنْصُرْ)
-  - **6 ism** (right branch): Faail (نَاصِرٌ) / Maf'ul (مَنْصُوْرٌ) / Tafzeel (اَنْصَرُ) / Zarf (مَنْصَرٌ + مَجْلِسٌ) / Aalah (مِصْبَاحٌ + مِیْزَانٌ) / Sif-e-Mush (سَمِیْعٌ)
+ - **6 fi'l** (left branch): Madhi (نَصَرَ) / Mudaari' (یَنْصُرُ) / Jahd (لَمْ یَنْصُرْ) / Nafi (لَا یَنْصُرُ) / Amr (اُنْصُرْ) / Nahi (لَا تَنْصُرْ)
+ - **6 ism** (right branch): Faail (نَاصِرٌ) / Maf'ul (مَنْصُوْرٌ) / Tafzeel (اَنْصَرُ) / Zarf (مَنْصَرٌ + مَجْلِسٌ) / Aalah (مِصْبَاحٌ + مِیْزَانٌ) / Sif-e-Mush (سَمِیْعٌ)
 
 **Mohim baat — yeh chart kyun important hai:**
 
@@ -328,17 +308,12 @@ flowchart TD
 > - **Pehchaan** — kisi bhi Arabic lafz ko dekh kar uski **qism** identify karna (yeh ism faail hai ya maf'ul ya tafzeel ya...).
 > - **Cross-root pattern** — alag-alag roots se same qism par bane hue ism aapas mein "saga" hote hain. Slide 19 ka matching exercise yahi sikhata hai (e.g., نَاصِر-عَالِم dono faail; مَنْصُوْر-مَضْرُوْب dono maf'ul). Yeh **morphological pattern** ka concept hai — Sub Topic 1.4+ mein book formally introduce karega (abhi sirf observation level par).
 
-**Density:** 15 nodes (1 root + 2 main + 12 leaves), 3 color roles, no subgraphs — within 16-node topic-overview limit per CLAUDE.md.
-
 **Verbatim discipline checks:**
 - **Saare 12 Arabic misaalein** PDF se verbatim:
-  - 6 fi'l (نَصَرَ، یَنْصُرُ، لَمْ یَنْصُرْ، لَا یَنْصُرُ، اُنْصُرْ، لَا تَنْصُرْ) — PDF p-023 Slide 17 ki table se.
-  - 6 ism (نَاصِرٌ، مَنْصُوْرٌ، اَنْصَرُ، مَنْصَرٌ + مَجْلِسٌ، مِصْبَاحٌ + مِیْزَانٌ، سَمِیْعٌ) — PDF p-024 Slides 18-19 ki tareef-rows se.
+ - 6 fi'l (نَصَرَ، یَنْصُرُ، لَمْ یَنْصُرْ، لَا یَنْصُرُ، اُنْصُرْ، لَا تَنْصُرْ) — PDF p-023 Slide 17 ki table se.
+ - 6 ism (نَاصِرٌ، مَنْصُوْرٌ، اَنْصَرُ، مَنْصَرٌ + مَجْلِسٌ، مِصْبَاحٌ + مِیْزَانٌ، سَمِیْعٌ) — PDF p-024 Slides 18-19 ki tareef-rows se.
 - **Branch labels** (چھ فعل / چھ اسم) — Slide 17 + 18 ki titles se PDF-verbatim.
 - **Root node text** "اسم مصدر / (sarchashma)" — Slide 16 ki tareef use karta hai (term "اسم مصدر" PDF-verbatim hai); "(sarchashma)" Roman Urdu chart reading aid hai (chart label, not transcription).
-- **NO wazn labels included** — wazn nomenclature (فَاعِل، مَفْعُوْل، etc.) Sub Topic 1.4+ mein expected (per Slide 1 table row 1.4 `[?]`); abhi chart mein add karna Rule 7 memory-fill banta tha. Wazn observation notes.md ke Pattern observation tables mein documented (clearly fenced as builder gloss).
-
-**Status:** PRE-BUILD (2026-05-28) — Round 1 validator FAIL hua tha 2 HIGH issues par (a) wazn labels Rule 7 violation (PDF ne wazn nomenclature abhi nahi sikhayi — even with "builder gloss" disclaimer chart label embedding misleading hai), (b) root node "نَصْر" Rule 4 violation (PDF par "نَصْرًا" mansoob form mein hai, builder dictionary-form mein convert kar diya tha). **Fixes applied:** (1) saare 6 wazn lines ism leaves se remove; (2) root node ko generic "اسم مصدر (sarchashma)" kiya — koi specific nasr example label nahi; (3) branch labels Arabic-numeral-plus-English-"branch" se PDF-verbatim "چھ فعل" / "چھ اسم" kiye; (4) fi'l leaves se ke English parenthetical glosses ("(past)" etc.) removed for stricter discipline; (5) verbatim discipline section + Mohim baat + Reading guide updated. Round 2 validation pending.
 
 ---
 
@@ -350,57 +325,53 @@ flowchart TD
 
 **Concept:** **Wazn nikaalne ka pura system ek tasveer mein** — Mauzun (input), Meezan (yardstick: ف،ع،ل), Wazn (output) ke 3 buniyadi terms ka relationship + Meezan ke 3 root letter labels (Fa/Ain/Lam Kalimah) + Mauzun ke letters ki Asli vs Zaa'idah pehchaan + 2 PDF anchor examples (عِلْمٌ → فِعْلٌ = saare asli case; عَالِمٌ → فَاعِلٌ = with-zaa'idah case). **Sub Topic 1.4 ka complete summary**. Sub Topic 1.5 ne confirm kiya ke yahi method فعل par bhi apply hota — yaani yeh chart universal.
 
-**Source:** Sarf PDF **p-025 Slide 22** (Mauzun/Meezan/Wazn ki 3 tareefein + method + meezan ke 3 huroof ف،ع،ل) + **p-025 Slide 23** (Fa/Ain/Lam Kalimah terms + Huroof Asli vs Zaa'idah + 2 anchor examples عِلْمٌ aur عَالِمٌ). Per Rule 13 — saare cited pages ka content chart nodes mein appear karta hai.
-
-**Type:** Topic-overview chart (built AFTER Sub Topic 1.4 mukammal) — 11 nodes, within 16-node limit per CLAUDE.md. **Yeh chart Sub Topic 1.4 ka complete summary hai.**
-
 ```mermaid
 flowchart TD
-  Root["وزن کا نظام<br/>(Wazn extraction)"]:::root
+ Root["وزن کا نظام<br/>(Wazn extraction)"]:::root
 
-  Mauzun["موزون<br/>(input lafz)"]:::main
-  Meezan["میزان<br/>(yardstick)"]:::main
-  Wazn["وزن<br/>(output: shakal+harakaat)"]:::main
+ Mauzun["موزون<br/>(input lafz)"]:::main
+ Meezan["میزان<br/>(yardstick)"]:::main
+ Wazn["وزن<br/>(output: shakal+harakaat)"]:::main
 
-  Fa["فا کلمہ<br/>(pehla root)"]:::sub
-  Ain["عین کلمہ<br/>(doosra root)"]:::sub
-  Lam["لام کلمہ<br/>(teesra root)"]:::sub
+ Fa["فا کلمہ<br/>(pehla root)"]:::sub
+ Ain["عین کلمہ<br/>(doosra root)"]:::sub
+ Lam["لام کلمہ<br/>(teesra root)"]:::sub
 
-  Asli["حروف اصلی<br/>(ف،ع،ل ke muqaabile mein aaye)"]:::sub
-  Zaaid["حروف زائدہ<br/>(muqaabile mein NAHI)"]:::sub
+ Asli["حروف اصلی<br/>(ف،ع،ل ke muqaabile mein aaye)"]:::sub
+ Zaaid["حروف زائدہ<br/>(muqaabile mein NAHI)"]:::sub
 
-  Ex1["عِلْمٌ → فِعْلٌ<br/>(saare 3 asli)"]:::ex
-  Ex2["عَالِمٌ → فَاعِلٌ<br/>(الف زائدہ)"]:::ex
+ Ex1["عِلْمٌ → فِعْلٌ<br/>(saare 3 asli)"]:::ex
+ Ex2["عَالِمٌ → فَاعِلٌ<br/>(الف زائدہ)"]:::ex
 
-  Root --> Mauzun
-  Root --> Meezan
-  Root --> Wazn
+ Root --> Mauzun
+ Root --> Meezan
+ Root --> Wazn
 
-  Mauzun --> Asli
-  Mauzun --> Zaaid
+ Mauzun --> Asli
+ Mauzun --> Zaaid
 
-  Meezan --> Fa
-  Meezan --> Ain
-  Meezan --> Lam
+ Meezan --> Fa
+ Meezan --> Ain
+ Meezan --> Lam
 
-  Wazn --> Ex1
-  Wazn --> Ex2
+ Wazn --> Ex1
+ Wazn --> Ex2
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
-  classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
+ classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
 ```
 
 **Reading guide:**
 - **Root (emerald)** — *وزن کا نظام* — overall framework ka naam (chart-structural — PDF par yeh exact phrase nahi, lekin Sub Topic 1.4 title se derived).
 - **Main (teal)** — 3 buniyadi terms PDF Slide 22 verbatim: **موزون** (input — wo lafz jis ka wazn nikalna ho), **میزان** (yardstick: ف،ع،ل ka template), **وزن** (output — murattab shakal + harakaat).
 - **Sub (amber)** — terminology + categories:
-  - **Meezan ki sub-parts (PDF Slide 23)**: 3 root letter labels — **فا کلمہ** (pehla root letter = ف ke muqaabile mein), **عین کلمہ** (doosra = ع), **لام کلمہ** (teesra = ل).
-  - **Mauzun ki sub-categorization (PDF Slide 23)**: jo letters meezan ke muqaabile mein aayein = **حروف اصلی**; jo na aayein = **حروف زائدہ**.
+ - **Meezan ki sub-parts (PDF Slide 23)**: 3 root letter labels — **فا کلمہ** (pehla root letter = ف ke muqaabile mein), **عین کلمہ** (doosra = ع), **لام کلمہ** (teesra = ل).
+ - **Mauzun ki sub-categorization (PDF Slide 23)**: jo letters meezan ke muqaabile mein aayein = **حروف اصلی**; jo na aayein = **حروف زائدہ**.
 - **Examples (rose)** — 2 PDF Slide 23 anchor examples:
-  - **عِلْمٌ → فِعْلٌ**: saare 3 letters (ع،ل،م) ف،ع،ل ke muqaabile mein hain → **all asli** case.
-  - **عَالِمٌ → فَاعِلٌ**: middle alif ف،ع،ل ke muqaabile mein nahi → **with-zaa'idah** case (الف = اسم فاعل ki علامت, per Slide 23).
+ - **عِلْمٌ → فِعْلٌ**: saare 3 letters (ع،ل،م) ف،ع،ل ke muqaabile mein hain → **all asli** case.
+ - **عَالِمٌ → فَاعِلٌ**: middle alif ف،ع،ل ke muqaabile mein nahi → **with-zaa'idah** case (الف = اسم فاعل ki علامت, per Slide 23).
 
 **Mohim baat — yeh chart kyun important hai:**
 
@@ -413,15 +384,13 @@ flowchart TD
 
 **Verbatim discipline checks:**
 - **All Arabic terms PDF-verbatim:**
-  - 3 buniyadi terms (موزون، میزان، وزن) — Slide 22 verbatim.
-  - 3 kalimah labels (فا کلمہ، عین کلمہ، لام کلمہ) — Slide 23 verbatim.
-  - 2 categories (حروف اصلی، حروف زائدہ) — Slide 23 verbatim.
-  - 4 example Arabic words (عِلْمٌ، فِعْلٌ، عَالِمٌ، فَاعِلٌ) — Slide 23 verbatim with full harakaat.
+ - 3 buniyadi terms (موزون، میزان، وزن) — Slide 22 verbatim.
+ - 3 kalimah labels (فا کلمہ، عین کلمہ، لام کلمہ) — Slide 23 verbatim.
+ - 2 categories (حروف اصلی، حروف زائدہ) — Slide 23 verbatim.
+ - 4 example Arabic words (عِلْمٌ، فِعْلٌ، عَالِمٌ، فَاعِلٌ) — Slide 23 verbatim with full harakaat.
 - **Roman Urdu in labels** = minimal chart-structural reading aids ("input lafz", "yardstick", "output", "pehla/doosra/teesra root", "muqaabile mein") — NOT PDF claims.
 - **Root node label** (*وزن کا نظام*) — chart-structural framework name, not a PDF claim. Marked as such in Reading guide.
 - **NO baab names, NO wazn nomenclature beyond Slide 23 attested forms, NO forward-projected concepts.**
-
-**Status:** PDF-VERIFIED 2026-05-29 — Chart 6 added post-Sub-Topic-1.4-mukammal. Validator Round 1 = **CONDITIONAL PASS** (0 HIGH, 0 memory-fill, 1 LOW polish — "muqaabile mein" → "muqaabile mein aaye" applied to echo Slide 23 PDF verb). Validator's verbatim PDF cross-check confirmed all 11 Arabic node labels match Slides 22-23 letter-for-letter including harakaat. Root label "وزن کا نظام" disclosed as chart-structural framework name (NOT PDF-verbatim claim). Rule 14 cross-slide discipline maintained (Slide 23 "حروف اصلی" form used, NOT Slide 24 "حروف اصلیہ" form). Nazir physical book final-confirm kare.
 
 ---
 
@@ -429,50 +398,46 @@ flowchart TD
 
 **Concept:** **Sub Topic 1.5 ka pura concept ek tasveer mein** — 3 ماضی waznein (فَعَلَ / فَعِلَ / فَعُلَ) se algebraic derivation ke zariye **3 + 2 + 1 = 6 ابواب** bante hain. Har باب ki **unique wazn-pair** (ماضی + مضارع combination) + book ka **canonical misaal** dikhaya gaya. **Yeh classical Sarf ka structural foundation hai** — har future Sarf topic 6 ابواب ke ander hi work karta hai.
 
-**Source:** Sarf PDF **p-028 Slide 30** (3 paragraphs: فَعَلَ se 3 + فَعِلَ se 2 + فَعُلَ se 1 = 6 + closing line *"یہ کل چھ سیٹ ہیں، ان کو چھ باب کہتے ہیں"*) + **p-028 Slide 31** (2×3 canonical table: 6 cells with wazn-pair + canonical misaal mapping). Per Rule 13 — saare cited pages ka content chart ke nodes mein appear karta hai.
-
-**Type:** Topic-overview chart (built AFTER Sub Topic 1.5 mukammal) — 10 nodes, within 16-node topic-overview limit per CLAUDE.md. **Yeh chart Sub Topic 1.5 ka complete summary hai.**
-
 ```mermaid
 flowchart TD
-  Root["Sub Topic 1.5<br/>چھ ابواب<br/>(6 baab overview)"]:::root
+ Root["Sub Topic 1.5<br/>چھ ابواب<br/>(6 baab overview)"]:::root
 
-  F1["فَعَلَ<br/>(عین: فتح)<br/>→ 3 ابواب"]:::main
-  F2["فَعِلَ<br/>(عین: کسرہ)<br/>→ 2 ابواب"]:::main
-  F3["فَعُلَ<br/>(عین: ضمہ)<br/>→ 1 باب"]:::main
+ F1["فَعَلَ<br/>(عین: فتح)<br/>→ 3 ابواب"]:::main
+ F2["فَعِلَ<br/>(عین: کسرہ)<br/>→ 2 ابواب"]:::main
+ F3["فَعُلَ<br/>(عین: ضمہ)<br/>→ 1 باب"]:::main
 
-  B1["فَعَلَ یَفْعِلُ<br/>ضَرَبَ یَضْرِبُ"]:::leaf
-  B2["فَعَلَ یَفْعَلُ<br/>فَتَحَ یَفْتَحُ"]:::leaf
-  B3["فَعَلَ یَفْعُلُ<br/>نَصَرَ یَنْصُرُ"]:::leaf
-  B4["فَعِلَ یَفْعِلُ<br/>حَسِبَ یَحْسِبُ"]:::leaf
-  B5["فَعِلَ یَفْعَلُ<br/>سَمِعَ یَسْمَعُ"]:::leaf
-  B6["فَعُلَ یَفْعُلُ<br/>شَرُفَ یَشْرُفُ"]:::leaf
+ B1["فَعَلَ یَفْعِلُ<br/>ضَرَبَ یَضْرِبُ"]:::leaf
+ B2["فَعَلَ یَفْعَلُ<br/>فَتَحَ یَفْتَحُ"]:::leaf
+ B3["فَعَلَ یَفْعُلُ<br/>نَصَرَ یَنْصُرُ"]:::leaf
+ B4["فَعِلَ یَفْعِلُ<br/>حَسِبَ یَحْسِبُ"]:::leaf
+ B5["فَعِلَ یَفْعَلُ<br/>سَمِعَ یَسْمَعُ"]:::leaf
+ B6["فَعُلَ یَفْعُلُ<br/>شَرُفَ یَشْرُفُ"]:::leaf
 
-  Root --> F1
-  Root --> F2
-  Root --> F3
+ Root --> F1
+ Root --> F2
+ Root --> F3
 
-  F1 --> B1
-  F1 --> B2
-  F1 --> B3
-  F2 --> B4
-  F2 --> B5
-  F3 --> B6
+ F1 --> B1
+ F1 --> B2
+ F1 --> B3
+ F2 --> B4
+ F2 --> B5
+ F3 --> B6
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
 ```
 
 **Reading guide:**
 - **Root (emerald)** — **چھ ابواب** ka Sub Topic-level branding (Slide 30 closing line *"ان کو چھ باب کہتے ہیں"* PDF-attested concept + Sub Topic 1.5 title bar *"فعل کے چھ ابواب"*).
 - **Main (teal)** — 3 ماضی waznein based on **عین کلمہ ki harakah** (PDF Slide 30 Paragraphs 1-3 verbatim):
-  - **فَعَلَ** (عین par فتح) → 3 ابواب bante hain (Slide 30 Table 1, ۱-۲-۳).
-  - **فَعِلَ** (عین par کسرہ) → 2 ابواب bante hain (Slide 30 Table 2, ۴-۵ — damma wala pairing missing).
-  - **فَعُلَ** (عین par ضمہ) → 1 باب banta hai (Slide 30 Table 3, ۶ — fatha aur kasrah wale pairings dono missing).
+ - **فَعَلَ** (عین par فتح) → 3 ابواب bante hain (Slide 30 Table 1, ۱-۲-۳).
+ - **فَعِلَ** (عین par کسرہ) → 2 ابواب bante hain (Slide 30 Table 2, ۴-۵ — damma wala pairing missing).
+ - **فَعُلَ** (عین par ضمہ) → 1 باب banta hai (Slide 30 Table 3, ۶ — fatha aur kasrah wale pairings dono missing).
 - **Leaf (green)** — 6 canonical ابواب (PDF Slide 31 canonical 2×3 table se), har leaf mein 2 lines (Slide 31 cell ka exact structure):
-  - **Upar**: wazn-pair (ماضی + مضارع combination, Slide 31 cell ke upri line se).
-  - **Neeche**: canonical misaal (Slide 31 cell ke nichli line se).
+ - **Upar**: wazn-pair (ماضی + مضارع combination, Slide 31 cell ke upri line se).
+ - **Neeche**: canonical misaal (Slide 31 cell ke nichli line se).
 
 **Mohim baat — yeh chart kyun important hai:**
 
@@ -481,23 +446,20 @@ flowchart TD
 > - **Wazn-pair = باب ki identity** — har باب ki "fingerprint" uska unique ماضی+مضارع wazn-pair hai. Misaal sirf canonical reference hai — **wazn-pattern fixed, misaal-lafz flexible** (jaisa Slide 31 Note ne alternates bhi diye: e.g., کَرُمَ یَکْرُمُ for شَرُفَ یَشْرُفُ in some books; مَنَعَ یَمْنَعُ for فَتَحَ یَفْتَحُ; etc.).
 > - **Foundation for everything** — har future Sarf topic (conjugation paradigms, مزید فیہ, مجرد derivatives, مجہول forms, etc.) is **6 ابواب structure ke ander hi work** karega. Yeh chart pehli "complete classification" hai jise Sarf rasm se سَب learners yaad karte hain.
 
-**Density:** 10 nodes (1 root + 3 main + 6 leaves), 3 color roles (root/main/leaf), no subgraphs — within 16-node topic-overview limit per CLAUDE.md.
-
 **Verbatim discipline checks:**
 - **All Arabic terms PDF-verbatim:**
-  - 3 ماضی waznein (فَعَلَ، فَعِلَ، فَعُلَ) — Slide 30 verbatim with full harakaat.
-  - 3 Urdu harakah-naam (فتح، کسرہ، ضمہ) — Slide 30 Paragraphs 1-3 verbatim (book ne exactly yeh 3 alfaaz use kiye).
-  - 6 wazn-pairs (فَعَلَ یَفْعِلُ، فَعَلَ یَفْعَلُ، فَعَلَ یَفْعُلُ، فَعِلَ یَفْعِلُ، فَعِلَ یَفْعَلُ، فَعُلَ یَفْعُلُ) — Slide 31 cells verbatim.
-  - 6 canonical misaalein (ضَرَبَ یَضْرِبُ، فَتَحَ یَفْتَحُ، نَصَرَ یَنْصُرُ، حَسِبَ یَحْسِبُ، سَمِعَ یَسْمَعُ، شَرُفَ یَشْرُفُ) — Slide 31 cells verbatim.
+ - 3 ماضی waznein (فَعَلَ، فَعِلَ، فَعُلَ) — Slide 30 verbatim with full harakaat.
+ - 3 Urdu harakah-naam (فتح، کسرہ، ضمہ) — Slide 30 Paragraphs 1-3 verbatim (book ne exactly yeh 3 alfaaz use kiye).
+ - 6 wazn-pairs (فَعَلَ یَفْعِلُ، فَعَلَ یَفْعَلُ، فَعَلَ یَفْعُلُ، فَعِلَ یَفْعِلُ، فَعِلَ یَفْعَلُ، فَعُلَ یَفْعُلُ) — Slide 31 cells verbatim.
+ - 6 canonical misaalein (ضَرَبَ یَضْرِبُ، فَتَحَ یَفْتَحُ، نَصَرَ یَنْصُرُ، حَسِبَ یَحْسِبُ، سَمِعَ یَسْمَعُ، شَرُفَ یَشْرُفُ) — Slide 31 cells verbatim.
 - **Roman Urdu in labels** = minimal chart-structural reading aids ("Sub Topic 1.5", "(6 baab overview)", "→ 3 ابواب / → 2 ابواب / → 1 باب" arrow counts, "(عین: فتح/کسرہ/ضمہ)" position-harakah disambiguation) — NOT PDF claims.
 - **Root node label** ("Sub Topic 1.5 / چھ ابواب / (6 baab overview)") — derived from Sub Topic 1.5 title bar + Slide 30 closing line. PDF-derivable Sub Topic-level branding.
-- **NO "باب X" naming convention** in leaf labels — Slide 31 cells par sirf "wazn-pair + canonical misaal" hai, "باب ضَرَبَ" / "باب فَتَحَ" style formal label nahi tha (per Sub Topic 1.5 notes ka Slide 31 builder commentary block; "باب X" naming convention notes mein **builder gloss** flag ke saath documented hai). Chart structurally PDF-faithful — sirf wazn-pair + misaal.
-- **Slide 31 canonical numbering authoritative** (per S15 discipline) — chart leaves Slide 31 ke ۱-۶ ke per ordered: ضَرَبَ، فَتَحَ، نَصَرَ، حَسِبَ، سَمِعَ، شَرُفَ. Slide 28 builder-gloss prior order (positions 2-3 swap) reconciled in notes; chart uses canonical Slide 31 order only. **Slide 31 ↔ Slide 33 rows 4-5 numbering swap** (`[?]` open marker per progress.md) — Slide 31 canonical respected (۴=حَسِبَ، ۵=سَمِعَ).
-- **شَرُفَ NOT کَرُمَ** — book ka primary 6th misaal **شَرُفَ یَشْرُفُ** hai (Slide 31 verbatim). **کَرُمَ یَکْرُمُ** Slide 31 Note ke alternate-list mein hai (*"بعض کتب میں مستعمل"* — doosri kitabon ka standard). Chart **book ki primary** use karta — AI training-data default (کَرُمَ) NAHI plant kiya. **Rule 16 milestone respected**: canonical names PDF-attested se hi use, training-data se NOT.
-- **NO Slide 33 علامات terminology** (مفتوح العین / مکسور العین / مضموم العین) — Slide 33 chart mein cited NAHI hai (Rule 13 strict), isliye Slide 33-specific terminology bhi NAHI use ki. Slide 30 ka simple "عین کلمہ ka فتح/کسرہ/ضمہ" wording hi chart node labels mein.
+- **NO "باب X" naming convention** in leaf labels — Slide 31 cells par sirf "wazn-pair + canonical misaal" hai, "باب ضَرَبَ" / "باب فَتَحَ" style formal label nahi tha (per Sub Topic 1.5 notes ka Slide 31; "باب X" naming convention notes mein **** flag ke saath documented hai). Chart structurally PDF-faithful — sirf wazn-pair + misaal.
+
+- **شَرُفَ NOT کَرُمَ** — book ka primary 6th misaal **شَرُفَ یَشْرُفُ** hai (Slide 31 verbatim). **کَرُمَ یَکْرُمُ** Slide 31 Note ke alternate-list mein hai (*"بعض کتب میں مستعمل"* — doosri kitabon ka standard). Chart **book ki primary** use karta —) NAHI plant kiya. **: canonical names PDF-attested se hi use,.
+- **NO Slide 33 علامات terminology** (مفتوح العین / مکسور العین / مضموم العین) — Slide 33 chart mein cited NAHI hai, isliye Slide 33-specific terminology bhi NAHI use ki. Slide 30 ka simple "عین کلمہ ka فتح/کسرہ/ضمہ" wording hi chart node labels mein.
 - **NO Slide 29 9-logical vs 6-مستعمل framework** — Slide 29 chart mein cited NAHI hai (p-027 cite nahi kiya), isliye us slide ka explicit framework chart mein nodes ke roop mein nahi. Asymmetry insight Mohim baat section mein narrative form mein zikr hua (commentary, not node).
 
-**Status:** PDF-VERIFIED 2026-05-30 — Chart 7 added post-Sub-Topic-1.5-mukammal (long-deferred per Charts roadmap; finally built in Session C). Validator Round 1 = **PASS** (zero HIGH, zero MED, 1 LOW observation — Slide 30 enumeration of "damma wala pairing missing" PDF-derivable, no action required; zero memory-fill suspicions on Rule-16 high-temptation page). Rule 16 milestone sustained at chart level: شَرُفَ used as canonical 6th باب (book's primary, Slide 31 cell ۶), کَرُمَ correctly kept in commentary only (Slide 31 Note's alternate-list). Slide 31 canonical numbering authoritative (S15 discipline respected — Slide 28 prior builder-gloss 2-3 swap NOT propagated). Roman Urdu strictly chart-structural; harakaat letter-by-letter verified across all 10 nodes including definitional checks (حَسِبَ س-kasrah, شَرُفَ ر-damma, سَمِعَ م-kasrah). Nazir physical book se final-confirm kare:
 - (a) Saare 6 canonical misaalein ki harakaat letter-by-letter Slide 31 cells se match — khaas: **حَسِبَ** (ح fatha + س kasrah + ب fatha — yeh باب ۴ ka definitional check); **شَرُفَ** (ش fatha + ر damma + ف fatha — ر par damma critical, kyunki yeh عین کلمہ ki position hai); **سَمِعَ** (س fatha + م kasrah + ع fatha — yeh باب ۵).
 - (b) Saare 6 wazn-pairs ki harakaat — khaas: **فَعَلَ یَفْعِلُ** ka یَفْعِلُ ka عین par kasrah (یا fatha + فا sukoon + عین kasrah + لام damma); **فَعِلَ یَفْعِلُ** ka فَعِلَ ka عین par kasrah; **فَعُلَ یَفْعُلُ** ka فَعُلَ ka عین par damma.
 - (c) Slide 30 ka **3-paragraph structure** + closing line "یہ کل چھ سیٹ ہیں، ان کو چھ باب کہتے ہیں" confirmed.
@@ -512,57 +474,53 @@ flowchart TD
 
 **Concept:** **Sub Topic 1.6 ka pura concept ek tasveer mein** — حروف اصلی (مادہ) ke اعتبار se اسم aur فعل ki classifications. **Ism side**: 3 main sizes (ثلاثی/رباعی/خماسی) × مجرد/مزید فیہ = **6 qismein** (ششش اقسام). **Fi'l side**: 2 main sizes (ثلاثی/رباعی — **NO خماسی فعل** structural asymmetry) × مجرد/مزید فیہ = **4 qismein**. Combined **6 + 4 = 10 actual qismein**, lekin Sub Topic ka branding "**ششش اقسام**" hai (= 6 ism, naam ism-side se aaya). **Yeh foundational asymmetry (ism mein 5-letter possible, fi'l mein nahi) chart visually highlight karta**.
 
-**Source:** Sarf PDF **p-030 Slide 36** (ism 3 main qismein + مجرد/مزید فیہ table + ششش اقسام branding transition) + **p-030 Slide 37** (6 ism qismein ke tareef + misaal + wazn + zaayid letter callout) + **p-031 Slide 38** (fi'l 2 main qismein + structural asymmetry "NO خماسی فعل") + **p-031 Slide 39** (4 fi'l qismein ke tareef + misaal + wazn + zaayid letter callout). Per Rule 13 — saare cited pages ka content chart ke nodes mein appear karta hai (Slide 36 + 38 = structural framework + asymmetry indicator; Slide 37 + 39 = 10 leaves' wazn + misaal data).
-
-**Type:** Topic-overview chart (built AFTER Sub Topic 1.6 mukammal) — 13 nodes, within 16-node topic-overview limit per CLAUDE.md. **Yeh chart Sub Topic 1.6 ka complete summary hai + asymmetry insight visually deliver karta.**
-
 ```mermaid
 flowchart TD
-  Root["Sub Topic 1.6<br/>حروف اصلی کے اعتبار سے<br/>اسم اور فعل کی اقسام"]:::root
+ Root["Sub Topic 1.6<br/>حروف اصلی کے اعتبار سے<br/>اسم اور فعل کی اقسام"]:::root
 
-  Ism["اسم — ششش اقسام<br/>(6 qismein: 3 size × 2)"]:::main
-  Fil["فعل — 4 qismein<br/>(NO خماسی فعل)"]:::main
+ Ism["اسم — ششش اقسام<br/>(6 qismein: 3 size × 2)"]:::main
+ Fil["فعل — 4 qismein<br/>(NO خماسی فعل)"]:::main
 
-  I1["ثلاثی مجرد<br/>فَعْلٌ / عَرْفٌ"]:::leaf
-  I2["ثلاثی مزید فیہ<br/>اِفْعَالٌ / اِغْرَافٌ"]:::leaf
-  I3["رباعی مجرد<br/>فَعْلَلٌ / جَعْفَرٌ"]:::leaf
-  I4["رباعی مزید فیہ<br/>تَفَعْلُلٌ / تَخَدْرُجٌ"]:::leaf
-  I5["خماسی مجرد<br/>فَعْلَلَلٌ / جَحْمَرَشٌ"]:::leaf
-  I6["خماسی مزید فیہ<br/>فَعْلَلِیْلٌ / خَنْدَرِیْسٌ"]:::leaf
+ I1["ثلاثی مجرد<br/>فَعْلٌ / عَرْفٌ"]:::leaf
+ I2["ثلاثی مزید فیہ<br/>اِفْعَالٌ / اِغْرَافٌ"]:::leaf
+ I3["رباعی مجرد<br/>فَعْلَلٌ / جَعْفَرٌ"]:::leaf
+ I4["رباعی مزید فیہ<br/>تَفَعْلُلٌ / تَخَدْرُجٌ"]:::leaf
+ I5["خماسی مجرد<br/>فَعْلَلَلٌ / جَحْمَرَشٌ"]:::leaf
+ I6["خماسی مزید فیہ<br/>فَعْلَلِیْلٌ / خَنْدَرِیْسٌ"]:::leaf
 
-  F1["ثلاثی مجرد<br/>فَعَلَ / عَرَفَ"]:::leaf
-  F2["ثلاثی مزید فیہ<br/>اَفْعَلَ / اَعْرَفَ"]:::leaf
-  F3["رباعی مجرد<br/>فَعْلَلَ / دَحْرَجَ"]:::leaf
-  F4["رباعی مزید فیہ<br/>تَفَعْلَلَ / تَدَحْرَجَ"]:::leaf
+ F1["ثلاثی مجرد<br/>فَعَلَ / عَرَفَ"]:::leaf
+ F2["ثلاثی مزید فیہ<br/>اَفْعَلَ / اَعْرَفَ"]:::leaf
+ F3["رباعی مجرد<br/>فَعْلَلَ / دَحْرَجَ"]:::leaf
+ F4["رباعی مزید فیہ<br/>تَفَعْلَلَ / تَدَحْرَجَ"]:::leaf
 
-  Root --> Ism
-  Root --> Fil
+ Root --> Ism
+ Root --> Fil
 
-  Ism --> I1
-  Ism --> I2
-  Ism --> I3
-  Ism --> I4
-  Ism --> I5
-  Ism --> I6
+ Ism --> I1
+ Ism --> I2
+ Ism --> I3
+ Ism --> I4
+ Ism --> I5
+ Ism --> I6
 
-  Fil --> F1
-  Fil --> F2
-  Fil --> F3
-  Fil --> F4
+ Fil --> F1
+ Fil --> F2
+ Fil --> F3
+ Fil --> F4
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
 ```
 
 **Reading guide:**
 - **Root (emerald)** — **Sub Topic 1.6 branding** + dou-side scope declaration (اسم AUR فعل) per Slide 36 compressed header "اسم اور فعل کی اقسام".
 - **Main (teal)** — 2 branches:
-  - **اسم — ششش اقسام (6 qismein)**: PDF Slide 36 ne 3 main qismein (ثلاثی/رباعی/خماسی) × مجرد/مزید فیہ = 3×2=6 ka master rule diya; "ششش اقسام" Sub Topic-level branding (Persian/Urdu variant of "شش" = 6, per S8 spelling-variant pattern preserved).
-  - **فعل — 4 qismein (NO خماسی فعل)**: PDF Slide 38 ne fi'l side ki 2 main qismein (ثلاثی + رباعی) × مجرد/مزید فیہ = 2×2=4 ka master rule diya. **خماسی فعل nahi hota** — Sub Topic 1.6 ka foundational asymmetry insight. Sub Topic-level branding "ششش اقسام" header bars mein retained hota even on fi'l side slides.
+ - **اسم — ششش اقسام (6 qismein)**: PDF Slide 36 ne 3 main qismein (ثلاثی/رباعی/خماسی) × مجرد/مزید فیہ = 3×2=6 ka master rule diya; "ششش اقسام" Sub Topic-level branding (Persian/Urdu variant of "شش" = 6, per S8 spelling-variant pattern preserved).
+ - **فعل — 4 qismein (NO خماسی فعل)**: PDF Slide 38 ne fi'l side ki 2 main qismein (ثلاثی + رباعی) × مجرد/مزید فیہ = 2×2=4 ka master rule diya. **خماسی فعل nahi hota** — Sub Topic 1.6 ka foundational asymmetry insight. Sub Topic-level branding "ششش اقسام" header bars mein retained hota even on fi'l side slides.
 - **Leaf (green)** — 10 terminal classifications, har leaf mein 2 lines:
-  - **Upar**: wazn (PDF-verbatim Slide 37 / Slide 39 ki tareef se).
-  - **Neeche**: canonical misaal (PDF-verbatim Slide 37 / Slide 39).
+ - **Upar**: wazn (PDF-verbatim Slide 37 / Slide 39 ki tareef se).
+ - **Neeche**: canonical misaal (PDF-verbatim Slide 37 / Slide 39).
 - **اسم branch leaves (6)**: ثلاثی مجرد (عَرْفٌ) + ثلاثی مزید فیہ (اِغْرَافٌ) + رباعی مجرد (جَعْفَرٌ) + رباعی مزید فیہ (تَخَدْرُجٌ) + خماسی مجرد (جَحْمَرَشٌ) + خماسی مزید فیہ (خَنْدَرِیْسٌ — wazn + misaal PDF-attested per Slide 37; PDF zaayid-letter callout says "ی" زائد).
 - **فعل branch leaves (4)**: ثلاثی مجرد (عَرَفَ) + ثلاثی مزید فیہ (اَعْرَفَ) + رباعی مجرد (دَحْرَجَ) + رباعی مزید فیہ (تَدَحْرَجَ).
 
@@ -573,23 +531,16 @@ flowchart TD
 > - **مجرد vs مزید فیہ ka uniform pattern** — har size par (ثلاثی, رباعی, خماسی) **2-way split**: roots-only (مجرد) vs roots+extras (مزید فیہ). Pattern dono sides par identical, sirf khaas khanji zaayid letters har case ke liye specific hain (ہمزہ + الف / ت / ی / etc.).
 > - **Wazn vs misaal cross-mapping** — har leaf par wazn (structural template) + misaal (PDF-canonical example) jod ke dikhaya. Future Sarf topics mein har leaf apni paradigms develop karega — yeh chart starting point hai.
 
-**Density:** 13 nodes (1 root + 2 main + 10 leaves), 3 color roles (root/main/leaf), no subgraphs — within 16-node topic-overview limit per CLAUDE.md.
-
 **Verbatim discipline checks:**
 - **All Arabic terms PDF-verbatim:**
-  - 10 qism names (ثلاثی مجرد / ثلاثی مزید فیہ / رباعی مجرد / رباعی مزید فیہ / خماسی مجرد / خماسی مزید فیہ across ism; ثلاثی مجرد / ثلاثی مزید فیہ / رباعی مجرد / رباعی مزید فیہ on fi'l) — Slide 37 + Slide 39 verbatim.
-  - 10 waznein (فَعْلٌ / اِفْعَالٌ / فَعْلَلٌ / تَفَعْلُلٌ / فَعْلَلَلٌ / فَعْلَلِیْلٌ for ism; فَعَلَ / اَفْعَلَ / فَعْلَلَ / تَفَعْلَلَ for fi'l) — Slide 37 + 39 verbatim with full harakaat.
-  - 10 misaalein (عَرْفٌ / اِغْرَافٌ / جَعْفَرٌ / تَخَدْرُجٌ / جَحْمَرَشٌ / خَنْدَرِیْسٌ for ism; عَرَفَ / اَعْرَفَ / دَحْرَجَ / تَدَحْرَجَ for fi'l) — Slide 37 + 39 verbatim.
-  - "ششش اقسام" (3 ش letters) — book ki spelling variant preserved per S8 (standard Persian "شش" = 6, book uses ششش consistently across all Sub Topic 1.6 slides + Sub Topic-level branding).
+ - 10 qism names (ثلاثی مجرد / ثلاثی مزید فیہ / رباعی مجرد / رباعی مزید فیہ / خماسی مجرد / خماسی مزید فیہ across ism; ثلاثی مجرد / ثلاثی مزید فیہ / رباعی مجرد / رباعی مزید فیہ on fi'l) — Slide 37 + Slide 39 verbatim.
+ - 10 waznein (فَعْلٌ / اِفْعَالٌ / فَعْلَلٌ / تَفَعْلُلٌ / فَعْلَلَلٌ / فَعْلَلِیْلٌ for ism; فَعَلَ / اَفْعَلَ / فَعْلَلَ / تَفَعْلَلَ for fi'l) — Slide 37 + 39 verbatim with full harakaat.
+ - 10 misaalein (عَرْفٌ / اِغْرَافٌ / جَعْفَرٌ / تَخَدْرُجٌ / جَحْمَرَشٌ / خَنْدَرِیْسٌ for ism; عَرَفَ / اَعْرَفَ / دَحْرَجَ / تَدَحْرَجَ for fi'l) — Slide 37 + 39 verbatim.
+ - "ششش اقسام" (3 ش letters) — book ki spelling variant preserved per S8 (standard Persian "شش" = 6, book uses ششش consistently across all Sub Topic 1.6 slides + Sub Topic-level branding).
 - **Roman Urdu in labels** = minimal chart-structural reading aids ("(6 qismein: 3 size × 2)", "(NO خماسی فعل)") — these are chart-structural disambiguation NOT PDF claims. "(NO خماسی فعل)" reflects Slide 38's structural fact (fi'l mein 4 qismein only, ism mein 6).
 - **Root node label** ("حروف اصلی کے اعتبار سے اسم اور فعل کی اقسام") — derived from Slide 36 compressed header sub-heading. PDF-attested.
 - **NO خَنْدَرِیْسٌ zaayid letter prefix** in chart leaf — keep at wazn + misaal level only; zaayid-letter callout (`[?]` per notes — "ی" / "نی" / "یا" ambiguity Slide 37 PDF callout small/unclear) is forward detail in notes, NOT in chart node label. Rule 4 compliant.
-- **NO 6 ابواب cross-reference** to Sub Topic 1.5 — Sub Topic 1.5 ke 6 canonical ابواب structurally ثلاثی مجرد فعل hain, but builder gloss only (notes mein documented as fenced). Chart 11 stays within Sub Topic 1.6 scope.
-- **"خماسی فعل nahi hota" insight** PDF-attested via Slide 38's 4-row structure (ism Slide 36's 6-row vs fi'l Slide 38's 4-row direct contrast). "NO خماسی فعل" parenthetical in main node label is structural-fact summary, not memory-fill.
-
-**Status:** PDF-VERIFIED 2026-05-30 — Chart 11 added post-Sub-Topic-1.6-MUKAMMAL. 13 nodes derived strictly from Slide 36 + 37 (ism: 6 qismein + waznein + misaalein) + Slide 38 + 39 (fi'l: 4 qismein + waznein + misaalein + asymmetry). Rule 16 milestone sustained: book's primary misaalein preserved verbatim — chart node labels NAHI extend kiye gaye to surface phonetic forms or to forward Sub Topics. **خماسی فعل NAHI hota** structural insight visually delivered via main-node label's "(NO خماسی فعل)" parenthetical.
-
-**Validator dispute notation (Chart 11 Round 1)**: Round 1 validator flagged Slide 39 ثلاثی مجرد فعل misaal possible mismatch (validator "appears to read عَلِمَ/فَعِلَ" vs chart's عَرَفَ/فَعَلَ). **Internal consistency check supports notes.md transcription**: validator independently agreed Slide 39 ثلاثی مزید فیہ misaal = **اَعْرَفَ** (root ع-ر-ف); if ثلاثی مجرد had different root (ع-ل-م), Slide 39 wouldn't have root-family consistency. Notes.md PASS-validated transcription (عَرَفَ/فَعَلَ at ثلاثی مجرد + اَعْرَفَ/اَفْعَلَ at ثلاثی مزید فیہ — same ع-ر-ف root) stands; validator likely confused Slide 38's opening misaal **عَلِمَ/فَعِلَ** (cited in notes structural insight section) with Slide 39's opening. **Nazir physical book ke baad final arbiter** — agar PDF actually عَلِمَ/فَعِلَ dikhata hai, both notes.md + Chart 11 F1 leaf require parallel fix.
+- **NO 6 ابواب cross-reference** to Sub Topic 1.5 — Sub Topic 1.5 ke 6 canonical ابواب structurally ثلاثی مجرد فعل hain, but only (notes mein documented as fenced). Chart 11 stays within Sub Topic 1.6 scope.
 
 Nazir physical book se final-confirm kare per Slide 37 + 39 verbatim discipline checks listed in respective notes Status blocks.
 
@@ -599,58 +550,54 @@ Nazir physical book se final-confirm kare per Slide 37 + 39 verbatim discipline 
 
 **Concept:** **Sub Topic 1.7 ka pura هَفْت اقسام (7 categories) framework ek tasveer mein** — مزاج حروف (letters ki nature: علت / ہمزہ / تضعیف) ke اعتبار se کلمات ki **exhaustive classification**. Har category ka **positional rule** (kis position par kya hai: fa/ع/lam) + **sub-types** (where applicable) + **canonical misaal** ek leaf mein consolidated. Chart **4 distinct sub-typing conventions** ko bhi visually surface karta (حرف علت letter / علت positions adjacency / ہمزہ position / root letter count) — Sub Topic 1.7 ki **architectural richness** ka indicator.
 
-**Source:** Sarf PDF **p-032 Slide 42** (7 canonical category names PDF-attested + master rules: صحیح triple-NO condition + مثال/اجوف/ناقص 3-way "بالترتیب" mnemonic + تضعیف parenthetical definition) + **p-033 Slide 43** (مثال + اجوف tareef + 2 sub-types each + misaalein) + **p-033 Slide 44** (ناقص 2 sub-types + لفیف tareef + 2 sub-types + 3 misaalein + مہموز header) + **p-033 Slide 45** (مہموز 3 sub-types + مضاعف tareef + 2 sub-types + misaalein) + **p-034 Slide 47** (nakshah ne مہموزالعین standalone-ء orthography likely-resolve ki; مضاعف ثلاثی misaal مَدَدَ morphological-root form attest ki). Per Rule 13 — saare cited pages ka content chart ke nodes mein appear karta hai (7 category names + sub-types + canonical misaalein).
-
-**Type:** Topic-overview chart (built AFTER Sub Topic 1.7 MUKAMMAL) — 8 nodes (compressed design with rich main-node labels), within 16-node topic-overview limit per CLAUDE.md. **Yeh chart Sub Topic 1.7 ka complete summary hai + 4 distinct sub-typing conventions visually deliver karta**.
-
 ```mermaid
 flowchart TD
-  Root["Sub Topic 1.7<br/>هَفْت اقسام<br/>(7 categories by مزاج حروف)"]:::root
+ Root["Sub Topic 1.7<br/>هَفْت اقسام<br/>(7 categories by مزاج حروف)"]:::root
 
-  C1["صحیح<br/>(no علت / no ہمزہ / no تضعیف)<br/>misaal: صَبَرَ"]:::leaf
-  C2["مثال<br/>(و/ی at فا کلمہ)<br/>واوی: وَصَلَ • یائی: یَسَرَ"]:::leaf
-  C3["اجوف<br/>(و/ی at عین کلمہ)<br/>واوی: قَوَلَ • یائی: بَیَعَ"]:::leaf
-  C4["ناقص<br/>(و/ی at لام کلمہ)<br/>واوی: دَعَوَ • یائی: رَمَیَ"]:::leaf
-  C5["لفیف<br/>(2 root letters علت — adjacency)<br/>مفروق: وَقَیَ • مقرون: طَوَیَ"]:::leaf
-  C6["مہموز<br/>(ہمزہ at fa/ع/lam position)<br/>الفاء: اَمَرَ • العین: سَءَلَ • اللام: قَرَءَ"]:::leaf
-  C7["مضاعف<br/>(2 root letters same جنس)<br/>ثلاثی: مَدَدَ • رباعی: زَلْزَلَ"]:::leaf
+ C1["صحیح<br/>(no علت / no ہمزہ / no تضعیف)<br/>misaal: صَبَرَ"]:::leaf
+ C2["مثال<br/>(و/ی at فا کلمہ)<br/>واوی: وَصَلَ • یائی: یَسَرَ"]:::leaf
+ C3["اجوف<br/>(و/ی at عین کلمہ)<br/>واوی: قَوَلَ • یائی: بَیَعَ"]:::leaf
+ C4["ناقص<br/>(و/ی at لام کلمہ)<br/>واوی: دَعَوَ • یائی: رَمَیَ"]:::leaf
+ C5["لفیف<br/>(2 root letters علت — adjacency)<br/>مفروق: وَقَیَ • مقرون: طَوَیَ"]:::leaf
+ C6["مہموز<br/>(ہمزہ at fa/ع/lam position)<br/>الفاء: اَمَرَ • العین: سَءَلَ • اللام: قَرَءَ"]:::leaf
+ C7["مضاعف<br/>(2 root letters same جنس)<br/>ثلاثی: مَدَدَ • رباعی: زَلْزَلَ"]:::leaf
 
-  Root --> C1
-  Root --> C2
-  Root --> C3
-  Root --> C4
-  Root --> C5
-  Root --> C6
-  Root --> C7
+ Root --> C1
+ Root --> C2
+ Root --> C3
+ Root --> C4
+ Root --> C5
+ Root --> C6
+ Root --> C7
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
 ```
 
 **Reading guide:**
 - **Root (emerald)** — **هَفْت اقسام Sub Topic-level branding** (Slide 42 paragraph 1: *"اصطلاحاً صرف میں ان کو هَفْت اقسام کہتے ہیں"*). S8 spelling variant "هَفْت" (Arabic-style heh) preserved verbatim. Compact descriptor "(7 categories by مزاج حروف)" reflects Sub Topic 1.7 title.
 - **Leaf (green)** — 7 terminal categories, har leaf mein 3 lines:
-  - **Line 1**: Category name (Arabic, PDF-verbatim).
-  - **Line 2**: Positional rule / structural rule (compact Roman + Arabic mix).
-  - **Line 3**: Sub-types (if any) + canonical fi'l misaal per sub-type.
+ - **Line 1**: Category name (Arabic, PDF-verbatim).
+ - **Line 2**: Positional rule / structural rule (compact Roman + Arabic mix).
+ - **Line 3**: Sub-types (if any) + canonical fi'l misaal per sub-type.
 - **Leaf details (PDF cross-link summary)**:
-  - **صحیح** (Slide 42) — triple-NO condition (na علت / na ہمزہ / na تضعیف), misaal صَبَرَ
-  - **مثال** (Slides 42 + 43) — 2 sub-types: مثال واوی (وَصَلَ) + مثال یائی (یَسَرَ)
-  - **اجوف** (Slides 42 + 43) — 2 sub-types: اجوف واوی (قَوَلَ) + اجوف یائی (بَیَعَ) — morphological-root forms (S10 preservation)
-  - **ناقص** (Slides 42 + 43 + 44) — 2 sub-types: ناقص واوی (دَعَوَ) + ناقص یائی (رَمَیَ)
-  - **لفیف** (Slide 44) — 2 sub-types: مفروق (fa+lam علت separated by sound-ع: وَقَیَ) + مقرون (adjacent علت — book's expanded definition: ع+ل OR fa+ع; canonical sub-case shown: طَوَیَ)
-  - **مہموز** (Slides 44 + 45 + 47) — 3 sub-types (الفاء/العین/اللام): اَمَرَ + سَءَلَ + قَرَءَ; مہموزالعین orthographic kursi-form Slide 47 nakshah ne likely-resolve ki (standalone ء)
-  - **مضاعف** (Slide 45 + 47) — 2 sub-types: ثلاثی (مَدَدَ morphological-root form per nakshah Slide 47) + رباعی (زَلْزَلَ — 4-position structure)
+ - **صحیح** (Slide 42) — triple-NO condition (na علت / na ہمزہ / na تضعیف), misaal صَبَرَ
+ - **مثال** (Slides 42 + 43) — 2 sub-types: مثال واوی (وَصَلَ) + مثال یائی (یَسَرَ)
+ - **اجوف** (Slides 42 + 43) — 2 sub-types: اجوف واوی (قَوَلَ) + اجوف یائی (بَیَعَ) — morphological-root forms (S10 preservation)
+ - **ناقص** (Slides 42 + 43 + 44) — 2 sub-types: ناقص واوی (دَعَوَ) + ناقص یائی (رَمَیَ)
+ - **لفیف** (Slide 44) — 2 sub-types: مفروق (fa+lam علت separated by sound-ع: وَقَیَ) + مقرون (adjacent علت — book's expanded definition: ع+ل OR fa+ع; canonical sub-case shown: طَوَیَ)
+ - **مہموز** (Slides 44 + 45 + 47) — 3 sub-types (الفاء/العین/اللام): اَمَرَ + سَءَلَ + قَرَءَ; مہموزالعین orthographic kursi-form Slide 47 nakshah ne likely-resolve ki (standalone ء)
+ - **مضاعف** (Slide 45 + 47) — 2 sub-types: ثلاثی (مَدَدَ morphological-root form per nakshah Slide 47) + رباعی (زَلْزَلَ — 4-position structure)
 
 **Mohim baat — yeh chart kyun important hai:**
 
 > Sub Topic 1.7 ki **architectural richness** ek tasveer mein. Chart dekh kar 4 cheezein samjho:
 > - **Exhaustive classification** — koi bhi kalimah in 7 mein se ek mein zaroor aata hai (Slide 42 paragraph 1 ka claim). 7 categories ka chart visual exhaustiveness ka anchor hai.
 > - **4 distinct sub-typing conventions** — chart ke leaves padhne se 4 alag-alag conventions surface ho jati hain:
->   - حرف علت letter (و vs ی) → مثال + اجوف + ناقص ki واوی/یائی
->   - علت positions adjacency → لفیف ki مفروق/مقرون
->   - ہمزہ position → مہموز ki الفاء/العین/اللام (3-way split!)
->   - root letter count → مضاعف ki ثلاثی/رباعی
+> - حرف علت letter (و vs ی) → مثال + اجوف + ناقص ki واوی/یائی
+> - علت positions adjacency → لفیف ki مفروق/مقرون
+> - ہمزہ position → مہموز ki الفاء/العین/اللام (3-way split!)
+> - root letter count → مضاعف ki ثلاثی/رباعی
 > - **Practical synthesis convergence** — Sub Topic 1.7 ne Sub Topic 1.2 (حرف علت) + Sub Topic 1.4 (kalimah positions: fa/ع/lam) + Sub Topic 1.6 (ثلاثی/رباعی) ki theory **apply** + **extend** ki (4-position terminology Slide 45 par introduced).
 > - **مہموزالعین orthography** — Slide 47 nakshah ne cell-isolation rendering se book ka standalone ء choice reveal ki (Nazir physical-confirm pending).
 
@@ -658,64 +605,58 @@ flowchart TD
 
 **Verbatim discipline checks:**
 - **All Arabic terms PDF-verbatim:**
-  - 7 category names (صحیح / مثال / اجوف / ناقص / لفیف / مہموز / مضاعف) — Slide 42 verbatim with harakaat (chart preserves base form without harakaat for chart compactness; full harakaat documented in notes).
-  - 14 sub-type names (واوی / یائی × 3 categories; مفروق / مقرون; الفاء / العین / اللام; ثلاثی / رباعی) — Slides 43-45 verbatim.
-  - 9 canonical fi'l misaalein (صَبَرَ / وَصَلَ / یَسَرَ / قَوَلَ / بَیَعَ / دَعَوَ / رَمَیَ / وَقَیَ / طَوَیَ / اَمَرَ / سَءَلَ / قَرَءَ / مَدَدَ / زَلْزَلَ — actually 14 misaalein total) — Slides 42-45 + Slide 47 nakshah verbatim with full harakaat.
-  - "هَفْت اقسام" + "مزاج حروف" — Sub Topic-level branding (S8 spelling variants preserved per book's choices).
-- **Roman Urdu in labels** = minimal chart-structural reading aids ("(no علت / no ہمزہ / no تضعیف)", "(و/ی at فا کلمہ)", "(2 root letters علت — adjacency)", "(ہمزہ at fa/ع/lam position)", "(2 root letters same جنس)") — these are compact positional-rule summaries derived from PDF tareefein, NOT memory-fill claims.
+ - 7 category names (صحیح / مثال / اجوف / ناقص / لفیف / مہموز / مضاعف) — Slide 42 verbatim with harakaat (chart preserves base form without harakaat for chart compactness; full harakaat documented in notes).
+ - 14 sub-type names (واوی / یائی × 3 categories; مفروق / مقرون; الفاء / العین / اللام; ثلاثی / رباعی) — Slides 43-45 verbatim.
+ - 9 canonical fi'l misaalein (صَبَرَ / وَصَلَ / یَسَرَ / قَوَلَ / بَیَعَ / دَعَوَ / رَمَیَ / وَقَیَ / طَوَیَ / اَمَرَ / سَءَلَ / قَرَءَ / مَدَدَ / زَلْزَلَ — actually 14 misaalein total) — Slides 42-45 + Slide 47 nakshah verbatim with full harakaat.
+ - "هَفْت اقسام" + "مزاج حروف" — Sub Topic-level branding (S8 spelling variants preserved per book's choices).
+
 - **Root node label** ("Sub Topic 1.7 / هَفْت اقسام / (7 categories by مزاج حروف)") — derived from Sub Topic 1.7 title bar + Slide 42 paragraph 1 + Slide 42 actual title. PDF-attested.
 - **سَءَلَ standalone ء form** — chart preserves PDF-render form per Slide 47 nakshah cell-isolation evidence (Slide 45 par small-font ambiguous tha; Slide 47 ne likely-resolve kiya). `[?]` STANDALONE flag retained in notes Status sections; chart uses visible form per book ka rendering.
 - **مَدَدَ morphological-root form** — chart uses Slide 47 nakshah form (مَدَدَ, 3-letter fatha-fatha-fatha) instead of Slide 45 ka مَدَّ (shaddad-merge form). Reason: chart-leaf uniformity (sab fi'l morphological-root forms); nakshah form structurally aligns with other 13 misaalein.
-- **NO surface phonetic forms** — قَالَ from قَوَلَ / دَعَا from دَعَوَ / رَمَى from رَمَیَ / سَأَلَ standardized — chart NAHI extend kiya gaya. Rule 16 strict + S10 morphological-root preservation consistent.
+- **NO surface phonetic forms** — قَالَ from قَوَلَ / دَعَا from دَعَوَ / رَمَى from رَمَیَ / سَأَلَ standardized — chart NAHI extend kiya gaya.
 - **NO forward Topic 2.0 specifics** — chart limited to Sub Topic 1.7 scope; no Topic 2.0 framework name plants.
 - **NO classical "9-minus-3" missing pairings enumeration** (Sub Topic 1.5 framework) — out of scope for this chart.
-
-**Status:** PDF-VERIFIED 2026-05-30 — Chart 12 added post-Sub-Topic-1.7-MUKAMMAL. 8 nodes derived strictly from Slides 42 + 43 + 44 + 45 + 47. Rule 16 milestone sustained: 7 canonical category names preserved verbatim from PDF; sub-types verbatim per Slides 43-45; canonical misaalein per Slides 42-45 + 47 nakshah. **4 distinct sub-typing conventions** visually surfaced via leaf label structure. مہموزالعین orthography likely-resolved per Slide 47 (Nazir physical-confirm pending). **0 open `[?]` items for chart** (PDF-attested data only used; Slide 45 ka `[?]` STANDALONE addressed via nakshah resolution). Nazir physical book se final-confirm kare per Slides 42-47 verbatim discipline checks listed in respective notes Status blocks.
 
 ---
 
 ## Chart 13 — Topic 1.0 capstone overview (اصطلاحات MUKAMMAL — structural inference)
 
-**Concept:** **Topic 1.0 (اصطلاحات) ka complete framework ek tasveer mein** — 48 slides (Slides 1-48), 7 Sub Topics (1.1-1.7), classical Sarf ka foundation. Har Sub Topic apna core concept + slide range + key takeaway saath rakhta hai. **Topic 1.0 MUKAMMAL milestone = builder structural inference** (Slide 1 table establishes 7 Sub Topics; Slide 48 = Sub Topic 1.7 khatima exercise bar parallel to prior 6 Sub Topic khatimas → Topic 1.0 likely closure); NOT PDF-explicit on p-034 itself. Slide 49+ par Nazir physical confirm pending.
-
-**Source:** Sarf PDF entire Topic 1.0 span: **p-018 Slide 1** (Topic 1.0 cover + 7-row TOC table establishing Sub Topic structure + starting slide numbers) + **p-018-019 Slides 2-5** (Sub Topic 1.1) + **p-019-022 Slides 6-14** (Sub Topic 1.2) + **p-023-024 Slides 15-20** (Sub Topic 1.3) + **p-025-026 Slides 21-26** (Sub Topic 1.4) + **p-027-029 Slides 27-34** (Sub Topic 1.5) + **p-030-031 Slides 35-40** (Sub Topic 1.6) + **p-032-034 Slides 41-48** (Sub Topic 1.7). Per Rule 13 — saare cited pages ka content chart ke nodes mein appear karta hai (Slide 1 = Sub Topic names + structure; respective Sub Topic ranges = key concepts per leaf).
-
-**Type:** Capstone chart (built AFTER Topic 1.0 MUKAMMAL via structural inference) — 8 nodes, well within 16-node topic-overview limit per CLAUDE.md. **Yeh chart Topic 1.0 ka complete bird's-eye-view hai — 7 Sub Topics ko jod kar Sarf ke foundational framework ka end-to-end map.**
+**Concept:** **Topic 1.0 (اصطلاحات) ka complete framework ek tasveer mein** — 48 slides (Slides 1-48), 7 Sub Topics (1.1-1.7), classical Sarf ka foundation. Har Sub Topic apna core concept + slide range + key takeaway saath rakhta hai. **Topic 1.0 MUKAMMAL milestone =; Slide 48 = Sub Topic 1.7 khatima exercise bar parallel to prior 6 Sub Topic khatimas → Topic 1.0 likely closure); NOT PDF-explicit on p-034 itself. Slide 49+ par Nazir physical confirm pending.
 
 ```mermaid
 flowchart TD
-  Root["Topic 1.0<br/>اصطلاحات<br/>(48 slides, 7 Sub Topics — MUKAMMAL*)"]:::root
+ Root["Topic 1.0<br/>اصطلاحات<br/>(48 slides, 7 Sub Topics — MUKAMMAL*)"]:::root
 
-  S1["Sub Topic 1.1<br/>تعریف، موضوع، غرض، واضع، اہمیت<br/>Slides 2-5: 5 buniyadi cheezein"]:::main
-  S2["Sub Topic 1.2<br/>کلمہ کی تعریف و اقسام<br/>Slides 6-14: ism/fi'l/harf + huroof tahajji"]:::main
-  S3["Sub Topic 1.3<br/>جامد، مصدر، مشتق<br/>Slides 15-20: 1 masdar → 12 mushtaqqaat"]:::main
-  S4["Sub Topic 1.4<br/>حروف اصلی کی پہچان<br/>Slides 21-26: wazn + فا/عین/لام کلمہ terminology"]:::main
-  S5["Sub Topic 1.5<br/>فعل کے چھ ابواب<br/>Slides 27-34: ضَرَبَ + فَتَحَ + نَصَرَ + حَسِبَ + سَمِعَ + شَرُفَ"]:::main
-  S6["Sub Topic 1.6<br/>ششش اقسام<br/>Slides 35-40: ism 6 + fi'l 4 — asymmetry"]:::main
-  S7["Sub Topic 1.7<br/>هَفْت اقسام<br/>Slides 41-48: 7 categories by مزاج حروف"]:::main
+ S1["Sub Topic 1.1<br/>تعریف، موضوع، غرض، واضع، اہمیت<br/>Slides 2-5: 5 buniyadi cheezein"]:::main
+ S2["Sub Topic 1.2<br/>کلمہ کی تعریف و اقسام<br/>Slides 6-14: ism/fi'l/harf + huroof tahajji"]:::main
+ S3["Sub Topic 1.3<br/>جامد، مصدر، مشتق<br/>Slides 15-20: 1 masdar → 12 mushtaqqaat"]:::main
+ S4["Sub Topic 1.4<br/>حروف اصلی کی پہچان<br/>Slides 21-26: wazn + فا/عین/لام کلمہ terminology"]:::main
+ S5["Sub Topic 1.5<br/>فعل کے چھ ابواب<br/>Slides 27-34: ضَرَبَ + فَتَحَ + نَصَرَ + حَسِبَ + سَمِعَ + شَرُفَ"]:::main
+ S6["Sub Topic 1.6<br/>ششش اقسام<br/>Slides 35-40: ism 6 + fi'l 4 — asymmetry"]:::main
+ S7["Sub Topic 1.7<br/>هَفْت اقسام<br/>Slides 41-48: 7 categories by مزاج حروف"]:::main
 
-  Root --> S1
-  Root --> S2
-  Root --> S3
-  Root --> S4
-  Root --> S5
-  Root --> S6
-  Root --> S7
+ Root --> S1
+ Root --> S2
+ Root --> S3
+ Root --> S4
+ Root --> S5
+ Root --> S6
+ Root --> S7
 
-  classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
-  classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
+ classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
+ classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
 ```
 
 **Reading guide:**
 - **Root (emerald)** — **Topic 1.0** branding + 48-slide span + 7 Sub Topics count. **MUKAMMAL\*** marker has asterisk indicating fence (structural inference, NOT PDF-explicit on p-034). See Status block + notes.md Slide 48 milestone block for fence details.
 - **Main (teal)** — 7 Sub Topics:
-  - **Sub Topic 1.1** (Slides 2-5, p-018-019): 5 buniyadi cheezein (tareef + mauzu + gharaz + waadi + ahmiyat) — kisi bhi نیا fan parhne ke pehle 5 sawal answer karne ka classical convention.
-  - **Sub Topic 1.2** (Slides 6-14, p-019-022): کلمہ ki tareef + 3 aqsaam (Ism/Fi'l/Harf) + huroof tahajji (sahih 25 + illat 3 = 28). Foundation classification system.
-  - **Sub Topic 1.3** (Slides 15-20, p-023-024): Ism ki derivational morphology — Jamid (rigid) vs Masdar (verbal noun) vs Mushtaq (derived). Master rule: 1 masdar se 12 mushtaqqaat (6 fi'l + 6 ism).
-  - **Sub Topic 1.4** (Slides 21-26, p-025-026): Wazn extraction system. Mauzun + Meezan + Wazn 3-term framework + فا/عین/لام کلمہ position terminology + حروف اصلی vs زائدہ distinction.
-  - **Sub Topic 1.5** (Slides 27-34, p-027-029): فعل ke 6 canonical ابواب — derivation 3 ماضی waznein × possible مضارع = 9 logical → 6 مستعمل (3+2+1=6). Canonical names: ضَرَبَ / فَتَحَ / نَصَرَ / حَسِبَ / سَمِعَ / شَرُفَ (book's specific choice, NOT کَرُمَ training-default).
-  - **Sub Topic 1.6** (Slides 35-40, p-030-031): حروف اصلی count → ششش اقسام (ism: 3 size × 2 = 6 qismein; fi'l: 2 size × 2 = 4 qismein; NO خماسی فعل asymmetry).
-  - **Sub Topic 1.7** (Slides 41-48, p-032-034): مزاج حروف (letters ki nature) → هَفْت اقسام (7 categories: صحیح + مثال + اجوف + ناقص + لفیف + مہموز + مضاعف). Classical Sarf foundation ka practical synthesis convergence point — Sub Topics 1.2 + 1.4 + 1.6 ki theory apply + extend.
+ - **Sub Topic 1.1** (Slides 2-5, p-018-019): 5 buniyadi cheezein (tareef + mauzu + gharaz + waadi + ahmiyat) — kisi bhi نیا fan parhne ke pehle 5 sawal answer karne ka classical convention.
+ - **Sub Topic 1.2** (Slides 6-14, p-019-022): کلمہ ki tareef + 3 aqsaam (Ism/Fi'l/Harf) + huroof tahajji (sahih 25 + illat 3 = 28). Foundation classification system.
+ - **Sub Topic 1.3** (Slides 15-20, p-023-024): Ism ki derivational morphology — Jamid (rigid) vs Masdar (verbal noun) vs Mushtaq (derived). Master rule: 1 masdar se 12 mushtaqqaat (6 fi'l + 6 ism).
+ - **Sub Topic 1.4** (Slides 21-26, p-025-026): Wazn extraction system. Mauzun + Meezan + Wazn 3-term framework + فا/عین/لام کلمہ position terminology + حروف اصلی vs زائدہ distinction.
+ - **Sub Topic 1.5** (Slides 27-34, p-027-029): فعل ke 6 canonical ابواب — derivation 3 ماضی waznein × possible مضارع = 9 logical → 6 مستعمل (3+2+1=6). Canonical names: ضَرَبَ / فَتَحَ / نَصَرَ / حَسِبَ / سَمِعَ / شَرُفَ (book's specific choice, NOT کَرُمَ training-default).
+ - **Sub Topic 1.6** (Slides 35-40, p-030-031): حروف اصلی count → ششش اقسام (ism: 3 size × 2 = 6 qismein; fi'l: 2 size × 2 = 4 qismein; NO خماسی فعل asymmetry).
+ - **Sub Topic 1.7** (Slides 41-48, p-032-034): مزاج حروف (letters ki nature) → هَفْت اقسام (7 categories: صحیح + مثال + اجوف + ناقص + لفیف + مہموز + مضاعف). Classical Sarf foundation ka practical synthesis convergence point — Sub Topics 1.2 + 1.4 + 1.6 ki theory apply + extend.
 
 **Mohim baat — yeh chart kyun important hai:**
 
@@ -723,36 +664,32 @@ flowchart TD
 > - **Sarf ka foundation framework** — kalimah (1.2) → derivational morphology (1.3) → structural classification (1.4-1.7). Yeh sequence Sarf ke saare advanced topics ka base hai (mzeed feeh paradigms, conjugation systems, sarf-e-saghir/kabeer, etc. — sab is foundation se build hote hain).
 > - **3 sets of N-categorizations** (Sub Topics 1.5 + 1.6 + 1.7): 6 ابواب + ششش اقسام + هَفْت اقسام. Yeh classical Sarf ka standard sequence hai — har book ka different design choice; is kitab ne **شَرُفَ** vs کَرُمَ (canonical 6th باب) + **ششش** vs شش (spelling variant) + **هَفْت** vs ہفت (spelling variant) jaise specific choices kiye.
 > - **Practical synthesis at Sub Topic 1.7** — sirf Sub Topic 1.7 ne preceding Sub Topics ki theory ko **apply** kiya: حرف علت (1.2) + kalimah positions (1.4) + ثلاثی/رباعی (1.6). Yeh "convergence point" pattern Topic 1.0 ka structural design hai.
-> - **Foundation complete** — Topic 1.0 ke baad Topic 2.0 (likely tasreef-related per book overall structure expected, **builder NAHI plant karega specifics** per Rule 16) Topic 1.0 ki foundation par build karega.
 
 **Density:** 8 nodes (1 root + 7 main with 3-line labels), 2 color roles (root/main), no subgraphs — well within 16-node topic-overview limit. **Capstone design**: minimum node count + maximum coverage per node label.
 
 **Verbatim discipline checks:**
 - **Source pattern for leaf line-2 labels** (Sub Topic identity): Each leaf uses the **Sub Topic-level branding label** from the SUB-TOPIC HEADER BAR (consistently displayed across all slides in that Sub Topic) + Sub-Topic cover slide title. **NOT Slide 1 TOC row labels** — Slide 1 TOC small-font row labels are `[?]`-flagged in notes.md (Slide 1 Status block). Sub-Topic-level branding is the more reliably-attested anchor (appears on dozens of slide header bars + cover slides verbatim).
 - **All Arabic terms PDF-verbatim:**
-  - Topic 1.0 = "اصطلاحات" (Slide 1 cover title verbatim, large-font — not `[?]`).
-  - 7 Sub Topic names (header-bar branding sources):
-    - 1.1 "تعریف، موضوع، غرض، واضع، اہمیت" (Slide 2 cover bar + Slide 3 visible 5-word phrase confirmed).
-    - 1.2 "کلمہ کی تعریف و اقسام" (Sub Topic 1.2 cover area Slides 6+; notes.md TOC).
-    - 1.3 "جامد، مصدر، مشتق" (Slide 15 cover verbatim).
-    - 1.4 "حروف اصلی کی پہچان" (notes.md TOC + Slide 23 header content; Slide 1 TOC row uses `[?]`-flagged "وزن کے ذریعے..." prefix that's small-font).
-    - 1.5 "فعل کے چھ ابواب" (Sub Topic 1.5 HEADER BAR consistently across Slides 27-34; notes.md TOC; Slide 30 closing line *"ان کو چھ باب کہتے ہیں"*).
-    - 1.6 "ششش اقسام" (Sub Topic 1.6 HEADER BAR consistently across Slides 35-40; Slide 36 transition formally introduces).
-    - 1.7 "هَفْت اقسام" (Sub Topic 1.7 HEADER BAR consistently across Slides 41-48; Slide 42 paragraph 1 formally introduces).
-  - 6 canonical ابواب names (ضَرَبَ + فَتَحَ + نَصَرَ + حَسِبَ + سَمِعَ + شَرُفَ): Slide 31 verbatim, Slide 31 numbering authoritative per S15.
-  - 7 هَفْت categories (صحیح + مثال + اجوف + ناقص + لفیف + مہموز + مضاعف): Slide 42 verbatim.
-- **Roman Urdu in labels** = minimal chart-structural reading aids ("48 slides, 7 Sub Topics", "Slides 2-5: 5 buniyadi cheezein", "ism 6 + fi'l 4 — asymmetry", "7 categories by مزاج حروف") — these are slide-range + key-takeaway summaries, NOT memory-fill claims.
-- **Root node MUKAMMAL\* asterisk** — explicit fence marker pointing to Status block clarification: Topic 1.0 MUKAMMAL is builder structural inference (Slide 1 table establishes 7 Sub Topics; Sub Topic 1.7 is last per Slide 1; Slide 48 = standard Sub Topic khatima pattern → likely Topic-closure). **NOT PDF-explicit on p-034**. Nazir physical Slide 49+ confirm pending.
-- **NO Topic 2.0 specifics** — chart limited to Topic 1.0 scope; "Topic 2.0 likely follows" mentioned only in commentary, not as a node. Rule 16 strict.
+ - Topic 1.0 = "اصطلاحات" (Slide 1 cover title verbatim, large-font — not `[?]`).
+ - 7 Sub Topic names (header-bar branding sources):
+ - 1.1 "تعریف، موضوع، غرض، واضع، اہمیت" (Slide 2 cover bar + Slide 3 visible 5-word phrase confirmed).
+ - 1.2 "کلمہ کی تعریف و اقسام" (Sub Topic 1.2 cover area Slides 6+; notes.md TOC).
+ - 1.3 "جامد، مصدر، مشتق" (Slide 15 cover verbatim).
+ - 1.4 "حروف اصلی کی پہچان" (notes.md TOC + Slide 23 header content; Slide 1 TOC row uses `[?]`-flagged "وزن کے ذریعے..." prefix that's small-font).
+ - 1.5 "فعل کے چھ ابواب" (Sub Topic 1.5 HEADER BAR consistently across Slides 27-34; notes.md TOC; Slide 30 closing line *"ان کو چھ باب کہتے ہیں"*).
+ - 1.6 "ششش اقسام" (Sub Topic 1.6 HEADER BAR consistently across Slides 35-40; Slide 36 transition formally introduces).
+ - 1.7 "هَفْت اقسام" (Sub Topic 1.7 HEADER BAR consistently across Slides 41-48; Slide 42 paragraph 1 formally introduces).
+
+ - 7 هَفْت categories (صحیح + مثال + اجوف + ناقص + لفیف + مہموز + مضاعف): Slide 42 verbatim.
+
+- **Root node MUKAMMAL\* asterisk** — explicit fence marker pointing to Status block clarification: Topic 1.0 MUKAMMAL is; Sub Topic 1.7 is last per Slide 1; Slide 48 = standard Sub Topic khatima pattern → likely Topic-closure). **NOT PDF-explicit on p-034**. Nazir physical Slide 49+ confirm pending.
+- **NO Topic 2.0 specifics** — chart limited to Topic 1.0 scope; "Topic 2.0 likely follows" mentioned only in commentary, not as a node.
 - **NO surface phonetic forms / forward conjugation paradigms** — chart preserves morphological-root teaching method consistent with Sub Topics 1.5 + 1.7 discipline.
 
-**Status:** PDF-VERIFIED 2026-05-30 — Chart 13 capstone added post-Topic-1.0-MUKAMMAL-structural-inference. **⚠ Fence**: Topic 1.0 MUKAMMAL marker (asterisk in root node label + "MUKAMMAL\*" notation) reflects **builder structural inference** based on:
 - Slide 1 (p-018) ki TOC table = 7 Sub Topics formally listed
 - Sub Topic 1.7 = last per Slide 1 table position
 - Slide 48 = Sub Topic 1.7 khatima exercise bar (parallel to Slides 5/14/20/26/34/40 prior Sub Topic exercise bars — standard pattern)
 - → Sub Topic 1.7 khatime ke saath Topic 1.0 likely closure
-
-**PDF p-034 itself does NOT contain explicit "Topic 1.0 MUKAMMAL" announcement**. Slide 49+ par dikh sakta hai kya book ne explicit Topic-level closure summary slide banayi (book ka choice) ya direct Topic 2.0 cover hai. **Nazir physical book par final-confirm pending**. Chart node count: 8 (1 root + 7 main), 2 color roles, no subgraphs, well within 16-node topic-overview limit per CLAUDE.md.
 
 **Cross-link to Charts 1-12 + nakshah Slides 46-47**:
 - Chart 1 (Slide 7 — Kalimah 3 aqsaam) → Sub Topic 1.2 leaf
@@ -769,7 +706,7 @@ flowchart TD
 
 Nazir physical book se final-confirm kare:
 - **(a)** Slide 49+ par Topic-level explicit closure announcement ya direct Topic 2.0 cover slide
-- **(b)** Topic 2.0 ka aaghaaz par builder NAHI plant karega koi specific content (Rule 16 strict)
+- **(b)** Topic 2.0 ka aaghaaz par koi specific content 
 
 ---
 
