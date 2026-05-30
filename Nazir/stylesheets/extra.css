@@ -214,6 +214,102 @@
   box-shadow: 0 6px 16px rgba(6, 78, 59, 0.12);
 }
 
+/* ---- Mermaid chart labels: force colors + font (Material CSS leakage fix) ---- */
+.mermaid {
+  background: transparent;
+  margin: 1.5em 0;
+  padding: 1em;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Reset Material's color inheritance on Mermaid label HTML */
+.mermaid foreignObject,
+.mermaid foreignObject div,
+.mermaid foreignObject span,
+.mermaid .nodeLabel,
+.mermaid .nodeLabel p,
+.mermaid .label,
+.mermaid .edgeLabel,
+.mermaid .edgeLabel p {
+  font-family: 'Noori Nastaliq', 'Jameel Noori Nastaleeq', 'Alvi Nastaliq', 'Noto Nastaliq Urdu', 'Inter', sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+}
+
+/* Per-node-class explicit text colors — override Material's color leakage */
+.mermaid g.node.root foreignObject div,
+.mermaid g.node.root .nodeLabel,
+.mermaid g.node.root .nodeLabel p,
+.mermaid .node.root foreignObject div,
+.mermaid .node.root .nodeLabel,
+.mermaid .node.root .nodeLabel p {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.mermaid g.node.main foreignObject div,
+.mermaid g.node.main .nodeLabel,
+.mermaid g.node.main .nodeLabel p,
+.mermaid .node.main foreignObject div,
+.mermaid .node.main .nodeLabel,
+.mermaid .node.main .nodeLabel p {
+  color: #0c4a6e !important;
+  font-weight: 600 !important;
+}
+
+.mermaid g.node.sub foreignObject div,
+.mermaid g.node.sub .nodeLabel,
+.mermaid g.node.sub .nodeLabel p,
+.mermaid .node.sub foreignObject div,
+.mermaid .node.sub .nodeLabel,
+.mermaid .node.sub .nodeLabel p {
+  color: #7c2d12 !important;
+  font-weight: 600 !important;
+}
+
+.mermaid g.node.leaf foreignObject div,
+.mermaid g.node.leaf .nodeLabel,
+.mermaid g.node.leaf .nodeLabel p,
+.mermaid .node.leaf foreignObject div,
+.mermaid .node.leaf .nodeLabel,
+.mermaid .node.leaf .nodeLabel p {
+  color: #14532d !important;
+  font-weight: 600 !important;
+}
+
+.mermaid g.node.ex foreignObject div,
+.mermaid g.node.ex .nodeLabel,
+.mermaid g.node.ex .nodeLabel p,
+.mermaid .node.ex foreignObject div,
+.mermaid .node.ex .nodeLabel,
+.mermaid .node.ex .nodeLabel p {
+  color: #881337 !important;
+  font-weight: 600 !important;
+}
+
+/* Edge labels (arrows between nodes) */
+.mermaid .edgeLabel foreignObject div,
+.mermaid .edgeLabel .label {
+  color: #1f2421 !important;
+  background: rgba(253, 251, 245, 0.85) !important;
+  padding: 0.15em 0.4em !important;
+  border-radius: 3px !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .edgeLabel foreignObject div,
+[data-md-color-scheme="slate"] .mermaid .edgeLabel .label {
+  color: #e8e3d5 !important;
+  background: rgba(20, 24, 26, 0.85) !important;
+}
+
+/* Edge arrow lines */
+.mermaid .edgePath .path,
+.mermaid .flowchart-link {
+  stroke: #b45309 !important;
+  stroke-width: 1.5px !important;
+}
+
 /* ---- Print ---- */
 @media print {
   .md-header, .md-tabs, .md-sidebar, .md-footer { display: none !important; }
