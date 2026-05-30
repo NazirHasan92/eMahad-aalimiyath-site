@@ -1,0 +1,172 @@
+site_name: Nazir's eMahad Notes
+site_description: Page-by-page Aalim-course notes (Nahw + Sarf) built from PDF source-of-truth.
+site_url: https://nazirhasan92.github.io/eMahad-aalimiyath/
+repo_url: https://github.com/NazirHasan92/eMahad-aalimiyath
+repo_name: NazirHasan92/eMahad-aalimiyath
+edit_uri: edit/main/Nazir/
+
+docs_dir: Nazir
+site_dir: site
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/NazirHasan92/eMahad-aalimiyath
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Anchor link to this section
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search:
+      lang:
+        - en
+  - mermaid2:
+      version: 10.9.1
+
+hooks:
+  - hooks.py
+
+exclude_docs: |
+  CLAUDE.md
+  progress.md
+  daily-drill.md
+  session-start.md
+  Nahw/BUILD-PROMPT.md
+  Nahw/LEARN-PROMPT.md
+  Nahw/notes.md
+  Arabic/
+  Fiqh/
+  _memory/
+  _handoff/
+  _research/
+  _planning/
+  _archive/
+  _validation-reports/
+  .claude/
+  Nahw/_planning/
+  Nahw/_archive/
+  Sarf/_planning/
+  Sarf/_archive/
+  Sarf/_validation-reports/
+  Sarf/.pages/
+  Nahw/.pages/
+  *.pdf
+  *.ps1
+  *.png
+
+nav:
+  - Home: index.md
+  - Nahw (نحو):
+      - Overview: Nahw/index.md
+      - Bab 1 (Kalimah aur Kalam):
+          - Bab 1 — overview: Nahw/bab-1/README.md
+          - Fasl 1 (KHATAM):
+              - Fasl 1 — overview: Nahw/bab-1/fasl-1/README.md
+              - Section 1 (p-06): Nahw/bab-1/fasl-1/section-01.md
+              - Section 2 (p-07): Nahw/bab-1/fasl-1/section-02.md
+              - Section 3 (p-08): Nahw/bab-1/fasl-1/section-03.md
+              - Section 4 (p-09): Nahw/bab-1/fasl-1/section-04.md
+              - Section 5 (p-10): Nahw/bab-1/fasl-1/section-05.md
+              - Section 6 (p-11): Nahw/bab-1/fasl-1/section-06.md
+          - Fasl 2 (MUKAMMAL):
+              - Fasl 2 — overview: Nahw/bab-1/fasl-2/README.md
+              - Section 7 (p-12): Nahw/bab-1/fasl-2/section-07.md
+              - Section 8 (p-13): Nahw/bab-1/fasl-2/section-08.md
+          - Fasl 3 (MUKAMMAL):
+              - Fasl 3 — overview: Nahw/bab-1/fasl-3/README.md
+              - Section 9 (p-14): Nahw/bab-1/fasl-3/section-09.md
+              - Section 10 (p-15): Nahw/bab-1/fasl-3/section-10.md
+          - Fasl 4 (migrated):
+              - Fasl 4 — overview: Nahw/bab-1/fasl-4/README.md
+              - Section 11 (p-16): Nahw/bab-1/fasl-4/section-11.md
+              - Section 12 (p-17): Nahw/bab-1/fasl-4/section-12.md
+          - Fasl 5 (MUKAMMAL):
+              - Fasl 5 — overview: Nahw/bab-1/fasl-5/README.md
+              - Section 13 (p-18): Nahw/bab-1/fasl-5/section-13.md
+              - Section 14 (p-19): Nahw/bab-1/fasl-5/section-14.md
+              - Section 15 (p-20): Nahw/bab-1/fasl-5/section-15.md
+              - Section 16 (p-21): Nahw/bab-1/fasl-5/section-16.md
+              - Section 17 (p-22): Nahw/bab-1/fasl-5/section-17.md
+              - Section 18 (p-23): Nahw/bab-1/fasl-5/section-18.md
+              - Section 19 (p-24): Nahw/bab-1/fasl-5/section-19.md
+              - Section 20 (p-25): Nahw/bab-1/fasl-5/section-20.md
+          - Fasl 6 (IN-PROGRESS):
+              - Fasl 6 — overview: Nahw/bab-1/fasl-6/README.md
+              - Section 21 (p-26): Nahw/bab-1/fasl-6/section-21.md
+      - Charts: Nahw/charts.md
+      - I'rab tables: Nahw/irab-tables.md
+  - Sarf (صرف):
+      - Overview: Sarf/index.md
+      - Notes (page-by-page): Sarf/notes.md
+      - Topic 1 (Sarf ka taaruf):
+          - Topic 1 — overview: Sarf/topic-1/README.md
+          - Sub Topic 1.6: Sarf/topic-1/sub-topic-1.6.md
+          - Sub Topic 1.7 (MUKAMMAL): Sarf/topic-1/sub-topic-1.7.md
+      - Charts: Sarf/charts.md
+      - Gardaan tables: Sarf/gardaan-tables.md

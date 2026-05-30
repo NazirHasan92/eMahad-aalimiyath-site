@@ -1,0 +1,14 @@
+# Python venv for MkDocs Material site build
+.venv/
+__pycache__/
+*.pyc
+
+# MkDocs build output
+site/
+
+# macOS junk
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

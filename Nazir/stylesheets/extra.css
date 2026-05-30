@@ -1,0 +1,70 @@
+/* Arabic / Urdu typography for Nazir's eMahad Notes — overlays MkDocs Material defaults */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Amiri:wght@400;700&display=swap');
+
+/* Apply Arabic-aware font stack to all text — Latin glyphs fall back to Material's default,
+   Arabic Unicode range U+0600-06FF (and supplements) is rendered by Noto Nastaliq Urdu /
+   Amiri, with size adjusted so Arabic looks visually balanced next to Latin text. */
+@font-face {
+  font-family: 'NastaliqArabic';
+  src: local('Noori Nastaliq'), local('Jameel Noori Nastaleeq'), local('Alvi Nastaleeq'),
+       local('Faiz Lahori Nastaleeq'), local('Noto Nastaliq Urdu'),
+       local('Scheherazade New'), local('Amiri');
+  unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+  size-adjust: 130%;
+  font-display: swap;
+}
+
+/* Stack Arabic font ahead of Material's default text font so Arabic glyphs route to
+   Noto Nastaliq Urdu while Latin glyphs continue using the Material text font. */
+:root {
+  --md-text-font-family: 'NastaliqArabic', Inter, system-ui, -apple-system, BlinkMacSystemFont,
+                         'Segoe UI', Roboto, sans-serif;
+  --md-code-font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, monospace;
+}
+
+/* Improve line-height for Arabic-heavy prose without breaking Latin text */
+.md-typeset {
+  line-height: 1.85;
+}
+
+/* Larger Arabic blockquote text — the book's main quotes are dense */
+.md-typeset blockquote {
+  font-size: 1.02em;
+  line-height: 1.95;
+  border-left: 4px solid var(--md-primary-fg-color);
+  background: rgba(0, 150, 136, 0.04);
+  padding: 0.8em 1.2em;
+}
+
+/* Tables with Arabic content need more padding + vertical-align top */
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: 0.7em 0.95em;
+  line-height: 1.85;
+  vertical-align: top;
+}
+
+/* Lang attribute support — explicit RTL for elements marked as Arabic/Urdu */
+[lang="ar"], [lang="ur"] {
+  direction: rtl;
+  text-align: right;
+  font-family: 'NastaliqArabic', serif;
+}
+
+/* Mermaid diagrams centered + with margin breathing room */
+.mermaid {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+/* H1 / H2 colors — match the project's emerald scheme without fighting Material's primary */
+.md-typeset h1 {
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+}
+
+/* Status marker call-outs (Status: PRE-BUILD / PDF-VERIFIED / VERIFIED) — make them pop */
+.md-typeset strong {
+  color: var(--md-default-fg-color);
+}
