@@ -13,7 +13,7 @@
  * Palette: deep emerald + warm gold + ivory
  * ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Amiri+Quran&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500;600;700&family=Amiri+Quran&family=Inter:wght@400;500;600;700&display=swap');
 
 /* ---- Palette ---- */
 [data-md-color-scheme="default"] {
@@ -54,9 +54,10 @@
   --md-code-font-family: 'JetBrains Mono', Consolas, monospace !important;
 }
 
-/* ---- Base typography: substantially larger body so Nastaliq is legible ---- */
+/* ---- Base typography: larger + heavier (medium 500) so Nastaliq is legible ---- */
 .md-typeset {
   font-size: 1.3rem;
+  font-weight: 500;
   line-height: 2.05;
 }
 
@@ -91,12 +92,13 @@
   font-size: 1.05em;
 }
 
-/* ---- RTL Arabic/Urdu blocks — extra size + line-height for Nastaliq ---- */
+/* ---- RTL Arabic/Urdu blocks — extra size + line-height + medium weight for Nastaliq ---- */
 [lang="ar"], [lang="ur"], .arabic, .urdu {
   direction: rtl;
   text-align: right;
   line-height: 2.4;
   font-size: 1.1em;
+  font-weight: 500;
 }
 
 /* ---- Blockquotes (base) ---- */
