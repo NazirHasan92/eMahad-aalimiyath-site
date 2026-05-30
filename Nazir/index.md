@@ -1,39 +1,101 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Nazir's eMahad Notes
 
-Page-by-page notes for the **8-year Aalim course** at eMahad, built directly from the source PDFs of each subject's book. Notes are written using a strict **PDF-truthfulness** discipline — Arabic quoted verbatim with harakaat, no memory-fill, explicit `[?]` markers where source is unclear.
+<p style="font-size: 1.15em; line-height: 1.85; color: var(--md-default-fg-color--light); margin-top: -0.5em;">
+Page-by-page notes for the <strong>8-year Aalim course</strong> at eMahad — built directly from the source PDFs of each book, with strict PDF-truthfulness discipline (Arabic quoted verbatim with harakaat, no memory-fill, explicit <code>[?]</code> markers where the source is unclear).
+</p>
 
-> **Status:** Pre-build / live-affirmation hybrid. Most Sections are at `PRE-BUILD` — content matches PDF (validator PASS) but Nazir's physical-book verification is still pending. Sections progress: PRE-BUILD → PDF-VERIFIED → VERIFIED.
+<div class="grid cards" markdown>
 
----
+-   :material-script-text-outline:{ .lg .middle } &nbsp; **Nahw (نحو)**
 
-## Subjects
+    ---
 
-| Subject | Book | Entry point | Progress |
-|---|---|---|---|
-| **Nahw** (نحو) | *Ilm-un-Nahw al-Bushra* | [Nahw home](Nahw/index.md) | Bab 1 Fasl 1-5 MUKAMMAL, Fasl 6 IN-PROGRESS (Section 21 latest) |
-| **Sarf** (صرف) | *Muallim u Sarf* | [Sarf notes](Sarf/notes.md) | Sub Topic 1.7 MUKAMMAL — Topic 1.0 structurally complete (Slides 1-48) |
+    *Ilm-un-Nahw al-Bushra* — Arabic grammar.
 
-Arabic and Fiqh subjects begin in later years of the course.
+    **Bab 1 (Kalimah aur Kalam):** Fasl 1–5 MUKAMMAL · Fasl 6 IN-PROGRESS. **Section 21** is the latest page-built (PDF p-26 / Fasl 6 ka aaghaaz: اسم منسوب).
 
----
+    [:octicons-arrow-right-24: Enter Nahw](Nahw/index.md){ .md-button .md-button--primary }
+
+-   :material-format-letter-case:{ .lg .middle } &nbsp; **Sarf (صرف)**
+
+    ---
+
+    *Muallim u Sarf* — Arabic morphology.
+
+    **Topic 1.0** structurally complete (Slides 1–48, 7 Sub Topics). **Sub Topic 1.7 MUKAMMAL** (p-032 → p-034) — comprehensive 14-row nakshah; **Sub Topic 2.1** in progress.
+
+    [:octicons-arrow-right-24: Enter Sarf](Sarf/index.md){ .md-button .md-button--primary }
+
+</div>
 
 ## Cross-cutting references
 
-| Resource | Subject | What it holds |
-|---|---|---|
-| [Nahw charts](Nahw/charts.md) | Nahw | Mermaid concept charts (taxonomy trees, classification grids) |
-| [Nahw i'rab tables](Nahw/irab-tables.md) | Nahw | Paradigm tables (Mudmaraat, Mausoolah, Ishara, etc.) |
-| [Sarf charts](Sarf/charts.md) | Sarf | Mermaid concept charts for Sarf taxonomy |
-| [Sarf gardaan tables](Sarf/gardaan-tables.md) | Sarf | 14-form paradigm tables (Muzaari', Maazi, Amr, etc.) |
+<div class="grid cards" markdown>
+
+-   :material-chart-tree:{ .lg .middle } &nbsp; **Nahw concept charts**
+
+    ---
+
+    13 Mermaid diagrams covering Lafz taxonomy, Jumla classification, Ism Ghair Mutamakkin tree, and more.
+
+    [:octicons-arrow-right-24: Open](Nahw/charts.md)
+
+-   :material-table-large:{ .lg .middle } &nbsp; **Nahw i'rab tables**
+
+    ---
+
+    6 paradigm tables (Mudmaraat 14-form set, Mausoolah, Ishara, etc.) with harakaat-perfect transcription.
+
+    [:octicons-arrow-right-24: Open](Nahw/irab-tables.md)
+
+-   :material-chart-arc:{ .lg .middle } &nbsp; **Sarf concept charts**
+
+    ---
+
+    11 Mermaid diagrams: morphology taxonomy, 6-baab system, 14-sigha wheels.
+
+    [:octicons-arrow-right-24: Open](Sarf/charts.md)
+
+-   :material-table-multiple:{ .lg .middle } &nbsp; **Sarf gardaan tables**
+
+    ---
+
+    14-form paradigm tables (Muzaari', Maazi, Amr, Nahi, etc.) — every harakah from the source.
+
+    [:octicons-arrow-right-24: Open](Sarf/gardaan-tables.md)
+
+</div>
 
 ---
 
-## About the project
+## How these notes are built
 
-- **Source-of-truth discipline:** every line in the notes traces to a specific PDF page. Builder reads the PDF page at letter-perfect resolution, narrates what's visible, then writes. Anything not visible on the PDF is either marked `[?]` or omitted. No AI-generated Arabic grammar from training data.
-- **Validator-checked:** a second AI pass (the `nahw-validator` / `sarf-validator` agents) re-reads each Section against the PDF independently and flags any drift before the section is committed.
-- **Status levels:**
-    - `PRE-BUILD (YYYY-MM-DD)` — builder wrote from PDF Read tool render
+<div class="grid" markdown>
+
+!!! info "Source-of-truth discipline"
+    Every line in the notes traces to a specific PDF page. The builder reads the PDF page at letter-perfect resolution, narrates what's visible, then writes. Anything not visible on the PDF is either marked `[?]` or omitted. **No AI-generated Arabic grammar from training data.**
+
+!!! check "Validator-checked"
+    A second AI pass (the `nahw-validator` / `sarf-validator` agents) re-reads each Section against the PDF independently and flags any drift before the section is committed. Memory-fill is the cardinal sin — caught at this layer.
+
+!!! example "Status levels"
+    - `PRE-BUILD (YYYY-MM-DD)` — builder wrote from PDF render
     - `PDF-VERIFIED (YYYY-MM-DD)` — validator agent confirmed full PDF match
-    - `VERIFIED (YYYY-MM-DD)` — Nazir verified against physical printed book
-- **Repo:** [github.com/NazirHasan92/eMahad-aalimiyath](https://github.com/NazirHasan92/eMahad-aalimiyath)
+    - `VERIFIED (YYYY-MM-DD)` — Nazir verified against the physical printed book
+
+!!! abstract "Companion site"
+    Ramsha's notes (Arabic Madinah Book 1 · Fiqh Nur al-Idah · Hadeeth Zad ut-Taalibeen) at [ramsha-aalimiyath site](https://nazirhasan92.github.io/ramsha-aalimiyath/).
+
+</div>
+
+---
+
+<p style="text-align: center; opacity: 0.7; font-size: 0.9em;">
+Built page-by-page, one PDF page per teaching session. Source repository: <a href="https://github.com/NazirHasan92/eMahad-aalimiyath-site">github.com/NazirHasan92/eMahad-aalimiyath-site</a>.
+</p>

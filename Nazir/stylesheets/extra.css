@@ -1,70 +1,349 @@
-/* Arabic / Urdu typography for Nazir's eMahad Notes — overlays MkDocs Material defaults */
+/* ============================================================
+ * Nazir's eMahad Notes — typography + theme overlay
+ * Classical Islamic-studies aesthetic: deep emerald + warm gold + ivory.
+ * Optimized for Arabic/Urdu Nastaliq + Latin mixed content.
+ * ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Amiri:wght@400;700&display=swap');
+/* -- Web fonts: reliable cross-platform Arabic/Urdu rendering -------- */
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Amiri:wght@400;700&family=Amiri+Quran&family=Reem+Kufi:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap');
 
-/* Apply Arabic-aware font stack to all text — Latin glyphs fall back to Material's default,
-   Arabic Unicode range U+0600-06FF (and supplements) is rendered by Noto Nastaliq Urdu /
-   Amiri, with size adjusted so Arabic looks visually balanced next to Latin text. */
+/* Arabic/Urdu font stack — Unicode-range routes Arabic glyphs to Gulzar
+   (best Urdu Nastaliq web font) with Amiri as fallback. Adjusted size
+   so Nastaliq feels balanced next to Latin. */
 @font-face {
-  font-family: 'NastaliqArabic';
-  src: local('Noori Nastaliq'), local('Jameel Noori Nastaleeq'), local('Alvi Nastaleeq'),
-       local('Faiz Lahori Nastaleeq'), local('Noto Nastaliq Urdu'),
-       local('Scheherazade New'), local('Amiri');
-  unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
-  size-adjust: 130%;
+  font-family: 'ArabicStack';
+  src: local('Gulzar'), local('Noto Nastaliq Urdu'), local('Amiri'),
+       local('Scheherazade New');
+  unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
+  size-adjust: 145%;
   font-display: swap;
 }
 
-/* Stack Arabic font ahead of Material's default text font so Arabic glyphs route to
-   Noto Nastaliq Urdu while Latin glyphs continue using the Material text font. */
+/* Quran-specific font with tashkeel-optimized rendering */
+@font-face {
+  font-family: 'QuranicStack';
+  src: local('Amiri Quran'), local('Amiri');
+  unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+  size-adjust: 135%;
+  font-display: swap;
+}
+
+/* ============================================================
+ * Color palette — deep emerald + warm gold + ivory
+ * Override Material's CSS variables for the chosen aesthetic.
+ * ============================================================ */
+
+/* Light mode */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #064e3b;          /* deep emerald */
+  --md-primary-fg-color--light: #047857;
+  --md-primary-fg-color--dark: #022c1f;
+  --md-primary-bg-color: #fffbeb;          /* warm ivory text on header */
+  --md-primary-bg-color--light: #fef6dd;
+  --md-accent-fg-color: #b45309;           /* warm gold/amber */
+  --md-accent-fg-color--transparent: rgba(180, 83, 9, 0.1);
+  --md-accent-bg-color: #fffbeb;
+  --md-default-bg-color: #fdfbf5;          /* ivory background */
+  --md-default-fg-color: #1f2421;          /* deep ink */
+  --md-default-fg-color--light: #2f3a35;
+  --md-typeset-a-color: #047857;           /* link color matches primary */
+  --md-code-bg-color: #f3ede1;             /* warm code bg */
+  --md-code-fg-color: #7c2d12;             /* burgundy code text */
+}
+
+/* Dark mode — deep charcoal background + amber accents tuned for tashkeel readability */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #047857;          /* lighter emerald for dark bg */
+  --md-primary-bg-color: #f5efde;
+  --md-accent-fg-color: #fbbf24;           /* bright amber for dark mode */
+  --md-accent-fg-color--transparent: rgba(251, 191, 36, 0.12);
+  --md-default-bg-color: #14181a;          /* deep ink-charcoal */
+  --md-default-fg-color: #e8e3d5;          /* warm white — easier on eyes than pure white */
+  --md-default-fg-color--light: #d4cfc1;
+  --md-typeset-a-color: #6ee7b7;           /* mint link */
+  --md-code-bg-color: #1f2425;
+  --md-code-fg-color: #fbbf24;
+}
+
+/* ============================================================
+ * Base typography — Latin uses Inter, headings use Reem Kufi (modern Arabic+Latin hybrid)
+ * ============================================================ */
 :root {
-  --md-text-font-family: 'NastaliqArabic', Inter, system-ui, -apple-system, BlinkMacSystemFont,
-                         'Segoe UI', Roboto, sans-serif;
-  --md-code-font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, monospace;
+  --md-text-font-family: 'ArabicStack', 'Inter', system-ui, -apple-system,
+                         BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --md-code-font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code',
+                         Consolas, monospace;
 }
 
-/* Improve line-height for Arabic-heavy prose without breaking Latin text */
 .md-typeset {
-  line-height: 1.85;
+  font-size: 1.02rem;
+  line-height: 1.9;
+  letter-spacing: 0;
 }
 
-/* Larger Arabic blockquote text — the book's main quotes are dense */
-.md-typeset blockquote {
-  font-size: 1.02em;
-  line-height: 1.95;
-  border-left: 4px solid var(--md-primary-fg-color);
-  background: rgba(0, 150, 136, 0.04);
-  padding: 0.8em 1.2em;
+/* Headings — Reem Kufi for the modern-classical hybrid feel */
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4 {
+  font-family: 'Reem Kufi', 'Inter', system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.005em;
 }
 
-/* Tables with Arabic content need more padding + vertical-align top */
-.md-typeset table:not([class]) th,
-.md-typeset table:not([class]) td {
-  padding: 0.7em 0.95em;
-  line-height: 1.85;
-  vertical-align: top;
-}
-
-/* Lang attribute support — explicit RTL for elements marked as Arabic/Urdu */
-[lang="ar"], [lang="ur"] {
-  direction: rtl;
-  text-align: right;
-  font-family: 'NastaliqArabic', serif;
-}
-
-/* Mermaid diagrams centered + with margin breathing room */
-.mermaid {
-  text-align: center;
-  margin: 1.5em 0;
-}
-
-/* H1 / H2 colors — match the project's emerald scheme without fighting Material's primary */
 .md-typeset h1 {
   color: var(--md-primary-fg-color);
   font-weight: 700;
+  font-size: 2.1em;
+  margin-top: 0.4em;
+  padding-bottom: 0.4em;
+  border-bottom: 3px solid var(--md-primary-fg-color);
 }
 
-/* Status marker call-outs (Status: PRE-BUILD / PDF-VERIFIED / VERIFIED) — make them pop */
-.md-typeset strong {
+.md-typeset h2 {
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+  font-size: 1.55em;
+  margin-top: 1.8em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid var(--md-default-fg-color--light);
+}
+
+.md-typeset h3 {
+  color: var(--md-accent-fg-color);
+  font-weight: 600;
+  font-size: 1.25em;
+  margin-top: 1.5em;
+}
+
+.md-typeset h4 {
+  color: var(--md-accent-fg-color);
+  font-weight: 500;
+  font-size: 1.08em;
+}
+
+/* Paragraph + list spacing */
+.md-typeset p, .md-typeset li {
+  line-height: 1.95;
+  margin: 0.8em 0;
+}
+
+/* ============================================================
+ * RTL handling for Arabic/Urdu blocks
+ * ============================================================ */
+[lang="ar"], [lang="ur"], .arabic, .urdu {
+  direction: rtl;
+  text-align: right;
+  font-family: 'ArabicStack', serif;
+  line-height: 2.2;
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+
+/* Inline Arabic words within Latin paragraphs — keep readable */
+.md-typeset strong:lang(ar),
+.md-typeset strong:lang(ur),
+.md-typeset em:lang(ar),
+.md-typeset em:lang(ur) {
+  font-family: 'ArabicStack', serif;
+  font-size: 1.08em;
+  font-weight: inherit;
+}
+
+/* ============================================================
+ * Blockquotes — base + Quran/Hadith special treatments
+ * ============================================================ */
+.md-typeset blockquote {
+  font-size: 1.05em;
+  line-height: 2.05;
+  border-left: 4px solid var(--md-accent-fg-color);
+  background: var(--md-accent-fg-color--transparent);
+  padding: 0.95em 1.4em;
+  margin: 1.3em 0;
+  border-radius: 0 6px 6px 0;
   color: var(--md-default-fg-color);
+}
+
+.md-typeset blockquote p {
+  margin: 0.5em 0;
+}
+
+/* Quran verse block — sacred styling, decorative borders, centered */
+.md-typeset blockquote.quran,
+.md-typeset blockquote[lang="ar"] {
+  font-family: 'QuranicStack', 'ArabicStack', serif;
+  font-size: 1.45em;
+  line-height: 2.4;
+  text-align: center;
+  direction: rtl;
+  padding: 1.6em 2em;
+  margin: 2em auto;
+  max-width: 92%;
+  background: linear-gradient(180deg,
+    rgba(180, 83, 9, 0.04) 0%,
+    rgba(180, 83, 9, 0.08) 50%,
+    rgba(180, 83, 9, 0.04) 100%);
+  border-left: none;
+  border-top: 3px double var(--md-accent-fg-color);
+  border-bottom: 3px double var(--md-accent-fg-color);
+  border-radius: 0;
+  position: relative;
+}
+
+/* Decorative ornament before/after Quran blocks */
+.md-typeset blockquote.quran::before,
+.md-typeset blockquote.quran::after {
+  content: "❋";
+  display: block;
+  font-size: 0.6em;
+  color: var(--md-accent-fg-color);
+  opacity: 0.65;
+  text-align: center;
+  margin: 0.3em 0;
+}
+
+/* ============================================================
+ * Tables — Arabic-friendly cells, deeper rhythm
+ * ============================================================ */
+.md-typeset table:not([class]) {
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-family: 'Reem Kufi', 'Inter', sans-serif;
+  font-weight: 600;
+  padding: 0.85em 1.05em;
+  text-align: left;
+  border: none;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.8em 1.05em;
+  line-height: 1.9;
+  vertical-align: top;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) td {
+  background: rgba(180, 83, 9, 0.03);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) td {
+  background: rgba(251, 191, 36, 0.04);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+  border-top-color: rgba(255, 255, 255, 0.06);
+}
+
+/* ============================================================
+ * Code blocks — burgundy on warm cream (light) / amber on charcoal (dark)
+ * ============================================================ */
+.md-typeset code {
+  font-size: 0.9em;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  background: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+}
+
+.md-typeset pre {
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* ============================================================
+ * Admonitions — Material's "info/note/warning" boxes
+ * Subtle border-left in accent color
+ * ============================================================ */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 6px;
+  border-left-width: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+/* ============================================================
+ * Navigation — refined sidebar + header
+ * ============================================================ */
+.md-tabs__link {
+  font-family: 'Reem Kufi', 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+}
+
+.md-nav__link {
+  font-size: 0.92rem;
+}
+
+.md-nav__title {
+  font-family: 'Reem Kufi', 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+/* ============================================================
+ * Mermaid diagrams — center + breathing room + theme-matched
+ * ============================================================ */
+.mermaid {
+  text-align: center;
+  margin: 2em 0;
+  padding: 1em;
+  background: rgba(6, 78, 59, 0.02);
+  border-radius: 8px;
+}
+
+[data-md-color-scheme="slate"] .mermaid {
+  background: rgba(110, 231, 183, 0.04);
+}
+
+/* ============================================================
+ * Hero / landing page — grid cards from Material's pymdownx
+ * ============================================================ */
+.md-typeset .grid.cards > ol > li,
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+  border-radius: 8px;
+  border-left: 4px solid var(--md-primary-fg-color);
+  background: var(--md-default-bg-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.md-typeset .grid.cards > ol > li:hover,
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(6, 78, 59, 0.12);
+}
+
+.md-typeset .grid.cards > ol > li > p:first-child,
+.md-typeset .grid.cards > ul > li > p:first-child {
+  font-family: 'Reem Kufi', 'Inter', sans-serif;
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+  font-size: 1.15em;
+  margin-top: 0;
+}
+
+/* ============================================================
+ * Footer + utility
+ * ============================================================ */
+.md-footer-meta {
+  background: var(--md-primary-fg-color--dark);
+}
+
+/* Smoother search */
+.md-search__input {
+  font-family: 'ArabicStack', 'Inter', sans-serif;
+}
+
+/* Print: hide nav, emphasize content */
+@media print {
+  .md-header, .md-tabs, .md-sidebar, .md-footer { display: none !important; }
+  .md-content { margin: 0 !important; max-width: 100% !important; }
 }
