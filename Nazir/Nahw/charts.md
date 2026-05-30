@@ -23,50 +23,79 @@
  pre { background: #f7f7f7; padding: 1em 1.2em; border-radius: 6px; border: 1px solid #eee; }
 </style>
 
-# Nahw — Concept Charts (Mermaid)
+# Nahw — Concept Charts
 
 > **One chart = one concept. Built during teaching when a concept genuinely needs visual representation.**
 >
 
-> - Beginner charts: max 6-8 nodes, 2-3 color roles, NO subgraphs
-> - Topic-overview charts (built AFTER all sub-concepts taught): max 16 nodes, one level of subgraph max
+> - Beginner charts: max 6-8 nodes, 2-3 color roles
+> - Topic-overview charts (built AFTER all sub-concepts taught): max 16 nodes
 > - **Never use comprehensive overview chart to OPEN a topic for a beginner**
-> - **I'rab tables → `irab-tables.md`, NOT here.** Mermaid is for trees, processes, dependency parses, concept maps.
+> - **I'rab tables → `irab-tables.md`, NOT here.** Charts are for trees, taxonomies, concept maps.
 
 ---
 
-## Standard `classDef` palette (paste into every chart)
+## Chart system: HTML/CSS card hierarchy + Markmap for dense overviews
 
-> Niche sample tree palette aur shapes demo karta hai:
+Charts use a custom **HTML/CSS card-hierarchy** component (defined in `stylesheets/extra.css`). For dense review charts with many nodes (Insha'iya 10-qismein, Mudmaraat 84-form taxonomy) we use **Markmap** — an interactive markdown-to-mindmap library that supports zoom, pan, and click-to-collapse.
 
-```mermaid
-flowchart TD
- R["Root<br/>topic node"]:::root
- M["Main<br/>concept"]:::main
- S["Sub<br/>rule/detail"]:::sub
- L["Leaf<br/>terminal"]:::leaf
- E["Example<br/>misaal"]:::ex
+### 5-role palette (never deviate)
 
- R --> M
- R --> E
- M --> S
- M --> L
+| Class | Role | Color |
+|-------|------|-------|
+| `ct-root` | Topic / root node | Deep emerald gradient, white text |
+| `ct-main` | Main concept (3-4 per chart) | Teal pastel |
+| `ct-sub` | Rule / detail / cross-reference | Amber pastel |
+| `ct-leaf` | Terminal leaf | Green pastel |
+| `ct-ex` | Example | Rose pastel |
 
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
- classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
+### Pattern (HTML in markdown via `md_in_html`)
+
+```html
+<div class="concept-tree" markdown="0">
+  <div class="ct-source">Source: PDF p-NN</div>
+  <div class="ct-branch">
+    <div class="ct-node ct-root">
+      <div class="ct-ar">کلمہ</div>
+      <div class="ct-gloss">Kalimah · akela bamaani lafz</div>
+    </div>
+    <div class="ct-children">
+      <div class="ct-branch">
+        <div class="ct-node ct-main">
+          <div class="ct-ar">اسم</div>
+          <div class="ct-gloss">Ism · noun</div>
+        </div>
+        <div class="ct-children">
+          <div class="ct-node ct-leaf">
+            <div class="ct-ar">جامد</div>
+            <div class="ct-gloss">Jamid</div>
+          </div>
+        </div>
+      </div>
+      <!-- more sibling branches ... -->
+    </div>
+  </div>
+</div>
 ```
 
-Apne charts mein sirf wahi `classDef` lines paste karein jo zaroori hain.
+### Pattern (Markmap — for dense overviews)
 
-Semantics (never deviate):
-- **root** = topic node
-- **main** = main concept
-- **sub** = rule / detail
-- **leaf** = terminal leaf
-- **ex** = example
+```html
+<div class="markmap">
+  <script type="text/template">
+---
+markmap:
+  colorFreezeLevel: 2
+  initialExpandLevel: -1
+---
+
+# Root heading
+## Sub heading
+- bullet item
+- bullet item
+  </script>
+</div>
+```
 
 ---
 
@@ -101,28 +130,72 @@ Semantics (never deviate):
 - **Amber** (sub) = rule / cross-reference
 - **Green** (leaf) = terminal qismein
 
-```mermaid
-flowchart TD
- K["کلمہ (Kalimah)<br/>= مفرد<br/>akela bamaani lafz"]:::root
-
- K --> I["اِسم (Ism)<br/>akela samjha jaye<br/>+ zamana NAHI"]:::main
- K --> F["فِعل (Fi'l)<br/>akela samjha jaye<br/>+ zamana HAI"]:::main
- K --> H["حَرف (Harf)<br/>akela bematlab<br/>(jodne wala)"]:::main
-
- I --> J["جَامِد (Jamid)<br/>na bana, na bante"]:::leaf
- I --> M["مَصدر (Masdar)<br/>source (na bana,<br/>bohot bante)"]:::leaf
- I --> S["مُشتَق (Mushtaq)<br/>Masdar se bana"]:::leaf
-
- F --> FQ["4 qismein:<br/>Maazi / Muzaari /<br/>Amr / Nahi<br/>→ tareefein Sarf mein"]:::sub
-
- H --> HA["عَامِل (Amil)"]:::leaf
- H --> HG["غَیر عَامِل<br/>(Ghair Amil)"]:::leaf
-
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-```
+<div class="concept-tree" markdown="0">
+<div class="ct-source">Source: PDF p-06 + p-07 · Mufrad branch</div>
+<div class="ct-branch">
+  <div class="ct-node ct-root">
+    <div class="ct-ar">کلمہ</div>
+    <div class="ct-roman">Kalimah</div>
+    <div class="ct-gloss">= مفرد · akela bamaani lafz</div>
+  </div>
+  <div class="ct-children">
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">اِسم</div>
+        <div class="ct-roman">Ism</div>
+        <div class="ct-gloss">akela samjha jaye + zamana NAHI</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">جَامِد</div>
+          <div class="ct-roman">Jamid</div>
+          <div class="ct-gloss">na bana, na bante</div>
+        </div>
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">مَصدر</div>
+          <div class="ct-roman">Masdar</div>
+          <div class="ct-gloss">source · bohot bante</div>
+        </div>
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">مُشتَق</div>
+          <div class="ct-roman">Mushtaq</div>
+          <div class="ct-gloss">Masdar se bana</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">فِعل</div>
+        <div class="ct-roman">Fi'l</div>
+        <div class="ct-gloss">akela samjha jaye + zamana HAI</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-sub">
+          <div class="ct-roman">4 qismein → Sarf</div>
+          <div class="ct-gloss">Maazi · Muzaari · Amr · Nahi</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">حَرف</div>
+        <div class="ct-roman">Harf</div>
+        <div class="ct-gloss">akela bematlab · jodne wala</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">عَامِل</div>
+          <div class="ct-roman">Amil</div>
+        </div>
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">غَیر عَامِل</div>
+          <div class="ct-roman">Ghair Amil</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 **Kaise istemaal karein:**
 - Chart kholo → kisi bhi node par dekho → us ki tareef yaad karo (notes.md mein dekhna minus points)
@@ -143,24 +216,53 @@ flowchart TD
 
 **Concept:** Chart 1 ke "above" wala context — Kalimah aur Jumla kahaan se aate hain. Yeh **Fasl 1 ka master overview** hai. Leaf nodes (Chart 1, 3, 4, 5) ki taraf reference karte hain.
 
-```mermaid
-flowchart TD
- L["لَفظ (Lafz)<br/>jo awaaz<br/>muh se nikle"]:::root
-
- L --> MZ["مَوضُوع (Mauzu')<br/>bamaani lafz"]:::main
- L --> MH["مُہْمَل (Muhmal)<br/>bematlab — Nahw<br/>se khaarij"]:::leaf
-
- MZ --> MF["مُفرَد = کَلِمَہ<br/>(akela bamaani)<br/>→ Chart 1"]:::sub
- MZ --> MR["مُرَکَّب<br/>(2+ kalimon ka jod)"]:::main
-
- MR --> MU["مُفِید = جُملہ = کَلَام<br/>→ Chart 3 (Khabariya)<br/>→ Chart 4 (Insha'iya)"]:::sub
- MR --> GM["غَیر مُفِید<br/>→ Chart 5"]:::sub
-
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-```
+<div class="concept-tree" markdown="0">
+<div class="ct-source">Source: PDF p-06 + p-07 · Fasl 1 master overview</div>
+<div class="ct-branch">
+  <div class="ct-node ct-root">
+    <div class="ct-ar">لَفظ</div>
+    <div class="ct-roman">Lafz</div>
+    <div class="ct-gloss">jo awaaz muh se nikle</div>
+  </div>
+  <div class="ct-children">
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">مَوضُوع</div>
+        <div class="ct-roman">Mauzu'</div>
+        <div class="ct-gloss">bamaani lafz</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">مُفرَد = کَلِمَہ</div>
+          <div class="ct-gloss">akela bamaani · → Chart 1</div>
+        </div>
+        <div class="ct-branch">
+          <div class="ct-node ct-main">
+            <div class="ct-ar">مُرَکَّب</div>
+            <div class="ct-roman">Murakkab</div>
+            <div class="ct-gloss">2+ kalimon ka jod</div>
+          </div>
+          <div class="ct-children">
+            <div class="ct-node ct-sub">
+              <div class="ct-ar">مُفِید = جُملہ = کَلَام</div>
+              <div class="ct-gloss">→ Chart 3 (Khabariya)<br/>→ Chart 4 (Insha'iya)</div>
+            </div>
+            <div class="ct-node ct-sub">
+              <div class="ct-ar">غَیر مُفِید</div>
+              <div class="ct-gloss">→ Chart 5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-node ct-leaf">
+      <div class="ct-ar">مُہْمَل</div>
+      <div class="ct-roman">Muhmal</div>
+      <div class="ct-gloss">bematlab · Nahw se khaarij</div>
+    </div>
+  </div>
+</div>
+</div>
 
 **Density check:** 7 nodes, 4 classDefs, no subgraphs. ✅
 
@@ -174,26 +276,57 @@ flowchart TD
 
 **Concept:** Jumla Khabariya ke 2 qismein aur har qism ke 2 ajzaa kya naam rakhte hain. Examples included.
 
-```mermaid
-flowchart TD
- K["جُملہ خَبَرِیَّہ<br/>(sach/jhoot keh sakein)"]:::root
-
- K --> I["جُملہ اِسمِیَّہ<br/>(pehla hissa Ism;<br/>doosra Ism ya Fi'l)"]:::main
- K --> F["جُملہ فِعلِیَّہ<br/>(pehla Fi'l + Fa'il)"]:::main
-
- I --> IM["مُبتَدا (Mubtada)<br/>= Musnad Ilayh<br/>pehla hissa"]:::leaf
- I --> IK["خَبَر (Khabar)<br/>= Musnad<br/>doosra hissa"]:::leaf
- I --> IE["misaal:<br/>زَیْدٌ عَالِمٌ<br/>زَیْدٌ عَلِمَ"]:::ex
-
- F --> FF["فِعل (Fi'l)<br/>= Musnad<br/>pehla hissa"]:::leaf
- F --> FA["فَاعِل (Fa'il)<br/>= Musnad Ilayh<br/>doosra hissa"]:::leaf
- F --> FE["misaal:<br/>عَلِمَ زَیْدٌ<br/>سَمِعَ بَکْرٌ"]:::ex
-
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
- classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
-```
+<div class="concept-tree" markdown="0">
+<div class="ct-source">Source: PDF p-08</div>
+<div class="ct-branch">
+  <div class="ct-node ct-root">
+    <div class="ct-ar">جُملہ خَبَرِیَّہ</div>
+    <div class="ct-gloss">sach / jhoot keh sakein</div>
+  </div>
+  <div class="ct-children">
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">جُملہ اِسمِیَّہ</div>
+        <div class="ct-gloss">pehla hissa Ism; doosra Ism ya Fi'l</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">مُبتَدا</div>
+          <div class="ct-gloss">= Musnad Ilayh · pehla hissa</div>
+        </div>
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">خَبَر</div>
+          <div class="ct-gloss">= Musnad · doosra hissa</div>
+        </div>
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">زَیْدٌ عَالِمٌ<br/>زَیْدٌ عَلِمَ</div>
+          <div class="ct-gloss">misaal</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">جُملہ فِعلِیَّہ</div>
+        <div class="ct-gloss">pehla Fi'l + Fa'il</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">فِعل</div>
+          <div class="ct-gloss">= Musnad · pehla hissa</div>
+        </div>
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">فَاعِل</div>
+          <div class="ct-gloss">= Musnad Ilayh · doosra hissa</div>
+        </div>
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">عَلِمَ زَیْدٌ<br/>سَمِعَ بَکْرٌ</div>
+          <div class="ct-gloss">misaal</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 **Density check:** 9 nodes, 4 classDefs, no subgraphs. ✅
 
@@ -209,24 +342,58 @@ flowchart TD
 
 **Concept:** Insha'iya ki 10 sub-qismein, har ek ka ek-line description + Arabic example. **Yeh chart ka density limit (16) ke qareeb hai — review chart, beginner-open chart NAHI.**
 
-```mermaid
-flowchart TD
- IN["جُملہ اِنشَائِیَّہ<br/>(sach/jhoot na keh sakein)"]:::root
+<div class="markmap">
+<script type="text/template">
+---
+markmap:
+  colorFreezeLevel: 2
+  initialExpandLevel: 2
+  maxWidth: 280
+---
 
- IN --> Q1["اَمر (Amr)<br/>hukm<br/>اِضْرِبْ"]:::leaf
- IN --> Q2["نَہی (Nahi)<br/>mana<br/>لَا تَضْرِبْ"]:::leaf
- IN --> Q3["اِستِفہَام (Istefham)<br/>sawal<br/>هَلْ ضَرَبَ زَیْدٌ؟"]:::leaf
- IN --> Q4["تَمَنِّی (Tamanni)<br/>kaash<br/>لَیْتَ زَیْدًا حَاضِرٌ"]:::leaf
- IN --> Q5["تَرَجِّی (Tarajji)<br/>ummeed<br/>لَعَلَّ عَمْرًوا غَائِبٌ"]:::leaf
- IN --> Q6["عُقُود (Uqood)<br/>muamla<br/>بِعْتُ وَاشْتَرَیْتُ"]:::leaf
- IN --> Q7["نِدَا (Nida)<br/>pukar<br/>يَا اَللهُ"]:::leaf
- IN --> Q8["عَرض (Arz)<br/>narmi se<br/>اَلَا تَأْتِيْنِيْ<br/>فَأُعْطِیْكَ دِیْنَارًا"]:::leaf
- IN --> Q9["قَسَم (Qasam)<br/>qasam<br/>وَاللهِ لَأَضْرِبَنَّ زَیْدًا"]:::leaf
- IN --> Q10["تَعَجُّب (Ta'ajjub)<br/>hairat<br/>مَا اَحْسَنَهٗ"]:::leaf
+# جُملہ اِنشَائِیَّہ
 
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-```
+## اَمر (Amr)
+- hukm
+- اِضْرِبْ
+
+## نَہی (Nahi)
+- mana
+- لَا تَضْرِبْ
+
+## اِستِفہَام (Istefham)
+- sawal
+- هَلْ ضَرَبَ زَیْدٌ؟
+
+## تَمَنِّی (Tamanni)
+- kaash
+- لَیْتَ زَیْدًا حَاضِرٌ
+
+## تَرَجِّی (Tarajji)
+- ummeed
+- لَعَلَّ عَمْرًوا غَائِبٌ
+
+## عُقُود (Uqood)
+- muamla
+- بِعْتُ وَاشْتَرَیْتُ
+
+## نِدَا (Nida)
+- pukar
+- يَا اَللهُ
+
+## عَرض (Arz)
+- narmi se
+- اَلَا تَأْتِيْنِيْ فَأُعْطِیْكَ دِیْنَارًا
+
+## قَسَم (Qasam)
+- qasam
+- وَاللهِ لَأَضْرِبَنَّ زَیْدًا
+
+## تَعَجُّب (Ta'ajjub)
+- hairat
+- مَا اَحْسَنَهٗ
+</script>
+</div>
 
 **Density check:** 11 nodes, 2 classDefs, no subgraphs. ✅
 
@@ -247,26 +414,56 @@ flowchart TD
 
 **Concept:** Ghair Mufid ki 3 sub-qismein ka distinguishing features ke saath comparison.
 
-```mermaid
-flowchart TD
- GM["مُرَکَّب غَیر مُفِید<br/>(khabar/talab nahi)"]:::root
-
- GM --> ID["مُرَکَّب اِضافی<br/>(nisbat ek ism ki<br/>doosre ki taraf)"]:::main
- GM --> BI["مُرَکَّب بِنائی<br/>(2 ism ek;<br/>donon par fatha)"]:::main
- GM --> MS["مُرَکَّب مَنَع صَرف<br/>(2 ism ek;<br/>sirf pehla maftooh)"]:::main
-
- ID --> IDR["مُضاف +<br/>مُضاف الیہ"]:::sub
- ID --> IDE["misaal:<br/>غُلَامُ زَیْدٍ"]:::ex
-
- BI --> BIE["misaal: اَحَدَ عَشَرَ<br/>(asal: اَحَدٌ وَعَشَرٌ)<br/>exception: اِثْنَا عَشَرَ"]:::ex
-
- MS --> MSE["misaal: بَعْلَبَكُّ<br/>(shehar — بَعْل+بَكٌّ)"]:::ex
-
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
- classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
-```
+<div class="concept-tree" markdown="0">
+<div class="ct-source">Source: PDF p-10 + p-11</div>
+<div class="ct-branch">
+  <div class="ct-node ct-root">
+    <div class="ct-ar">مُرَکَّب غَیر مُفِید</div>
+    <div class="ct-gloss">khabar / talab nahi</div>
+  </div>
+  <div class="ct-children">
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">مُرَکَّب اِضافی</div>
+        <div class="ct-gloss">nisbat ek ism ki doosre ki taraf</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">مُضاف + مُضاف الیہ</div>
+        </div>
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">غُلَامُ زَیْدٍ</div>
+          <div class="ct-gloss">misaal</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">مُرَکَّب بِنائی</div>
+        <div class="ct-gloss">2 ism ek · donon par fatha</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">اَحَدَ عَشَرَ</div>
+          <div class="ct-gloss">asal: اَحَدٌ وَعَشَرٌ<br/>exception: اِثْنَا عَشَرَ</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">مُرَکَّب مَنَع صَرف</div>
+        <div class="ct-gloss">2 ism ek · sirf pehla maftooh</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">بَعْلَبَكُّ</div>
+          <div class="ct-gloss">shehar · بَعْل+بَكٌّ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 **Density check:** 8 nodes, 4 classDefs, no subgraphs. ✅
 
@@ -294,28 +491,58 @@ flowchart TD
 - **Amber** (sub) = key insight (mahall-e-i'rab)
 - **Pink** (ex) = book ke 6 misaal jumlay
 
-```mermaid
-flowchart TD
- R["آخری حرف کی تبدیلی?<br/>(Mu'arrab vs Mabni)"]:::root
-
- R --> MU["مُعرَب<br/>akhri harakah BADALTI<br/>misaal: زَیْد"]:::main
- R --> MA["مَبنی<br/>akhri harakah YAKSAAN<br/>misaal: هٰذَا"]:::main
-
- MU --> Z1["جَاءَ زَیْدٌ<br/>(د par ضمہ)"]:::ex
- MU --> Z2["رَأَیْتُ زَیْدًا<br/>(د par فتحہ)"]:::ex
- MU --> Z3["مَرَرْتُ بِزَیْدٍ<br/>(د par کسرہ)"]:::ex
-
- MA --> H1["جَاءَ هٰذَا"]:::ex
- MA --> H2["رَأَیْتُ هٰذَا"]:::ex
- MA --> H3["مَرَرْتُ بِهٰذَا"]:::ex
-
- MU --> MUI["محل اعراب = 'د'<br/>(same letter, alag harakah)"]:::sub
-
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
- classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
-```
+<div class="concept-tree" markdown="0">
+<div class="ct-source">Source: PDF p-16 · Section 11 pivot example</div>
+<div class="ct-branch">
+  <div class="ct-node ct-root">
+    <div class="ct-ar">آخری حرف کی تبدیلی?</div>
+    <div class="ct-gloss">Mu'arrab vs Mabni</div>
+  </div>
+  <div class="ct-children">
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">مُعرَب</div>
+        <div class="ct-gloss">akhri harakah BADALTI · misaal: زَیْد</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">جَاءَ زَیْدٌ</div>
+          <div class="ct-gloss">د par ضمہ</div>
+        </div>
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">رَأَیْتُ زَیْدًا</div>
+          <div class="ct-gloss">د par فتحہ</div>
+        </div>
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">مَرَرْتُ بِزَیْدٍ</div>
+          <div class="ct-gloss">د par کسرہ</div>
+        </div>
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">محل اعراب = 'د'</div>
+          <div class="ct-gloss">same letter, alag harakah</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">مَبنی</div>
+        <div class="ct-gloss">akhri harakah YAKSAAN · misaal: هٰذَا</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">جَاءَ هٰذَا</div>
+        </div>
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">رَأَیْتُ هٰذَا</div>
+        </div>
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">مَرَرْتُ بِهٰذَا</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 **Kaise istemaal karein:**
 - Mu'arrab side dekho — 3 misaal jumlon mein **akhri harakah** par focus (ٌ → ً → ٍ).
@@ -343,34 +570,59 @@ Yeh **identification toolkit** chart hai — koi Arabic lafz dekho, in 11 mein s
 - **Teal** (main) = 4 thematic groups
 - **Green** (leaf) = 11 alamat with PDF misaalein
 
-```mermaid
-flowchart TD
- I["اِسم — pehchaan ke<br/>11 alamat (PDF p-14)"]:::root
+<div class="markmap">
+<script type="text/template">
+---
+markmap:
+  colorFreezeLevel: 2
+  initialExpandLevel: 2
+  maxWidth: 280
+---
 
- I --> G1["Group 1: Word-edge markers"]:::main
- I --> G2["Group 2: Syntactic role markers"]:::main
- I --> G3["Group 3: Morphological forms<br/>(Sarf forward-refs)"]:::main
- I --> G4["Group 4: Quality + femininity markers"]:::main
+# اِسم — 11 alamat (p-14)
 
- G1 --> A1["1. الف لام shuru mein<br/>misaal: اَلْحَمْدُ"]:::leaf
- G1 --> A2["2. حرفِ جر shuru mein<br/>misaal: بِزَیْدِ"]:::leaf
- G1 --> A3["3. تنوین aakhir mein<br/>misaal: زَیْدٌ"]:::leaf
+## Group 1: Word-edge markers
 
- G2 --> A4["4. مسند الیہ ho<br/>misaal: زَیْدٌ قَائِمٌ"]:::leaf
- G2 --> A5["5. مضاف ho<br/>misaal: غُلَامُ زَیْدٍ"]:::leaf
+### 1. الف لام shuru mein
+- misaal: اَلْحَمْدُ
 
- G3 --> A6["6. مُصَغَّر<br/>misaal: قُرَیْشٌ، رُجَیْلٌ"]:::leaf
- G3 --> A7["7. منسوب<br/>misaal: بَغْدَادِيٌّ، هِنْدِيٌّ"]:::leaf
- G3 --> A8["8. تثنیہ<br/>misaal: رَجُلَانِ"]:::leaf
- G3 --> A9["9. جمع<br/>misaal: رِجَالٌ"]:::leaf
+### 2. حرفِ جر shuru mein
+- misaal: بِزَیْدِ
 
- G4 --> A10["10. موصوف ho<br/>misaal: رَجُلٌ کَرِیْمٌ"]:::leaf
- G4 --> A11["11. تائے متحرک aakhir mein<br/>misaal: ضَارِبَۃٌ"]:::leaf
+### 3. تنوین aakhir mein
+- misaal: زَیْدٌ
 
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-```
+## Group 2: Syntactic role markers
+
+### 4. مسند الیہ ho
+- misaal: زَیْدٌ قَائِمٌ
+
+### 5. مضاف ho
+- misaal: غُلَامُ زَیْدٍ
+
+## Group 3: Morphological forms (Sarf forward-refs)
+
+### 6. مُصَغَّر
+- misaal: قُرَیْشٌ، رُجَیْلٌ
+
+### 7. منسوب
+- misaal: بَغْدَادِيٌّ، هِنْدِيٌّ
+
+### 8. تثنیہ
+- misaal: رَجُلَانِ
+
+### 9. جمع
+- misaal: رِجَالٌ
+
+## Group 4: Quality + femininity markers
+
+### 10. موصوف ho
+- misaal: رَجُلٌ کَرِیْمٌ
+
+### 11. تائے متحرک aakhir mein
+- misaal: ضَارِبَۃٌ
+</script>
+</div>
 
 **Density check:** 16 nodes (limit: 16 for topic-overview ✅), 3 classDefs, no subgraphs ✅.
 
@@ -393,29 +645,53 @@ flowchart TD
 
 Yeh **topic-overview** chart hai — built after sub-concepts taught.
 
-```mermaid
-flowchart TD
- J["جُملہ (Fasl 2 ki<br/>2 taqseemein)"]:::root
+<div class="markmap">
+<script type="text/template">
+---
+markmap:
+  colorFreezeLevel: 2
+  initialExpandLevel: 2
+  maxWidth: 280
+---
 
- J --> Z["بااعتبارِ ذات<br/>4 qismein = 'اصل جملہ'"]:::main
- J --> S["بااعتبارِ صفت<br/>6 qismein"]:::main
+# جُملہ (Fasl 2 ki 2 taqseemein)
 
- Z --> Z1["اسمیہ<br/>misaal: زَیْدٌ قَائِمٌ"]:::leaf
- Z --> Z2["فعلیہ<br/>misaal: قَامَ زَیْدٌ"]:::leaf
- Z --> Z3["شرطیہ<br/>misaal: اِنْ تُکْرِمْنِيْ أُکْرِمْكَ"]:::leaf
- Z --> Z4["ظرفیہ<br/>misaal: عِنْدِيْ مَالٌ"]:::leaf
+## بااعتبارِ ذات — 4 qismein = "اصل جملہ"
 
- S --> S1["مبینہ<br/>pehlay jumlay ko wazeh kare"]:::leaf
- S --> S2["معللہ<br/>علت bayan kare"]:::leaf
- S --> S3["معترضہ<br/>do jumlon ke darmiyaan interject"]:::leaf
- S --> S4["مستانفہ<br/>(= جملہ ابتدائیہ)<br/>naya kalam shuru kare"]:::leaf
- S --> S5["حالیہ<br/>حال واقع ho"]:::leaf
- S --> S6["معطوفہ<br/>عطف se juda jumla"]:::leaf
+### اسمیہ
+- misaal: زَیْدٌ قَائِمٌ
 
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-```
+### فعلیہ
+- misaal: قَامَ زَیْدٌ
+
+### شرطیہ
+- misaal: اِنْ تُکْرِمْنِيْ أُکْرِمْكَ
+
+### ظرفیہ
+- misaal: عِنْدِيْ مَالٌ
+
+## بااعتبارِ صفت — 6 qismein
+
+### مبینہ
+- pehlay jumlay ko wazeh kare
+
+### معللہ
+- علت bayan kare
+
+### معترضہ
+- do jumlon ke darmiyaan interject
+
+### مستانفہ
+- = جملہ ابتدائیہ
+- naya kalam shuru kare
+
+### حالیہ
+- حال واقع ho
+
+### معطوفہ
+- عطف se juda jumla
+</script>
+</div>
 
 **Density check:** 13 nodes (limit: 16 ✅), 3 classDefs ✅, no subgraphs ✅.
 
@@ -431,33 +707,52 @@ flowchart TD
 - **Fi'l side**: 8 positive alamat (particle-prefix + structural + sigha-based)
 - **Harf side**: 1 negative criterion + 3 link-type examples (Ism-Ism / Ism-Fi'l / Fi'l-Fi'l)
 
-```mermaid
-flowchart TD
- R["Fi'l aur Harf ki<br/>alamat (PDF p-15)"]:::root
+<div class="markmap">
+<script type="text/template">
+---
+markmap:
+  colorFreezeLevel: 2
+  initialExpandLevel: 2
+  maxWidth: 280
+---
 
- R --> F["فِعل — 8 positive alamat"]:::main
- R --> H["حرف — 1 negative criterion<br/>(Ism/Fi'l ki alamat na ho)"]:::main
+# Fi'l aur Harf ki alamat (p-15)
 
- F --> F1["1. قَدْ shuru mein<br/>misaal: قَدْ ضَرَبَ"]:::leaf
- F --> F2["2. سَ shuru mein<br/>misaal: سَیَضْرِبُ"]:::leaf
- F --> F3["3. سَوْفَ shuru mein<br/>misaal: سَوْفَ یَضْرِبُ"]:::leaf
- F --> F4["4. حرفِ جزم daakhil<br/>misaal: لَمْ یَضْرِبْ"]:::leaf
- F --> F5["5. ضمیر متصل ho<br/>misaal: ضَرَبْتُ"]:::leaf
- F --> F6["6. تائے ساکن aakhir<br/>misaal: ضَرَبَتْ"]:::leaf
- F --> F7["7. اَمر<br/>misaal: اِضْرِبْ"]:::leaf
- F --> F8["8. نہی<br/>misaal: لَا تَضْرِبْ"]:::leaf
+## فِعل — 8 positive alamat
 
- H --> HK["Harf = محض ربط<br/>(mere linking)"]:::sub
- HK --> L1["Ism⟷Ism<br/>زَیْدٌ فِي الدَّارِ"]:::ex
- HK --> L2["Ism⟷Fi'l<br/>کَتَبْتُ بِالْقَلَمِ"]:::ex
- HK --> L3["Fi'l⟷Fi'l<br/>أُرِیْدُ أَنْ أُصَلِّيَ"]:::ex
+### 1. قَدْ shuru mein
+- misaal: قَدْ ضَرَبَ
 
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
- classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
-```
+### 2. سَ shuru mein
+- misaal: سَیَضْرِبُ
+
+### 3. سَوْفَ shuru mein
+- misaal: سَوْفَ یَضْرِبُ
+
+### 4. حرفِ جزم daakhil
+- misaal: لَمْ یَضْرِبْ
+
+### 5. ضمیر متصل ho
+- misaal: ضَرَبْتُ
+
+### 6. تائے ساکن aakhir
+- misaal: ضَرَبَتْ
+
+### 7. اَمر
+- misaal: اِضْرِبْ
+
+### 8. نہی
+- misaal: لَا تَضْرِبْ
+
+## حرف — 1 negative criterion
+
+### Harf = محض ربط (mere linking)
+
+- Ism⟷Ism: زَیْدٌ فِي الدَّارِ
+- Ism⟷Fi'l: کَتَبْتُ بِالْقَلَمِ
+- Fi'l⟷Fi'l: أُرِیْدُ أَنْ أُصَلِّيَ
+</script>
+</div>
 
 **Density check:** 14 nodes (limit: 16 ✅), 5 classDefs (limit: 5 ✅), no subgraphs ✅.
 
@@ -476,27 +771,69 @@ flowchart TD
 - **Teal** (main) = 3 i'rab states
 - **Green** (leaf) = 6 paradigm tables with misaal-form
 
-```mermaid
-flowchart TD
- R["مُدْمَرَات / Damayer<br/>Qism #1 of 8<br/>(Section 13-15)<br/>5 qismein → 6 tables<br/>× 14 forms = 84 total"]:::root
-
- R --> MR["مَرفُوع / Marfu'<br/>Fa'il position"]:::main
- R --> MN["مَنصُوب / Mansoob<br/>Maf'ool position"]:::main
- R --> MJ["مَجرُور / Majroor<br/>after Jarr/Idafa"]:::main
-
- MR --> T1["مُتَّصِل (Table 1)<br/>e.g. ضَرَبْتُ"]:::leaf
- MR --> T2["مُنفَصِل (Table 2)<br/>e.g. اَنَا"]:::leaf
-
- MN --> T3["مُتَّصِل (Table 3)<br/>e.g. ضَرَبَنِيْ"]:::leaf
- MN --> T4["مُنفَصِل (Table 4)<br/>e.g. اِیَّایَ"]:::leaf
-
- MJ --> T5["بہ حَرف جَر<br/>(Table 5)<br/>e.g. لِيْ"]:::leaf
- MJ --> T6["بہ اِضافَت<br/>(Table 6)<br/>e.g. دَارِيْ"]:::leaf
-
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-```
+<div class="concept-tree" markdown="0">
+<div class="ct-source">Source: PDF p-18 + p-19 + p-20 · Fasl 5 Qism #1 of 8</div>
+<div class="ct-branch">
+  <div class="ct-node ct-root">
+    <div class="ct-ar">مُدْمَرَات</div>
+    <div class="ct-roman">Damayer · Qism #1 of 8</div>
+    <div class="ct-gloss">5 qismein → 6 tables × 14 forms = 84 total</div>
+  </div>
+  <div class="ct-children">
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">مَرفُوع</div>
+        <div class="ct-roman">Marfu'</div>
+        <div class="ct-gloss">Fa'il position</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">مُتَّصِل</div>
+          <div class="ct-gloss">Table 1 · ضَرَبْتُ</div>
+        </div>
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">مُنفَصِل</div>
+          <div class="ct-gloss">Table 2 · اَنَا</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">مَنصُوب</div>
+        <div class="ct-roman">Mansoob</div>
+        <div class="ct-gloss">Maf'ool position</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">مُتَّصِل</div>
+          <div class="ct-gloss">Table 3 · ضَرَبَنِيْ</div>
+        </div>
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">مُنفَصِل</div>
+          <div class="ct-gloss">Table 4 · اِیَّایَ</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">مَجرُور</div>
+        <div class="ct-roman">Majroor</div>
+        <div class="ct-gloss">after Jarr / Idafa</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">بہ حَرف جَر</div>
+          <div class="ct-gloss">Table 5 · لِيْ</div>
+        </div>
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">بہ اِضافَت</div>
+          <div class="ct-gloss">Table 6 · دَارِيْ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 **Density check:** 10 nodes (limit: 16 ✅), 3 classDefs (limit: 5 ✅), no subgraphs ✅.
 
@@ -516,30 +853,72 @@ flowchart TD
 - **Amber** (sub) = compound-unit rule + exceptions header
 - **Green** (leaf) = actual form clusters
 
-```mermaid
-flowchart TD
- R["اَسْمَائے مَوْصُوْلَہ<br/>Mausoolah<br/>Qism #2 of 8<br/>(Section 15)<br/>10 paradigm cells<br/>+ 3 special rules"]:::root
-
- R --> SP["خاص (Specific)<br/>7 gender-specific"]:::main
- R --> GN["عام (Generic)<br/>2 generic"]:::main
- R --> EX["استثناء<br/>(3 special rules)"]:::sub
-
- SP --> M["مَردانہ (M) — 3 forms<br/>اَلَّذِيْ (sing) /<br/>اَلَّذَانِ (dual) /<br/>اَلَّذِيْنَ (pl)"]:::leaf
- SP --> F["مُؤنث (F) — 4 forms<br/>اَلَّتِيْ / اَلَّتَانِ /<br/>اَللَّتَیْنِ /<br/>اَللَّاتِيْ"]:::leaf
-
- GN --> G1["مَنْ (human) /<br/>مَا (non-human)"]:::leaf
-
- EX --> E1["اَيٌّ / اَيَّۃٌ<br/>Mu'arrab + Idafa-only<br/>(also fills 10th cell)"]:::leaf
- EX --> E2["الف لام = اَلَّذِيْ<br/>(in Ism Fa'il/Maf'ool)<br/>e.g. اَلضَّارِبُ"]:::leaf
- EX --> E3["ذُو = اَلَّذِيْ<br/>(Banu Tay tribe)"]:::leaf
-
- R --> RULE["Mausool + سِلَہ<br/>= compound unit<br/>(Section 15 rule)<br/>Sila ki return-ضمیر<br/>lazmi"]:::sub
-
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-```
+<div class="concept-tree" markdown="0">
+<div class="ct-source">Source: PDF p-20 · Fasl 5 Qism #2 of 8 · 10 paradigm cells + 3 special rules</div>
+<div class="ct-branch">
+  <div class="ct-node ct-root">
+    <div class="ct-ar">اَسْمَائے مَوْصُوْلَہ</div>
+    <div class="ct-roman">Mausoolah · Qism #2 of 8</div>
+    <div class="ct-gloss">10 paradigm cells + 3 special rules</div>
+  </div>
+  <div class="ct-children">
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">خاص</div>
+        <div class="ct-gloss">Specific · 7 gender-specific</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">مَردانہ (M) — 3 forms</div>
+          <div class="ct-gloss">اَلَّذِيْ · اَلَّذَانِ · اَلَّذِيْنَ</div>
+        </div>
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">مُؤنث (F) — 4 forms</div>
+          <div class="ct-gloss">اَلَّتِيْ · اَلَّتَانِ · اَللَّتَیْنِ · اَللَّاتِيْ</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">عام</div>
+        <div class="ct-gloss">Generic · 2 generic</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">مَنْ / مَا</div>
+          <div class="ct-gloss">human / non-human</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-sub">
+        <div class="ct-ar">استثناء</div>
+        <div class="ct-gloss">3 special rules</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">اَيٌّ / اَيَّۃٌ</div>
+          <div class="ct-gloss">Mu'arrab + Idafa-only · 10th cell</div>
+        </div>
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">الف لام = اَلَّذِيْ</div>
+          <div class="ct-gloss">in Ism Fa'il/Maf'ool · اَلضَّارِبُ</div>
+        </div>
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">ذُو = اَلَّذِيْ</div>
+          <div class="ct-gloss">Banu Tay tribe</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-sub">
+        <div class="ct-ar">Mausool + سِلَہ</div>
+        <div class="ct-gloss">compound unit (Section 15 rule)<br/>Sila ki return-ضمیر lazmi</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 **Density check:** 11 nodes (limit: 16 ✅), 4 classDefs (limit: 5 ✅), no subgraphs ✅.
 
@@ -559,32 +938,39 @@ flowchart TD
 - **Green** (leaf) = 10 individual forms (5 + 5)
 - **Amber** (sub) = compound-unit rule
 
-```mermaid
-flowchart TD
- R["اَسْمَائے اِشَارَہ<br/>Ishara<br/>Qism #3 of 8<br/>(Section 16)<br/>10 forms total"]:::root
+<div class="markmap">
+<script type="text/template">
+---
+markmap:
+  colorFreezeLevel: 2
+  initialExpandLevel: 2
+  maxWidth: 260
+---
 
- R --> QR["اِشَارَہ قَرِیْب<br/>Qareeb (close)<br/>5 forms"]:::main
- R --> BD["اِشَارَہ بَعِیْد<br/>Ba'eed (far)<br/>5 forms"]:::main
+# اَسْمَائے اِشَارَہ (Ishara · Qism #3 of 8)
 
- QR --> Q1["M sing: هٰذَا"]:::leaf
- QR --> Q2["M dual: هٰذَانِ"]:::leaf
- QR --> Q3["F sing: هٰذِهِ"]:::leaf
- QR --> Q4["F dual: هَاتَانِ"]:::leaf
- QR --> Q5["Plural<br/>(gender-common):<br/>هٰؤُلَاءِ"]:::leaf
+## اِشَارَہ قَرِیْب — Qareeb (close) · 5 forms
 
- BD --> B1["M sing: ذٰلِكَ"]:::leaf
- BD --> B2["M dual: ذَانِكَ"]:::leaf
- BD --> B3["F sing: تِلْكَ"]:::leaf
- BD --> B4["F dual: تَانِكَ"]:::leaf
- BD --> B5["Plural<br/>(gender-common):<br/>اُولٰئِكَ"]:::leaf
+- M sing: هٰذَا
+- M dual: هٰذَانِ
+- F sing: هٰذِهِ
+- F dual: هَاتَانِ
+- Plural (gender-common): هٰؤُلَاءِ
 
- R --> RULE["Ishara + مُشار اِلَیہ<br/>= compound unit<br/>(Section 16 rule)<br/>e.g. هٰذَا الْقَلَمُ نَفِیْسٌ"]:::sub
+## اِشَارَہ بَعِیْد — Ba'eed (far) · 5 forms
 
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-```
+- M sing: ذٰلِكَ
+- M dual: ذَانِكَ
+- F sing: تِلْكَ
+- F dual: تَانِكَ
+- Plural (gender-common): اُولٰئِكَ
+
+## Ishara + مُشار اِلَیہ = compound unit
+
+- Section 16 rule
+- misaal: هٰذَا الْقَلَمُ نَفِیْسٌ
+</script>
+</div>
 
 **Density check:** 14 nodes (limit: 16 ✅), 4 classDefs (limit: 5 ✅), no subgraphs ✅.
 

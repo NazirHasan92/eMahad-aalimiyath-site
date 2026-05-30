@@ -215,120 +215,291 @@
 }
 
 /* ============================================================
- * Mermaid chart labels — full color + font isolation
+ * Concept-tree charts — pure HTML/CSS card hierarchy
  *
- * Problem: Mermaid charts are wrapped by MkDocs in <code> tags, and Material's
- * .md-typeset code rule applies --md-code-fg-color (burgundy) to ALL descendants,
- * which leaked into chart label text. We isolate the .mermaid scope completely.
+ * Replaces Mermaid (which kept breaking due to shadow-DOM + Material
+ * code-color leakage). Designed to live inside markdown via md_in_html.
+ *
+ * Markup pattern:
+ *   <div class="concept-tree" markdown="0">
+ *     <div class="ct-source">Source: PDF p-NN</div>
+ *     <div class="ct-branch">
+ *       <div class="ct-node ct-root">
+ *         <div class="ct-ar">کلمہ</div>
+ *         <div class="ct-gloss">Kalimah · akela bamaani lafz</div>
+ *       </div>
+ *       <div class="ct-children">
+ *         <div class="ct-branch">
+ *           <div class="ct-node ct-main"> ... </div>
+ *           <div class="ct-children"> ... </div>
+ *         </div>
+ *         ... more sibling branches
+ *       </div>
+ *     </div>
+ *   </div>
+ *
+ * Node classes (same 5-role palette as before):
+ *   ct-root   = topic node (deep emerald gradient, white text)
+ *   ct-main   = main concept (teal pastel gradient)
+ *   ct-sub    = rule / detail (amber pastel gradient)
+ *   ct-leaf   = terminal leaf (green pastel gradient)
+ *   ct-ex     = example (rose pastel gradient)
  * ============================================================ */
 
-.mermaid {
-  background: transparent !important;
-  margin: 1.5em 0;
-  padding: 1em;
-  border-radius: 8px;
+.concept-tree {
+  background: linear-gradient(180deg, #fdfbf5 0%, #f7f5ef 100%);
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  margin: 1.8em 0;
+  border: 1px solid rgba(180, 83, 9, 0.12);
+  box-shadow: 0 1px 3px rgba(6, 78, 59, 0.05), 0 12px 32px rgba(6, 78, 59, 0.04);
+  overflow-x: auto;
+}
+
+[data-md-color-scheme="slate"] .concept-tree {
+  background: linear-gradient(180deg, #1a1f1d 0%, #14181a 100%);
+  border-color: rgba(251, 191, 36, 0.15);
+}
+
+.concept-tree .ct-source {
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light);
   text-align: center;
-  /* Reset Material's CSS variables so descendants don't inherit code colors */
-  --md-code-fg-color: inherit;
-  --md-code-bg-color: transparent;
-  color: #1f2421;
+  margin-bottom: 1.4rem;
+  opacity: 0.7;
+  font-style: italic;
 }
 
-[data-md-color-scheme="slate"] .mermaid {
-  color: #e8e3d5;
+.ct-branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
 }
 
-/* The Mermaid source-code wrapper Material adds — make it transparent */
-.mermaid code,
-.mermaid pre {
-  background: transparent !important;
-  color: inherit !important;
-  padding: 0 !important;
+.ct-children {
+  display: flex;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 36px;
+  position: relative;
+  margin-top: 0.4rem;
 }
 
-/* Universal text-color reset for everything inside .mermaid before applying per-class colors */
-.mermaid svg text,
-.mermaid svg .nodeLabel,
-.mermaid svg foreignObject,
-.mermaid svg foreignObject *,
-.mermaid svg .label,
-.mermaid svg .label * {
-  font-family: 'Noori Nastaliq', 'Jameel Noori Nastaleeq', 'Alvi Nastaliq', 'Noto Nastaliq Urdu', 'Inter', sans-serif !important;
-  font-size: 15px !important;
+/* Horizontal connector across siblings */
+.ct-children::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 12%;
+  right: 12%;
+  height: 1.5px;
+  background: rgba(180, 83, 9, 0.45);
+  border-radius: 1px;
 }
 
-/* Per-class node label colors — using universal descendant selector for maximum coverage */
-.mermaid .node.root,
-.mermaid .node.root *,
-.mermaid g.node.root,
-.mermaid g.node.root * {
-  color: #ffffff !important;
-  font-weight: 700 !important;
+/* Hide horizontal line if only one child */
+.ct-children:has(> :only-child)::before {
+  display: none;
 }
 
-.mermaid .node.main,
-.mermaid .node.main *,
-.mermaid g.node.main,
-.mermaid g.node.main * {
-  color: #0c4a6e !important;
-  font-weight: 600 !important;
+/* Vertical drop from parent to horizontal */
+.ct-branch > .ct-children::after {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  width: 1.5px;
+  height: 16px;
+  background: rgba(180, 83, 9, 0.45);
+  transform: translateX(-0.75px);
 }
 
-.mermaid .node.sub,
-.mermaid .node.sub *,
-.mermaid g.node.sub,
-.mermaid g.node.sub * {
-  color: #7c2d12 !important;
-  font-weight: 600 !important;
+/* Vertical drop from horizontal to each child */
+.ct-children > * {
+  position: relative;
 }
 
-.mermaid .node.leaf,
-.mermaid .node.leaf *,
-.mermaid g.node.leaf,
-.mermaid g.node.leaf * {
-  color: #14532d !important;
-  font-weight: 600 !important;
+.ct-children > *::before {
+  content: '';
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  width: 1.5px;
+  height: 36px;
+  background: rgba(180, 83, 9, 0.45);
+  transform: translateX(-0.75px);
 }
 
-.mermaid .node.ex,
-.mermaid .node.ex *,
-.mermaid g.node.ex,
-.mermaid g.node.ex * {
-  color: #881337 !important;
-  font-weight: 600 !important;
+/* ---- Nodes ---- */
+.ct-node {
+  background: #fff;
+  border-radius: 14px;
+  padding: 0.9rem 1.2rem;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 6px 18px rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  min-width: 130px;
+  max-width: 240px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  z-index: 1;
 }
 
-/* Edge labels — neutral readable color */
-.mermaid .edgeLabel,
-.mermaid .edgeLabel *,
-.mermaid .edgeLabel foreignObject div {
-  color: #1f2421 !important;
-  background: rgba(253, 251, 245, 0.9) !important;
-  padding: 0.15em 0.4em !important;
-  border-radius: 3px !important;
+.ct-node:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06), 0 14px 32px rgba(0, 0, 0, 0.07);
 }
 
-[data-md-color-scheme="slate"] .mermaid .edgeLabel,
-[data-md-color-scheme="slate"] .mermaid .edgeLabel *,
-[data-md-color-scheme="slate"] .mermaid .edgeLabel foreignObject div {
-  color: #e8e3d5 !important;
-  background: rgba(20, 24, 26, 0.9) !important;
+[data-md-color-scheme="slate"] .ct-node {
+  background: #1f2425;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
-/* Edge arrow lines */
-.mermaid .edgePath .path,
-.mermaid .flowchart-link,
-.mermaid path.flowchart-link {
-  stroke: #b45309 !important;
-  stroke-width: 1.5px !important;
+.ct-node .ct-ar {
+  font-family: 'Noori Nastaliq', 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', serif;
+  font-size: 1.55rem;
+  line-height: 1.55;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  direction: rtl;
 }
 
-/* SVG text fallback (when htmlLabels=false somewhere) */
-.mermaid svg .node.root text { fill: #ffffff !important; }
-.mermaid svg .node.main text { fill: #0c4a6e !important; }
-.mermaid svg .node.sub text { fill: #7c2d12 !important; }
-.mermaid svg .node.leaf text { fill: #14532d !important; }
-.mermaid svg .node.ex text { fill: #881337 !important; }
+.ct-node .ct-roman {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  letter-spacing: -0.01em;
+}
+
+.ct-node .ct-gloss {
+  font-size: 0.78rem;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+/* ---- Role colors: 5-class palette (matches charts.md spec) ---- */
+.ct-root {
+  background: linear-gradient(135deg, #064e3b 0%, #022c1f 100%);
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(6, 78, 59, 0.25), 0 10px 24px rgba(6, 78, 59, 0.2);
+}
+.ct-root .ct-gloss { color: #a7f3d0; opacity: 0.95; }
+
+.ct-main {
+  background: linear-gradient(135deg, #ecfeff 0%, #cffafe 100%);
+  color: #0c4a6e;
+  border-color: rgba(14, 116, 144, 0.4);
+}
+[data-md-color-scheme="slate"] .ct-main {
+  background: linear-gradient(135deg, #164e63 0%, #0e7490 100%);
+  color: #ecfeff;
+  border-color: rgba(165, 243, 252, 0.3);
+}
+
+.ct-sub {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  color: #7c2d12;
+  border-color: rgba(180, 83, 9, 0.4);
+}
+[data-md-color-scheme="slate"] .ct-sub {
+  background: linear-gradient(135deg, #78350f 0%, #92400e 100%);
+  color: #fef3c7;
+  border-color: rgba(252, 211, 77, 0.35);
+}
+
+.ct-leaf {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  color: #14532d;
+  border-color: rgba(22, 101, 52, 0.4);
+  min-width: 115px;
+  padding: 0.75rem 1rem;
+}
+[data-md-color-scheme="slate"] .ct-leaf {
+  background: linear-gradient(135deg, #14532d 0%, #166534 100%);
+  color: #dcfce7;
+  border-color: rgba(134, 239, 172, 0.35);
+}
+
+.ct-ex {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+  color: #881337;
+  border-color: rgba(190, 18, 60, 0.35);
+  min-width: 115px;
+  padding: 0.75rem 1rem;
+}
+[data-md-color-scheme="slate"] .ct-ex {
+  background: linear-gradient(135deg, #881337 0%, #9f1239 100%);
+  color: #ffe4e6;
+  border-color: rgba(253, 164, 175, 0.35);
+}
+
+/* Compact variant for charts with many siblings (Insha'iya 10-way, etc.) */
+.concept-tree.ct-compact .ct-node {
+  min-width: 110px;
+  padding: 0.65rem 0.85rem;
+}
+.concept-tree.ct-compact .ct-node .ct-ar {
+  font-size: 1.3rem;
+}
+.concept-tree.ct-compact .ct-children {
+  gap: 0.7rem;
+}
+
+/* Mobile responsiveness — stack vertically when too narrow */
+@media (max-width: 720px) {
+  .concept-tree {
+    padding: 1.4rem 0.6rem;
+  }
+  .ct-children {
+    gap: 0.6rem;
+    padding-top: 24px;
+  }
+  .ct-children::before { left: 8%; right: 8%; }
+  .ct-children > *::before { top: -24px; height: 24px; }
+  .ct-branch > .ct-children::after { top: -10px; height: 10px; }
+  .ct-node {
+    min-width: 100px;
+    padding: 0.6rem 0.8rem;
+  }
+  .ct-node .ct-ar { font-size: 1.25rem; }
+}
+
+/* ============================================================
+ * Markmap embeds — interactive mindmap for dense overview charts
+ *
+ * Uses markmap-autoloader (loaded via extra_javascript). Embed via:
+ *   <div class="markmap">
+ *     <script type="text/template">
+ *       # Root heading
+ *       ## Sub
+ *       - item
+ *     </script>
+ *   </div>
+ * ============================================================ */
+
+.markmap {
+  width: 100%;
+  height: 520px;
+  margin: 1.8em 0;
+  background: #fdfbf5;
+  border-radius: 14px;
+  border: 1px solid rgba(180, 83, 9, 0.12);
+  box-shadow: 0 1px 3px rgba(6, 78, 59, 0.05), 0 12px 32px rgba(6, 78, 59, 0.04);
+  overflow: hidden;
+}
+
+[data-md-color-scheme="slate"] .markmap {
+  background: #1a1f1d;
+  border-color: rgba(251, 191, 36, 0.15);
+}
+
+.markmap svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 
 /* ---- Print ---- */
 @media print {

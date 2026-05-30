@@ -23,50 +23,23 @@
  pre { background: #f7f7f7; padding: 1em 1.2em; border-radius: 6px; border: 1px solid #eee; }
 </style>
 
-# Sarf — Concept Charts (Mermaid)
+# Sarf — Concept Charts
 
 > **One chart = one concept. Built during teaching when a concept genuinely needs visual representation.**
 >
 
-> - Beginner charts: max 6-8 nodes, 2-3 color roles, NO subgraphs
-> - Topic-overview charts (built AFTER all sub-concepts taught): max 16 nodes, one level of subgraph max
+> - Beginner charts: max 6-8 nodes, 2-3 color roles
+> - Topic-overview charts (built AFTER all sub-concepts taught): max 16 nodes
 > - **Never use comprehensive overview chart to OPEN a topic for a beginner**
-> - **Paradigm tables (gardaan) → `gardaan-tables.md`, NOT here.** Mermaid is for trees, processes, concept maps only.
+> - **Paradigm tables (gardaan) → `gardaan-tables.md`, NOT here.** Charts are for trees, taxonomies, concept maps only.
 
 ---
 
-## Standard `classDef` palette (paste into every chart)
+## Chart system
 
-> Niche sample tree palette aur shapes demo karta hai:
+Charts use a custom **HTML/CSS card-hierarchy** component (`.concept-tree`, defined in `stylesheets/extra.css`). For dense review charts with many sibling nodes we use **Markmap** — an interactive markdown-to-mindmap that supports zoom, pan, and click-to-collapse.
 
-```mermaid
-flowchart TD
- R["Root<br/>topic node"]:::root
- M["Main<br/>concept"]:::main
- S["Sub<br/>rule/detail"]:::sub
- L["Leaf<br/>terminal"]:::leaf
- E["Example<br/>misaal"]:::ex
-
- R --> M
- R --> E
- M --> S
- M --> L
-
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
- classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
-```
-
-Apne charts mein sirf wahi `classDef` lines paste karein jo zaroori hain.
-
-Semantics (never deviate):
-- **root** = topic node
-- **main** = main concept
-- **sub** = rule / detail
-- **leaf** = terminal leaf
-- **ex** = example
+5-role palette (never deviate): `ct-root` (deep emerald), `ct-main` (teal), `ct-sub` (amber), `ct-leaf` (green), `ct-ex` (rose). See [Nahw/charts.md](../Nahw/charts.md) for the full pattern reference.
 
 ---
 
@@ -89,27 +62,54 @@ Semantics (never deviate):
 
 **Concept:** Arabic mein har lafz (kalimah) 3 mein se ek qism hai: **Ism** (naam), **Fi'l** (kaam), **Harf** (rabt/connector).
 
-```mermaid
-flowchart TD
- K["کلمہ<br/>(Kalimah)<br/>ek ma'na wala lafz"]:::root
- I["اسم<br/>(Ism)<br/>naam — zamana NAHI"]:::main
- F["فعل<br/>(Fi'l)<br/>kaam — zamana HAI"]:::main
- H["حرف<br/>(Harf)<br/>akele matlab NAHI"]:::main
- IE["زَیْدٌ، خَالِدٌ"]:::ex
- FE["نَصَرَ"]:::ex
- HE["مِنْ، اِلٰی، فِیْ"]:::ex
-
- K --> I
- K --> F
- K --> H
- I --> IE
- F --> FE
- H --> HE
-
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
-```
+<div class="concept-tree" markdown="0">
+<div class="ct-source">Source: Sarf p-019 Slide 7 + p-021 Slide 10</div>
+<div class="ct-branch">
+  <div class="ct-node ct-root">
+    <div class="ct-ar">کلمہ</div>
+    <div class="ct-roman">Kalimah</div>
+    <div class="ct-gloss">ek ma'na wala lafz</div>
+  </div>
+  <div class="ct-children">
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">اسم</div>
+        <div class="ct-roman">Ism</div>
+        <div class="ct-gloss">naam · zamana NAHI</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">زَیْدٌ، خَالِدٌ</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">فعل</div>
+        <div class="ct-roman">Fi'l</div>
+        <div class="ct-gloss">kaam · zamana HAI</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">نَصَرَ</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">حرف</div>
+        <div class="ct-roman">Harf</div>
+        <div class="ct-gloss">akele matlab NAHI</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">مِنْ، اِلٰی، فِیْ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 **Reading guide:**
 - **Root (gehra emerald)** — Kalimah, jo top concept hai
@@ -124,33 +124,65 @@ flowchart TD
 
 **Source:** Sarf PDF p-020, Slides 8 + 9 (combined topic-overview).
 
-```mermaid
-flowchart TD
- F["فعل<br/>(Fi'l)"]:::root
- T1["اثبات/نفی<br/>kaam hua ya nahi?"]:::main
- T2["معرب/مبنی<br/>عامل se badle ya nahi?"]:::main
- T3["معلوم/مجہول<br/>fa'il saaf ya chhupa?"]:::main
- Sub["فعل ثبت<br/>نَصَرَ"]:::sub
- Man["فعل منفی<br/>مَا نَصَرَ"]:::sub
- Muar["فعل معرب<br/>یَعْلَمُ"]:::sub
- Mab["فعل مبنی<br/>یَعْلَمْنَ"]:::sub
- Mal["فعل معلوم<br/>شَرِبَ حَامِدٌ مَاءً"]:::sub
- Maj["فعل مجہول<br/>شُرِبَ مَاءٌ"]:::sub
-
- F --> T1
- F --> T2
- F --> T3
- T1 --> Sub
- T1 --> Man
- T2 --> Muar
- T2 --> Mab
- T3 --> Mal
- T3 --> Maj
-
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
-```
+<div class="concept-tree" markdown="0">
+<div class="ct-source">Source: Sarf p-020 Slides 8 + 9 · 3 aitebar combined topic-overview</div>
+<div class="ct-branch">
+  <div class="ct-node ct-root">
+    <div class="ct-ar">فعل</div>
+    <div class="ct-roman">Fi'l</div>
+  </div>
+  <div class="ct-children">
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">اثبات / نفی</div>
+        <div class="ct-gloss">kaam hua ya nahi?</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">فعل ثبت</div>
+          <div class="ct-gloss">نَصَرَ</div>
+        </div>
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">فعل منفی</div>
+          <div class="ct-gloss">مَا نَصَرَ</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">معرب / مبنی</div>
+        <div class="ct-gloss">عامل se badle ya nahi?</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">فعل معرب</div>
+          <div class="ct-gloss">یَعْلَمُ</div>
+        </div>
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">فعل مبنی</div>
+          <div class="ct-gloss">یَعْلَمْنَ</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">معلوم / مجہول</div>
+        <div class="ct-gloss">fa'il saaf ya chhupa?</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">فعل معلوم</div>
+          <div class="ct-gloss">شَرِبَ حَامِدٌ مَاءً</div>
+        </div>
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">فعل مجہول</div>
+          <div class="ct-gloss">شُرِبَ مَاءٌ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 **Reading guide:**
 - **Root (emerald)** — Fi'l, top concept
@@ -171,35 +203,37 @@ flowchart TD
 
 **Type:** Topic-overview chart with 1-level sub-classification.
 
-```mermaid
-flowchart TD
- H["حروف<br/>(harkat ke aitebar se)"]:::root
- M["مُتَحَرِّک<br/>harakah HAI<br/>ضَرَبَ"]:::main
- S["ساکِن<br/>harakah NAHI<br/>خَالِدْ ka د"]:::main
- Mu["مُشَدَّد<br/>shadda hai<br/>دَقَّ، رَبَّ"]:::main
- N["مُنَوَّن<br/>tanwin hai<br/>ضَرْبًا"]:::main
- Mat["مفتوح<br/>(zabar)<br/>کَتَبَ"]:::sub
- Mak["مکسور<br/>(zer)<br/>اِبْلِی"]:::sub
- Mad["مضموم<br/>(pesh)<br/>اُذُنْ"]:::sub
- F2["فتحتان<br/>(دو زبر)<br/>کِتَابًا"]:::sub
- K2["کسرتان<br/>(دو زیر)<br/>کِتَابٍ"]:::sub
- D2["ضمتان<br/>(دو پیش)<br/>کِتَابٌ"]:::sub
+<div class="markmap">
+<script type="text/template">
+---
+markmap:
+  colorFreezeLevel: 2
+  initialExpandLevel: 2
+  maxWidth: 280
+---
 
- H --> M
- H --> S
- H --> Mu
- H --> N
- M --> Mat
- M --> Mak
- M --> Mad
- N --> F2
- N --> K2
- N --> D2
+# حروف — harkat ke aitebar se
 
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
-```
+## مُتَحَرِّک — harakah HAI (ضَرَبَ)
+
+- مفتوح (zabar): کَتَبَ
+- مکسور (zer): اِبْلِی
+- مضموم (pesh): اُذُنْ
+
+## ساکِن — harakah NAHI (خَالِدْ ka د)
+
+## مُشَدَّد — shadda hai
+
+- دَقَّ
+- رَبَّ
+
+## مُنَوَّن — tanwin hai (ضَرْبًا)
+
+- فتحتان (دو زبر): کِتَابًا
+- کسرتان (دو زیر): کِتَابٍ
+- ضمتان (دو پیش): کِتَابٌ
+</script>
+</div>
 
 **Reading guide:**
 - **Root (emerald)** — Huroof (harkat-based classification)
@@ -218,24 +252,38 @@ flowchart TD
 
 **Type:** Beginner taxonomy chart (5 nodes — within max 6-8 beginner limit).
 
-```mermaid
-flowchart TD
- H["حروف تہجی<br/>(Huroof Tahajji)<br/>Arabic alphabet"]:::root
- S["حروف صحیح<br/>25<br/>ek shakal mein"]:::main
- I["حروف علت<br/>3 (و، ا، ی)<br/>shakal badalti"]:::main
- IE["و، ا، ی<br/>mnemonic: وَائِی"]:::ex
- B["بیماری analogy<br/>bimaar ka haal<br/>badalta rehta"]:::sub
-
- H --> S
- H --> I
- I --> IE
- I --> B
-
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
- classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
-```
+<div class="concept-tree" markdown="0">
+<div class="ct-source">Source: Sarf p-021 Slide 11</div>
+<div class="ct-branch">
+  <div class="ct-node ct-root">
+    <div class="ct-ar">حروف تہجی</div>
+    <div class="ct-roman">Huroof Tahajji</div>
+    <div class="ct-gloss">Arabic alphabet</div>
+  </div>
+  <div class="ct-children">
+    <div class="ct-node ct-main">
+      <div class="ct-ar">حروف صحیح</div>
+      <div class="ct-gloss">25 · ek shakal mein</div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">حروف علت</div>
+        <div class="ct-gloss">3 (و، ا، ی) · shakal badalti</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">و، ا، ی</div>
+          <div class="ct-gloss">mnemonic: وَائِی</div>
+        </div>
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">بیماری analogy</div>
+          <div class="ct-gloss">bimaar ka haal badalta rehta</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 **Reading guide:**
 - **Root (emerald)** — Huroof Tahajji (Arabic alphabet) — kalimah ki bunyaad
@@ -255,45 +303,36 @@ flowchart TD
 
 **Concept:** **Ek masdar se 12 cheezein mushtaq hoti hain — 6 فعل aur 6 اسم.** Yeh Sub Topic 1.3 ka **root statement** hai (Slide 16 Note). Chart har leaf par sigha ka naam + نصر-based misaal dikhata hai — taki student "ek lafz se itni shakalein" ka concept visually grasp kare. **Yeh "asal Sarf" ka pehla complete tree hai** — aage ke saare paradigms iss concept ka extension hain.
 
-```mermaid
-flowchart TD
- Mas["اسم مصدر<br/>(sarchashma)"]:::root
- Br1["چھ فعل<br/>(Slide 17)"]:::main
- Br2["چھ اسم<br/>(Slides 18-19)"]:::main
+<div class="markmap">
+<script type="text/template">
+---
+markmap:
+  colorFreezeLevel: 2
+  initialExpandLevel: 2
+  maxWidth: 260
+---
 
- Mad["ماضی<br/>نَصَرَ"]:::leaf
- Mud["مضارع<br/>یَنْصُرُ"]:::leaf
- Jah["جحد<br/>لَمْ یَنْصُرْ"]:::leaf
- Naf["نفی<br/>لَا یَنْصُرُ"]:::leaf
- Amr["امر<br/>اُنْصُرْ"]:::leaf
- Nah["نہی<br/>لَا تَنْصُرْ"]:::leaf
+# اسم مصدر (sarchashma)
 
- Faa["اسم فاعل<br/>نَاصِرٌ"]:::leaf
- Maf["اسم مفعول<br/>مَنْصُوْرٌ"]:::leaf
- Taf["اسم تفضیل<br/>اَنْصَرُ"]:::leaf
- Zar["اسم ظرف<br/>مَنْصَرٌ / مَجْلِسٌ"]:::leaf
- Aal["اسم آلہ<br/>مِصْبَاحٌ / مِیْزَانٌ"]:::leaf
- Sif["صفت مشبہ<br/>سَمِیْعٌ"]:::leaf
+## چھ فعل (Slide 17)
 
- Mas --> Br1
- Mas --> Br2
- Br1 --> Mad
- Br1 --> Mud
- Br1 --> Jah
- Br1 --> Naf
- Br1 --> Amr
- Br1 --> Nah
- Br2 --> Faa
- Br2 --> Maf
- Br2 --> Taf
- Br2 --> Zar
- Br2 --> Aal
- Br2 --> Sif
+- ماضی: نَصَرَ
+- مضارع: یَنْصُرُ
+- جحد: لَمْ یَنْصُرْ
+- نفی: لَا یَنْصُرُ
+- امر: اُنْصُرْ
+- نہی: لَا تَنْصُرْ
 
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-```
+## چھ اسم (Slides 18-19)
+
+- اسم فاعل: نَاصِرٌ
+- اسم مفعول: مَنْصُوْرٌ
+- اسم تفضیل: اَنْصَرُ
+- اسم ظرف: مَنْصَرٌ / مَجْلِسٌ
+- اسم آلہ: مِصْبَاحٌ / مِیْزَانٌ
+- صفت مشبہ: سَمِیْعٌ
+</script>
+</div>
 
 **Reading guide:**
 - **Root (emerald)** — **اسم مصدر** — derivation ka sarchashma (class concept, koi specific example label nahi — examples leaves par hain)
@@ -325,43 +364,69 @@ flowchart TD
 
 **Concept:** **Wazn nikaalne ka pura system ek tasveer mein** — Mauzun (input), Meezan (yardstick: ف،ع،ل), Wazn (output) ke 3 buniyadi terms ka relationship + Meezan ke 3 root letter labels (Fa/Ain/Lam Kalimah) + Mauzun ke letters ki Asli vs Zaa'idah pehchaan + 2 PDF anchor examples (عِلْمٌ → فِعْلٌ = saare asli case; عَالِمٌ → فَاعِلٌ = with-zaa'idah case). **Sub Topic 1.4 ka complete summary**. Sub Topic 1.5 ne confirm kiya ke yahi method فعل par bhi apply hota — yaani yeh chart universal.
 
-```mermaid
-flowchart TD
- Root["وزن کا نظام<br/>(Wazn extraction)"]:::root
-
- Mauzun["موزون<br/>(input lafz)"]:::main
- Meezan["میزان<br/>(yardstick)"]:::main
- Wazn["وزن<br/>(output: shakal+harakaat)"]:::main
-
- Fa["فا کلمہ<br/>(pehla root)"]:::sub
- Ain["عین کلمہ<br/>(doosra root)"]:::sub
- Lam["لام کلمہ<br/>(teesra root)"]:::sub
-
- Asli["حروف اصلی<br/>(ف،ع،ل ke muqaabile mein aaye)"]:::sub
- Zaaid["حروف زائدہ<br/>(muqaabile mein NAHI)"]:::sub
-
- Ex1["عِلْمٌ → فِعْلٌ<br/>(saare 3 asli)"]:::ex
- Ex2["عَالِمٌ → فَاعِلٌ<br/>(الف زائدہ)"]:::ex
-
- Root --> Mauzun
- Root --> Meezan
- Root --> Wazn
-
- Mauzun --> Asli
- Mauzun --> Zaaid
-
- Meezan --> Fa
- Meezan --> Ain
- Meezan --> Lam
-
- Wazn --> Ex1
- Wazn --> Ex2
-
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef sub fill:#fef3c7,stroke:#b45309,color:#7c2d12;
- classDef ex fill:#ffe4e6,stroke:#be123c,color:#881337;
-```
+<div class="concept-tree" markdown="0">
+<div class="ct-source">Source: Sarf p-025 Slides 22 + 23 · Sub Topic 1.4 topic-overview</div>
+<div class="ct-branch">
+  <div class="ct-node ct-root">
+    <div class="ct-ar">وزن کا نظام</div>
+    <div class="ct-roman">Wazn extraction</div>
+  </div>
+  <div class="ct-children">
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">موزون</div>
+        <div class="ct-gloss">input lafz</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">حروف اصلی</div>
+          <div class="ct-gloss">ف،ع،ل ke muqaabile mein aaye</div>
+        </div>
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">حروف زائدہ</div>
+          <div class="ct-gloss">muqaabile mein NAHI</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">میزان</div>
+        <div class="ct-gloss">yardstick</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">فا کلمہ</div>
+          <div class="ct-gloss">pehla root</div>
+        </div>
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">عین کلمہ</div>
+          <div class="ct-gloss">doosra root</div>
+        </div>
+        <div class="ct-node ct-sub">
+          <div class="ct-ar">لام کلمہ</div>
+          <div class="ct-gloss">teesra root</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">وزن</div>
+        <div class="ct-gloss">output: shakal + harakaat</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">عِلْمٌ → فِعْلٌ</div>
+          <div class="ct-gloss">saare 3 asli</div>
+        </div>
+        <div class="ct-node ct-ex">
+          <div class="ct-ar">عَالِمٌ → فَاعِلٌ</div>
+          <div class="ct-gloss">الف زائدہ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 **Reading guide:**
 - **Root (emerald)** — *وزن کا نظام* — overall framework ka naam (chart-structural — PDF par yeh exact phrase nahi, lekin Sub Topic 1.4 title se derived).
@@ -398,36 +463,66 @@ flowchart TD
 
 **Concept:** **Sub Topic 1.5 ka pura concept ek tasveer mein** — 3 ماضی waznein (فَعَلَ / فَعِلَ / فَعُلَ) se algebraic derivation ke zariye **3 + 2 + 1 = 6 ابواب** bante hain. Har باب ki **unique wazn-pair** (ماضی + مضارع combination) + book ka **canonical misaal** dikhaya gaya. **Yeh classical Sarf ka structural foundation hai** — har future Sarf topic 6 ابواب ke ander hi work karta hai.
 
-```mermaid
-flowchart TD
- Root["Sub Topic 1.5<br/>چھ ابواب<br/>(6 baab overview)"]:::root
-
- F1["فَعَلَ<br/>(عین: فتح)<br/>→ 3 ابواب"]:::main
- F2["فَعِلَ<br/>(عین: کسرہ)<br/>→ 2 ابواب"]:::main
- F3["فَعُلَ<br/>(عین: ضمہ)<br/>→ 1 باب"]:::main
-
- B1["فَعَلَ یَفْعِلُ<br/>ضَرَبَ یَضْرِبُ"]:::leaf
- B2["فَعَلَ یَفْعَلُ<br/>فَتَحَ یَفْتَحُ"]:::leaf
- B3["فَعَلَ یَفْعُلُ<br/>نَصَرَ یَنْصُرُ"]:::leaf
- B4["فَعِلَ یَفْعِلُ<br/>حَسِبَ یَحْسِبُ"]:::leaf
- B5["فَعِلَ یَفْعَلُ<br/>سَمِعَ یَسْمَعُ"]:::leaf
- B6["فَعُلَ یَفْعُلُ<br/>شَرُفَ یَشْرُفُ"]:::leaf
-
- Root --> F1
- Root --> F2
- Root --> F3
-
- F1 --> B1
- F1 --> B2
- F1 --> B3
- F2 --> B4
- F2 --> B5
- F3 --> B6
-
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-```
+<div class="concept-tree" markdown="0">
+<div class="ct-source">Source: Sarf p-029 Slides 30 + 31 · Sub Topic 1.5 capstone</div>
+<div class="ct-branch">
+  <div class="ct-node ct-root">
+    <div class="ct-ar">چھ ابواب</div>
+    <div class="ct-roman">Sub Topic 1.5</div>
+    <div class="ct-gloss">6 baab overview · 3+2+1 asymmetry</div>
+  </div>
+  <div class="ct-children">
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">فَعَلَ</div>
+        <div class="ct-gloss">عین: فتح · → 3 ابواب</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">فَعَلَ یَفْعِلُ</div>
+          <div class="ct-gloss">ضَرَبَ یَضْرِبُ</div>
+        </div>
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">فَعَلَ یَفْعَلُ</div>
+          <div class="ct-gloss">فَتَحَ یَفْتَحُ</div>
+        </div>
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">فَعَلَ یَفْعُلُ</div>
+          <div class="ct-gloss">نَصَرَ یَنْصُرُ</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">فَعِلَ</div>
+        <div class="ct-gloss">عین: کسرہ · → 2 ابواب</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">فَعِلَ یَفْعِلُ</div>
+          <div class="ct-gloss">حَسِبَ یَحْسِبُ</div>
+        </div>
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">فَعِلَ یَفْعَلُ</div>
+          <div class="ct-gloss">سَمِعَ یَسْمَعُ</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-branch">
+      <div class="ct-node ct-main">
+        <div class="ct-ar">فَعُلَ</div>
+        <div class="ct-gloss">عین: ضمہ · → 1 باب</div>
+      </div>
+      <div class="ct-children">
+        <div class="ct-node ct-leaf">
+          <div class="ct-ar">فَعُلَ یَفْعُلُ</div>
+          <div class="ct-gloss">شَرُفَ یَشْرُفُ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 **Reading guide:**
 - **Root (emerald)** — **چھ ابواب** ka Sub Topic-level branding (Slide 30 closing line *"ان کو چھ باب کہتے ہیں"* PDF-attested concept + Sub Topic 1.5 title bar *"فعل کے چھ ابواب"*).
@@ -474,44 +569,34 @@ flowchart TD
 
 **Concept:** **Sub Topic 1.6 ka pura concept ek tasveer mein** — حروف اصلی (مادہ) ke اعتبار se اسم aur فعل ki classifications. **Ism side**: 3 main sizes (ثلاثی/رباعی/خماسی) × مجرد/مزید فیہ = **6 qismein** (ششش اقسام). **Fi'l side**: 2 main sizes (ثلاثی/رباعی — **NO خماسی فعل** structural asymmetry) × مجرد/مزید فیہ = **4 qismein**. Combined **6 + 4 = 10 actual qismein**, lekin Sub Topic ka branding "**ششش اقسام**" hai (= 6 ism, naam ism-side se aaya). **Yeh foundational asymmetry (ism mein 5-letter possible, fi'l mein nahi) chart visually highlight karta**.
 
-```mermaid
-flowchart TD
- Root["Sub Topic 1.6<br/>حروف اصلی کے اعتبار سے<br/>اسم اور فعل کی اقسام"]:::root
+<div class="markmap">
+<script type="text/template">
+---
+markmap:
+  colorFreezeLevel: 2
+  initialExpandLevel: 2
+  maxWidth: 260
+---
 
- Ism["اسم — ششش اقسام<br/>(6 qismein: 3 size × 2)"]:::main
- Fil["فعل — 4 qismein<br/>(NO خماسی فعل)"]:::main
+# Sub Topic 1.6 — حروف اصلی ke اعتبار se اسم aur فعل ki اقسام
 
- I1["ثلاثی مجرد<br/>فَعْلٌ / عَرْفٌ"]:::leaf
- I2["ثلاثی مزید فیہ<br/>اِفْعَالٌ / اِغْرَافٌ"]:::leaf
- I3["رباعی مجرد<br/>فَعْلَلٌ / جَعْفَرٌ"]:::leaf
- I4["رباعی مزید فیہ<br/>تَفَعْلُلٌ / تَخَدْرُجٌ"]:::leaf
- I5["خماسی مجرد<br/>فَعْلَلَلٌ / جَحْمَرَشٌ"]:::leaf
- I6["خماسی مزید فیہ<br/>فَعْلَلِیْلٌ / خَنْدَرِیْسٌ"]:::leaf
+## اسم — ششش اقسام (6 qismein: 3 size × 2)
 
- F1["ثلاثی مجرد<br/>فَعَلَ / عَرَفَ"]:::leaf
- F2["ثلاثی مزید فیہ<br/>اَفْعَلَ / اَعْرَفَ"]:::leaf
- F3["رباعی مجرد<br/>فَعْلَلَ / دَحْرَجَ"]:::leaf
- F4["رباعی مزید فیہ<br/>تَفَعْلَلَ / تَدَحْرَجَ"]:::leaf
+- ثلاثی مجرد — فَعْلٌ / عَرْفٌ
+- ثلاثی مزید فیہ — اِفْعَالٌ / اِغْرَافٌ
+- رباعی مجرد — فَعْلَلٌ / جَعْفَرٌ
+- رباعی مزید فیہ — تَفَعْلُلٌ / تَخَدْرُجٌ
+- خماسی مجرد — فَعْلَلَلٌ / جَحْمَرَشٌ
+- خماسی مزید فیہ — فَعْلَلِیْلٌ / خَنْدَرِیْسٌ
 
- Root --> Ism
- Root --> Fil
+## فعل — 4 qismein (NO خماسی فعل)
 
- Ism --> I1
- Ism --> I2
- Ism --> I3
- Ism --> I4
- Ism --> I5
- Ism --> I6
-
- Fil --> F1
- Fil --> F2
- Fil --> F3
- Fil --> F4
-
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-```
+- ثلاثی مجرد — فَعَلَ / عَرَفَ
+- ثلاثی مزید فیہ — اَفْعَلَ / اَعْرَفَ
+- رباعی مجرد — فَعْلَلَ / دَحْرَجَ
+- رباعی مزید فیہ — تَفَعْلَلَ / تَدَحْرَجَ
+</script>
+</div>
 
 **Reading guide:**
 - **Root (emerald)** — **Sub Topic 1.6 branding** + dou-side scope declaration (اسم AUR فعل) per Slide 36 compressed header "اسم اور فعل کی اقسام".
@@ -550,29 +635,47 @@ Nazir physical book se final-confirm kare per Slide 37 + 39 verbatim discipline 
 
 **Concept:** **Sub Topic 1.7 ka pura هَفْت اقسام (7 categories) framework ek tasveer mein** — مزاج حروف (letters ki nature: علت / ہمزہ / تضعیف) ke اعتبار se کلمات ki **exhaustive classification**. Har category ka **positional rule** (kis position par kya hai: fa/ع/lam) + **sub-types** (where applicable) + **canonical misaal** ek leaf mein consolidated. Chart **4 distinct sub-typing conventions** ko bhi visually surface karta (حرف علت letter / علت positions adjacency / ہمزہ position / root letter count) — Sub Topic 1.7 ki **architectural richness** ka indicator.
 
-```mermaid
-flowchart TD
- Root["Sub Topic 1.7<br/>هَفْت اقسام<br/>(7 categories by مزاج حروف)"]:::root
+<div class="markmap">
+<script type="text/template">
+---
+markmap:
+  colorFreezeLevel: 2
+  initialExpandLevel: 2
+  maxWidth: 280
+---
 
- C1["صحیح<br/>(no علت / no ہمزہ / no تضعیف)<br/>misaal: صَبَرَ"]:::leaf
- C2["مثال<br/>(و/ی at فا کلمہ)<br/>واوی: وَصَلَ • یائی: یَسَرَ"]:::leaf
- C3["اجوف<br/>(و/ی at عین کلمہ)<br/>واوی: قَوَلَ • یائی: بَیَعَ"]:::leaf
- C4["ناقص<br/>(و/ی at لام کلمہ)<br/>واوی: دَعَوَ • یائی: رَمَیَ"]:::leaf
- C5["لفیف<br/>(2 root letters علت — adjacency)<br/>مفروق: وَقَیَ • مقرون: طَوَیَ"]:::leaf
- C6["مہموز<br/>(ہمزہ at fa/ع/lam position)<br/>الفاء: اَمَرَ • العین: سَءَلَ • اللام: قَرَءَ"]:::leaf
- C7["مضاعف<br/>(2 root letters same جنس)<br/>ثلاثی: مَدَدَ • رباعی: زَلْزَلَ"]:::leaf
+# Sub Topic 1.7 — هَفْت اقسام (7 categories by مزاج حروف)
 
- Root --> C1
- Root --> C2
- Root --> C3
- Root --> C4
- Root --> C5
- Root --> C6
- Root --> C7
+## صحیح
+- no علت / no ہمزہ / no تضعیف
+- misaal: صَبَرَ
 
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef leaf fill:#dcfce7,stroke:#166534,color:#14532d;
-```
+## مثال — و/ی at فا کلمہ
+- واوی: وَصَلَ
+- یائی: یَسَرَ
+
+## اجوف — و/ی at عین کلمہ
+- واوی: قَوَلَ
+- یائی: بَیَعَ
+
+## ناقص — و/ی at لام کلمہ
+- واوی: دَعَوَ
+- یائی: رَمَیَ
+
+## لفیف — 2 root letters علت (adjacency)
+- مفروق: وَقَیَ
+- مقرون: طَوَیَ
+
+## مہموز — ہمزہ at fa/ع/lam position
+- الفاء: اَمَرَ
+- العین: سَءَلَ
+- اللام: قَرَءَ
+
+## مضاعف — 2 root letters same جنس
+- ثلاثی: مَدَدَ
+- رباعی: زَلْزَلَ
+</script>
+</div>
 
 **Reading guide:**
 - **Root (emerald)** — **هَفْت اقسام Sub Topic-level branding** (Slide 42 paragraph 1: *"اصطلاحاً صرف میں ان کو هَفْت اقسام کہتے ہیں"*). S8 spelling variant "هَفْت" (Arabic-style heh) preserved verbatim. Compact descriptor "(7 categories by مزاج حروف)" reflects Sub Topic 1.7 title.
@@ -623,29 +726,46 @@ flowchart TD
 
 **Concept:** **Topic 1.0 (اصطلاحات) ka complete framework ek tasveer mein** — 48 slides (Slides 1-48), 7 Sub Topics (1.1-1.7), classical Sarf ka foundation. Har Sub Topic apna core concept + slide range + key takeaway saath rakhta hai. **Topic 1.0 MUKAMMAL milestone =; Slide 48 = Sub Topic 1.7 khatima exercise bar parallel to prior 6 Sub Topic khatimas → Topic 1.0 likely closure); NOT PDF-explicit on p-034 itself. Slide 49+ par Nazir physical confirm pending.
 
-```mermaid
-flowchart TD
- Root["Topic 1.0<br/>اصطلاحات<br/>(48 slides, 7 Sub Topics — MUKAMMAL*)"]:::root
+<div class="markmap">
+<script type="text/template">
+---
+markmap:
+  colorFreezeLevel: 2
+  initialExpandLevel: 1
+  maxWidth: 320
+---
 
- S1["Sub Topic 1.1<br/>تعریف، موضوع، غرض، واضع، اہمیت<br/>Slides 2-5: 5 buniyadi cheezein"]:::main
- S2["Sub Topic 1.2<br/>کلمہ کی تعریف و اقسام<br/>Slides 6-14: ism/fi'l/harf + huroof tahajji"]:::main
- S3["Sub Topic 1.3<br/>جامد، مصدر، مشتق<br/>Slides 15-20: 1 masdar → 12 mushtaqqaat"]:::main
- S4["Sub Topic 1.4<br/>حروف اصلی کی پہچان<br/>Slides 21-26: wazn + فا/عین/لام کلمہ terminology"]:::main
- S5["Sub Topic 1.5<br/>فعل کے چھ ابواب<br/>Slides 27-34: ضَرَبَ + فَتَحَ + نَصَرَ + حَسِبَ + سَمِعَ + شَرُفَ"]:::main
- S6["Sub Topic 1.6<br/>ششش اقسام<br/>Slides 35-40: ism 6 + fi'l 4 — asymmetry"]:::main
- S7["Sub Topic 1.7<br/>هَفْت اقسام<br/>Slides 41-48: 7 categories by مزاج حروف"]:::main
+# Topic 1.0 — اصطلاحات (48 slides, 7 Sub Topics)
 
- Root --> S1
- Root --> S2
- Root --> S3
- Root --> S4
- Root --> S5
- Root --> S6
- Root --> S7
+## Sub Topic 1.1 — تعریف، موضوع، غرض، واضع، اہمیت
+- Slides 2-5
+- 5 buniyadi cheezein
 
- classDef root fill:#064e3b,stroke:#064e3b,color:#fff,font-weight:bold;
- classDef main fill:#cffafe,stroke:#0e7490,color:#0c4a6e;
-```
+## Sub Topic 1.2 — کلمہ کی تعریف و اقسام
+- Slides 6-14
+- ism / fi'l / harf + huroof tahajji
+
+## Sub Topic 1.3 — جامد، مصدر، مشتق
+- Slides 15-20
+- 1 masdar → 12 mushtaqqaat
+
+## Sub Topic 1.4 — حروف اصلی کی پہچان
+- Slides 21-26
+- wazn + فا/عین/لام کلمہ terminology
+
+## Sub Topic 1.5 — فعل کے چھ ابواب
+- Slides 27-34
+- ضَرَبَ + فَتَحَ + نَصَرَ + حَسِبَ + سَمِعَ + شَرُفَ
+
+## Sub Topic 1.6 — ششش اقسام
+- Slides 35-40
+- ism 6 + fi'l 4 — asymmetry
+
+## Sub Topic 1.7 — هَفْت اقسام
+- Slides 41-48
+- 7 categories by مزاج حروف
+</script>
+</div>
 
 **Reading guide:**
 - **Root (emerald)** — **Topic 1.0** branding + 48-slide span + 7 Sub Topics count. **MUKAMMAL\*** marker has asterisk indicating fence (structural inference, NOT PDF-explicit on p-034). See Status block + notes.md Slide 48 milestone block for fence details.
