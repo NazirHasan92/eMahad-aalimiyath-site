@@ -105,6 +105,35 @@ plugins:
           primaryTextColor: '#ffffff'
           primaryBorderColor: '#064e3b'
           lineColor: '#b45309'
+        # themeCSS is injected INTO the chart's shadow DOM — only way to override
+        # Material's --md-mermaid-label-fg-color leakage on <p> elements that
+        # Mermaid wraps node text in.
+        themeCSS: |
+          .root .nodeLabel, .root .nodeLabel p, .root foreignObject p, .root span p {
+            color: #ffffff !important;
+            font-weight: 700 !important;
+          }
+          .main .nodeLabel, .main .nodeLabel p, .main foreignObject p, .main span p {
+            color: #0c4a6e !important;
+            font-weight: 600 !important;
+          }
+          .sub .nodeLabel, .sub .nodeLabel p, .sub foreignObject p, .sub span p {
+            color: #7c2d12 !important;
+            font-weight: 600 !important;
+          }
+          .leaf .nodeLabel, .leaf .nodeLabel p, .leaf foreignObject p, .leaf span p {
+            color: #14532d !important;
+            font-weight: 600 !important;
+          }
+          .ex .nodeLabel, .ex .nodeLabel p, .ex foreignObject p, .ex span p {
+            color: #881337 !important;
+            font-weight: 600 !important;
+          }
+          /* Font family for all chart text */
+          .nodeLabel, .nodeLabel p, foreignObject p, .label {
+            font-family: 'Noori Nastaliq', 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', Inter, sans-serif !important;
+            font-size: 15px !important;
+          }
         flowchart:
           htmlLabels: true
           useMaxWidth: true
