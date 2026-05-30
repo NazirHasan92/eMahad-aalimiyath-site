@@ -49,8 +49,8 @@
 
 ## Topics
 
-- **Topic 1.0** — Istilahaat (اصطلاحات) — [topic-1/README.md](topic-1/README.md) — Status: 6/7 Sub Topics PRE-MIGRATION + 1/7 MUKAMMAL (Phase 1 in progress 2026-05-30)
-- **Topic 2.0** — TBD (not yet started in book)
+- **Topic 1.0** — Istilahaat (اصطلاحات) — [topic-1/README.md](topic-1/README.md) — Status: **7/7 Sub Topics MUKAMMAL** (Phase 1 + Phase 2 complete, 2026-05-30). **Topic 1.0 MUKAMMAL confirmed by Slide 49 Topic 2.0 transition** (PDF p-035, 2026-05-30) — pehle structural inference tha (S19 fenced), ab PDF-explicit. Nazir physical-book sub-slide-level verification still pending for individual Sub Topics, but Topic-level closure confirmed.
+- **Topic 2.0** — فعل ماضی — [topic-2/README.md](topic-2/README.md) — Status: **IN-PROGRESS** (started 2026-05-30 with PDF p-035 = Slides 49 + 50 + 51). Sub Topic 2.1 IN-PROGRESS (3 of ~14 expected slides covered). 4 Sub Topics expected per Slide 49 TOC (2.1/2.2/2.3/2.4 starting Slides 50/64/70/77). Sub Topic decorative tags `[?]`-flagged (stylized calligraphic).
 
 ---
 

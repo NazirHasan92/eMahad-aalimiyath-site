@@ -41,7 +41,7 @@
 
 # Sub Topic 1.7 — مزاج حروف کے اعتبار سے اسم اور فعل کی اقسام (**هَفْت اقسام**) — **MUKAMMAL** ✅
 
-> **Sub Topic 1.7 MUKAMMAL** (Slides 41-48, p-032 + p-033 + p-034) — 8 slides ka comprehensive coverage: cover (41) + 7-names master + master rules (42) + مثال/اجوف tafseel (43) + ناقص + لفیف + مہموز header (44) + مہموز sub-types + مضاعف (45) + comprehensive nakshah consolidation (46-47) + exercise bar (48). Yeh **classical Sarf ka major topic** + **Topic 1.0 ka last Sub Topic** (per Slide 1 table). Sub Topic 1.7 ka khatima (Slide 48 exercise bar pattern parallel to prior 6 Sub Topic khatimas) → **Topic 1.0 (اصطلاحات) MUKAMMAL — builder structural inference** (NOT PDF-explicit on p-034 itself; Slide 49+ par physical confirm pending). Classical Sarf foundation ka **practical synthesis convergence point** — Sub Topic 1.2 (حرف علت) + Sub Topic 1.4 (kalimah positions) + Sub Topic 1.6 (ثلاثی/رباعی) ki theory finally applied + extended (4-position terminology Slide 45 par introduce + Slide 46-47 nakshah par uniformly applied).
+> **Sub Topic 1.7 MUKAMMAL** (Slides 41-48, p-032 + p-033 + p-034) — 8 slides ka comprehensive coverage: cover (41) + 7-names master + master rules (42) + مثال/اجوف tafseel (43) + ناقص + لفیف + مہموز header (44) + مہموز sub-types + مضاعف (45) + comprehensive nakshah consolidation (46-47) + exercise bar (48). Yeh **classical Sarf ka major topic** + **Topic 1.0 ka last Sub Topic** (per Slide 1 table). Sub Topic 1.7 ka khatima (Slide 48 exercise bar pattern parallel to prior 6 Sub Topic khatimas) → **Topic 1.0 (اصطلاحات) MUKAMMAL** — originally builder structural inference, **ab PDF-CONFIRMED post-Slide-49** (Slide 49 = Topic 2.0 cover par direct transition, p-035 read 2026-05-30 — S19 fence relaxed). Classical Sarf foundation ka **practical synthesis convergence point** — Sub Topic 1.2 (حرف علت) + Sub Topic 1.4 (kalimah positions) + Sub Topic 1.6 (ثلاثی/رباعی) ki theory finally applied + extended (4-position terminology Slide 45 par introduce + Slide 46-47 nakshah par uniformly applied).
 
 ---
 
@@ -735,14 +735,16 @@ Root م-د-د (ع=د, lam=د, dono same letter).
 
 ---
 
-##### 🎉 **TOPIC 1.0 MUKAMMAL milestone** (builder structural inference, fenced)
+##### 🎉 **TOPIC 1.0 MUKAMMAL milestone** (originally builder structural inference, fenced — POST-SLIDE-49 PDF-CONFIRMED)
 
-**⚠ Fence — builder structural inference, NOT PDF-explicit on p-034**: Yeh milestone marker **builder synthesis** hai — based on:
+**✅ Post-Slide-49 update (2026-05-30, PDF p-035)**: **Slide 49 = Topic 2.0 cover slide** — explicit "TOPIC 2.0" banner + new Sub Topic TOC table (2.1/2.2/2.3/2.4). Yeh **direct PDF-explicit transition** confirm kar deta hai ke Topic 1.0 Slide 48 par formally khatim ho gaya. **S19 structural-inference fence relaxed**: Topic 1.0 MUKAMMAL claim ab **PDF-confirmed**, not just inferred. Original structural-inference reasoning (below) preserved as history of pre-Slide-49 reasoning. Book ne separate "Topic 1.0 MUKAMMAL" summary slide nahi banayi — direct transition to Topic 2.0 = book ka closure-via-transition convention.
+
+**⚠ Pre-Slide-49 fence (preserved as history)** — builder structural inference, NOT PDF-explicit on p-034: Yeh milestone marker pehle **builder synthesis** tha — based on:
 - **Slide 1 table** (p-018): Topic 1.0 ke 7 Sub Topics formally listed (1.1-1.7), Sub Topic 1.7 = last one
 - **Slide 48 ki structure**: brown exercise bar pattern parallel hai prior 6 Sub Topic exercise bars (Slides 5/14/20/26/34/40) se — yeh standard Sub Topic ka khatima bar hai
 - **Conclusion (structural inference)**: Sub Topic 1.7 ke khatime ke saath Topic 1.0 likely MUKAMMAL
 
-**PDF p-034 itself does NOT contain an explicit "Topic 1.0 MUKAMMAL" announcement**. Slide 49+ par dikh sakta hai kya book ne Topic-level explicit closure summary slide banayi (book ka choice) ya direct Topic 2.0 ka aaghaaz hai — **Nazir physical book par final-confirm kare**.
+**Pre-Slide-49 caveat (now resolved)**: Pehle yeh likha tha "PDF p-034 itself does NOT contain an explicit 'Topic 1.0 MUKAMMAL' announcement". Yeh ab post-Slide-49 par resolved hai — Slide 49 par direct Topic 2.0 cover = transition-style closure. Nazir physical book se final sub-slide-level verifications still relevant (har Sub Topic ke individual slides ka physical re-check), but Topic-level closure confirmed PDF-explicit.
 
 **Sub Topic 1.7 ka span**: Slides 41-48 = **8 slides total** (cover + introduction + 4 categories tafseel split into Slides 42-45 + 2-page consolidation nakshah Slides 46-47 + exercise bar Slide 48).
 
@@ -974,7 +976,7 @@ Root م-د-د (ع=د, lam=د, dono same letter).
 
 ---
 
-### Sub Topic 1.7 — Yaad rakho (Slides 41-48 — Sub Topic 1.7 MUKAMMAL ✅ + Topic 1.0 MUKAMMAL via structural inference, Nazir confirm pending)
+### Sub Topic 1.7 — Yaad rakho (Slides 41-48 — Sub Topic 1.7 MUKAMMAL ✅ + Topic 1.0 MUKAMMAL ✅ — originally structural inference, POST-SLIDE-49 PDF-CONFIRMED 2026-05-30)
 
 77. **Roman:** **Sub Topic 1.7 ka scope** — **اسم AUR فعل** dono ki classification by **مزاج حروف** (letters ki nature). Total **7 qismein (هَفْت اقسام)** — koi bhi کلمہ in 7 mein se ek mein zaroor aata hai (exhaustive classification).
 
@@ -1079,13 +1081,14 @@ Root م-د-د (ع=د, lam=د, dono same letter).
 
 104. **Roman:** **مضاعف ثلاثی nakshah misaal مَدَدَ (Slide 47 row 13)**: Slide 45 par 2 forms the (مَدَدٌ ism + مَدَّ fi'l with shaddad). Slide 47 nakshah mein **مَدَدَ** (3-letter fatha-fatha-fatha fi'l, NO shaddad) — purpose: positions ع=د + ل=د **separately visible** for structural mapping. Shaddad merge form (مَدَّ) yahaan position-by-position breakdown ke liye unhelpful hota.
 
-105. **Roman:** **Topic 1.0 MUKAMMAL milestone (Slide 48 = Sub Topic 1.7 khatima exercise bar)** 🎉 — **builder structural inference (fenced)**:
-   - **Inference basis**: Slide 1 table ne Topic 1.0 ke 7 Sub Topics formally list kiye; Sub Topic 1.7 last hai; Slide 48 ka exercise bar pattern prior 6 Sub Topic exercise bars (5/14/20/26/34/40) se parallel = Sub Topic 1.7 khatima = Topic 1.0 likely MUKAMMAL
-   - **NOT PDF-explicit on p-034**: Topic-level explicit closure announcement is NOT present on this page. Slide 49+ par dikh sakta hai ya direct Topic 2.0 cover. **Nazir physical book par final-confirm pending**.
-   - **Topic 1.0 totals (per structural inference)**: 48 slides (Slides 1-48), 7 Sub Topics (1.1-1.7), all individually MUKAMMAL (per respective exercise bars)
+105. **Roman:** **Topic 1.0 MUKAMMAL milestone (Slide 48 = Sub Topic 1.7 khatima exercise bar)** 🎉 — originally **builder structural inference (fenced)**, **ab POST-SLIDE-49 PDF-CONFIRMED**:
+   - **✅ Post-Slide-49 update (2026-05-30, PDF p-035)**: Slide 49 = Topic 2.0 cover slide (banner "TOPIC 2.0" + 4-Sub-Topic TOC). **PDF-explicit transition** = formal closure of Topic 1.0. S19 fence relaxed.
+   - **Pre-Slide-49 inference basis (preserved as history)**: Slide 1 table ne Topic 1.0 ke 7 Sub Topics formally list kiye; Sub Topic 1.7 last hai; Slide 48 ka exercise bar pattern prior 6 Sub Topic exercise bars (5/14/20/26/34/40) se parallel = Sub Topic 1.7 khatima = Topic 1.0 likely MUKAMMAL
+   - **Pre-Slide-49 caveat (now resolved)**: Pehle likha tha "Topic-level explicit closure announcement is NOT present on p-034" — yeh Slide 49 par direct Topic 2.0 transition se resolved. Book ne separate "Topic 1.0 MUKAMMAL summary slide" nahi banayi; transition-style closure use kiya.
+   - **Topic 1.0 totals (now PDF-confirmed)**: 48 slides (Slides 1-48), 7 Sub Topics (1.1-1.7), all individually MUKAMMAL (per respective exercise bars)
    - **Foundation framework**: kalimah → ism/fi'l/harf → 3 aqsaam (1.5 abwaab + 1.6 ششش اقسام + 1.7 هَفْت اقسام)
    - **Practical synthesis convergence**: Sub Topic 1.7 ne 1.2 (حرف علت) + 1.4 (kalimah positions) + 1.6 (ثلاثی/رباعی) ki theory apply ki + 4-position terminology extend ki
-   - **Sarf ka pehla major Topic complete (structural inference)** — Topic 2.0 ya next major content Slide 49+ par expected (Rule 16 strict — koi specific prediction NAHI plant)
+   - **Sarf ka pehla major Topic complete (PDF-confirmed)** — Topic 2.0 Slide 49 par formally shuru, focus = **فعل ماضی** (per Slide 49 banner)
 
 ---
 
@@ -1156,7 +1159,7 @@ Root م-د-د (ع=د, lam=د, dono same letter).
 
 ---
 
-### Sub Topic 1.7 (Slides 41-48 done — MUKAMMAL ✅; Topic 1.0 likely-MUKAMMAL via structural inference, Slide 49+ confirm) — Charts roadmap + forward pointer
+### Sub Topic 1.7 (Slides 41-48 done — MUKAMMAL ✅; Topic 1.0 MUKAMMAL ✅ — POST-SLIDE-49 PDF-CONFIRMED 2026-05-30 via Topic 2.0 transition) — Charts roadmap + forward pointer
 
 **Sub Topic 1.7 ki visual coverage candidates (post-MUKAMMAL):**
 - **Chart 7 (Sub Topic 1.5 6 ابواب)**: BUILT 2026-05-30 (PASS) ✅
@@ -1164,11 +1167,9 @@ Root م-د-د (ع=د, lam=د, dono same letter).
 - **Chart 12 candidate (Sub Topic 1.7 — هَفْت اقسام master tree)**: ab **fully buildable** — sub-types + misaalein sab attest, Slide 47 nakshah resolved مہموزالعین orthography. Density: ~16-22 nodes (per 16-node guideline, may need split into separate categories chart + sub-types detail chart).
 - **Chart 13 capstone candidate (Topic 1.0 complete overview)**: ab **fully buildable** — Topic 1.0 MUKAMMAL achieve hua. Comprehensive map possible: Sub Topics 1.1 → 1.7 + main concepts per Sub Topic. Density: high — careful planning required.
 
-**Forward pointer:** **Aglay session pages — p-035+ — Slide 49+ par new content**. **Topic 1.0 MUKAMMAL milestone = builder structural inference** (Slide 48 = Sub Topic 1.7 khatima exercise bar pattern + Sub Topic 1.7 = Topic 1.0 ka last per Slide 1 table → structural inference of Topic 1.0 closure; NOT PDF-explicit on p-034). Slide 49+ par possible:
-- **Topic-level explicit closure summary slide** (agar book ne banayi hai — book ka choice; structural-inference confirmation hoga)
-- **Direct Topic 2.0 cover slide** (no explicit Topic 1.0 closure)
-- **Topic 2.0 ka aaghaaz** (Sarf course ka next major Topic — structural expectation per book overall design)
-- **Rule 16 ULTRA-strict**: builder NAHI plant karega koi Topic 2.0 ka specific content prediction — book khud reveal karega
+**Forward pointer (POST-SLIDE-49 UPDATE 2026-05-30):** ✅ **p-035 (Slide 49 + 50 + 51) covered** — see [topic-2/sub-topic-2.1.md](../topic-2/sub-topic-2.1.md). Slide 49 = **direct Topic 2.0 cover** (no separate "Topic 1.0 MUKAMMAL summary slide" — book ne transition-style closure use kiya). Topic 2.0 banner = **"فعل ماضی"**, 4 Sub Topics in TOC (2.1/2.2/2.3/2.4 starting Slides 50/64/70/77). Sub Topic 2.1 IN-PROGRESS as of 2026-05-30.
+
+**Pre-Slide-49 expectation (now resolved)**: Pre-reading expectations were either (a) Topic-level closure summary slide, (b) direct Topic 2.0 cover, or (c) other. Result: option (b) — direct Topic 2.0 cover (Slide 49). Rule 16 strictness on Topic 2.0 specifics applied throughout new content build — Sub Topic 2.2/2.3/2.4 unwaanat `[?]`-flagged due to stylized calligraphic TOC tags.
 
 **Rule 16 ULTRA-strict on details**: builder NAHI plant karega koi forward content speculation. **1 open `[?]` item remaining for Sub Topic 1.7** (مہموزالعین middle-hamza orthography — Slide 47 nakshah ne **likely-resolution** di standalone ء ki taraf, par Nazir physical book par final-confirm pending). Slide 44 right-margin red character bhi marginalia/artifact pending Nazir's physical book check.
 

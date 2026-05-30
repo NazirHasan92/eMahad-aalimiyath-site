@@ -49,18 +49,22 @@
 
 ## Sub Topic status
 
+**Topic 1.0 status:** All 7 Sub Topics MUKAMMAL (Phase 1 + Phase 2 complete, 2026-05-30). **Topic 1.0 MUKAMMAL confirmed by Slide 49 Topic 2.0 transition** (PDF p-035, 2026-05-30) — pehle structural inference tha (S19 fence applied at every site), ab Slide 49 ka "TOPIC 2.0" cover banner ne explicit transition di. **S19 fence relaxed** for Topic-level closure claim. Nazir physical-book sub-slide-level verification still pending for individual Sub Topics.
+
 | # | Sub Topic | Status | File |
 |---|---|---|---|
-| 1.1 | Tareef, Mauzu, Gharaz, Wadi, Ahmiyat | PRE-MIGRATION (in notes.md) | — |
-| 1.2 | Kalimah ki tareef + aqsam + Huroof Tahajji | PRE-MIGRATION (in notes.md) | — |
-| 1.3 | جامد / مصدر / مشتق | PRE-MIGRATION (in notes.md) | — |
-| 1.4 | حروف اصلی + wazn taaruf | PRE-MIGRATION (in notes.md) | — |
-| 1.5 | فعل کے چھ ابواب | PRE-MIGRATION (in notes.md) | — |
-| 1.6 | ششش اقسام | PRE-MIGRATION (in notes.md) | — |
+| 1.1 | Tareef, Mauzu, Gharaz, Wadi, Ahmiyat | **MUKAMMAL** ✅ (Phase 2b migrated) | [sub-topic-1.1.md](sub-topic-1.1.md) |
+| 1.2 | Kalimah ki tareef + aqsam + Huroof Tahajji | **MUKAMMAL** ✅ (Phase 2b migrated) | [sub-topic-1.2.md](sub-topic-1.2.md) |
+| 1.3 | جامد / مصدر / مشتق | **MUKAMMAL** ✅ (Phase 2b migrated) | [sub-topic-1.3.md](sub-topic-1.3.md) |
+| 1.4 | حروف اصلی + wazn taaruf | **MUKAMMAL** ✅ (Phase 2b migrated) | [sub-topic-1.4.md](sub-topic-1.4.md) |
+| 1.5 | فعل کے چھ ابواب | **MUKAMMAL** ✅ (Phase 2b migrated) | [sub-topic-1.5.md](sub-topic-1.5.md) |
+| 1.6 | ششش اقسام | **MUKAMMAL** ✅ (Phase 2a migrated) | [sub-topic-1.6.md](sub-topic-1.6.md) |
 | 1.7 | مزاج حروف ke aitebar se aqsam (هَفْت اقسام) | **MUKAMMAL** ✅ (Phase 1 migrated) | [sub-topic-1.7.md](sub-topic-1.7.md) |
+
+Note on Sub Topic 1.1 / 1.2 combined blocks: the `Sub Topic 1.1 + 1.2 — Naye terms (rolling glossary)` and `Sub Topic 1.1 + 1.2 — Sabak sawal` blocks live intact inside [sub-topic-1.1.md](sub-topic-1.1.md) — original notes.md kept them combined across Slides 1-13 spanning both Sub Topics. [sub-topic-1.2.md](sub-topic-1.2.md) has cross-reference links pointing back; no content is duplicated.
 
 ---
 
 ## Topic-level synthesis
 
-Topic-level synthesis to be written when Topic 1.0 fully VERIFIED post-Phase-2 + Nazir physical book confirm.
+Topic-level synthesis to be written when Topic 1.0 fully VERIFIED post-Nazir-physical-book-confirm.
