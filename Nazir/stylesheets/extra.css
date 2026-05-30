@@ -214,101 +214,121 @@
   box-shadow: 0 6px 16px rgba(6, 78, 59, 0.12);
 }
 
-/* ---- Mermaid chart labels: force colors + font (Material CSS leakage fix) ---- */
+/* ============================================================
+ * Mermaid chart labels — full color + font isolation
+ *
+ * Problem: Mermaid charts are wrapped by MkDocs in <code> tags, and Material's
+ * .md-typeset code rule applies --md-code-fg-color (burgundy) to ALL descendants,
+ * which leaked into chart label text. We isolate the .mermaid scope completely.
+ * ============================================================ */
+
 .mermaid {
-  background: transparent;
+  background: transparent !important;
   margin: 1.5em 0;
   padding: 1em;
   border-radius: 8px;
   text-align: center;
+  /* Reset Material's CSS variables so descendants don't inherit code colors */
+  --md-code-fg-color: inherit;
+  --md-code-bg-color: transparent;
+  color: #1f2421;
 }
 
-/* Reset Material's color inheritance on Mermaid label HTML */
-.mermaid foreignObject,
-.mermaid foreignObject div,
-.mermaid foreignObject span,
-.mermaid .nodeLabel,
-.mermaid .nodeLabel p,
-.mermaid .label,
-.mermaid .edgeLabel,
-.mermaid .edgeLabel p {
+[data-md-color-scheme="slate"] .mermaid {
+  color: #e8e3d5;
+}
+
+/* The Mermaid source-code wrapper Material adds — make it transparent */
+.mermaid code,
+.mermaid pre {
+  background: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;
+}
+
+/* Universal text-color reset for everything inside .mermaid before applying per-class colors */
+.mermaid svg text,
+.mermaid svg .nodeLabel,
+.mermaid svg foreignObject,
+.mermaid svg foreignObject *,
+.mermaid svg .label,
+.mermaid svg .label * {
   font-family: 'Noori Nastaliq', 'Jameel Noori Nastaleeq', 'Alvi Nastaliq', 'Noto Nastaliq Urdu', 'Inter', sans-serif !important;
   font-size: 15px !important;
-  line-height: 1.6 !important;
 }
 
-/* Per-node-class explicit text colors — override Material's color leakage */
-.mermaid g.node.root foreignObject div,
-.mermaid g.node.root .nodeLabel,
-.mermaid g.node.root .nodeLabel p,
-.mermaid .node.root foreignObject div,
-.mermaid .node.root .nodeLabel,
-.mermaid .node.root .nodeLabel p {
+/* Per-class node label colors — using universal descendant selector for maximum coverage */
+.mermaid .node.root,
+.mermaid .node.root *,
+.mermaid g.node.root,
+.mermaid g.node.root * {
   color: #ffffff !important;
   font-weight: 700 !important;
 }
 
-.mermaid g.node.main foreignObject div,
-.mermaid g.node.main .nodeLabel,
-.mermaid g.node.main .nodeLabel p,
-.mermaid .node.main foreignObject div,
-.mermaid .node.main .nodeLabel,
-.mermaid .node.main .nodeLabel p {
+.mermaid .node.main,
+.mermaid .node.main *,
+.mermaid g.node.main,
+.mermaid g.node.main * {
   color: #0c4a6e !important;
   font-weight: 600 !important;
 }
 
-.mermaid g.node.sub foreignObject div,
-.mermaid g.node.sub .nodeLabel,
-.mermaid g.node.sub .nodeLabel p,
-.mermaid .node.sub foreignObject div,
-.mermaid .node.sub .nodeLabel,
-.mermaid .node.sub .nodeLabel p {
+.mermaid .node.sub,
+.mermaid .node.sub *,
+.mermaid g.node.sub,
+.mermaid g.node.sub * {
   color: #7c2d12 !important;
   font-weight: 600 !important;
 }
 
-.mermaid g.node.leaf foreignObject div,
-.mermaid g.node.leaf .nodeLabel,
-.mermaid g.node.leaf .nodeLabel p,
-.mermaid .node.leaf foreignObject div,
-.mermaid .node.leaf .nodeLabel,
-.mermaid .node.leaf .nodeLabel p {
+.mermaid .node.leaf,
+.mermaid .node.leaf *,
+.mermaid g.node.leaf,
+.mermaid g.node.leaf * {
   color: #14532d !important;
   font-weight: 600 !important;
 }
 
-.mermaid g.node.ex foreignObject div,
-.mermaid g.node.ex .nodeLabel,
-.mermaid g.node.ex .nodeLabel p,
-.mermaid .node.ex foreignObject div,
-.mermaid .node.ex .nodeLabel,
-.mermaid .node.ex .nodeLabel p {
+.mermaid .node.ex,
+.mermaid .node.ex *,
+.mermaid g.node.ex,
+.mermaid g.node.ex * {
   color: #881337 !important;
   font-weight: 600 !important;
 }
 
-/* Edge labels (arrows between nodes) */
-.mermaid .edgeLabel foreignObject div,
-.mermaid .edgeLabel .label {
+/* Edge labels — neutral readable color */
+.mermaid .edgeLabel,
+.mermaid .edgeLabel *,
+.mermaid .edgeLabel foreignObject div {
   color: #1f2421 !important;
-  background: rgba(253, 251, 245, 0.85) !important;
+  background: rgba(253, 251, 245, 0.9) !important;
   padding: 0.15em 0.4em !important;
   border-radius: 3px !important;
 }
 
-[data-md-color-scheme="slate"] .mermaid .edgeLabel foreignObject div,
-[data-md-color-scheme="slate"] .mermaid .edgeLabel .label {
+[data-md-color-scheme="slate"] .mermaid .edgeLabel,
+[data-md-color-scheme="slate"] .mermaid .edgeLabel *,
+[data-md-color-scheme="slate"] .mermaid .edgeLabel foreignObject div {
   color: #e8e3d5 !important;
-  background: rgba(20, 24, 26, 0.85) !important;
+  background: rgba(20, 24, 26, 0.9) !important;
 }
 
 /* Edge arrow lines */
 .mermaid .edgePath .path,
-.mermaid .flowchart-link {
+.mermaid .flowchart-link,
+.mermaid path.flowchart-link {
   stroke: #b45309 !important;
   stroke-width: 1.5px !important;
 }
+
+/* SVG text fallback (when htmlLabels=false somewhere) */
+.mermaid svg .node.root text { fill: #ffffff !important; }
+.mermaid svg .node.main text { fill: #0c4a6e !important; }
+.mermaid svg .node.sub text { fill: #7c2d12 !important; }
+.mermaid svg .node.leaf text { fill: #14532d !important; }
+.mermaid svg .node.ex text { fill: #881337 !important; }
 
 /* ---- Print ---- */
 @media print {
