@@ -132,3 +132,5 @@ exclude_docs: |
 
 nav:
   - Home: index.md
+  - Nahw (نحو):
+      - "Kalimah — Ism · Fi'l · Harf": Nahw/01-kalimah.md

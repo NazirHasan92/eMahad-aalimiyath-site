@@ -13,7 +13,7 @@
  * Palette: deep emerald + warm gold + ivory
  * ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500;600;700&family=Amiri+Quran&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Amiri+Quran&family=Noto+Nastaliq+Urdu:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 /* ---- Palette ---- */
 [data-md-color-scheme="default"] {
@@ -500,6 +500,67 @@
   height: 100%;
   display: block;
 }
+
+/* ============================================================
+ * eMahad chart (.nchart) — CHART-FIRST house template (2026-07-19)
+ * One elegant, PDF-verbatim chart per page. Light + dark via Material scheme.
+ * Fonts: Amiri (Arabic hero/terms/examples), Noto Nastaliq Urdu (verbatim Urdu
+ * definitions), Inter (Roman = pronunciation only). No decorative motifs.
+ * Markup lives in each page .md inside <div class="nchart" markdown="0"> ... </div>
+ * ============================================================ */
+.nchart {
+  --nc-ground: #f7f6ef; --nc-ground2: #eef0e7;
+  --nc-ink: #16332a; --nc-muted: #586a5e; --nc-faint: #8b978c;
+  --nc-emerald: #0c4636; --nc-gold: #9c7b2c;
+  --nc-line: #c3ccbd; --nc-border: rgba(30,60,45,.14); --nc-border-faint: rgba(30,60,45,.07);
+  --nc-amiri: 'Amiri', 'Amiri Quran', 'Noto Nastaliq Urdu', serif;
+  --nc-urdu: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Amiri', serif;
+  --nc-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  position: relative; max-width: 620px; margin: 2em auto; overflow: hidden;
+  background: radial-gradient(130% 100% at 50% 0%, var(--nc-ground) 0%, var(--nc-ground2) 100%);
+  border: 1px solid var(--nc-border); border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(40,60,45,.12);
+  padding: 2.6rem 2rem 1.9rem; text-align: center; color: var(--nc-ink);
+}
+[data-md-color-scheme="slate"] .nchart {
+  --nc-ground: #16281f; --nc-ground2: #10201b;
+  --nc-ink: #e9efe4; --nc-muted: #9fb0a5; --nc-faint: #77877c;
+  --nc-emerald: #6ec7a3; --nc-gold: #cda862;
+  --nc-line: rgba(233,239,228,.24); --nc-border: rgba(233,239,228,.14); --nc-border-faint: rgba(233,239,228,.07);
+  box-shadow: 0 16px 50px rgba(0,0,0,.45);
+}
+.nchart * { box-sizing: border-box; }
+.nchart .nc-frame { position: absolute; inset: 12px; border: 1px solid var(--nc-border); border-radius: 9px; pointer-events: none; }
+.nchart .nc-hero { font-family: var(--nc-amiri); font-weight: 700; color: var(--nc-emerald); font-size: clamp(3rem,12vw,4.6rem); line-height: 1.6; margin: .1rem 0 .3rem; }
+.nchart .nc-sub { font-family: var(--nc-sans); text-transform: uppercase; letter-spacing: .4em; font-size: .72rem; font-weight: 600; color: var(--nc-gold); padding-left: .4em; }
+.nchart .nc-rule { width: 50px; height: 1px; background: var(--nc-gold); opacity: .7; margin: 1.1rem auto 1.2rem; }
+
+.nchart .nc-kids { display: flex; justify-content: center; position: relative; }
+.nchart .nc-kids::before { content: ''; position: absolute; top: 0; left: 50%; width: 1px; height: 22px; background: var(--nc-line); }
+.nchart .nc-col { position: relative; padding: 44px 8px 0; flex: 1 1 0; min-width: 0; }
+.nchart .nc-col::before, .nchart .nc-col::after { content: ''; position: absolute; top: 22px; width: 50%; height: 22px; }
+.nchart .nc-col::before { left: 0; border-top: 1px solid var(--nc-line); }
+.nchart .nc-col::after { right: 0; border-top: 1px solid var(--nc-line); }
+.nchart .nc-col:first-child::before { border-top: 0; }
+.nchart .nc-col:last-child::after { border-top: 0; }
+.nchart .nc-up { position: absolute; top: 22px; left: 50%; width: 1px; height: 22px; background: var(--nc-line); }
+.nchart .nc-term { font-family: var(--nc-amiri); font-weight: 700; color: var(--nc-emerald); font-size: clamp(1.8rem,6vw,2.4rem); line-height: 1.3; direction: rtl; }
+.nchart .nc-name { font-family: var(--nc-sans); text-transform: uppercase; letter-spacing: .16em; font-size: .66rem; font-weight: 700; color: var(--nc-gold); margin: .2rem 0 .9rem; }
+.nchart .nc-exs { font-family: var(--nc-amiri); color: var(--nc-ink); font-size: 1.35rem; line-height: 1.7; direction: rtl; }
+.nchart .nc-exs-rom { font-family: var(--nc-sans); color: var(--nc-muted); font-size: .72rem; margin-top: .25rem; }
+
+.nchart .nc-band { margin-top: 1.9rem; padding-top: 1.4rem; border-top: 1px solid var(--nc-border); }
+.nchart .nc-band-label { font-family: var(--nc-urdu); color: var(--nc-gold); font-size: 1.15rem; line-height: 2; margin-bottom: 1rem; direction: rtl; }
+.nchart .nc-def { display: grid; grid-template-columns: auto 1fr; gap: .6rem 1rem; align-items: baseline; max-width: 34rem; margin: 0 auto; }
+.nchart .nc-k { font-family: var(--nc-amiri); font-weight: 700; color: var(--nc-emerald); font-size: 1.35rem; white-space: nowrap; direction: rtl; }
+.nchart .nc-v { font-family: var(--nc-urdu); color: var(--nc-ink); font-size: 1rem; line-height: 2.3; text-align: right; direction: rtl; }
+.nchart .nc-sep { grid-column: 1 / -1; height: 1px; background: var(--nc-border-faint); }
+
+.nchart .nc-foot { margin-top: 1.6rem; padding-top: 1rem; border-top: 1px solid var(--nc-border); font-family: var(--nc-sans); display: flex; justify-content: space-between; gap: .5rem; flex-wrap: wrap; align-items: center; }
+.nchart .nc-brand { text-transform: uppercase; letter-spacing: .22em; font-size: .64rem; color: var(--nc-muted); }
+.nchart .nc-src { font-size: .62rem; color: var(--nc-faint); }
+@media (max-width: 560px) { .nchart { padding: 1.8rem 1rem 1.5rem; } }
 
 /* ---- Print ---- */
 @media print {
