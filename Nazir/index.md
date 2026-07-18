@@ -6,23 +6,20 @@ hide:
 
 # Nazir's eMahad Notes
 
+> 🔄 **Fresh start — July 2026.** The notes are being rebuilt from scratch, page by page, as elegant charts taken **verbatim from the source PDFs**. New pages will appear here as they are taught — quality over speed, one page at a time.
+
 <div class="grid cards" markdown>
 
--   ### Nahw
+-   ### Nahw — عِلْمُ النَّحو
 
-    *Ilm-un-Nahw al-Bushra*
+    *Ilm-un-Nahw al-Bushra* · 81 pages
 
-    [Open Nahw](Nahw/index.md){ .md-button .md-button--primary }
+    Rebuilding soon, one page at a time.
 
--   ### Sarf
+-   ### Sarf — عِلْمُ الصَّرف
 
-    *Muallim u Sarf*
+    *Muallim-us-Sarf* · 135 pages
 
-    [Open Sarf](Sarf/index.md){ .md-button .md-button--primary }
+    Rebuilding soon, one page at a time.
 
 </div>
-
-## Cross-cutting
-
-- [Nahw charts](Nahw/charts.md) · [Nahw i'rab tables](Nahw/irab-tables.md)
-- [Sarf charts](Sarf/charts.md) · [Sarf gardaan tables](Sarf/gardaan-tables.md)
