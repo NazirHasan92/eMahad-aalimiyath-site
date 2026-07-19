@@ -512,8 +512,9 @@
   --nc-ground: #f7f6ef; --nc-ground2: #eef0e7;
   --nc-ink: #16332a; --nc-muted: #586a5e; --nc-faint: #8b978c;
   --nc-emerald: #0c4636; --nc-gold: #9c7b2c;
-  --nc-line: #c3ccbd; --nc-border: rgba(30,60,45,.14); --nc-border-faint: rgba(30,60,45,.07);
+  --nc-line: #c3ccbd; --nc-border: rgba(30,60,45,.14); --nc-border-faint: rgba(30,60,45,.07); --nc-tline: #a7b4a1;
   --nc-amiri: 'Amiri', 'Amiri Quran', 'Noto Nastaliq Urdu', serif;
+  --nc-quran: 'Amiri Quran', 'Amiri', 'Scheherazade New', 'Geeza Pro', serif;
   --nc-urdu: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Amiri', serif;
   --nc-sans: 'Inter', system-ui, -apple-system, sans-serif;
 
@@ -527,22 +528,22 @@
   --nc-ground: #16281f; --nc-ground2: #10201b;
   --nc-ink: #e9efe4; --nc-muted: #9fb0a5; --nc-faint: #77877c;
   --nc-emerald: #6ec7a3; --nc-gold: #cda862;
-  --nc-line: rgba(233,239,228,.24); --nc-border: rgba(233,239,228,.14); --nc-border-faint: rgba(233,239,228,.07);
+  --nc-line: rgba(233,239,228,.24); --nc-border: rgba(233,239,228,.14); --nc-border-faint: rgba(233,239,228,.07); --nc-tline: rgba(233,239,228,.32);
   box-shadow: 0 16px 50px rgba(0,0,0,.45);
 }
 .nchart * { box-sizing: border-box; }
 .nchart .nc-frame { position: absolute; inset: 12px; border: 1px solid var(--nc-border); border-radius: 9px; pointer-events: none; }
 .nchart .nc-hero { font-family: var(--nc-amiri); font-weight: 700; color: var(--nc-emerald); font-size: clamp(1.7rem, 4.4vw, 2.5rem); line-height: 1.4; margin: .1rem auto .45rem; max-width: 26ch; text-wrap: balance; }
 
-/* Tables inside charts — big, Amiri, clean (overrides Material's small default) */
-.nchart .table-scroll { overflow-x: auto; margin: .4rem 0; }
-.nchart table { width: 100% !important; border-collapse: separate !important; border-spacing: 0 !important; margin: .6rem 0 !important; border: 0 !important; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 3px rgba(40,60,45,.07); }
-.nchart th, .nchart td { font-family: var(--nc-amiri) !important; text-align: center !important; border: 0 !important; padding: .65rem 1rem !important; line-height: 1.5 !important; vertical-align: middle !important; }
-.nchart thead th { background: var(--nc-emerald) !important; color: #fbfcf9 !important; font-size: 1.15rem !important; font-weight: 700 !important; }
+/* Tables inside charts — clear grid borders, BIG Quranic font, spacious (matches Nazir's reference) */
+.nchart .table-scroll { overflow-x: auto; margin: .6rem 0; }
+.nchart table { width: 100% !important; border-collapse: collapse !important; margin: .8rem 0 !important; border: 2px solid var(--nc-tline) !important; box-shadow: 0 1px 4px rgba(40,60,45,.08); }
+.nchart th, .nchart td { font-family: var(--nc-quran) !important; text-align: center !important; border: 1px solid var(--nc-tline) !important; padding: .9rem 1.1rem !important; line-height: 1.75 !important; vertical-align: middle !important; }
+.nchart thead th { background: var(--nc-emerald) !important; color: #fbfcf9 !important; font-size: 1.25rem !important; font-weight: 700 !important; }
 [data-md-color-scheme="slate"] .nchart thead th { color: #0c1712 !important; }
-.nchart tbody td { font-size: 1.5rem !important; color: var(--nc-ink) !important; background: var(--nc-ground) !important; border-top: 1px solid var(--nc-border) !important; }
-.nchart tbody tr:nth-child(even) td { background: var(--nc-ground2) !important; }
-.nchart td .rom { display: block; font-family: var(--nc-sans) !important; font-size: .72rem !important; color: var(--nc-muted); margin-top: .15rem; }
+.nchart tbody td { font-size: 1.8rem !important; color: var(--nc-ink) !important; background: var(--nc-ground2) !important; }
+.nchart tbody tr:nth-child(even) td { background: var(--nc-ground) !important; }
+.nchart td .rom { display: block; font-family: var(--nc-sans) !important; font-size: .74rem !important; color: var(--nc-muted); margin-top: .25rem; }
 .nchart .nc-sub { font-family: var(--nc-sans); text-transform: uppercase; letter-spacing: .4em; font-size: .72rem; font-weight: 600; color: var(--nc-gold); padding-left: .4em; }
 .nchart .nc-rule { width: 50px; height: 1px; background: var(--nc-gold); opacity: .7; margin: 1.1rem auto 1.2rem; }
 
@@ -555,15 +556,15 @@
 .nchart .nc-col:first-child::before { border-top: 0; }
 .nchart .nc-col:last-child::after { border-top: 0; }
 .nchart .nc-up { position: absolute; top: 22px; left: 50%; width: 1px; height: 22px; background: var(--nc-line); }
-.nchart .nc-term { font-family: var(--nc-amiri); font-weight: 700; color: var(--nc-emerald); font-size: clamp(1.8rem,6vw,2.4rem); line-height: 1.3; direction: rtl; }
+.nchart .nc-term { font-family: var(--nc-quran); font-weight: 700; color: var(--nc-emerald); font-size: clamp(1.8rem,6vw,2.4rem); line-height: 1.4; direction: rtl; }
 .nchart .nc-name { font-family: var(--nc-sans); text-transform: uppercase; letter-spacing: .16em; font-size: .66rem; font-weight: 700; color: var(--nc-gold); margin: .2rem 0 .9rem; }
-.nchart .nc-exs { font-family: var(--nc-amiri); color: var(--nc-ink); font-size: 1.35rem; line-height: 1.7; direction: rtl; }
+.nchart .nc-exs { font-family: var(--nc-quran); color: var(--nc-ink); font-size: 1.6rem; line-height: 1.85; direction: rtl; }
 .nchart .nc-exs-rom { font-family: var(--nc-sans); color: var(--nc-muted); font-size: .72rem; margin-top: .25rem; }
 
 .nchart .nc-band { margin-top: 1.9rem; padding-top: 1.4rem; border-top: 1px solid var(--nc-border); }
 .nchart .nc-band-label { font-family: var(--nc-urdu); color: var(--nc-gold); font-size: 1.15rem; line-height: 2; margin-bottom: 1rem; direction: rtl; }
 .nchart .nc-def { display: grid; grid-template-columns: auto 1fr; gap: .6rem 1rem; align-items: baseline; max-width: 34rem; margin: 0 auto; }
-.nchart .nc-k { font-family: var(--nc-amiri); font-weight: 700; color: var(--nc-emerald); font-size: 1.35rem; white-space: nowrap; direction: rtl; }
+.nchart .nc-k { font-family: var(--nc-quran); font-weight: 700; color: var(--nc-emerald); font-size: 1.55rem; white-space: nowrap; direction: rtl; }
 .nchart .nc-v { font-family: var(--nc-urdu); color: var(--nc-ink); font-size: 1rem; line-height: 2.3; text-align: right; direction: rtl; }
 .nchart .nc-sep { grid-column: 1 / -1; height: 1px; background: var(--nc-border-faint); }
 
