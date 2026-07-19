@@ -134,3 +134,34 @@ nav:
   - Home: index.md
   - Nahw (نحو):
       - "Kalimah — Ism · Fi'l · Harf": Nahw/01-kalimah.md
+      - "Kalimah wa Kalām — Fi'l · Harf · Murakkab": Nahw/p07-fil-harf-murakkab.md
+      - "Jumla Khabariyya — Ismiyya · Fi'liyya": Nahw/p08-jumla-khabariyya.md
+      - "Jumla Inshā'iyya": Nahw/p09-jumla-inshaiyya.md
+      - "Murakkab Ghayr Mufīd": Nahw/p10-murakkab-ghayr-mufid.md
+      - "Murakkab Manʿ-e Sarf": Nahw/p11-murakkab-mane-sarf.md
+      - "Jumla — Aqsām": Nahw/12-jumla-aqsaam.md
+      - "Jumla Sifātī — Aqsām": Nahw/p13-jumla-sifati-aqsaam.md
+      - "ʿAlāmāt-e Ism": Nahw/p14-alamat-ism.md
+      - "ʿAlāmāt-e Fiʿl · Harf": Nahw/p15-alamat-fil-harf.md
+      - "Muʿrab · Mabnī": Nahw/p16-muarab-mabni.md
+      - "Mabnī · Muʿrab — Aqsām": Nahw/p17-mabni-murab-aqsaam.md
+      - "Ism Ghayr Mutamakkin — Aqsām": Nahw/p18-ism-ghayr-mutamakkin-aqsam.md
+      - "Zamīr Mansūb · Majrūr": Nahw/p19-zameer-mansoob-majroor.md
+      - "Asmā-e Mawsūla": Nahw/p20-asma-mawsoola.md
+      - "Asmā-e Ishāra": Nahw/p21-asma-e-ishara.md
+  - Sarf (صرف):
+      - "Istilāhāt — ʿIlm-e Sarf": Sarf/p18-istilahaat.md
+      - "Wāziʿ · Kalimah": Sarf/p19-waazi-kalima.md
+      - "Fiʿl kī Taqsīm": Sarf/p20-fel-ki-taqseem.md
+      - "Harf · Hurūf-e Tahajjī": Sarf/p21-harf-huroof-tahajji.md
+      - "Hurūf · Harakat": Sarf/p22-huroof-harkat.md
+      - "Ism kī Aqsām": Sarf/p23-ism-ki-aqsaam.md
+      - "Asmā-e Mushtaqqa": Sarf/p24-asma-mushtaqqa.md
+      - "Wazn Nikālne kā Tarīqa": Sarf/p25-wazn-nikalne-ka-tariqa.md
+      - "Hurūf Asliyya · Asmā Awzān": Sarf/p26-huroof-asliya-asma-awzaan.md
+      - "Afʿāl ke Awzān": Sarf/p27-afaal-ke-awzaan.md
+      - "Chha Abwāb": Sarf/p28-chha-abwaab.md
+      - "Abwāb — Groups · ʿAlāmāt": Sarf/p29-abwaab-groups-alamaat.md
+      - "Shash Aqsām": Sarf/p30-shash-aqsaam.md
+      - "Fiʿl kī Aqsām — Thulāthī · Rubāʿī": Sarf/p31-fel-ki-aqsaam-thulathi-rubai.md
+      - "Haft Aqsām — Mizāj-e Hurūf": Sarf/p32-haft-aqsaam-mizaj-huroof.md
