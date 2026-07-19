@@ -47,26 +47,32 @@ hide:
     </div>
   </div>
 
+  <div class="nc-band">
+    <div class="nc-band-label" dir="rtl">مثالیں — تلفظ</div>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th dir="rtl">مثال</th><th>Roman</th></tr></thead>
+        <tbody>
+          <tr><td dir="rtl">قَدْ ضَرَبَ</td><td>qad ḍaraba</td></tr>
+          <tr><td dir="rtl">سَیَضْرِبُ</td><td>sa-yaḍribu</td></tr>
+          <tr><td dir="rtl">سَوْفَ یَضْرِبُ</td><td>sawfa yaḍribu</td></tr>
+          <tr><td dir="rtl">لَمْ یَضْرِبْ</td><td>lam yaḍrib</td></tr>
+          <tr><td dir="rtl">ضَرَبْتُ</td><td>ḍarabtu</td></tr>
+          <tr><td dir="rtl">ضَرَبَتْ</td><td>ḍarabat</td></tr>
+          <tr><td dir="rtl">اِضْرِبْ</td><td>iḍrib</td></tr>
+          <tr><td dir="rtl">لَا تَضْرِبْ</td><td>lā taḍrib</td></tr>
+          <tr><td dir="rtl">زَیْدٌ فِی الدَّارِ</td><td>zaydun fi d-dāri</td></tr>
+          <tr><td dir="rtl">کَتَبْتُ بِالْقَلَمِ</td><td>katabtu bi-l-qalami</td></tr>
+          <tr><td dir="rtl">اُرِیْدُ اَنْ اُصَلِّیَ</td><td>urīdu an uṣalliya</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
   <div class="nc-foot">
     <span class="nc-brand">eMahad · Ilm-un-Nahw</span>
     <span class="nc-src">Fasl 3 · PDF p-15 · verbatim · DRAFT</span>
   </div>
 </div>
-
-### مثالیں — تلفظ
-
-| مثال | Roman |
-| --- | --- |
-| قَدْ ضَرَبَ | qad ḍaraba |
-| سَیَضْرِبُ | sa-yaḍribu |
-| سَوْفَ یَضْرِبُ | sawfa yaḍribu |
-| لَمْ یَضْرِبْ | lam yaḍrib |
-| ضَرَبْتُ | ḍarabtu |
-| ضَرَبَتْ | ḍarabat |
-| اِضْرِبْ | iḍrib |
-| لَا تَضْرِبْ | lā taḍrib |
-| زَیْدٌ فِی الدَّارِ | zaydun fi d-dāri |
-| کَتَبْتُ بِالْقَلَمِ | katabtu bi-l-qalami |
-| اُرِیْدُ اَنْ اُصَلِّیَ | urīdu an uṣalliya |
 
 <!-- [?]: page read at high zoom; harakaat clear. Each nc-k + nc-v pair concatenates to the book's exact numbered sentence (order preserved). Top running header (فصل ۳ · علامات اسم فعل حرف · printed p-۱۴) is page furniture, not charted. -->

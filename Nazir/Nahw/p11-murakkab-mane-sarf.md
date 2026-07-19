@@ -27,27 +27,35 @@ hide:
     </div>
   </div>
 
+  <div class="nc-band">
+    <div class="nc-band-label" dir="rtl">ترکیب</div>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th dir="rtl">جملہ</th><th dir="rtl">ترکیب</th></tr></thead>
+        <tbody>
+          <tr><td dir="rtl">غُلَامُ زَیْدٍ حَاضِرٌ<span class="rom">ghulāmu zaidin ḥāḍirun</span></td><td dir="rtl">غُلَامُ مضاف، زَیْدٍ مضاف الیہ، مضاف اور مضاف الیہ کر مبتدا، حَاضِرٌ خبر، مبتدا خبر کر جملہ اسمیہ خبریہ ہوا۔</td></tr>
+          <tr><td dir="rtl">جَاءَ أَحَدَ عَشَرَ رَجُلًا<span class="rom">jā'a aḥada 'ashara rajulan</span></td><td dir="rtl">جَاءَ فعل، أَحَدَ عَشَرَ ممیز، رَجُلًا تمیز، ممیز تمیز کر فاعل ہوا، فعل فاعل کر جملہ فعلیہ خبریہ ہوا۔</td></tr>
+          <tr><td dir="rtl">إِبْرَاهِيمُ سَاكِنٌ بَعْلَبَكَّ<span class="rom">ibrāhīmu sākinun ba'labakka</span></td><td dir="rtl">إِبْرَاهِيمُ مبتدا، سَاكِنٌ مضاف، بَعْلَبَكَّ مضاف الیہ، مضاف مضاف الیہ کر خبر، مبتدا خبر کر جملہ اسمیہ خبریہ ہوا۔</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="nc-band">
+    <div class="nc-band-label" dir="rtl">ترکیب بیان کریں</div>
+    <div class="nc-exs" dir="rtl">قَلَمُ زَیْدٍ نَفِیْسٌ ۔</div>
+    <div class="nc-exs-rom">qalamu zaidin nafīsun</div>
+    <div class="nc-exs" dir="rtl">قَامَ أَرْبَعَةَ عَشَرَ رَجُلًا ۔</div>
+    <div class="nc-exs-rom">qāma arba'ata 'ashara rajulan</div>
+    <div class="nc-exs" dir="rtl">خَالِدٌ تَاجِرُ حَضْرَ مَوْتَ ۔</div>
+    <div class="nc-exs-rom">khālidun tājiru ḥaḍra mawta</div>
+  </div>
+
   <div class="nc-foot">
     <span class="nc-brand">eMahad · Ilm-un-Nahw</span>
     <span class="nc-src">PDF p-11 · verbatim · DRAFT</span>
   </div>
 </div>
-
-## ترکیب
-
-| جملہ | ترکیب |
-| --- | --- |
-| غُلَامُ زَیْدٍ حَاضِرٌ<br>*ghulāmu zaidin ḥāḍirun* | غُلَامُ مضاف، زَیْدٍ مضاف الیہ، مضاف اور مضاف الیہ کر مبتدا، حَاضِرٌ خبر، مبتدا خبر کر جملہ اسمیہ خبریہ ہوا۔ |
-| جَاءَ أَحَدَ عَشَرَ رَجُلًا<br>*jā'a aḥada 'ashara rajulan* | جَاءَ فعل، أَحَدَ عَشَرَ ممیز، رَجُلًا تمیز، ممیز تمیز کر فاعل ہوا، فعل فاعل کر جملہ فعلیہ خبریہ ہوا۔ |
-| إِبْرَاهِيمُ سَاكِنٌ بَعْلَبَكَّ<br>*ibrāhīmu sākinun ba'labakka* | إِبْرَاهِيمُ مبتدا، سَاكِنٌ مضاف، بَعْلَبَكَّ مضاف الیہ، مضاف مضاف الیہ کر خبر، مبتدا خبر کر جملہ اسمیہ خبریہ ہوا۔ |
-
-## ترکیب بیان کریں
-
-<div class="arabic" markdown="0" dir="rtl">
-قَلَمُ زَیْدٍ نَفِیْسٌ۔ &nbsp;·&nbsp; قَامَ أَرْبَعَةَ عَشَرَ رَجُلًا۔ &nbsp;·&nbsp; خَالِدٌ تَاجِرُ حَضْرَ مَوْتَ۔
-</div>
-
-*qalamu zaidin nafīsun · qāma arba'ata 'ashara rajulan · khālidun tājiru ḥaḍra mawta*
 
 <!-- [?] Heading term read as "مِنع صرف" (Man'-i Sarf) from the red heading; visually plausible alt reading "مزجی" (Mazjī). Verify against the physical book. -->
 <!-- [?] In the 2nd ترکیب row, role of أَحَدَ عَشَرَ read as "ممیز" and رَجُلًا as "تمیز"; confirm against book. -->
