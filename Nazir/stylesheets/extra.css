@@ -532,7 +532,17 @@
 }
 .nchart * { box-sizing: border-box; }
 .nchart .nc-frame { position: absolute; inset: 12px; border: 1px solid var(--nc-border); border-radius: 9px; pointer-events: none; }
-.nchart .nc-hero { font-family: var(--nc-amiri); font-weight: 700; color: var(--nc-emerald); font-size: clamp(3rem,12vw,4.6rem); line-height: 1.6; margin: .1rem 0 .3rem; }
+.nchart .nc-hero { font-family: var(--nc-amiri); font-weight: 700; color: var(--nc-emerald); font-size: clamp(1.7rem, 4.4vw, 2.5rem); line-height: 1.4; margin: .1rem auto .45rem; max-width: 26ch; text-wrap: balance; }
+
+/* Tables inside charts — big, Amiri, clean (overrides Material's small default) */
+.nchart .table-scroll { overflow-x: auto; margin: .4rem 0; }
+.nchart table { width: 100% !important; border-collapse: separate !important; border-spacing: 0 !important; margin: .6rem 0 !important; border: 0 !important; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 3px rgba(40,60,45,.07); }
+.nchart th, .nchart td { font-family: var(--nc-amiri) !important; text-align: center !important; border: 0 !important; padding: .65rem 1rem !important; line-height: 1.5 !important; vertical-align: middle !important; }
+.nchart thead th { background: var(--nc-emerald) !important; color: #fbfcf9 !important; font-size: 1.15rem !important; font-weight: 700 !important; }
+[data-md-color-scheme="slate"] .nchart thead th { color: #0c1712 !important; }
+.nchart tbody td { font-size: 1.5rem !important; color: var(--nc-ink) !important; background: var(--nc-ground) !important; border-top: 1px solid var(--nc-border) !important; }
+.nchart tbody tr:nth-child(even) td { background: var(--nc-ground2) !important; }
+.nchart td .rom { display: block; font-family: var(--nc-sans) !important; font-size: .72rem !important; color: var(--nc-muted); margin-top: .15rem; }
 .nchart .nc-sub { font-family: var(--nc-sans); text-transform: uppercase; letter-spacing: .4em; font-size: .72rem; font-weight: 600; color: var(--nc-gold); padding-left: .4em; }
 .nchart .nc-rule { width: 50px; height: 1px; background: var(--nc-gold); opacity: .7; margin: 1.1rem auto 1.2rem; }
 

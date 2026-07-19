@@ -10,18 +10,30 @@ hide:
   <div class="nc-sub">Alamat-e-Ism</div>
   <div class="nc-rule"></div>
 
-  <div class="nc-band" style="margin-top:0;border-top:0;padding-top:0">
-    <div class="nc-band-label" dir="rtl">فصل (۳) — علاماتِ اسم</div>
-    <div class="nc-v" dir="rtl">۱۔ الف لام ۲۔ حرف جرّ اُس کے شروع میں ہو، جیسے: اَلْحَمْدُ ، بِزَیْدٍ۔</div>
-    <div class="nc-v" dir="rtl">۳۔ تنوین اُس کے آخر میں ہو، جیسے: زَیْدٌ۔</div>
-    <div class="nc-v" dir="rtl">۴۔ مسند الیہ ہو، جیسے: زَیْدٌ قَائِمٌ۔</div>
-    <div class="nc-v" dir="rtl">۵۔ مضاف ہو، جیسے: غُلَامُ زَیْدٍ۔</div>
-    <div class="nc-v" dir="rtl">۶۔ مُصَغَّر ہو، جیسے: قُرَیْشٌ ، رُجَیْلٌ۔</div>
-    <div class="nc-v" dir="rtl">۷۔ منسوب ہو، جیسے: بَغْدَادِیٌّ ، ہِنْدِیٌّ۔</div>
-    <div class="nc-v" dir="rtl">۸۔ تثنیہ ہو، جیسے: رَجُلَانِ۔</div>
-    <div class="nc-v" dir="rtl">۹۔ جمع ہو، جیسے: رِجَالٌ۔</div>
-    <div class="nc-v" dir="rtl">۱۰۔ موصوف ہو، جیسے: رَجُلٌ کَرِیْمٌ۔</div>
-    <div class="nc-v" dir="rtl">۱۱۔ تائے متحرک اس سے ملی ہو، جیسے: ضَارِبَۃٌ۔</div>
+  <div class="nc-band-label" dir="rtl">فصل (۳) — علاماتِ اسم</div>
+
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th dir="rtl">نمبر</th>
+          <th dir="rtl">علامت</th>
+          <th dir="rtl">مثال</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td dir="rtl">۱، ۲</td><td dir="rtl">الف لام یا حرف جرّ اُس کے شروع میں ہو</td><td dir="rtl">اَلْحَمْدُ ، بِزَیْدٍ</td></tr>
+        <tr><td dir="rtl">۳</td><td dir="rtl">تنوین اُس کے آخر میں ہو</td><td dir="rtl">زَیْدٌ</td></tr>
+        <tr><td dir="rtl">۴</td><td dir="rtl">مسند الیہ ہو</td><td dir="rtl">زَیْدٌ قَائِمٌ</td></tr>
+        <tr><td dir="rtl">۵</td><td dir="rtl">مضاف ہو</td><td dir="rtl">غُلَامُ زَیْدٍ</td></tr>
+        <tr><td dir="rtl">۶</td><td dir="rtl">مُصَغَّر ہو</td><td dir="rtl">قُرَیْشٌ ، رُجَیْلٌ</td></tr>
+        <tr><td dir="rtl">۷</td><td dir="rtl">منسوب ہو</td><td dir="rtl">بَغْدَادِیٌّ ، ہِنْدِیٌّ</td></tr>
+        <tr><td dir="rtl">۸</td><td dir="rtl">تثنیہ ہو</td><td dir="rtl">رَجُلَانِ</td></tr>
+        <tr><td dir="rtl">۹</td><td dir="rtl">جمع ہو</td><td dir="rtl">رِجَالٌ</td></tr>
+        <tr><td dir="rtl">۱۰</td><td dir="rtl">موصوف ہو</td><td dir="rtl">رَجُلٌ کَرِیْمٌ</td></tr>
+        <tr><td dir="rtl">۱۱</td><td dir="rtl">تائے متحرک اس سے ملی ہو</td><td dir="rtl">ضَارِبَۃٌ</td></tr>
+      </tbody>
+    </table>
   </div>
 
   <div class="nc-band">
@@ -35,4 +47,4 @@ hide:
   </div>
 </div>
 
-<!-- [?]: Signs 1 & 2 (الف لام / حرف جرّ) share one printed line "اُس کے شروع میں ہو" with two examples (اَلْحَمْدُ ، بِزَیْدٍ); kept together on one line exactly as printed. Sign 2 prints حرف جرّ (Arabic form: no izafat kasra under ف, shadda on ر) — confirmed against 600 DPI render. Title heading علاماتِ اسم carries only the izafat kasra, no other harakat. -->
+<!-- [?]: Signs 1 & 2 (الف لام / حرف جرّ) share one printed line "اُس کے شروع میں ہو" with two examples (اَلْحَمْدُ ، بِزَیْدٍ); combined into one table row exactly as printed. Sign 2 prints حرف جرّ (no izafat kasra under ف, shadda on ر) — confirmed against 600 DPI render. Title heading علاماتِ اسم carries only the izafat kasra. Content is verbatim; only the layout (numbered text → table) changed. -->
