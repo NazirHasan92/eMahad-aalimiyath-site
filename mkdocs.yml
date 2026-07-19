@@ -149,6 +149,33 @@ nav:
       - "Zamīr Mansūb · Majrūr": Nahw/p19-zameer-mansoob-majroor.md
       - "Asmā-e Mawsūla": Nahw/p20-asma-mawsoola.md
       - "Asmā-e Ishāra": Nahw/p21-asma-e-ishara.md
+      - "Asmā-e Afʿāl · Aswāt · Zurūf": Nahw/p22-asmae-afaal-aswaat-zuruf.md
+      - "Asmā Ghayr Mutamakkin": Nahw/p23-asma-ghair-mutamakkin.md
+      - "Zarf-e Makān": Nahw/p24-zarf-e-makan.md
+      - "Ism Ghayr Mutamakkin — Zurūf": Nahw/p25-asma-ghair-mutamakkin.md
+      - "Ism Mansūb": Nahw/p26-ism-mansub.md
+      - "Ism Mansūb — Qawāʿid": Nahw/p27-ism-e-mansub-qawaid.md
+      - "Ism Tasghīr": Nahw/p28-ism-tasgheer.md
+      - "Maʿrifa · Nakira": Nahw/p29-marifa-nakira.md
+      - "Mudhakkar · Muʾannath": Nahw/p30-mudhakkar-muannath.md
+      - "Wāhid · Tathniya · Jamʿ": Nahw/p31-wahid-tathniya-jam.md
+      - "Jamʿ — Qillat · Kathrat": Nahw/p32-jama-qillat-kathrat.md
+      - "Muntahā al-Jumūʿ": Nahw/p33-muntaha-al-jumu.md
+      - "Munsarif · Ghayr Munsarif": Nahw/p34-munsarif-ghayr-munsarif.md
+      - "ʿAdl · ʿAjma · Alif-Nūn": Nahw/p35-adl-ajma-alif-nun.md
+      - "Munsarif — Fawāʾid": Nahw/p36-munsarif-ghayr-munsarif-fawaid.md
+      - "Marfūʿāt": Nahw/p37-marfooaat.md
+      - "Ahkām-e Fāʿil": Nahw/p38-ahkam-e-fael.md
+      - "Mubtadā · Khabar · Inna": Nahw/p39-mubtada-khabar-inna.md
+      - "Kāna wa Akhawāt": Nahw/p40-kaana-wa-akhwaat.md
+      - "Mansūbāt": Nahw/p41-mansubat.md
+      - "Mafʿūl Mutlaq · Lahu": Nahw/p42-mafool-mutlaq-lahu.md
+      - "Mafʿūl Maʿ · Fīh": Nahw/p43-mafool-maa-mafool-fih.md
+      - "Hāl": Nahw/p44-haal.md
+      - "Mansūbāt — Tamīz": Nahw/p45-mansubat.md
+      - "Hurūf-e Istithnā": Nahw/p46-huroof-istithna.md
+      - "Iʿrāb-e Mustathnā": Nahw/p47-aqsam-e-irab-mustasna.md
+      - "Iʿrāb — Lafẓ Ghayr": Nahw/p48-irab-lafz-ghayr.md
   - Sarf (صرف):
       - "Istilāhāt — ʿIlm-e Sarf": Sarf/p18-istilahaat.md
       - "Wāziʿ · Kalimah": Sarf/p19-waazi-kalima.md
@@ -165,3 +192,31 @@ nav:
       - "Shash Aqsām": Sarf/p30-shash-aqsaam.md
       - "Fiʿl kī Aqsām — Thulāthī · Rubāʿī": Sarf/p31-fel-ki-aqsaam-thulathi-rubai.md
       - "Haft Aqsām — Mizāj-e Hurūf": Sarf/p32-haft-aqsaam-mizaj-huroof.md
+      - "Nāqis · Lafīf · Mahmūz · Muzāʿaf": Sarf/p33-naqis-lafif-mahmuz-muzaaf.md
+      - "Haft Aqsām": Sarf/p34-haft-aqsam.md
+      - "Fiʿl Māzī": Sarf/p35-fael-maazi.md
+      - "Gardān — Māzī Maʿlūm": Sarf/p36-gardaan-fel-maazi-maloom.md
+      - "Sīghon kī Pehchān · ʿAlāmāt": Sarf/p37-sighon-ki-pehchan-alamat.md
+      - "Fiʿl Māzī — Pehchān": Sarf/p38-fael-maazi-pehchan.md
+      - "Māzī — ʿAlāmāt-e Taʾnīth": Sarf/p39-mazi-alamat-e-tanith.md
+      - "Māzī Maʿlūm — Mashq": Sarf/p40-fil-madi-malum-mashq.md
+      - "Māzī Maʿlūm — Gardān": Sarf/p41-madi-maloom-gardaan.md
+      - "Māzī Manfī Maʿlūm — Gardān": Sarf/p42-gardaan-madi-manfi-maloom.md
+      - "Fiʿl Māzī Majhūl": Sarf/p43-fel-madi-majhool.md
+      - "Māzī Majhūl — Gardān": Sarf/p44-gardaan-maazi-majhool.md
+      - "Māzī Majhūl — Mashq": Sarf/p45-madi-majhool.md
+      - "Māzī Manfī Majhūl": Sarf/p46-madi-manfi-majhool.md
+      - "Qad · Kāna": Sarf/p47-qad-aur-kaan.md
+      - "Māzī — Chār Gardānen": Sarf/p48-madi-majhool-gardan.md
+      - "Fiʿl Muzāriʿ Maʿlūm": Sarf/p49-fil-mudari-maloom.md
+      - "Muzāriʿ Maʿlūm — Binā": Sarf/p50-mudari-maloom-bina.md
+      - "Zamma · Nūn-e Iʿrābī": Sarf/p51-zamma-nun-irabi.md
+      - "Muzāriʿ — Tamrīn": Sarf/p52-mudari-tamrin.md
+      - "Muzāriʿ — Awzān": Sarf/p53-fil-mudari-awzan.md
+      - "Muzāriʿ Manfī": Sarf/p54-mudari-manfi.md
+      - "Muzāriʿ Manfī Maʿlūm": Sarf/p55-fil-mudari-manfi-maloom.md
+      - "Muzāriʿ Manfī — Gardān": Sarf/p56-mudari-manfi.md
+      - "Muzāriʿ Majhūl": Sarf/p57-mudari-majhool.md
+      - "Muzāriʿ Majhūl — Tamrīn": Sarf/p58-tamreen-mudari-majhool.md
+      - "Muzāriʿ Manfī Majhūl": Sarf/p59-mudari-manfi-majhool.md
+      - "Muzāriʿ Manfī Majhūl — Tamrīn": Sarf/p60-tamreen-mudari-manfi-majhool.md
