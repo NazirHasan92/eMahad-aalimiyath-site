@@ -11,7 +11,7 @@ hide:
   <div class="nc-rule"></div>
 
   <div class="nc-band" style="margin-top:0;border-top:0;padding-top:0">
-    <div class="nc-band-label" dir="rtl">فعل نہی بنانے کا طریقہ · گردانیں بنائیں</div>
+    <div class="nc-band-label" dir="rtl">فعل نہی بنانے کا طریقہ</div>
     <div class="nc-v" dir="rtl">يَنْصُرُ ـ يَذْهَبُ اور يَسْئَلُ سے نہی غائب معلوم و مجہول کی گردانیں بنائیں۔</div>
   </div>
 
@@ -84,6 +84,6 @@ hide:
   </div>
 </div>
 
-<!-- [?]: Grid harakāt read from a 400-DPI render; letters are clear, but a few vowel marks are approximate — e.g. لَا يَنْصُرْنَ (sukūn vs damma on ص/ن), لَا اُسْئَلْ (final harakat), hamza seat written as ئ throughout (اُسْئَلْ / نَسْئَلْ / يُسْئَلْنَانِّ) as the book renders it. -->
-<!-- [?]: Instruction 3rd verb read as يَسْئَلُ (fatha, active); could be يُسْئَلُ. -->
-<!-- [?]: عربی بنائیں sentence 4 read as "نہ جانا جائے" (could be "نہ جایا جائے"); sentence 7 "ہم ہرگز نہ لوٹیں". -->
+<!-- verify (400-DPI re-read, p101): Sub Topic 4.2 header = "فعل نہی بنانے کا طریقہ" (no "امر و"); the "فعل امر و نہی کا بیان" heading is the Topic-4.0-side box, not this label. Editorial splice "· گردانیں بنائیں" removed. -->
+<!-- verify: row1 col3 لَا يُعْرَفَا CONFIRMED — damma on ي (passive), sukūn on ع, fatha on ر, dual alif. Instruction 3rd verb CONFIRMED يَسْئَلُ (fatha, active). All 16 grid صیغے match the page. -->
+<!-- [?]: hamza seat written as ئ throughout (اُسْئَلْ / نَسْئَلْ / يُسْئَلْنَانِّ) as the book renders it. عربی بنائیں sentence 4 "نہ جانا جائے"; sentence 7 "ہم ہرگز نہ لوٹیں". -->

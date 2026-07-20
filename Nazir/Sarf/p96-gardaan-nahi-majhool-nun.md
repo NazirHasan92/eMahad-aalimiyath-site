@@ -65,22 +65,25 @@ hide:
   <div class="nc-band">
     <div class="nc-band-label" dir="rtl">صیغے اور معانی بتائیں</div>
     <div class="table-scroll">
-      <table>
+      <table dir="rtl">
         <tbody>
           <tr>
-            <td dir="rtl">لَاتُسْئَلِیْ</td>
-            <td dir="rtl">لَاتَنْصُرُنْ</td>
             <td dir="rtl">لَاتَذْهَبُوْا</td>
+            <td dir="rtl">لَاتَنْصُرَنْ</td>
+            <td dir="rtl">لَاتُسْئَلِنَّ</td>
+            <td dir="rtl">لَاتُسْئَلِیْ</td>
           </tr>
           <tr>
-            <td dir="rtl">لَاتُرْجِعْنَ</td>
-            <td dir="rtl">[?]</td>
-            <td dir="rtl">[?]</td>
+            <td dir="rtl">لَاتَفْعَلَا</td>
+            <td dir="rtl">لَاتُعْرَفَا</td>
+            <td dir="rtl">لَاتُعْرَفَنَّ</td>
+            <td dir="rtl">لَاتَرْجِعْنَ</td>
           </tr>
           <tr>
-            <td dir="rtl">لَاتَمْنَعُنْ</td>
-            <td dir="rtl">[?]</td>
+            <td dir="rtl">لَاتُسْئَلَنْ</td>
             <td dir="rtl">لَاتُسْئَلُوْا</td>
+            <td dir="rtl">لَاتُمْنَعْ</td>
+            <td dir="rtl">لَاتُمْنَعَنْ</td>
           </tr>
         </tbody>
       </table>
@@ -89,7 +92,7 @@ hide:
 
   <div class="nc-band">
     <div class="nc-band-label" dir="rtl">عربی بنائیں</div>
-    <div class="nc-v" dir="rtl">نہ جاؤ تو ایک مرد ۔ نہ سوال کرو تو ایک عورت ۔ نہ لوٹ کے جاؤ تم دو مرد ۔ نہ مدد کیے جاؤ تم سب مرد ۔ نہ جاؤ تم سب عورتیں ۔ تم سب مرد ہرگز مدد نہ کیے جاؤ ۔ تو ایک مرد ہرگز سوال نہ کیا جائے ۔ ہرگز ہرگز نہ جاؤ تم سب مرد ۔</div>
+    <div class="nc-v" dir="rtl">نہ جاؤ تو ایک مرد ۔ نہ سوال کرو تو ایک عورت ۔ نہ رو کے جاؤ تم دو مرد ۔ نہ مدد کیے جاؤ تم سب مرد ۔ نہ جاؤ تم سب عورتیں ۔ تم سب مرد ہرگز مدد نہ کیے جاؤ ۔ تو ایک مرد ہرگز سوال نہ کیا جائے ۔ ہرگز ہرگز نہ جاؤ تم سب مرد ۔</div>
   </div>
 
   <div class="nc-foot">
@@ -97,6 +100,3 @@ hide:
     <span class="nc-src">Slide 195–196 · PDF p-96 · verbatim · DRAFT</span>
   </div>
 </div>
-
-<!-- [?]: Slide 196 "صیغے اور معانی بتائیں" grid — the fine-print harakāt are small in the image render. Confidently read cells transcribed; two cells left as [?] (their vowels/skeleton not sharp enough to commit without guessing). -->
-<!-- [?]: Slide 196 "عربی بنائیں" — Urdu prompt sentences transcribed best-effort from a small image; wording (esp. "نہ لوٹ کے جاؤ" for the رجع verb) not fully certain. -->

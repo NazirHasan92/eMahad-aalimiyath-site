@@ -32,7 +32,7 @@ hide:
         </thead>
         <tbody>
           <tr>
-            <td dir="rtl">مَا اَفْعَلَہٗ<br><span class="nc-name">Mā af'alahū</span></td>
+            <td dir="rtl">مَاۤ اَفْعَلَہٗ<br><span class="nc-name">Mā af'alahū</span></td>
             <td dir="rtl">کیا ہی اچھا کیا اس نے</td>
           </tr>
           <tr>

@@ -11,31 +11,31 @@ hide:
   <div class="nc-rule"></div>
 
   <div class="nc-band" style="margin-top:0;border-top:0;padding-top:0">
-    <div class="nc-v" dir="rtl">یَنْصُرُ ، یَمْنَعُ اور یَدْخُلُ سے امرِ غائب و متکلم و مجہول بانونِ ثقیلہ و خفیفہ کی گردان بنائیں۔</div>
+    <div class="nc-v" dir="rtl">یَنْصُرُ ، یَمْنَعُ اور یَدْخُلُ سے امرِ غائب و متکلم و مجہول بانونِ ثقیلہ و خفیفہ کی گردانیں بنائیں۔</div>
   </div>
 
   <div class="nc-band">
-    <div class="nc-band-label" dir="rtl">صیغے اور معنی بتائیں:</div>
+    <div class="nc-band-label" dir="rtl">صیغے اور معانی بتائیں:</div>
     <div class="table-scroll">
       <table dir="rtl">
         <tbody>
           <tr>
             <td>لِیُنْصَرُوْا</td>
-            <td>لِیُنْصَرْنَ</td>
+            <td>لِیُنْصَرَنَّ</td>
             <td>لِیُمْنَعُوْا</td>
             <td>لِیُمْنَعَنَّ</td>
           </tr>
           <tr>
-            <td>لِیُنْصَرْنَانِّ</td>
-            <td>لِتُنْصَرَنَّ</td>
-            <td>لِیُدْخَلْنَ</td>
-            <td>لِیُمْنَعَنَّ</td>
+            <td>لِیُدْخَلَنْ</td>
+            <td>لِیُدْخَلْنَآنِّ</td>
+            <td>لِیُنْصَرُنْ</td>
+            <td>لِیُنْصَرْنَآنِّ</td>
           </tr>
           <tr>
-            <td>لِیُنْصَرَنَّ</td>
-            <td>لِتُنْصَرْنَ</td>
-            <td>لِیُمْنَعَنَّ</td>
-            <td>لِیُسْمَعَنَّ</td>
+            <td>لِنُنْصَرَنَّ</td>
+            <td>لِتُنْصَرُنْ</td>
+            <td>لِیُمْنَعْ</td>
+            <td>لِیُسْمَعَا</td>
           </tr>
         </tbody>
       </table>
@@ -53,7 +53,7 @@ hide:
           </tr>
           <tr>
             <td dir="rtl">۲</td>
-            <td dir="rtl">چاہیے کہ ضرور منع کی جائے وہ ایک عورت۔</td>
+            <td dir="rtl">چاہیے کہ ضرور روکی جائے وہ ایک عورت۔</td>
           </tr>
           <tr>
             <td dir="rtl">۳</td>
@@ -80,8 +80,8 @@ hide:
   </div>
 
   <div class="nc-band">
-    <div class="nc-band-label" dir="rtl">فعل ماضی ”فَعَلَ“ کی گردان میں تمام صیغوں کو ترجمہ کرتے ہوئے اس بات کا دھیان رکھیں:</div>
-    <div class="nc-v" dir="rtl">کہ اس ایک، دو، سب مردوں نے یا سب عورتوں نے، تم ایک، دو، سب مردوں نے یا سب عورتوں نے اور ہم سب نے نیک کام کیے اور ان شاء اللہ کرتے رہیں گے۔</div>
+    <div class="nc-band-label" dir="rtl">فعل ماضی ”فَعَلَ“ کی گردان میں تمام صیغوں کا ترجمہ کرتے ہوئے اس بات کا دھیان رکھیں:</div>
+    <div class="nc-v" dir="rtl">کہ اس ایک، دو، سب مردوں نے یا سب عورتوں نے؛ تم ایک، دو، سب مردوں نے یا سب عورتوں نے اور ہم سب نے نیک کام کیے اور ان شاء اللہ کرتے رہیں گے۔</div>
     <div class="nc-v" dir="rtl">مفتی ابو لبابہ شاہ منصور مدظلہ</div>
   </div>
 
@@ -91,6 +91,5 @@ hide:
   </div>
 </div>
 
-<!-- [?]: The 12 conjugation forms in the "صیغے اور معنی بتائیں" table are dense amr-majhool forms carrying nūn-e-thaqīla (ـَنَّ) / nūn-e-khafīfa endings, read from a compressed image render. Roots (نصر، منع، دخل، سمع) are legible; exact endings/harakāt on several cells are NOT certain and must be verified against the physical book. لِیُنْصَرُوْا / لِیُمْنَعُوْا may actually carry nūn (لِیُنْصَرُنَّ / لِیُمْنَعُنَّ); لِیُسْمَعَنَّ root (سمع) is unexpected given the instruction only names نصر/منع/دخل and may be a misread. -->
-<!-- [?]: "عربی بنائیں" sentence ۵ — "سوال کیا جائے" read from image; the verb here is uncertain (could be from سمع = "سنا جائے") — verify against book. -->
+<!-- [?]: "عربی بنائیں" sentence ۵ — "سوال کیا جائے" read from image; the verb may be from سمع ("سنا جائے") — low-confidence, verify against physical book. -->
 <!-- [?]: Signature line "مفتی ابو لبابہ شاہ منصور مدظلہ" — read from small footer text. -->

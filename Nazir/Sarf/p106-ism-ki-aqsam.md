@@ -12,7 +12,6 @@ hide:
 
   <div class="nc-band" style="margin-top:0;border-top:0;padding-top:0">
     <div class="nc-band-label" dir="rtl">آئیے! افعال کے بعد اسماء کی بحث پڑھتے ہیں۔</div>
-    <div class="nc-v" dir="rtl">اصطلاحات میں ہم ان تینوں کی تعریف پڑھ چکے ہیں، اب ہم اسمائے مشتقہ پڑھتے ہیں۔</div>
   </div>
 
   <div class="nc-band">
@@ -34,6 +33,7 @@ hide:
         <div class="nc-name">Mushtaqq</div>
       </div>
     </div>
+    <div class="nc-v" dir="rtl">اصطلاحات میں ہم ان تینوں کی تعریف پڑھ چکے ہیں، اب ہم اسمائے مشتقہ پڑھتے ہیں۔</div>
   </div>
 
   <div class="nc-band">
@@ -65,7 +65,7 @@ hide:
             <td dir="rtl">۳</td>
             <td dir="rtl">اِسْم ظَرْف</td>
             <td dir="rtl">۶</td>
-            <td dir="rtl">صِفَتِ مُشَبَّہ</td>
+            <td dir="rtl">صِفَت مُشَبَّہ</td>
           </tr>
         </tbody>
       </table>
@@ -83,6 +83,6 @@ hide:
   </div>
 </div>
 
-<!-- [?]: صفت مشبہ read as صِفَتِ مُشَبَّہ (izāfat); exact harakāt on مشبہ from image render. -->
+<!-- Note: صفت مشبہ written as two words صِفَت مُشَبَّہ (no izāfat kasra) — matches PDF Slide 215 table row 6, which shows no izāfat marker. -->
 <!-- Note (not imported): Slide 214 on this page is an internal navigation TOC (Sub Topic 5.1–5.7 with "Slide" page-refs) listing SEVEN sub-topics — the six above PLUS اسم مبالغہ (Sub Topic 5.7). The printed "اسمائے مشتقہ چھ (۶)" table on Slide 215 lists only six and omits اسم مبالغہ. English "Slide"/"Sub Topic" navigation labels and slide numbers deliberately not reproduced per Urdu+Roman-only chart rule. -->
 <!-- Excluded: red handwritten margin annotations (student's notes, not printed book) on left/right of Slide 215. -->

@@ -47,23 +47,17 @@ hide:
     <div class="nc-band-label" dir="rtl">عربی بنائیں</div>
     <div class="table-scroll">
       <table dir="rtl">
-        <thead>
-          <tr>
-            <th>نمبر</th>
-            <th>معنی</th>
-          </tr>
-        </thead>
         <tbody>
-          <tr><td>۱</td><td>سب مرد جانے والے</td></tr>
-          <tr><td>۲</td><td>سب عورتیں بیٹھنے والی</td></tr>
-          <tr><td>۳</td><td>دو عورتیں سجدہ کرنے والی</td></tr>
-          <tr><td>۴</td><td>ایک مرد بیٹھنے والا</td></tr>
-          <tr><td>۵</td><td>دو عورتیں پوچھنے والی</td></tr>
-          <tr><td>۶</td><td>دو مرد پوچھنے والے</td></tr>
-          <tr><td>۷</td><td>ایک عورت جاننے والی</td></tr>
-          <tr><td>۸</td><td>سجدہ کرنے والی سب عورتیں</td></tr>
-          <tr><td>۹</td><td>جاننے والی دو عورتیں</td></tr>
-          <tr><td>۱۰</td><td>رکوع کرنے والا ایک مرد</td></tr>
+          <tr><td>سب مرد کرنے والے</td></tr>
+          <tr><td>سب عورتیں بیٹھنے والی</td></tr>
+          <tr><td>دو عورتیں سجدہ کرنے والی</td></tr>
+          <tr><td>ایک مرد بیٹھنے والا</td></tr>
+          <tr><td>دو عورتیں پوچھنے والی</td></tr>
+          <tr><td>دو مرد پوچھنے والے</td></tr>
+          <tr><td>ایک عورت جاننے والی</td></tr>
+          <tr><td>سجدہ کرنے والی سب عورتیں</td></tr>
+          <tr><td>جاننے والی دو عورتیں</td></tr>
+          <tr><td>رکوع کرنے والا ایک مرد</td></tr>
         </tbody>
       </table>
     </div>
@@ -123,7 +117,7 @@ hide:
 
   <div class="nc-band">
     <div class="nc-band-label" dir="rtl">نوٹ</div>
-    <div class="nc-v" dir="rtl">باب فَعُلَ ، یَفْعُلُ سے اسم فاعل کی بجائے صفت مشبہ مستعمل ہے ۔ صفت مشبہ کی تفصیل آگے آئے گی ۔ اِنْ شَاءَ اللّٰهُ</div>
+    <div class="nc-v" dir="rtl">باب فَعُلَ ، یَفْعُلُ سے اسم فاعل کی بجائے صفت مشبہ مستعمل ہے ۔ صفت مشبہ کی تفصیل آگے آئے گی ، اِنْ شَاءَ اللّٰهُ</div>
   </div>
 
   <div class="nc-foot">
@@ -132,4 +126,4 @@ hide:
   </div>
 </div>
 
-<!-- [?]: عربی بنائیں — meaning phrases read from image render; verify against physical book. Uncertain words: #1 جانے/کرنے; #3 & #8 سجدہ/عبادت; #10 رکوع (does not map to the 5 tamrin verbs یذهب/یعبد/یعلم/یجلس/یسئل). -->
+<!-- [?]: عربی بنائیں is a running paragraph in the book (10 phrases separated by ۔), not a numbered list; rendered here as a bordered phrase table with no fabricated نمبر/معنی headers. Note #10 (رکوع کرنے والا ایک مرد) does not map to the 5 tamrin verbs یذهب/یعبد/یعلم/یجلس/یسئل — this is verbatim from the page. -->

@@ -6,12 +6,11 @@ hide:
 <div class="nchart" markdown="0">
   <div class="nc-frame"></div>
 
-  <div class="nc-hero" dir="rtl">فِعْلِ نَہی</div>
+  <div class="nc-hero" dir="rtl">فعل نہی</div>
   <div class="nc-sub">Fi'l-e Nahī</div>
   <div class="nc-rule"></div>
 
   <div class="nc-band" style="margin-top:0;border-top:0;padding-top:0">
-    <div class="nc-band-label" dir="rtl">نہی کا معنی</div>
     <div class="nc-v" dir="rtl">نہی کا لغوی معنی ہے روکنا۔ اصطلاح میں نہی اس فعل کو کہتے ہیں جس میں کسی کام سے روکا جائے، جیسے:</div>
     <div class="nc-def">
       <div class="nc-k" dir="rtl">لَا تَذْھَبْ</div>
@@ -92,5 +91,6 @@ hide:
   </div>
 </div>
 
+<!-- Hero corrected to plain "فعل نہی" — PDF red display title shows no confirmable idafat kasra/harakaat; removed Claude-added vowelling. -->
+<!-- First band-label "نہی کا معنی" removed — not a heading on PDF p94; definition sits directly under the title (as on the page). -->
 <!-- [?]: طریقہ paragraph — "لائے نہی (لَا)" read from image; the label for the لَا particle (لائے نہی / لاءِ نہی) not fully sharp in render. -->
-<!-- [?]: "جس میں کسی کام سے روکا جائے" — the word کسی read from a slightly compressed image; letters otherwise clear. -->

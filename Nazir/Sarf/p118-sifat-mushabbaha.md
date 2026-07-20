@@ -6,7 +6,7 @@ hide:
 <div class="nchart" markdown="0">
   <div class="nc-frame"></div>
 
-  <div class="nc-hero" dir="rtl">صِفَتِ مُشَبَّہ</div>
+  <div class="nc-hero" dir="rtl">صفت مشبّہ</div>
   <div class="nc-sub">Sifat-e Mushabbaha</div>
   <div class="nc-rule"></div>
 
@@ -16,7 +16,7 @@ hide:
   </div>
 
   <div class="nc-band">
-    <div class="nc-band-label" dir="rtl">صفت مشبہ بنانے کا طریقہ</div>
+    <div class="nc-band-label" dir="rtl">صفت مشبّہ بنانے کا طریقہ</div>
     <div class="table-scroll">
       <table dir="rtl">
         <thead>
@@ -28,7 +28,7 @@ hide:
         <tbody>
           <tr>
             <td>شَرِیْفٌ</td>
-            <td>کو یَشْرُفُ سے بنایا، "یا" حرف مضارعت کو گرا دیا، فائے کلمہ کو فتحہ دیا، عین کلمہ کو کسرہ دیا، تیسری جگہ یا ساکنہ علامتِ صفت مشبہ لائے، آخری حرف پر تنوین لگا دی تو یَشْرُفُ سے شَرِیْفٌ بن گیا۔</td>
+            <td>کو یَشْرُفُ سے بنایا، حرف مضارعت "یا" کو گرا دیا، فائے کلمہ کو فتحہ دیا، عین کلمہ کو کسرہ دیا، تیسری جگہ یا ساکنہ علامتِ صفت مشبّہ لائے، آخری حرف پر تنوین لگا دی تو یَشْرُفُ سے شَرِیْفٌ بن گیا۔</td>
           </tr>
         </tbody>
       </table>
@@ -37,7 +37,7 @@ hide:
   </div>
 
   <div class="nc-band">
-    <div class="nc-band-label" dir="rtl">گردان صفت مشبہ از شَرُفَ یَشْرُفُ</div>
+    <div class="nc-band-label" dir="rtl">گردان صفت مشبّہ از شَرُفَ یَشْرُفُ</div>
     <div class="table-scroll">
       <table dir="rtl">
         <thead>
@@ -81,7 +81,7 @@ hide:
         </tbody>
       </table>
     </div>
-    <div class="nc-v" dir="rtl">نوٹ: صفت مشبہ کی مکمل گردان معلم القواعد الصرف میں پڑھیں گے اِنْ شَاءَ اللّٰہُ۔</div>
+    <div class="nc-v" dir="rtl">نوٹ: صفت مشبّہ کی مکمل گردان معلم قواعد الصرف میں پڑھیں گے اِنْ شَاءَ اللّٰہُ۔</div>
   </div>
 
   <div class="nc-foot">
@@ -90,5 +90,5 @@ hide:
   </div>
 </div>
 
-<!-- [?]: بناء cell — "تیسری جگہ یا ساکنہ علامتِ صفت مشبہ لائے": exact connecting particle (یا ساکنہ / یائے ساکنہ / یا ساکنہ کہ) not fully sharp in the image render; wording kept close to visible text. -->
+<!-- [?]: بناء cell — "تیسری جگہ یا ساکنہ علامتِ صفت مشبّہ لائے": exact connecting particle (یا ساکنہ / یائے ساکنہ) not fully sharp in the image render; wording kept close to visible text. -->
 <!-- [?]: gardaan heading "از شَرُفَ یَشْرُفُ" — harakah on the māḍī شَرُفَ read from image, reasonably clear. -->

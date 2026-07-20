@@ -14,16 +14,6 @@ hide:
     <div class="nc-band-label" dir="rtl">ثلاثی مجرد کے ابواب سے فعل نہی غائب و متکلّم مجہول کی گردانیں</div>
     <div class="table-scroll">
       <table dir="rtl">
-        <thead>
-          <tr>
-            <th dir="rtl">ضرب</th>
-            <th dir="rtl">فتح</th>
-            <th dir="rtl">نصر</th>
-            <th dir="rtl">سمع</th>
-            <th dir="rtl">حسب</th>
-            <th dir="rtl">شرف</th>
-          </tr>
-        </thead>
         <tbody>
           <tr>
             <td dir="rtl">لَا يُضْرَبْ</td>
@@ -98,16 +88,6 @@ hide:
     <div class="nc-band-label" dir="rtl">ثلاثی مجرد کے ابواب سے فعل نہی غائب و متکلّم مجہول با نونِ ثقیلہ کی گردانیں</div>
     <div class="table-scroll">
       <table dir="rtl">
-        <thead>
-          <tr>
-            <th dir="rtl">ضرب</th>
-            <th dir="rtl">فتح</th>
-            <th dir="rtl">نصر</th>
-            <th dir="rtl">سمع</th>
-            <th dir="rtl">حسب</th>
-            <th dir="rtl">شرف</th>
-          </tr>
-        </thead>
         <tbody>
           <tr>
             <td dir="rtl">لَا يُضْرَبَنَّ</td>
@@ -182,16 +162,6 @@ hide:
     <div class="nc-band-label" dir="rtl">ثلاثی مجرد کے ابواب سے فعل نہی غائب و متکلّم مجہول با نونِ خفیفہ کی گردانیں</div>
     <div class="table-scroll">
       <table dir="rtl">
-        <thead>
-          <tr>
-            <th dir="rtl">ضرب</th>
-            <th dir="rtl">فتح</th>
-            <th dir="rtl">نصر</th>
-            <th dir="rtl">سمع</th>
-            <th dir="rtl">حسب</th>
-            <th dir="rtl">شرف</th>
-          </tr>
-        </thead>
         <tbody>
           <tr>
             <td dir="rtl">لَا يُضْرَبَنْ</td>
@@ -200,14 +170,6 @@ hide:
             <td dir="rtl">لَا يُسْمَعَنْ</td>
             <td dir="rtl">لَا يُحْسَبَنْ</td>
             <td dir="rtl">لَا يُشْرَفَنْ</td>
-          </tr>
-          <tr>
-            <td dir="rtl">لَا يُضْرَبَانْ</td>
-            <td dir="rtl">لَا يُفْتَحَانْ</td>
-            <td dir="rtl">لَا يُنْصَرَانْ</td>
-            <td dir="rtl">لَا يُسْمَعَانْ</td>
-            <td dir="rtl">لَا يُحْسَبَانْ</td>
-            <td dir="rtl">لَا يُشْرَفَانْ</td>
           </tr>
           <tr>
             <td dir="rtl">لَا يُضْرَبُنْ</td>
@@ -224,22 +186,6 @@ hide:
             <td dir="rtl">لَا تُسْمَعَنْ</td>
             <td dir="rtl">لَا تُحْسَبَنْ</td>
             <td dir="rtl">لَا تُشْرَفَنْ</td>
-          </tr>
-          <tr>
-            <td dir="rtl">لَا تُضْرَبَانْ</td>
-            <td dir="rtl">لَا تُفْتَحَانْ</td>
-            <td dir="rtl">لَا تُنْصَرَانْ</td>
-            <td dir="rtl">لَا تُسْمَعَانْ</td>
-            <td dir="rtl">لَا تُحْسَبَانْ</td>
-            <td dir="rtl">لَا تُشْرَفَانْ</td>
-          </tr>
-          <tr>
-            <td dir="rtl">لَا يُضْرَبْنَانْ</td>
-            <td dir="rtl">لَا يُفْتَحْنَانْ</td>
-            <td dir="rtl">لَا يُنْصَرْنَانْ</td>
-            <td dir="rtl">لَا يُسْمَعْنَانْ</td>
-            <td dir="rtl">لَا يُحْسَبْنَانْ</td>
-            <td dir="rtl">لَا يُشْرَفْنَانْ</td>
           </tr>
           <tr>
             <td dir="rtl">لَا أُضْرَبَنْ</td>
@@ -268,7 +214,7 @@ hide:
   </div>
 </div>
 
-<!-- [?]: Column headers (ضرب فتح نصر سمع حسب شرف) are the six abwāb roots read from the forms themselves and added as reading aids; the book's table cells contain only the conjugated forms, no header row. -->
-<!-- [?]: Column ORDER — rightmost is clearly ضرب and leftmost clearly شرف; the middle columns فتح / نصر / سمع / حسب were read at the render's limit and their left-to-right order should be checked against the physical book. -->
-<!-- [?]: Table 1 (Slide 208, plain nahī majhūl) read with high confidence — passive pattern لَا يُفْعَلْ is uniform across all six abwāb. -->
-<!-- [?]: Tables 2 & 3 (nūn thaqīla با نونِ ثقیلہ / nūn khafīfa با نونِ خفیفہ) are DENSE at this render. The systematic emphatic-nūn endings (ـَنَّ / ـَانِّ / ـُنَّ / ـْنَانِّ  and  ـَنْ / ـَانْ / ـُنْ / ـْنَانْ) were read as best possible but individual harakāt, and especially the dual and jama-mu'annath khafīfa forms (rows 2, 5, 6 of Table 3), should be verified letter-by-letter against the physical book. Row count assumed = 8 (6 ghā'ib + 2 mutakallim) matching the header غائب و متکلّم. -->
+<!-- Column order (right→left): ضرب · فتح · نصر · سمع · حسب · شرف. The book tables have NO header row; columns are identified by the root letters within each form. -->
+<!-- Table 1 (Slide 208, plain nahī majhūl): 8 rows — 6 ghā'ib (يُضْرَبْ · يُضْرَبَا · يُضْرَبُوْا · تُضْرَبْ · تُضْرَبَا · يُضْرَبْنَ) + 2 mutakallim (أُضْرَبْ · نُضْرَبْ). -->
+<!-- Table 2 (Slide 209, nūn thaqīla): 8 rows — retains the dual (ـَانِّ) and jama-mu'annath (ـْنَانِّ) forms, per the book. -->
+<!-- Table 3 (Slide 209, nūn khafīfa): 5 rows ONLY. The dual and jama-mu'annath forms are absent — nūn khafīfa (sākin) does not attach to the alif of tathniya or the nūn of niswa. Rows kept: يُضْرَبَنْ · يُضْرَبُنْ · تُضْرَبَنْ · أُضْرَبَنْ · نُضْرَبَنْ. (Corrected 2026-07-20: 3 fabricated dual/fem-plural rows removed to match the PDF.) -->

@@ -18,48 +18,48 @@ hide:
         <tbody>
           <tr>
             <td dir="rtl">لَا تُضْرَبْ</td>
-            <td dir="rtl">لَا تُنْصَرْ</td>
             <td dir="rtl">لَا تُفْتَحْ</td>
+            <td dir="rtl">لَا تُنْصَرْ</td>
             <td dir="rtl">لَا تُسْمَعْ</td>
             <td dir="rtl">لَا تُحْسَبْ</td>
             <td dir="rtl">لَا تُشْرَفْ</td>
           </tr>
           <tr>
             <td dir="rtl">لَا تُضْرَبَا</td>
-            <td dir="rtl">لَا تُنْصَرَا</td>
             <td dir="rtl">لَا تُفْتَحَا</td>
+            <td dir="rtl">لَا تُنْصَرَا</td>
             <td dir="rtl">لَا تُسْمَعَا</td>
             <td dir="rtl">لَا تُحْسَبَا</td>
             <td dir="rtl">لَا تُشْرَفَا</td>
           </tr>
           <tr>
             <td dir="rtl">لَا تُضْرَبُوْا</td>
-            <td dir="rtl">لَا تُنْصَرُوْا</td>
             <td dir="rtl">لَا تُفْتَحُوْا</td>
+            <td dir="rtl">لَا تُنْصَرُوْا</td>
             <td dir="rtl">لَا تُسْمَعُوْا</td>
             <td dir="rtl">لَا تُحْسَبُوْا</td>
             <td dir="rtl">لَا تُشْرَفُوْا</td>
           </tr>
           <tr>
             <td dir="rtl">لَا تُضْرَبِیْ</td>
-            <td dir="rtl">لَا تُنْصَرِیْ</td>
             <td dir="rtl">لَا تُفْتَحِیْ</td>
+            <td dir="rtl">لَا تُنْصَرِیْ</td>
             <td dir="rtl">لَا تُسْمَعِیْ</td>
             <td dir="rtl">لَا تُحْسَبِیْ</td>
             <td dir="rtl">لَا تُشْرَفِیْ</td>
           </tr>
           <tr>
             <td dir="rtl">لَا تُضْرَبَا</td>
-            <td dir="rtl">لَا تُنْصَرَا</td>
             <td dir="rtl">لَا تُفْتَحَا</td>
+            <td dir="rtl">لَا تُنْصَرَا</td>
             <td dir="rtl">لَا تُسْمَعَا</td>
             <td dir="rtl">لَا تُحْسَبَا</td>
             <td dir="rtl">لَا تُشْرَفَا</td>
           </tr>
           <tr>
             <td dir="rtl">لَا تُضْرَبْنَ</td>
-            <td dir="rtl">لَا تُنْصَرْنَ</td>
             <td dir="rtl">لَا تُفْتَحْنَ</td>
+            <td dir="rtl">لَا تُنْصَرْنَ</td>
             <td dir="rtl">لَا تُسْمَعْنَ</td>
             <td dir="rtl">لَا تُحْسَبْنَ</td>
             <td dir="rtl">لَا تُشْرَفْنَ</td>
@@ -77,48 +77,48 @@ hide:
         <tbody>
           <tr>
             <td dir="rtl">لَا تُضْرَبَنَّ</td>
-            <td dir="rtl">لَا تُنْصَرَنَّ</td>
             <td dir="rtl">لَا تُفْتَحَنَّ</td>
+            <td dir="rtl">لَا تُنْصَرَنَّ</td>
             <td dir="rtl">لَا تُسْمَعَنَّ</td>
             <td dir="rtl">لَا تُحْسَبَنَّ</td>
             <td dir="rtl">لَا تُشْرَفَنَّ</td>
           </tr>
           <tr>
             <td dir="rtl">لَا تُضْرَبَانِّ</td>
-            <td dir="rtl">لَا تُنْصَرَانِّ</td>
             <td dir="rtl">لَا تُفْتَحَانِّ</td>
+            <td dir="rtl">لَا تُنْصَرَانِّ</td>
             <td dir="rtl">لَا تُسْمَعَانِّ</td>
             <td dir="rtl">لَا تُحْسَبَانِّ</td>
             <td dir="rtl">لَا تُشْرَفَانِّ</td>
           </tr>
           <tr>
             <td dir="rtl">لَا تُضْرَبُنَّ</td>
-            <td dir="rtl">لَا تُنْصَرُنَّ</td>
             <td dir="rtl">لَا تُفْتَحُنَّ</td>
+            <td dir="rtl">لَا تُنْصَرُنَّ</td>
             <td dir="rtl">لَا تُسْمَعُنَّ</td>
             <td dir="rtl">لَا تُحْسَبُنَّ</td>
             <td dir="rtl">لَا تُشْرَفُنَّ</td>
           </tr>
           <tr>
             <td dir="rtl">لَا تُضْرَبِنَّ</td>
-            <td dir="rtl">لَا تُنْصَرِنَّ</td>
             <td dir="rtl">لَا تُفْتَحِنَّ</td>
+            <td dir="rtl">لَا تُنْصَرِنَّ</td>
             <td dir="rtl">لَا تُسْمَعِنَّ</td>
             <td dir="rtl">لَا تُحْسَبِنَّ</td>
             <td dir="rtl">لَا تُشْرَفِنَّ</td>
           </tr>
           <tr>
             <td dir="rtl">لَا تُضْرَبَانِّ</td>
-            <td dir="rtl">لَا تُنْصَرَانِّ</td>
             <td dir="rtl">لَا تُفْتَحَانِّ</td>
+            <td dir="rtl">لَا تُنْصَرَانِّ</td>
             <td dir="rtl">لَا تُسْمَعَانِّ</td>
             <td dir="rtl">لَا تُحْسَبَانِّ</td>
             <td dir="rtl">لَا تُشْرَفَانِّ</td>
           </tr>
           <tr>
             <td dir="rtl">لَا تُضْرَبْنَانِّ</td>
-            <td dir="rtl">لَا تُنْصَرْنَانِّ</td>
             <td dir="rtl">لَا تُفْتَحْنَانِّ</td>
+            <td dir="rtl">لَا تُنْصَرْنَانِّ</td>
             <td dir="rtl">لَا تُسْمَعْنَانِّ</td>
             <td dir="rtl">لَا تُحْسَبْنَانِّ</td>
             <td dir="rtl">لَا تُشْرَفْنَانِّ</td>
@@ -135,24 +135,24 @@ hide:
         <tbody>
           <tr>
             <td dir="rtl">لَا تُضْرَبَنْ</td>
-            <td dir="rtl">لَا تُنْصَرَنْ</td>
             <td dir="rtl">لَا تُفْتَحَنْ</td>
+            <td dir="rtl">لَا تُنْصَرَنْ</td>
             <td dir="rtl">لَا تُسْمَعَنْ</td>
             <td dir="rtl">لَا تُحْسَبَنْ</td>
             <td dir="rtl">لَا تُشْرَفَنْ</td>
           </tr>
           <tr>
             <td dir="rtl">لَا تُضْرَبُنْ</td>
-            <td dir="rtl">لَا تُنْصَرُنْ</td>
             <td dir="rtl">لَا تُفْتَحُنْ</td>
+            <td dir="rtl">لَا تُنْصَرُنْ</td>
             <td dir="rtl">لَا تُسْمَعُنْ</td>
             <td dir="rtl">لَا تُحْسَبُنْ</td>
             <td dir="rtl">لَا تُشْرَفُنْ</td>
           </tr>
           <tr>
             <td dir="rtl">لَا تُضْرَبِنْ</td>
-            <td dir="rtl">لَا تُنْصَرِنْ</td>
             <td dir="rtl">لَا تُفْتَحِنْ</td>
+            <td dir="rtl">لَا تُنْصَرِنْ</td>
             <td dir="rtl">لَا تُسْمَعِنْ</td>
             <td dir="rtl">لَا تُحْسَبِنْ</td>
             <td dir="rtl">لَا تُشْرَفِنْ</td>
@@ -170,4 +170,4 @@ hide:
 
 <!-- [?]: با نونِ ثقیلہ / با نونِ خفیفہ — book renders the Urdu as "بانون ثقیلہ / بانون خفیفہ"; written here with izafat for readability, same pronunciation. -->
 <!-- [?]: نونِ خفیفہ table shows only 3 rows on this page (page ends there); remaining rows continue on the next PDF page — not transcribed here. -->
-<!-- [?]: Dense image render — harakāt read as clearly as possible; the six columns follow the six abwāb (ضرب، نصر، فتح، سمع، حسب، شرف) right-to-left, and the majhūl pattern تُفْعَل is consistent across all columns. -->
+<!-- [?]: Column order (right→left) verified from 300-DPI render: ضرب، فتح، نصر، سمع، حسب، شرف. Majhūl pattern تُفْعَل is consistent across all six columns. -->

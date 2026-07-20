@@ -15,16 +15,16 @@ hide:
     <div class="table-scroll">
       <table>
         <thead>
-          <tr><th dir="rtl">نمبر</th><th dir="rtl">لفظ</th><th>Roman</th></tr>
+          <tr><th dir="rtl">لفظ</th><th>Roman</th></tr>
         </thead>
         <tbody>
-          <tr><td dir="rtl">۱</td><td dir="rtl">شَرِيفُونَ</td><td>Sharīfūna</td></tr>
-          <tr><td dir="rtl">۲</td><td dir="rtl">كَرِيمَاتٌ</td><td>Karīmātun</td></tr>
-          <tr><td dir="rtl">۳</td><td dir="rtl">سَمِيعٌ</td><td>Samī'un</td></tr>
-          <tr><td dir="rtl">۴</td><td dir="rtl">شَرِيفَةٌ</td><td>Sharīfatun</td></tr>
-          <tr><td dir="rtl">۵</td><td dir="rtl">كَرِيمَانِ</td><td>Karīmāni</td></tr>
-          <tr><td dir="rtl">۶</td><td dir="rtl">بَعِيدٌ</td><td>Ba'īdun</td></tr>
-          <tr><td dir="rtl">۷</td><td dir="rtl">قَرِيبٌ</td><td>Qarībun</td></tr>
+          <tr><td dir="rtl">شَرِيفُونَ</td><td>Sharīfūna</td></tr>
+          <tr><td dir="rtl">كَرِيمَاتٌ</td><td>Karīmātun</td></tr>
+          <tr><td dir="rtl">سَمِيعٌ</td><td>Samī'un</td></tr>
+          <tr><td dir="rtl">شَرِيفَةٌ</td><td>Sharīfatun</td></tr>
+          <tr><td dir="rtl">كَرِيمَانِ</td><td>Karīmāni</td></tr>
+          <tr><td dir="rtl">بَعِيدٌ</td><td>Ba'īdun</td></tr>
+          <tr><td dir="rtl">قَرِيبٌ</td><td>Qarībun</td></tr>
         </tbody>
       </table>
     </div>
@@ -35,16 +35,16 @@ hide:
     <div class="table-scroll">
       <table>
         <thead>
-          <tr><th dir="rtl">نمبر</th><th dir="rtl">اردو</th></tr>
+          <tr><th dir="rtl">اردو</th></tr>
         </thead>
         <tbody>
-          <tr><td dir="rtl">۱</td><td dir="rtl">بزرگ ہونے والی سب عورتیں</td></tr>
-          <tr><td dir="rtl">۲</td><td dir="rtl">دور ہونے والی عورتیں</td></tr>
-          <tr><td dir="rtl">۳</td><td dir="rtl">بزرگ ہونے والا</td></tr>
-          <tr><td dir="rtl">۴</td><td dir="rtl">قریب ہونے والا ایک مرد</td></tr>
-          <tr><td dir="rtl">۵</td><td dir="rtl">قریب ہونے والی سب عورتیں</td></tr>
-          <tr><td dir="rtl">۶</td><td dir="rtl">قریب ہونے والی دو عورتیں</td></tr>
-          <tr><td dir="rtl">۷</td><td dir="rtl">دور ہونے والے سب مرد</td></tr>
+          <tr><td dir="rtl">بزرگ ہونے والی سب عورتیں</td></tr>
+          <tr><td dir="rtl">دور ہونے والی عورتیں</td></tr>
+          <tr><td dir="rtl">بزرگ ہونے والا</td></tr>
+          <tr><td dir="rtl">قریب ہونے والا ایک مرد</td></tr>
+          <tr><td dir="rtl">قریب ہونے والی سب عورتیں</td></tr>
+          <tr><td dir="rtl">قریب ہونے والی دو عورتیں</td></tr>
+          <tr><td dir="rtl">دور ہونے والےсب مرد</td></tr>
         </tbody>
       </table>
     </div>
@@ -52,7 +52,7 @@ hide:
 
   <div class="nc-band">
     <div class="nc-band-label" dir="rtl">اسم فاعل اور صفت مشبہ کا فرق</div>
-    <div class="nc-v" dir="rtl">اسم فاعل میں صفت عارضی ہوتی ہے اور صفت مشبہ میں صفت مستقل اور پائیداری کے ساتھ ہوتی ہے، جیسے: سَامِعٌ (سننے والا) ایسے شخص کو کہیں گے جو کسی بات کو فی الحال سن رہا ہو، بعد میں اس سے الگ بھی ہوسکتا ہے، اگر کانوں کو بند کرے یا سوچ جائے اور سَمِيعٌ (ہمیشہ سننے والا) یہ اللہ تعالیٰ کی صفت ہے کہ کسی وقت بھی سمع (سننا) اس ذات سے جدا نہیں ہوتا۔</div>
+    <div class="nc-v" dir="rtl">اسم فاعل میں صفت عارضی ہوتی ہے اور صفت مشبہ میں صفت مستقل اور پائیداری کے ساتھ ہوتی ہے، جیسے: سَامِعٌ (سننے والا) ایسے شخص کو کہیں گے جو کسی بات کو فی الحال سن رہا ہو، بعد میں اس سے الگ بھی ہوسکتا ہے، اگر کانوں کو بند کرے یا سو جائے اور سَمِيعٌ (ہمیشہ سننے والا) یہ اللہ تعالیٰ کی صفت ہے کہ کسی وقت بھی سمع (سننا) اس ذات سے جدا نہیں ہوتا۔</div>
   </div>
 
   <div class="nc-band">
@@ -82,5 +82,3 @@ hide:
     <span class="nc-src">PDF p-119 · verbatim · DRAFT</span>
   </div>
 </div>
-
-<!-- [?]: عربی بنائیں item ۲ "دور ہونے والی عورتیں" — number (dual vs plural) not fully explicit in image; transcribed as written. -->

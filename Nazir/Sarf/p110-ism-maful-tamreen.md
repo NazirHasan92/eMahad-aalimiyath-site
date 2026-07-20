@@ -47,22 +47,16 @@ hide:
     <div class="nc-band-label" dir="rtl">عربی بنائیں</div>
     <div class="table-scroll">
       <table dir="rtl">
-        <thead>
-          <tr>
-            <th>نمبر</th>
-            <th>عبارت</th>
-          </tr>
-        </thead>
         <tbody>
-          <tr><td>۱</td><td>مدد کیے ہوئے دو مرد</td></tr>
-          <tr><td>۲</td><td>سوال کی ہوئیں سب عورتیں</td></tr>
-          <tr><td>۳</td><td>جانی ہوئی دو عورتیں</td></tr>
-          <tr><td>۴</td><td>سوال کی ہوئیں دو عورتیں</td></tr>
-          <tr><td>۵</td><td>سوال کیے ہوئے سب مرد</td></tr>
-          <tr><td>۶</td><td>مدد کی گئی ایک عورت</td></tr>
-          <tr><td>۷</td><td>روک دی ہوئی سب عورتیں</td></tr>
-          <tr><td>۸</td><td>رزق دی ہوئی دو عورتیں</td></tr>
-          <tr><td>۹</td><td>رزق دیے ہوئے سب مرد</td></tr>
+          <tr><td>مدد کیے ہوئے دو مرد</td></tr>
+          <tr><td>سوال کی ہوئیں سب عورتیں</td></tr>
+          <tr><td>جانی ہوئی دو عورتیں</td></tr>
+          <tr><td>سوال کی ہوئیں دو عورتیں</td></tr>
+          <tr><td>سوال کیے ہوئے سب مرد</td></tr>
+          <tr><td>مدد کی گئی ایک عورت</td></tr>
+          <tr><td>روک دی ہوئی دو عورتیں</td></tr>
+          <tr><td>رزق دی ہوئی سب عورتیں</td></tr>
+          <tr><td>رزق دیے ہوئے سب مرد</td></tr>
         </tbody>
       </table>
     </div>
@@ -132,6 +126,6 @@ hide:
   </div>
 </div>
 
-<!-- [?]: عربی بنائیں phrases — Urdu wording read from image render; a few verbs uncertain: "جانی ہوئی دو عورتیں" (row 3, from جاننا/معلوم) and "روک دی ہوئی سب عورتیں" (row 7) — exact Urdu not fully sharp. -->
-<!-- [?]: Gardaan column 6 read as مَشْرُوْف (root ش-ر-ف, from شَرُفَ, bāb 6 karuma-type); final letter ف vs ب not 100% sharp in render — could conceivably be مَشْرُوْب. -->
-<!-- [?]: Harakāt (zer/zabar/pesh) on the اعراب-grid words and gardaan reconstructed from image render at standard اسم مفعول pattern; individual marks not all pixel-sharp. -->
+<!-- Verified 2026-07-20 against 600 DPI crop of PDF p110: عربی بنائیں is a running paragraph on the page (phrases separated by ۔); rendered here as a bordered table, no numbers/headers added. Rows 7 & 8 corrected: "روک دی ہوئی دو عورتیں" and "رزق دی ہوئی سب عورتیں". -->
+<!-- Verified 2026-07-20: Gardaan column 6 is مَشْرُوْف with ف (dot on top clearly visible in 600 DPI crop); column 5 is مَحْسُوْب with ب. -->
+

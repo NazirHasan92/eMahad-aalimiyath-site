@@ -573,6 +573,141 @@
 .nchart .nc-src { font-size: .62rem; color: var(--nc-faint); }
 @media (max-width: 560px) { .nchart { padding: 1.8rem 1rem 1.5rem; } }
 
+/* ============================================================
+ * Atlas — topic HUB map + home dashboard (2026-07-20 reorg)
+ * Lightweight navigation-only layer. Adds NO textbook content.
+ * ============================================================ */
+
+/* ---- HUB map: grid of clickable sub-part cards inside a .nchart ---- */
+.nchart .nc-map {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: .7rem;
+  margin: 1.2rem 0 .3rem;
+  text-align: right;
+}
+.nchart .nc-map a {
+  display: block;
+  text-decoration: none;
+  padding: .8rem .8rem .7rem;
+  border: 1px solid var(--nc-border);
+  border-radius: 11px;
+  background: var(--nc-ground2);
+  color: var(--nc-ink);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.nchart .nc-map a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(40, 60, 45, .14);
+  border-color: var(--nc-gold);
+}
+.nchart .nc-map .m-ar {
+  display: block;
+  font-family: var(--nc-quran);
+  font-size: 1.5rem;
+  line-height: 1.55;
+  color: var(--nc-emerald);
+  direction: rtl;
+}
+.nchart .nc-map .m-rom {
+  display: block;
+  font-family: var(--nc-sans);
+  font-size: .66rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--nc-muted);
+  margin-top: .3rem;
+  text-align: left;
+}
+/* sub-group heading inside a hub map */
+.nchart .nc-maphead {
+  font-family: var(--nc-urdu);
+  color: var(--nc-gold);
+  font-size: 1.1rem;
+  line-height: 1.9;
+  direction: rtl;
+  text-align: center;
+  margin: 1.6rem 0 .2rem;
+}
+.nchart .nc-lead {
+  font-family: var(--nc-urdu);
+  color: var(--nc-muted);
+  font-size: .98rem;
+  line-height: 2.1;
+  direction: rtl;
+  max-width: 34rem;
+  margin: 0 auto .4rem;
+}
+
+/* ---- Home dashboard: topic cards ---- */
+.atlas { max-width: 1000px; margin: 1.4rem auto 3rem; }
+.atlas-sec { margin: 2.4rem 0 1rem; }
+.atlas-sec > .atlas-h {
+  display: flex; align-items: baseline; gap: .7rem; flex-wrap: wrap;
+  border-bottom: 2px solid var(--md-primary-fg-color);
+  padding-bottom: .5rem; margin-bottom: 1.3rem;
+}
+.atlas-sec > .atlas-h .a-ar {
+  font-family: 'Amiri Quran', 'Amiri', serif;
+  font-size: 2rem; color: var(--md-primary-fg-color); direction: rtl;
+}
+.atlas-sec > .atlas-h .a-rom {
+  font-size: .8rem; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--md-accent-fg-color); font-weight: 700;
+}
+.atlas-sec > .atlas-h .a-count {
+  margin-left: auto; font-size: .78rem; color: var(--md-default-fg-color--light); opacity: .8;
+}
+.atlas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.atlas-card {
+  display: block; text-decoration: none;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-color: rgba(120,130,120,.22);
+  border-left: 4px solid var(--md-primary-fg-color);
+  border-radius: 12px;
+  padding: 1.05rem 1.1rem 1rem;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 2px 5px rgba(6, 78, 59, .05);
+  transition: transform .15s ease, box-shadow .15s ease, border-left-color .15s ease;
+}
+.atlas-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(6, 78, 59, .13);
+  border-left-color: var(--md-accent-fg-color);
+}
+.atlas-card .c-ar {
+  font-family: 'Amiri Quran', 'Amiri', serif;
+  font-size: 1.7rem; line-height: 1.5; color: var(--md-primary-fg-color);
+  direction: rtl; display: block;
+}
+[data-md-color-scheme="slate"] .atlas-card .c-ar { color: var(--md-typeset-a-color); }
+.atlas-card .c-rom {
+  font-size: .74rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--md-accent-fg-color); font-weight: 700; margin-top: .25rem; display: block;
+}
+.atlas-card .c-desc {
+  font-size: .82rem; line-height: 1.55; color: var(--md-default-fg-color--light);
+  margin-top: .55rem; display: block;
+}
+.atlas-card .c-count {
+  font-size: .7rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--md-default-fg-color--light); opacity: .7; margin-top: .55rem; display: block;
+}
+.atlas-lead {
+  font-size: .95rem; line-height: 1.8; color: var(--md-default-fg-color--light);
+  max-width: 52rem; margin: .3rem 0 0;
+}
+@media (max-width: 500px) {
+  .atlas-grid { grid-template-columns: 1fr 1fr; gap: .7rem; }
+  .atlas-card { padding: .8rem .7rem; }
+  .atlas-card .c-ar { font-size: 1.4rem; }
+  .atlas-card .c-desc { display: none; }
+}
+
 /* ---- Print ---- */
 @media print {
   .md-header, .md-tabs, .md-sidebar, .md-footer { display: none !important; }
