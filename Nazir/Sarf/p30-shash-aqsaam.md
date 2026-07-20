@@ -46,8 +46,7 @@ hide: [toc]
   </div>
 
   <div class="nc-rule"></div>
-  <div class="nc-hero" dir="rtl">شش اقسام</div>
-  <div class="nc-sub">Shash Aqsaam</div>
+  <div class="nc-band-label" dir="rtl">شش اقسام</div>
   <div class="nc-rule"></div>
 
   <div class="nc-band" style="overflow-x:auto">
@@ -67,8 +66,7 @@ hide: [toc]
   </div>
 
   <div class="nc-rule"></div>
-  <div class="nc-hero" dir="rtl">شش اقسام کی وضاحت</div>
-  <div class="nc-sub">Shash Aqsaam ki Wazaahat</div>
+  <div class="nc-band-label" dir="rtl">شش اقسام کی وضاحت</div>
   <div class="nc-rule"></div>
 
   <div class="nc-band" style="overflow-x:auto">

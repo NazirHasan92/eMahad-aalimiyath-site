@@ -42,8 +42,7 @@ hide: [toc]
   </div>
 
   <div class="nc-rule"></div>
-  <div class="nc-hero" dir="rtl">حروفِ تہجی</div>
-  <div class="nc-sub">Huroof-e-Tahajji</div>
+  <div class="nc-band-label" dir="rtl">حروفِ تہجی</div>
   <div class="nc-rule"></div>
 
   <div class="nc-def">

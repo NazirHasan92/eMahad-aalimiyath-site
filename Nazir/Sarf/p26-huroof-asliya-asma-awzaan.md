@@ -33,8 +33,7 @@ hide: [toc]
   </div>
 
   <div class="nc-rule"></div>
-  <div class="nc-hero" dir="rtl">اسم کے اوزان</div>
-  <div class="nc-sub">Ism ke Awzaan</div>
+  <div class="nc-band-label" dir="rtl">اسم کے اوزان</div>
   <div class="nc-rule"></div>
 
   <div class="nc-band" style="overflow-x:auto">

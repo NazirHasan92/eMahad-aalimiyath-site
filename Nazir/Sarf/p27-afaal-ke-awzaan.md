@@ -50,8 +50,7 @@ hide: [toc]
   </div>
 
   <div class="nc-rule"></div>
-  <div class="nc-hero" dir="rtl">عین کلمہ پر مختلف حرکات کی وجہ سے بننے والے ابواب</div>
-  <div class="nc-sub">'Ain-e-Kalima par Mukhtalif Harakaat ki Wajah se Banne Waale Abwaab</div>
+  <div class="nc-band-label" dir="rtl">عین کلمہ پر مختلف حرکات کی وجہ سے بننے والے ابواب</div>
   <div class="nc-rule"></div>
 
   <div class="nc-band">
