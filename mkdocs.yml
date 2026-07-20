@@ -133,90 +133,193 @@ exclude_docs: |
 nav:
   - Home: index.md
   - Nahw (نحو):
-      - "Kalimah — Ism · Fi'l · Harf": Nahw/01-kalimah.md
-      - "Kalimah wa Kalām — Fi'l · Harf · Murakkab": Nahw/p07-fil-harf-murakkab.md
-      - "Jumla Khabariyya — Ismiyya · Fi'liyya": Nahw/p08-jumla-khabariyya.md
-      - "Jumla Inshā'iyya": Nahw/p09-jumla-inshaiyya.md
-      - "Murakkab Ghayr Mufīd": Nahw/p10-murakkab-ghayr-mufid.md
-      - "Murakkab Manʿ-e Sarf": Nahw/p11-murakkab-mane-sarf.md
-      - "Jumla — Aqsām": Nahw/12-jumla-aqsaam.md
-      - "Jumla Sifātī — Aqsām": Nahw/p13-jumla-sifati-aqsaam.md
-      - "ʿAlāmāt-e Ism": Nahw/p14-alamat-ism.md
-      - "ʿAlāmāt-e Fiʿl · Harf": Nahw/p15-alamat-fil-harf.md
-      - "Muʿrab · Mabnī": Nahw/p16-muarab-mabni.md
-      - "Mabnī · Muʿrab — Aqsām": Nahw/p17-mabni-murab-aqsaam.md
-      - "Ism Ghayr Mutamakkin — Aqsām": Nahw/p18-ism-ghayr-mutamakkin-aqsam.md
-      - "Zamīr Mansūb · Majrūr": Nahw/p19-zameer-mansoob-majroor.md
-      - "Asmā-e Mawsūla": Nahw/p20-asma-mawsoola.md
-      - "Asmā-e Ishāra": Nahw/p21-asma-e-ishara.md
-      - "Asmā-e Afʿāl · Aswāt · Zurūf": Nahw/p22-asmae-afaal-aswaat-zuruf.md
-      - "Asmā Ghayr Mutamakkin": Nahw/p23-asma-ghair-mutamakkin.md
-      - "Zarf-e Makān": Nahw/p24-zarf-e-makan.md
-      - "Ism Ghayr Mutamakkin — Zurūf": Nahw/p25-asma-ghair-mutamakkin.md
-      - "Ism Mansūb": Nahw/p26-ism-mansub.md
-      - "Ism Mansūb — Qawāʿid": Nahw/p27-ism-e-mansub-qawaid.md
-      - "Ism Tasghīr": Nahw/p28-ism-tasgheer.md
-      - "Maʿrifa · Nakira": Nahw/p29-marifa-nakira.md
-      - "Mudhakkar · Muʾannath": Nahw/p30-mudhakkar-muannath.md
-      - "Wāhid · Tathniya · Jamʿ": Nahw/p31-wahid-tathniya-jam.md
-      - "Jamʿ — Qillat · Kathrat": Nahw/p32-jama-qillat-kathrat.md
-      - "Muntahā al-Jumūʿ": Nahw/p33-muntaha-al-jumu.md
-      - "Munsarif · Ghayr Munsarif": Nahw/p34-munsarif-ghayr-munsarif.md
-      - "ʿAdl · ʿAjma · Alif-Nūn": Nahw/p35-adl-ajma-alif-nun.md
-      - "Munsarif — Fawāʾid": Nahw/p36-munsarif-ghayr-munsarif-fawaid.md
-      - "Marfūʿāt": Nahw/p37-marfooaat.md
-      - "Ahkām-e Fāʿil": Nahw/p38-ahkam-e-fael.md
-      - "Mubtadā · Khabar · Inna": Nahw/p39-mubtada-khabar-inna.md
-      - "Kāna wa Akhawāt": Nahw/p40-kaana-wa-akhwaat.md
-      - "Mansūbāt": Nahw/p41-mansubat.md
-      - "Mafʿūl Mutlaq · Lahu": Nahw/p42-mafool-mutlaq-lahu.md
-      - "Mafʿūl Maʿ · Fīh": Nahw/p43-mafool-maa-mafool-fih.md
-      - "Hāl": Nahw/p44-haal.md
-      - "Mansūbāt — Tamīz": Nahw/p45-mansubat.md
-      - "Hurūf-e Istithnā": Nahw/p46-huroof-istithna.md
-      - "Iʿrāb-e Mustathnā": Nahw/p47-aqsam-e-irab-mustasna.md
-      - "Iʿrāb — Lafẓ Ghayr": Nahw/p48-irab-lafz-ghayr.md
+      - "Kalimah": Nahw/01-kalimah.md
+      - "Fil Harf Murakkab": Nahw/p07-fil-harf-murakkab.md
+      - "Jumla Khabariyya": Nahw/p08-jumla-khabariyya.md
+      - "Jumla Inshaiyya": Nahw/p09-jumla-inshaiyya.md
+      - "Murakkab Ghayr Mufid": Nahw/p10-murakkab-ghayr-mufid.md
+      - "Murakkab Mane Sarf": Nahw/p11-murakkab-mane-sarf.md
+      - "Jumla Aqsaam": Nahw/12-jumla-aqsaam.md
+      - "Jumla Sifati Aqsaam": Nahw/p13-jumla-sifati-aqsaam.md
+      - "Alamat Ism": Nahw/p14-alamat-ism.md
+      - "Alamat Fil Harf": Nahw/p15-alamat-fil-harf.md
+      - "Muarab Mabni": Nahw/p16-muarab-mabni.md
+      - "Mabni Murab Aqsaam": Nahw/p17-mabni-murab-aqsaam.md
+      - "Ism Ghayr Mutamakkin Aqsam": Nahw/p18-ism-ghayr-mutamakkin-aqsam.md
+      - "Zameer Mansoob Majroor": Nahw/p19-zameer-mansoob-majroor.md
+      - "Asma Mawsoola": Nahw/p20-asma-mawsoola.md
+      - "Asma E Ishara": Nahw/p21-asma-e-ishara.md
+      - "Asmae Afaal Aswaat Zuruf": Nahw/p22-asmae-afaal-aswaat-zuruf.md
+      - "Asma Ghair Mutamakkin": Nahw/p23-asma-ghair-mutamakkin.md
+      - "Zarf E Makan": Nahw/p24-zarf-e-makan.md
+      - "Asma Ghair Mutamakkin": Nahw/p25-asma-ghair-mutamakkin.md
+      - "Ism Mansub": Nahw/p26-ism-mansub.md
+      - "Ism E Mansub Qawaid": Nahw/p27-ism-e-mansub-qawaid.md
+      - "Ism Tasgheer": Nahw/p28-ism-tasgheer.md
+      - "Marifa Nakira": Nahw/p29-marifa-nakira.md
+      - "Mudhakkar Muannath": Nahw/p30-mudhakkar-muannath.md
+      - "Wahid Tathniya Jam": Nahw/p31-wahid-tathniya-jam.md
+      - "Jama Qillat Kathrat": Nahw/p32-jama-qillat-kathrat.md
+      - "Muntaha Al Jumu": Nahw/p33-muntaha-al-jumu.md
+      - "Munsarif Ghayr Munsarif": Nahw/p34-munsarif-ghayr-munsarif.md
+      - "Adl Ajma Alif Nun": Nahw/p35-adl-ajma-alif-nun.md
+      - "Munsarif Ghayr Munsarif Fawaid": Nahw/p36-munsarif-ghayr-munsarif-fawaid.md
+      - "Marfooaat": Nahw/p37-marfooaat.md
+      - "Ahkam E Fael": Nahw/p38-ahkam-e-fael.md
+      - "Mubtada Khabar Inna": Nahw/p39-mubtada-khabar-inna.md
+      - "Kaana Wa Akhwaat": Nahw/p40-kaana-wa-akhwaat.md
+      - "Mansubat": Nahw/p41-mansubat.md
+      - "Mafool Mutlaq Lahu": Nahw/p42-mafool-mutlaq-lahu.md
+      - "Mafool Maa Mafool Fih": Nahw/p43-mafool-maa-mafool-fih.md
+      - "Haal": Nahw/p44-haal.md
+      - "Mansubat": Nahw/p45-mansubat.md
+      - "Huroof Istithna": Nahw/p46-huroof-istithna.md
+      - "Aqsam E Irab Mustasna": Nahw/p47-aqsam-e-irab-mustasna.md
+      - "Irab Lafz Ghayr": Nahw/p48-irab-lafz-ghayr.md
+      - "Majrurat": Nahw/p49-majrurat.md
+      - "Aqsam E Irab Asma Mutamakkin": Nahw/p50-aqsam-e-irab-asma-mutamakkin.md
+      - "Aqsam Irab Mutamakkin": Nahw/p51-aqsam-irab-mutamakkin.md
+      - "Aqsam E Asma Mutamakkin": Nahw/p52-aqsam-e-asma-mutamakkin.md
+      - "Tawabi": Nahw/p53-tawabi.md
+      - "Sifat": Nahw/p54-sifat.md
+      - "Takeed": Nahw/p55-takeed.md
+      - "Tawabi Badal": Nahw/p56-tawabi-badal.md
+      - "Tawabi Badal Atf": Nahw/p57-tawabi-badal-atf.md
+      - "Awamil Lafzi Manawi": Nahw/p58-awamil-lafzi-manawi.md
+      - "Huroof E Aamila Dar Ism": Nahw/p59-huroof-e-aamila-dar-ism.md
+      - "Ma Wa La Nafi Jins": Nahw/p60-ma-wa-la-nafi-jins.md
+      - "Huroof Nida Wa Illa": Nahw/p61-huroof-nida-wa-illa.md
+      - "Huroof Nasiba": Nahw/p62-huroof-nasiba.md
+      - "Huruf Amila Fil Mudari": Nahw/p63-huruf-amila-fil-mudari.md
+      - "Huruf Amila Misalen": Nahw/p64-huruf-amila-misalen.md
+      - "Amal E Afal": Nahw/p65-amal-e-afal.md
+      - "Afaal Quloob Naqisa": Nahw/p66-afaal-quloob-naqisa.md
+      - "Amal E Afaal": Nahw/p67-amal-e-afaal.md
+      - "Afaal Madh Zamm": Nahw/p68-afaal-madh-zamm.md
+      - "Afaal E Tajjub": Nahw/p69-afaal-e-tajjub.md
+      - "Asma E Amila": Nahw/p70-asma-e-amila.md
+      - "Ism Faail Mafool": Nahw/p71-ism-faail-mafool.md
+      - "Asma E Amila": Nahw/p72-asma-e-amila.md
+      - "Awamil Manawi": Nahw/p73-awamil-manawi.md
+      - "Huroof Ghair Aamila": Nahw/p74-huroof-ghair-aamila.md
+      - "Huroof Masdariyya Tahdid Tawaqu": Nahw/p75-huroof-masdariyya-tahdid-tawaqu.md
+      - "Huroof Ghair Amila": Nahw/p76-huroof-ghair-amila.md
+      - "Huroof Shart O Atf": Nahw/p77-huroof-shart-o-atf.md
   - Sarf (صرف):
-      - "Istilāhāt — ʿIlm-e Sarf": Sarf/p18-istilahaat.md
-      - "Wāziʿ · Kalimah": Sarf/p19-waazi-kalima.md
-      - "Fiʿl kī Taqsīm": Sarf/p20-fel-ki-taqseem.md
-      - "Harf · Hurūf-e Tahajjī": Sarf/p21-harf-huroof-tahajji.md
-      - "Hurūf · Harakat": Sarf/p22-huroof-harkat.md
-      - "Ism kī Aqsām": Sarf/p23-ism-ki-aqsaam.md
-      - "Asmā-e Mushtaqqa": Sarf/p24-asma-mushtaqqa.md
-      - "Wazn Nikālne kā Tarīqa": Sarf/p25-wazn-nikalne-ka-tariqa.md
-      - "Hurūf Asliyya · Asmā Awzān": Sarf/p26-huroof-asliya-asma-awzaan.md
-      - "Afʿāl ke Awzān": Sarf/p27-afaal-ke-awzaan.md
-      - "Chha Abwāb": Sarf/p28-chha-abwaab.md
-      - "Abwāb — Groups · ʿAlāmāt": Sarf/p29-abwaab-groups-alamaat.md
-      - "Shash Aqsām": Sarf/p30-shash-aqsaam.md
-      - "Fiʿl kī Aqsām — Thulāthī · Rubāʿī": Sarf/p31-fel-ki-aqsaam-thulathi-rubai.md
-      - "Haft Aqsām — Mizāj-e Hurūf": Sarf/p32-haft-aqsaam-mizaj-huroof.md
-      - "Nāqis · Lafīf · Mahmūz · Muzāʿaf": Sarf/p33-naqis-lafif-mahmuz-muzaaf.md
-      - "Haft Aqsām": Sarf/p34-haft-aqsam.md
-      - "Fiʿl Māzī": Sarf/p35-fael-maazi.md
-      - "Gardān — Māzī Maʿlūm": Sarf/p36-gardaan-fel-maazi-maloom.md
-      - "Sīghon kī Pehchān · ʿAlāmāt": Sarf/p37-sighon-ki-pehchan-alamat.md
-      - "Fiʿl Māzī — Pehchān": Sarf/p38-fael-maazi-pehchan.md
-      - "Māzī — ʿAlāmāt-e Taʾnīth": Sarf/p39-mazi-alamat-e-tanith.md
-      - "Māzī Maʿlūm — Mashq": Sarf/p40-fil-madi-malum-mashq.md
-      - "Māzī Maʿlūm — Gardān": Sarf/p41-madi-maloom-gardaan.md
-      - "Māzī Manfī Maʿlūm — Gardān": Sarf/p42-gardaan-madi-manfi-maloom.md
-      - "Fiʿl Māzī Majhūl": Sarf/p43-fel-madi-majhool.md
-      - "Māzī Majhūl — Gardān": Sarf/p44-gardaan-maazi-majhool.md
-      - "Māzī Majhūl — Mashq": Sarf/p45-madi-majhool.md
-      - "Māzī Manfī Majhūl": Sarf/p46-madi-manfi-majhool.md
-      - "Qad · Kāna": Sarf/p47-qad-aur-kaan.md
-      - "Māzī — Chār Gardānen": Sarf/p48-madi-majhool-gardan.md
-      - "Fiʿl Muzāriʿ Maʿlūm": Sarf/p49-fil-mudari-maloom.md
-      - "Muzāriʿ Maʿlūm — Binā": Sarf/p50-mudari-maloom-bina.md
-      - "Zamma · Nūn-e Iʿrābī": Sarf/p51-zamma-nun-irabi.md
-      - "Muzāriʿ — Tamrīn": Sarf/p52-mudari-tamrin.md
-      - "Muzāriʿ — Awzān": Sarf/p53-fil-mudari-awzan.md
-      - "Muzāriʿ Manfī": Sarf/p54-mudari-manfi.md
-      - "Muzāriʿ Manfī Maʿlūm": Sarf/p55-fil-mudari-manfi-maloom.md
-      - "Muzāriʿ Manfī — Gardān": Sarf/p56-mudari-manfi.md
-      - "Muzāriʿ Majhūl": Sarf/p57-mudari-majhool.md
-      - "Muzāriʿ Majhūl — Tamrīn": Sarf/p58-tamreen-mudari-majhool.md
-      - "Muzāriʿ Manfī Majhūl": Sarf/p59-mudari-manfi-majhool.md
-      - "Muzāriʿ Manfī Majhūl — Tamrīn": Sarf/p60-tamreen-mudari-manfi-majhool.md
+      - "Istilahaat": Sarf/p18-istilahaat.md
+      - "Waazi Kalima": Sarf/p19-waazi-kalima.md
+      - "Fel Ki Taqseem": Sarf/p20-fel-ki-taqseem.md
+      - "Harf Huroof Tahajji": Sarf/p21-harf-huroof-tahajji.md
+      - "Huroof Harkat": Sarf/p22-huroof-harkat.md
+      - "Ism Ki Aqsaam": Sarf/p23-ism-ki-aqsaam.md
+      - "Asma Mushtaqqa": Sarf/p24-asma-mushtaqqa.md
+      - "Wazn Nikalne Ka Tariqa": Sarf/p25-wazn-nikalne-ka-tariqa.md
+      - "Huroof Asliya Asma Awzaan": Sarf/p26-huroof-asliya-asma-awzaan.md
+      - "Afaal Ke Awzaan": Sarf/p27-afaal-ke-awzaan.md
+      - "Chha Abwaab": Sarf/p28-chha-abwaab.md
+      - "Abwaab Groups Alamaat": Sarf/p29-abwaab-groups-alamaat.md
+      - "Shash Aqsaam": Sarf/p30-shash-aqsaam.md
+      - "Fel Ki Aqsaam Thulathi Rubai": Sarf/p31-fel-ki-aqsaam-thulathi-rubai.md
+      - "Haft Aqsaam Mizaj Huroof": Sarf/p32-haft-aqsaam-mizaj-huroof.md
+      - "Naqis Lafif Mahmuz Muzaaf": Sarf/p33-naqis-lafif-mahmuz-muzaaf.md
+      - "Haft Aqsam": Sarf/p34-haft-aqsam.md
+      - "Fael Maazi": Sarf/p35-fael-maazi.md
+      - "Gardaan Fel Maazi Maloom": Sarf/p36-gardaan-fel-maazi-maloom.md
+      - "Sighon Ki Pehchan Alamat": Sarf/p37-sighon-ki-pehchan-alamat.md
+      - "Fael Maazi Pehchan": Sarf/p38-fael-maazi-pehchan.md
+      - "Mazi Alamat E Tanith": Sarf/p39-mazi-alamat-e-tanith.md
+      - "Fil Madi Malum Mashq": Sarf/p40-fil-madi-malum-mashq.md
+      - "Madi Maloom Gardaan": Sarf/p41-madi-maloom-gardaan.md
+      - "Gardaan Madi Manfi Maloom": Sarf/p42-gardaan-madi-manfi-maloom.md
+      - "Fel Madi Majhool": Sarf/p43-fel-madi-majhool.md
+      - "Gardaan Maazi Majhool": Sarf/p44-gardaan-maazi-majhool.md
+      - "Madi Majhool": Sarf/p45-madi-majhool.md
+      - "Madi Manfi Majhool": Sarf/p46-madi-manfi-majhool.md
+      - "Qad Aur Kaan": Sarf/p47-qad-aur-kaan.md
+      - "Madi Majhool Gardan": Sarf/p48-madi-majhool-gardan.md
+      - "Fil Mudari Maloom": Sarf/p49-fil-mudari-maloom.md
+      - "Mudari Maloom Bina": Sarf/p50-mudari-maloom-bina.md
+      - "Zamma Nun Irabi": Sarf/p51-zamma-nun-irabi.md
+      - "Mudari Tamrin": Sarf/p52-mudari-tamrin.md
+      - "Fil Mudari Awzan": Sarf/p53-fil-mudari-awzan.md
+      - "Mudari Manfi": Sarf/p54-mudari-manfi.md
+      - "Fil Mudari Manfi Maloom": Sarf/p55-fil-mudari-manfi-maloom.md
+      - "Mudari Manfi": Sarf/p56-mudari-manfi.md
+      - "Mudari Majhool": Sarf/p57-mudari-majhool.md
+      - "Tamreen Mudari Majhool": Sarf/p58-tamreen-mudari-majhool.md
+      - "Mudari Manfi Majhool": Sarf/p59-mudari-manfi-majhool.md
+      - "Tamreen Mudari Manfi Majhool": Sarf/p60-tamreen-mudari-manfi-majhool.md
+      - "Nafi Mudari Kana": Sarf/p61-nafi-mudari-kana.md
+      - "Kan Sin Sawfa": Sarf/p62-kan-sin-sawfa.md
+      - "Mudari Majzoom Maftooh": Sarf/p63-mudari-majzoom-maftooh.md
+      - "Nawasib Jawazim": Sarf/p64-nawasib-jawazim.md
+      - "Fil Jahad Gardaan": Sarf/p65-fil-jahad-gardaan.md
+      - "Lan Nasiba": Sarf/p66-lan-nasiba.md
+      - "Nafi Majhool Lan Gardaan": Sarf/p67-nafi-majhool-lan-gardaan.md
+      - "Tamrin Lam Lan": Sarf/p68-tamrin-lam-lan.md
+      - "Fil E Jahd Gardaan": Sarf/p69-fil-e-jahd-gardaan.md
+      - "Nafi Bi Lan Gardan": Sarf/p70-nafi-bi-lan-gardan.md
+      - "Noon E Takeed": Sarf/p71-noon-e-takeed.md
+      - "Noon Thaqeela Khafeefa": Sarf/p72-noon-thaqeela-khafeefa.md
+      - "Mustaqbil Muakkad Nun": Sarf/p73-mustaqbil-muakkad-nun.md
+      - "Tamrin Mustaqbil Muakkad": Sarf/p74-tamrin-mustaqbil-muakkad.md
+      - "Mustaqbil Majhool Muakkad Noon": Sarf/p75-mustaqbil-majhool-muakkad-noon.md
+      - "Tamreen Mustaqbil Majhool Nun": Sarf/p76-tamreen-mustaqbil-majhool-nun.md
+      - "Fil Mustaqbil Muakkad Noon": Sarf/p77-fil-mustaqbil-muakkad-noon.md
+      - "Mustaqbal Majhool Muakkad": Sarf/p78-mustaqbal-majhool-muakkad.md
+      - "Fil Amr Wa Nahi": Sarf/p79-fil-amr-wa-nahi.md
+      - "Amr Hazir Maloom Qaida Gardan": Sarf/p80-amr-hazir-maloom-qaida-gardan.md
+      - "Tamreen Amr Hazir": Sarf/p81-tamreen-amr-hazir.md
+      - "Fal Amr Nun Takid": Sarf/p82-fal-amr-nun-takid.md
+      - "Amr Hadir Gardaan": Sarf/p83-amr-hadir-gardaan.md
+      - "Amr Hazir Majhool": Sarf/p84-amr-hazir-majhool.md
+      - "Gardaan Amr Hazir Majhul": Sarf/p85-gardaan-amr-hazir-majhul.md
+      - "Amr Hazir Majhool": Sarf/p86-amr-hazir-majhool.md
+      - "Fel Amr Ghaib Mutakallim": Sarf/p87-fel-amr-ghaib-mutakallim.md
+      - "Gardaan Amr Ghaib Nun Takid": Sarf/p88-gardaan-amr-ghaib-nun-takid.md
+      - "Amr Ghaib Maloom": Sarf/p89-amr-ghaib-maloom.md
+      - "Gardaan Amr Ghaib Majhool": Sarf/p90-gardaan-amr-ghaib-majhool.md
+      - "Tamreen Amr": Sarf/p91-tamreen-amr.md
+      - "Abwaab Amr Ghaib Majhool Nun": Sarf/p92-abwaab-amr-ghaib-majhool-nun.md
+      - "Gardan Amr Noon Takid": Sarf/p93-gardan-amr-noon-takid.md
+      - "Fel Nahi": Sarf/p94-fel-nahi.md
+      - "Gardaan Nahi Hazir": Sarf/p95-gardaan-nahi-hazir.md
+      - "Gardaan Nahi Majhool Nun": Sarf/p96-gardaan-nahi-majhool-nun.md
+      - "Fil Nahi Gardaan": Sarf/p97-fil-nahi-gardaan.md
+      - "Fil Nahi Hazir Majhool Gardaan": Sarf/p98-fil-nahi-hazir-majhool-gardaan.md
+      - "Gardaan Nahi Ghaib Mutakallim": Sarf/p99-gardaan-nahi-ghaib-mutakallim.md
+      - "Gardaan Nahi Ghaib Mutakallim Majhool": Sarf/p100-gardaan-nahi-ghaib-mutakallim-majhool.md
+      - "Tamrin Nahi": Sarf/p101-tamrin-nahi.md
+      - "Gardaan Nahi Ghaib Mutakallim Maloom": Sarf/p102-gardaan-nahi-ghaib-mutakallim-maloom.md
+      - "Nahi Majhul Gardan": Sarf/p103-nahi-majhul-gardan.md
+      - "Fil Nahi Nun Thaqila Khafifa": Sarf/p104-fil-nahi-nun-thaqila-khafifa.md
+      - "Fil Tajjub": Sarf/p105-fil-tajjub.md
+      - "Ism Ki Aqsam": Sarf/p106-ism-ki-aqsam.md
+      - "Ism Faail": Sarf/p107-ism-faail.md
+      - "Ism E Fail Gardaan": Sarf/p108-ism-e-fail-gardaan.md
+      - "Ism Mafool": Sarf/p109-ism-mafool.md
+      - "Ism Maful Tamreen": Sarf/p110-ism-maful-tamreen.md
+      - "Ism E Zarf": Sarf/p111-ism-e-zarf.md
+      - "Ism E Zarf Tamreen": Sarf/p112-ism-e-zarf-tamreen.md
+      - "Ism Zarf Gardaan Ism Aala": Sarf/p113-ism-zarf-gardaan-ism-aala.md
+      - "Ism E Ala": Sarf/p114-ism-e-ala.md
+      - "Asm E Alah Tamreen": Sarf/p115-asm-e-alah-tamreen.md
+      - "Ism Tafdil": Sarf/p116-ism-tafdil.md
+      - "Tamrin Ism Tafdil Gardaan": Sarf/p117-tamrin-ism-tafdil-gardaan.md
+      - "Sifat Mushabbaha": Sarf/p118-sifat-mushabbaha.md
+      - "Asm Mubalgha": Sarf/p119-asm-mubalgha.md
+      - "Ism Mubalagha Awzan": Sarf/p120-ism-mubalagha-awzan.md
+      - "Sarf Sagheer": Sarf/p121-sarf-sagheer.md
+      - "Sarf Sagheer Baab 3 6": Sarf/p122-sarf-sagheer-baab-3-6.md
+      - "Chha Abwaab Khasiyat": Sarf/p123-chha-abwaab-khasiyat.md
+      - "Khasiyyat Baab 2 3": Sarf/p124-khasiyyat-baab-2-3.md
+      - "Khasiyat Baab 4 5": Sarf/p125-khasiyat-baab-4-5.md
+      - "Chha Abwaab Ki Khasiyat": Sarf/p126-chha-abwaab-ki-khasiyat.md
+      - "Abwaab Lughat Rahnumai": Sarf/p127-abwaab-lughat-rahnumai.md
+      - "Sigha Hal": Sarf/p128-sigha-hal.md
+      - "Sarf Sagheer Khasiyat Tamreen": Sarf/p129-sarf-sagheer-khasiyat-tamreen.md
+      - "Sarf Saghir Khasiyat Worksheet": Sarf/p130-sarf-saghir-khasiyat-worksheet.md
+      - "Sarf E Saghir Mashq": Sarf/p131-sarf-e-saghir-mashq.md
+      - "Sarf Sagheer Khasiyat Tamreen": Sarf/p132-sarf-sagheer-khasiyat-tamreen.md
+      - "Abwaab Thulathi Mazeed Feeh": Sarf/p133-abwaab-thulathi-mazeed-feeh.md
+      - "Guzarish": Sarf/p134-guzarish.md
