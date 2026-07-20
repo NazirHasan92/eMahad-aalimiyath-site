@@ -21,10 +21,10 @@ hide:
       <table dir="rtl">
         <tbody>
           <tr>
-            <td>مِسْمَعَان</td>
-            <td>مِنْصَار</td>
-            <td>مِعْلَام <!-- [?] --></td>
-            <td>مُنْتَصِرٌ <!-- [?] --></td>
+            <td>مِسْمَعَانِ</td>
+            <td>مِنْصَارٌ</td>
+            <td>مِعْلَامٌ</td>
+            <td>مُنَیْصِرٌ</td>
           </tr>
           <tr>
             <td>مِفْتَاحٌ</td>
@@ -55,9 +55,10 @@ hide:
           <tr><td>۵</td><td>جاننے کے دو آلے</td></tr>
           <tr><td>۶</td><td>جھاڑو</td></tr>
           <tr><td>۷</td><td>تولیہ</td></tr>
-          <tr><td>۸</td><td>سُکھانا <!-- [?] --></td></tr>
-          <tr><td>۹</td><td>چھاننا</td></tr>
-          <tr><td>۱۰</td><td>ماپنے کا ایک آلہ</td></tr>
+          <tr><td>۸</td><td>پنکھا</td></tr>
+          <tr><td>۹</td><td>فلٹر</td></tr>
+          <tr><td>۱۰</td><td>پیمانہ</td></tr>
+          <tr><td>۱۱</td><td>ماپنے کا ایک آلہ</td></tr>
         </tbody>
       </table>
     </div>
@@ -74,7 +75,7 @@ hide:
             <td>مِنْصَرٌ</td>
             <td>مِسْمَعٌ</td>
             <td>مِحْسَبٌ</td>
-            <td>مِشْرَبٌ</td>
+            <td>مِشْرَفٌ</td>
           </tr>
           <tr>
             <td>مِضْرَبَانِ</td>
@@ -82,7 +83,7 @@ hide:
             <td>مِنْصَرَانِ</td>
             <td>مِسْمَعَانِ</td>
             <td>مِحْسَبَانِ</td>
-            <td>مِشْرَبَانِ</td>
+            <td>مِشْرَفَانِ</td>
           </tr>
           <tr>
             <td>مَضَارِبُ</td>
@@ -90,7 +91,7 @@ hide:
             <td>مَنَاصِرُ</td>
             <td>مَسَامِعُ</td>
             <td>مَحَاسِبُ</td>
-            <td>مَشَارِبُ</td>
+            <td>مَشَارِفُ</td>
           </tr>
           <tr>
             <td>مُضَیْرِبٌ</td>
@@ -98,7 +99,7 @@ hide:
             <td>مُنَیْصِرٌ</td>
             <td>مُسَیْمِعٌ</td>
             <td>مُحَیْسِبٌ</td>
-            <td>مُشَیْرِبٌ</td>
+            <td>مُشَیْرِفٌ</td>
           </tr>
         </tbody>
       </table>
@@ -110,8 +111,3 @@ hide:
     <span class="nc-src">Sub Topic 5.4 · PDF p-115 · verbatim · DRAFT</span>
   </div>
 </div>
-
-<!-- [?]: صیغے table, row 1, 3rd word — read as مِعْلَام; could plausibly be مِعْیَار (mīm/rā and lām/yā ambiguous in decorative render). -->
-<!-- [?]: صیغے table, row 1, 4th word — read as مُنْتَصِرٌ; harakaat not fully sharp. -->
-<!-- [?]: "عربی بنائیں" list — the token between تولیہ and چھاننا read as سُکھانا; a possible further token (فلٹر/ہلٹر?) in that stretch was not legible and may be missing. -->
-<!-- [?]: Slide 240 gardaan — column order (right→left: ضرب، فتح، نصر، سمع، حسب، شرب) and row-4 tasghīr harakaat read from image; individual zer/zabar/pesh on the decorative words are best-effort. Book shows NO row/column labels; none added. -->

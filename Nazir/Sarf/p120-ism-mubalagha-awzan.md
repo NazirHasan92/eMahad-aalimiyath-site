@@ -39,7 +39,7 @@ hide:
           </tr>
           <tr>
             <td dir="rtl">فُعَّالٌ</td>
-            <td dir="rtl">كُبَّارٌ (بڑا)</td>
+            <td dir="rtl">كُبَّارٌ (بہت بڑا)</td>
           </tr>
           <tr>
             <td dir="rtl">فُعُّولٌ</td>
@@ -83,32 +83,32 @@ hide:
         <tbody>
           <tr>
             <td dir="rtl">۱</td>
-            <td dir="rtl">ضَرَبَ يَضْرِبُ</td>
+            <td dir="rtl">ضَرَبَ، يَضْرِبُ</td>
             <td dir="rtl">الْغَسْلُ (دھونا) الْغَلْبُ (غالب ہونا)</td>
           </tr>
           <tr>
             <td dir="rtl">۲</td>
-            <td dir="rtl">فَتَحَ يَفْتَحُ</td>
+            <td dir="rtl">فَتَحَ، يَفْتَحُ</td>
             <td dir="rtl">الْفَتْحُ (کھولنا) الْمَنْعُ (روکنا)</td>
           </tr>
           <tr>
             <td dir="rtl">۳</td>
-            <td dir="rtl">نَصَرَ يَنْصُرُ</td>
+            <td dir="rtl">نَصَرَ، يَنْصُرُ</td>
             <td dir="rtl">الطَّلَبُ (ڈھونڈنا) الدُّخُولُ (داخل ہونا)</td>
           </tr>
           <tr>
             <td dir="rtl">۴</td>
-            <td dir="rtl">سَمِعَ يَسْمَعُ</td>
+            <td dir="rtl">سَمِعَ، يَسْمَعُ</td>
             <td dir="rtl">الْعِلْمُ (جاننا) الْجَهْلُ (نہ جاننا) الْفَهْمُ (سمجھنا)</td>
           </tr>
           <tr>
             <td dir="rtl">۵</td>
-            <td dir="rtl">حَسِبَ يَحْسِبُ</td>
+            <td dir="rtl">حَسِبَ، يَحْسِبُ</td>
             <td dir="rtl">النِّعْمَةُ (انعام پانا، رزق پانا)</td>
           </tr>
           <tr>
             <td dir="rtl">۶</td>
-            <td dir="rtl">كَرُمَ يَكْرُمُ</td>
+            <td dir="rtl">كَرُمَ، يَكْرُمُ</td>
             <td dir="rtl">الْقُرْبُ (نزدیک ہونا) الْبُعْدُ (دور ہونا) الْكَثْرَةُ (بہت ہونا)</td>
           </tr>
         </tbody>
@@ -126,5 +126,4 @@ hide:
   </div>
 </div>
 
-<!-- [?]: اوزان column harakaat read from image render; اوزان derived pattern-forms (فُعَّالٌ for كُبَّار, فُعُّولٌ for قُدُّوس) match the book's مثالیں but exact shadda/harakat placement on the وزن cells is not razor-sharp in the render. -->
-<!-- [?]: كُبَّارٌ meaning cell — book shows a short Urdu gloss read as "(بڑا)"; a further word may follow but was not clearly legible. -->
+<!-- [?]: نوٹ line — read as "قواعد الصرف میں پڑھیں گے"; a preceding word (possibly معلم / book title) is not razor-sharp in the render. -->

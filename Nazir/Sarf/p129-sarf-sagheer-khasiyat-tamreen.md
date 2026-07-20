@@ -6,8 +6,9 @@ hide:
 <div class="nchart" markdown="0">
   <div class="nc-frame"></div>
 
-  <div class="nc-hero" dir="rtl">صرف صغیر کی خاصیت</div>
-  <div class="nc-sub">Sarf Saghīr kī Khāsiyat</div>
+  <div class="nc-hero" dir="rtl">صرف صغیر خاصیت</div>
+  <div class="nc-sub" dir="rtl">چھ ابواب کی خاصیت</div>
+  <div class="nc-sub">Sarf Saghīr Khāsiyat · Chha Abwāb kī Khāsiyat</div>
   <div class="nc-rule"></div>
 
   <div class="nc-band" style="margin-top:0;border-top:0;padding-top:0">

@@ -44,7 +44,7 @@ hide:
           <tr><td dir="rtl">قریب ہونے والا ایک مرد</td></tr>
           <tr><td dir="rtl">قریب ہونے والی سب عورتیں</td></tr>
           <tr><td dir="rtl">قریب ہونے والی دو عورتیں</td></tr>
-          <tr><td dir="rtl">دور ہونے والےсب مرد</td></tr>
+          <tr><td dir="rtl">دور ہونے والے سب مرد</td></tr>
         </tbody>
       </table>
     </div>

@@ -23,7 +23,7 @@ hide:
         <tbody>
           <tr><td dir="rtl">سَقِمَ</td><td dir="rtl">وہ بیمار ہوا</td></tr>
           <tr><td dir="rtl">فَرِحَ</td><td dir="rtl">وہ خوش ہوا</td></tr>
-          <tr><td dir="rtl">گَلِدَ</td><td dir="rtl">وہ دنیا میں رنگ والا ہوا</td></tr>
+          <tr><td dir="rtl">گَلِدَ</td><td dir="rtl">وہ دنیالے رنگ والا ہوا</td></tr>
           <tr><td dir="rtl">حَمِدَ</td><td dir="rtl">اس نے تعریف کی</td></tr>
           <tr><td dir="rtl">حَزِنَ</td><td dir="rtl">وہ رنجیدہ ہوا</td></tr>
           <tr><td dir="rtl">سَمِعَ</td><td dir="rtl">اس نے سنا</td></tr>
@@ -75,4 +75,4 @@ hide:
   </div>
 </div>
 
-<!-- [?]: Slide 269 row 3 — word read as گَلِدَ and meaning as «وہ دنیا میں رنگ والا ہوا»; both the letter (گ vs ج) and the meaning phrase are not fully sharp in the image render. -->
+<!-- [?]: Slide 269 row 3 — the ONLY uncertain cell on the page. Word transcribed as گَلِدَ (initial letter renders گ-like; Arabic has no گ, so it is almost certainly ك — candidate كَمِدَ, a فَعِلَ verb meaning "colour became dull/faded"). Meaning transcribed literally from the glyphs as «وہ دنیالے رنگ والا ہوا»; «دنیالے» is not a real Urdu word and is likely دُھندلے (dull/faded) or سانولے (dusky). Nazir to verify this one cell against the physical book. All other cells, harakaat, examples, titles and prose confirmed against PDF p-125. -->

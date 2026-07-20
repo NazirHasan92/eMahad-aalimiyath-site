@@ -32,7 +32,7 @@ hide:
         </tbody>
       </table>
     </div>
-    <div class="nc-v" dir="rtl">مذکورہ الفاظ میں غور کرنے سے معلوم ہوتا ہے کہ اِن میں عین کلمہ یا لام حرفِ حلقی میں سے ہے، یہ اِس باب کی خاصیت ہے، اِس باب کی خاصیت ''لفظی'' ہے، لیکن یہ شرط صرف صحیح کیلئے ہے، مثال، اجوف، ناقص اور مہموز وغیرہ کیلئے یہ شرط نہیں ہے۔</div>
+    <div class="nc-v" dir="rtl">مذکورہ الفاظ میں غور کرنے سے معلوم ہوتا ہے کہ ان میں عین کلمہ یا لام کلمہ حرف حلقی میں سے ہے، پس یہ اس باب کی خاصیت ہے، اس باب کی خاصیت ''لفظی'' ہے لیکن یہ شرط صرف صحیح کیلئے ہے، مثال، اجوف، ناقص اور مہموز وغیرہ کیلئے یہ شرط نہیں ہے۔</div>
   </div>
 
   <div class="nc-band">
@@ -49,19 +49,19 @@ hide:
         </thead>
         <tbody>
           <tr>
-            <td dir="rtl">خَاصَمَنِیْ زَیْدٌ فَخَصَمْتُہٗ</td>
+            <td dir="rtl">خَاصَمَنِیْ زَیْدٌ فَخَصَمْتُهُ</td>
             <td>Khāsamanī Zaydun fa-khasamtuhū</td>
             <td dir="rtl">زید نے مجھ سے جھگڑا کیا میں اُس پر غالب آیا</td>
           </tr>
           <tr>
-            <td dir="rtl">سَابَقَنِیْ زَیْدٌ فَسَبَقْتُہٗ</td>
+            <td dir="rtl">سَابَقَنِیْ زَیْدٌ فَسَبَقْتُهُ</td>
             <td>Sābaqanī Zaydun fa-sabaqtuhū</td>
-            <td dir="rtl">زید نے مجھ سے دوڑ لگائی پس میں اس میں غالب آ گیا</td>
+            <td dir="rtl">زید نے مجھ سے دوڑ لگائی پس میں دوڑ میں غالب آگیا</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div class="nc-v" dir="rtl">اِن دو مثالوں میں غور کرنے سے معلوم ہوتا ہے کہ اِن کے اصل معانی میں تو فرق ہے مگر ایک بات مشترک ہے یعنی غالب آنا، اِس کو ''مغالبہ'' کہتے ہیں، یہ اِس باب کی خاصیت ہے۔</div>
+    <div class="nc-v" dir="rtl">ان دو مثالوں میں غور کرنے سے معلوم ہوتا ہے کہ ان کے اصل معانی میں تو فرق ہے مگر ایک بات مشترک ہے یعنی غالب آنا، اس کو ''مغالبہ'' کہتے ہیں، پس یہ اس باب کی خاصیت ہے۔</div>
   </div>
 
   <div class="nc-foot">
@@ -70,5 +70,5 @@ hide:
   </div>
 </div>
 
-<!-- [?]: نَهَضَ (meaning: وہ اُٹھا) — third letter read as ض from image + meaning "he rose"; glyph slightly ambiguous. -->
-<!-- [?]: Slide 267 prose — "عین کلمہ یا لام حرفِ حلقی میں سے ہے" — exact wording of the middle clause ("یا لام یا عین") read from image render; small harakāt/word-boundary not fully sharp. -->
+<!-- [?]: Header running-title read as چھ ابواب کی خاصیت (Sub Topic 6.2); Nastaliq banner slightly ambiguous. -->
+<!-- [?]: "پس" added to the concluding clause of both prose blocks (پس یہ اس باب کی خاصیت ہے) — read from image, moderate confidence. -->

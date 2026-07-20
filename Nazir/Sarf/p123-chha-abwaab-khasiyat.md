@@ -33,11 +33,12 @@ hide:
   </div>
 
   <div class="nc-band">
-    <div class="nc-v" dir="rtl">ان الفاظ پر غور کرنے سے معلوم ہوتا ہے کہ ان کے اصل معانی میں تو فرق ہے مگر ایک بات ان میں مشترک ہے، وہ یہ ہے کہ ان سب افعال میں اوپر سے نیچے کی طرف حرکت پائی جاتی ہے، اس حرکت کو ”ہبوط“ کہتے ہیں اور اس مشترک بات کو ”خاصیت“ کہتے ہیں۔ ہر باب میں کوئی نہ کوئی خاصیت ہوتی ہے اور وہ خاصیت باب میں اکثر الفاظ میں پائی جاتی ہے، تمام الفاظ میں پایا جانا ضروری نہیں۔</div>
+    <div class="nc-v" dir="rtl">ان الفاظ پر غور کرنے سے معلوم ہوتا ہے کہ ان کے اصل معانی میں تو فرق ہے مگر ایک بات ان میں مشترک ہے، وہ یہ ہے کہ ان سب افعال میں اوپر سے نیچے کی طرف حرکت پائی جاتی ہے، اس حرکت کو ”ہبوط“ کہتے ہیں اور اس مشترک بات کو ”خاصیت“ کہتے ہیں۔ ہر باب میں کوئی نہ کوئی خاصیت ہوتی ہے اور وہ خاصیت باب کے اکثر الفاظ میں پائی جاتی ہے، تمام الفاظ میں پایا جانا ضروری نہیں۔</div>
   </div>
 
   <div class="nc-band">
-    <div class="nc-band-label" dir="rtl">خاصیت باب اول ـ ضَرَبَ یَضْرِبُ</div>
+    <div class="nc-band-label" dir="rtl">خاصیت باب اول، ضَرَبَ یَضْرِبُ</div>
+    <div class="nc-band-label" dir="rtl">مندرجہ ذیل الفاظ پر غور کریں!</div>
     <div class="table-scroll">
       <table dir="rtl">
         <thead>
@@ -85,8 +86,3 @@ hide:
     <span class="nc-src">PDF p-123 · verbatim · DRAFT</span>
   </div>
 </div>
-
-<!-- [?]: یَکْسِرُ (row 3, table 1) — meaning ”وہ توڑتا ہے“ confirms root ك-س-ر; exact medial letter read from image render, verify against physical book. -->
-<!-- [?]: رَامَانِیْ (first example) — مفاعلہ form matching meaning ”تیر اندازی کی/غالب آنا“; first word's exact letters/harakāt read from image render, verify. -->
-<!-- [?]: ”اوپر سے نیچے کی طرف حرکت“ (both توضیحی paragraphs) — read from image; matches ہبوط (descent); verify wording. -->
-<!-- [?]: ”اور وہ خاصیت باب میں اکثر الفاظ میں…“ (para after table 1) — one word before ”خاصیت“ read from image, verify. -->

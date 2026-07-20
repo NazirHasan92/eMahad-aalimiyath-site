@@ -12,7 +12,7 @@ hide:
 
   <div class="nc-band" style="margin-top:0;border-top:0;padding-top:0">
     <div class="nc-band-label" dir="rtl">تمرین  ۔  (Slide 245)</div>
-    <div class="nc-v" dir="rtl">یَنْصُرُ ، یَعْلَمُ ، یَسْمَعُ اور [?] سے اسم تفضیل کی گردانیں بنائیں ، صیغے اور معانی کی پہچان لکھیں ۔</div>
+    <div class="nc-v" dir="rtl">یَنْصُرُ ، یَعْلَمُ ، یَسْمَعُ اور یَکْرُمُ سے اسم تفضیل کی گردانیں بنائیں ، صیغے اور معانی کی پہچان لکھیں ۔</div>
   </div>
 
   <div class="nc-band">
@@ -177,7 +177,7 @@ hide:
   </div>
 </div>
 
-<!-- [?]: تمرین (Slide 245) — 4th verb after "اور" not legible in the image render; left as [?]. The first three (یَنْصُرُ ، یَعْلَمُ ، یَسْمَعُ) are clear. -->
+<!-- تمرین (Slide 245) — 4th verb resolved as یَکْرُمُ: legible in the fresh render and corroborated by the scrambled صیغے list (اَکْرَمَانِ ، اَکْرَمُوْنَ ، کُرْمٰی) + the کرم column of both gardaan tables. Four tamrin roots = نصر ، علم ، سمع ، کرم. -->
 <!-- [?]: "صیغے اور معانی بتائیں" scrambled word-list — this is an identify-the-sigha exercise, so the exact harakāt matter and were read from the image render; verify each against the physical book. Doubtful vowels: عِلْمِیَانِ / سِمْعِیَاتٌ / نُصَرِیَاتٌ (kasra vs fatha on the middle radical). اَکْرَمُوْنَ is underlined in the book. -->
 <!-- [?]: "درج ذیل الفاظ کی مدد سے جملے بنائیں" sample sentences — order and exact wording of the six Urdu sentences read from the render; "عورتیں زیادہ عبادت کرنے والی" is underlined in the book. Verify sentence order. -->
 <!-- [?]: Gardaan tables (Slide 246) — masculine paradigm follows اَفْعَلُ ، اَفْعَلَانِ ، اَفْعَلُوْنَ ، اَفَاعِلُ ، اُفَیْعِلٌ and feminine follows فُعْلٰی ، فُعْلَیَانِ ، فُعْلَیَاتٌ ، فُعَلٌ ، فُعَیْلٰی (paradigm confirmed verbatim from p-116 gardaan). Column order right→left = ضرب ، فتح ، نصر ، سمع ، حسب ، کرم (matches p-108 order + کرم). Fine harakāt on rows 4–5 (اَفَاعِلُ / اُفَیْعِلٌ / فُعَلٌ / فُعَیْلٰی) read from image render — verify against physical book. -->

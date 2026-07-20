@@ -31,14 +31,15 @@ hide:
           <tr><td dir="rtl">۶</td><td dir="rtl">مَنَاصِرُ</td><td>Manāṣiru</td></tr>
           <tr><td dir="rtl">۷</td><td dir="rtl">مَشَارِبُ</td><td>Mashāribu</td></tr>
           <tr><td dir="rtl">۸</td><td dir="rtl">مَعَالِمُ</td><td>Ma‘ālimu</td></tr>
-          <tr><td dir="rtl">۹</td><td dir="rtl">مَضْرِبٌ</td><td>Maḍribun</td></tr>
-          <tr><td dir="rtl">۱۰</td><td dir="rtl">مَفْتَحٌ</td><td>Maftaḥun</td></tr>
-          <tr><td dir="rtl">۱۱</td><td dir="rtl">مَضْرِبَانِ</td><td>Maḍribāni</td></tr>
-          <tr><td dir="rtl">۱۲</td><td dir="rtl">مَسْئَلٌ</td><td>Mas'alun</td></tr>
-          <tr><td dir="rtl">۱۳</td><td dir="rtl">مَخْرَجٌ</td><td>Makhrajun</td></tr>
-          <tr><td dir="rtl">۱۴</td><td dir="rtl">مَجَالِسُ</td><td>Majālisu</td></tr>
-          <tr><td dir="rtl">۱۵</td><td dir="rtl">مَكَاتِبُ</td><td>Makātibu</td></tr>
-          <tr><td dir="rtl">۱۶</td><td dir="rtl">مَشْرَبٌ</td><td>Mashrabun</td></tr>
+          <tr><td dir="rtl">۹</td><td dir="rtl">مُنَاصِرٌ</td><td>Munāṣirun</td></tr>
+          <tr><td dir="rtl">۱۰</td><td dir="rtl">مَضْرِبٌ</td><td>Maḍribun</td></tr>
+          <tr><td dir="rtl">۱۱</td><td dir="rtl">مَفْتَحٌ</td><td>Maftaḥun</td></tr>
+          <tr><td dir="rtl">۱۲</td><td dir="rtl">مَضْرِبَانِ</td><td>Maḍribāni</td></tr>
+          <tr><td dir="rtl">۱۳</td><td dir="rtl">مَسْئَلٌ</td><td>Mas'alun</td></tr>
+          <tr><td dir="rtl">۱۴</td><td dir="rtl">مَخْرَجٌ</td><td>Makhrajun</td></tr>
+          <tr><td dir="rtl">۱۵</td><td dir="rtl">مَجَالِسُ</td><td>Majālisu</td></tr>
+          <tr><td dir="rtl">۱۶</td><td dir="rtl">مَكَاتِبُ</td><td>Makātibu</td></tr>
+          <tr><td dir="rtl">۱۷</td><td dir="rtl">مَشْرَبٌ</td><td>Mashrabun</td></tr>
         </tbody>
       </table>
     </div>
@@ -101,7 +102,7 @@ hide:
 
   <div class="nc-band">
     <div class="nc-band-label" dir="rtl">نوٹ</div>
-    <div class="nc-v" dir="rtl">مَسْکِنٌ اور مَطْلِعٌ یہ قانون کے مطابق مَسْکَنٌ اور مَطْلَعٌ بھی آتا ہے ۔</div>
+    <div class="nc-v" dir="rtl">مَسْکِنٌ اور مَطْلِعٌ یہ قانون کے مطابق مَسْکَنٌ اور مَطْلَعٌ بھی آتے ہیں ۔</div>
   </div>
 
   <div class="nc-foot">
@@ -110,6 +111,6 @@ hide:
   </div>
 </div>
 
-<!-- [?]: "صیغے اور معنی بتائیں" word list (منصر … مشرب) — consonantal skeleton read confidently, but fine harakāt on several words is not fully sharp in the image render; Roman is best-effort pronunciation. Verify مَفْتَحٌ (10), مَسْئَلٌ (12) especially. -->
-<!-- [?]: فائدہ — exact wording "اسم ظرف مکسور العین (بھی) آتا ہے" clause read from image; sense is clear, exact particle بھی placement uncertain. "قانون" in نوٹ could read قاعدہ. -->
-<!-- [?]: Page also has a red handwritten annotation "مَسْجَد / مَسْجِد" beside the فائدہ (student/scribe mark, not printed book text) — deliberately not included in the chart. Red check-marks appear at rows ۶ and ۸ (the two نوٹ words). -->
+<!-- [?]: "صیغے اور معنی بتائیں" list = 17 words on 3 printed lines (8 + 6 + 3). Consonantal skeletons read confidently; this is a MIXED-form drill (ism-zarf mufrad/tathniya/jama' AND some ism-faa'il), so the meem harakat (fatha مَ vs pesh مُ) distinguishes the form and is NOT fully sharp in the render for every word. Words to verify against the physical book: مُشْرِبَانِ(2)/مَشْرَبَانِ, مَشَارِبُ(7), مُنَاصِرٌ(9), مَضْرِبٌ(10), مَفْتَحٌ(11), مَسْئَلٌ(13), مُشْرِبٌ(17)/مَشْرَبٌ. Word ۹ (مُنَاصِرٌ, ism-faa'il with tanwin) opens line 2 and is DISTINCT from ۶ مَنَاصِرُ (diptote plural, no tanwin). -->
+<!-- [?]: فائدہ — the two العین terms sit in «guillemets» on the page; wording read from image, sense clear. نوٹ: "یہ قانون کے مطابق" — قانون could read قاعدے; verb read as "بھی آتے ہیں" (plural, two subjects مسکن+مطلع). -->
+<!-- [?]: Page also has a red handwritten annotation "مَسْجَد / مَسْجِد" beside the فائدہ (student/scribe mark, not printed book text) — deliberately not included in the chart. Red check-marks appear at bottom-table rows ۶ (مَسْکِنٌ) and ۸ (مَطْلِعٌ) — the two words named in the نوٹ. -->

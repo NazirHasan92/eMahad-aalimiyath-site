@@ -22,13 +22,13 @@ hide:
           <tr>
             <th>الفاظ</th>
             <th>وزن</th>
-            <th>ترجمہ</th>
+            <th>مثال</th>
             <th>گردان</th>
             <th>صیغہ</th>
+            <th>ترجمہ</th>
             <th>سہ اقسام</th>
             <th>شش اقسام</th>
             <th>ہفت اقسام</th>
-            <th>مثال</th>
             <th>مادہ</th>
             <th>باب</th>
           </tr>
@@ -37,13 +37,13 @@ hide:
           <tr>
             <td>صَدَقُوْا</td>
             <td>فَعَلُوْا</td>
-            <td>انہوں نے سچ بولا</td>
-            <td>جمع مذکر غائب</td>
+            <td>نَصَرُوْا</td>
             <td>ماضی معلوم</td>
+            <td>جمع مذکر غائب</td>
+            <td>انہوں نے سچ بولا</td>
             <td>فعل</td>
             <td>ثلاثی مجرد</td>
             <td>صحیح</td>
-            <td></td>
             <td>ص، د، ق</td>
             <td>ن</td>
           </tr>
@@ -60,13 +60,13 @@ hide:
           <tr>
             <th>الفاظ</th>
             <th>وزن</th>
-            <th>ترجمہ</th>
+            <th>مثال</th>
             <th>گردان</th>
             <th>صیغہ</th>
+            <th>ترجمہ</th>
             <th>سہ اقسام</th>
             <th>شش اقسام</th>
             <th>ہفت اقسام</th>
-            <th>مثال</th>
             <th>مادہ</th>
             <th>باب</th>
           </tr>
@@ -75,13 +75,13 @@ hide:
           <tr>
             <td>رَجَعُوْا</td>
             <td>فَعَلُوْا</td>
-            <td>وہ سب لوٹے</td>
-            <td>جمع مذکر غائب</td>
+            <td>ضَرَبُوْا</td>
             <td>ماضی معلوم</td>
+            <td>جمع مذکر غائب</td>
+            <td>وہ سب لوٹے</td>
             <td>فعل</td>
             <td>ثلاثی مجرد</td>
             <td>صحیح</td>
-            <td></td>
             <td>ر، ج، ع</td>
             <td>ض</td>
           </tr>
@@ -98,13 +98,13 @@ hide:
           <tr>
             <th>الفاظ</th>
             <th>وزن</th>
-            <th>ترجمہ</th>
+            <th>مثال</th>
             <th>گردان</th>
             <th>صیغہ</th>
+            <th>ترجمہ</th>
             <th>سہ اقسام</th>
             <th>شش اقسام</th>
             <th>ہفت اقسام</th>
-            <th>مثال</th>
             <th>مادہ</th>
             <th>باب</th>
           </tr>
@@ -113,13 +113,13 @@ hide:
           <tr>
             <td>جَلَسَ</td>
             <td>فَعَلَ</td>
-            <td>بیٹھا وہ ایک مرد</td>
-            <td>واحد مذکر غائب</td>
+            <td>ضَرَبَ</td>
             <td>ماضی معلوم</td>
+            <td>واحد مذکر غائب</td>
+            <td>بیٹھا وہ ایک مرد</td>
             <td>فعل</td>
             <td>ثلاثی مجرد</td>
             <td>صحیح</td>
-            <td></td>
             <td>ج، ل، س</td>
             <td>ض</td>
           </tr>
@@ -136,13 +136,13 @@ hide:
           <tr>
             <th>الفاظ</th>
             <th>وزن</th>
-            <th>ترجمہ</th>
+            <th>مثال</th>
             <th>گردان</th>
             <th>صیغہ</th>
+            <th>ترجمہ</th>
             <th>سہ اقسام</th>
             <th>شش اقسام</th>
             <th>ہفت اقسام</th>
-            <th>مثال</th>
             <th>مادہ</th>
             <th>باب</th>
           </tr>
@@ -167,8 +167,7 @@ hide:
   </div>
 </div>
 
-<!-- [?]: Hero — page has decorative banners "صرف صغیر خاصیت" / "چھ ابواب کی خاصیت" (stylized, hard to read exactly). Used "صِیْغَہ حَل" as the short topic title drawn from the red instruction line "صیغہ جات اس طرح حل کریں"; confirm preferred title with Nazir. -->
-<!-- [?]: The 11 column HEADERS (مثال / ترجمہ / سہ-شش-ہفت اقسام / صیغہ / گردان) are tiny in the render; values are placed by meaning (Urdu phrase → ترجمہ, اسم/فعل/حرف → سہ اقسام, root letters → مادہ, etc.). Exact left-right header order and the "مثال" column content (appears blank in the worked rows) not fully certain. -->
-<!-- [?]: باب letters — table 2 (رَجَعُوْا) read as "ض"; table 1 "ن", table 3 "ض" clearer. Confirm. -->
-<!-- [?]: Slide 276 exercise words (harakaat): اَبْتَرُ, بَصُرْتَ, لَاٰبُوْہُ read from a small render; اَبْتَرُ / بَصُرْتَ vowel endings and لَاٰبُوْہُ hamza/madd not fully sharp. -->
-<!-- [?]: A yellow comment/speech-bubble icon appears in the یَعْبُدُ row (شش اقسام cell) and floating in the right margin — an editor annotation in the PDF, not book content; omitted. -->
+<!-- [?]: Hero — page-chrome banners read "صرف صغیر خاصیت" / "چھ ابواب کی خاصیت" (stylized). Used "صِیْغَہ حَل" as the short topic title drawn from the red instruction "صیغہ جات اس طرح حل کریں"; confirm preferred title with Nazir. -->
+<!-- [?]: Exercise (Slide 276) word harakaat read from a small render — اَبْتَرُ (final vowel), بَصُرْتَ, and لَاٰبُوْہُ (hamza/madd) not fully sharp; confirm. -->
+<!-- [?]: باب letter for بَصُرْتَ read as "ش" (small red glyph); confirm ش vs ک. -->
+<!-- [?]: A yellow speech-bubble icon appears in the یَعْبُدُ row and the right margin — an editor annotation in the PDF, not book content; omitted. -->
