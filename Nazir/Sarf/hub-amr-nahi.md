@@ -42,7 +42,7 @@ hide:
     <a href="../p101-tamrin-nahi/"><span class="m-ar" dir="rtl">تَمْرِین</span><span class="m-rom">Tamrin Nahi</span></a>
     <a href="../p102-gardaan-nahi-ghaib-mutakallim-maloom/"><span class="m-ar" dir="rtl">فِعْلِ نَہی</span><span class="m-rom">Gardaan Nahi Ghaib Mutakallim Maloom</span></a>
     <a href="../p103-nahi-majhul-gardan/"><span class="m-ar" dir="rtl">فِعْلِ نَہِی مَجْہُول</span><span class="m-rom">Nahi Majhul Gardan</span></a>
-    <a href="../p104-fil-nahi-nun-thaqila-khafifa/"><span class="m-ar" dir="rtl">فعلِ نہی</span><span class="m-rom">Fil Nahi Nun Thaqila Khafifa</span></a>
+    <a href="../p104-fil-nahi-nun-thaqila-khafifa/"><span class="m-ar" dir="rtl">گردانِ فعلِ نہی</span><span class="m-rom">Fil Nahi Nun Thaqila Khafifa</span></a>
   </div>
   <div class="nc-maphead" dir="rtl">فعل تعجب</div>
   <div class="nc-map">
